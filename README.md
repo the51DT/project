@@ -1,1 +1,1 @@
-# Project Git Pages
+# GitHub Pages
