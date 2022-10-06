@@ -1,1 +1,1 @@
-# Project Git Pages (Public)
+# Project Git Pages
