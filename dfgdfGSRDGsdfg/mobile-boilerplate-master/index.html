@@ -16,6 +16,10 @@
             .slide-wrap{position: relative;}
             .slide-contents{display:none;position: absolute;width:100%}
             .slide-contents:nth-child(1){display:block}
+            .btn-slide{z-index: 2; position: fixed;width: 150px;height: 150px; background-color: red; opacity: .5;}
+            .btn-slide.slide-prev{left: 0;top: 50%;transform: translate(0, -50%);}
+            .btn-slide.slide-next{right: 0;top: 50%;transform: translate(0, -50%);}
+            .btn-slide.slide-home{left:50%;top:0;transform: translate(-50%, 0);}
         </style>
     </head>
     <body>
@@ -24,14 +28,17 @@
             <div class="content">
                 <div class="wrap">
                     <div class="slide-wrap">
-                        <img class="slide-contents" src="img/sample/sample0.png" alt="sample">
-                        <img class="slide-contents" src="img/sample/sample1.png" alt="sample">
-                        <img class="slide-contents" src="img/sample/sample2.png" alt="sample">
-                        <img class="slide-contents" src="img/sample/sample3.png" alt="sample">
-                        <img class="slide-contents" src="img/sample/sample4.png" alt="sample">
+                        <div class="slide-contents sp"><img class="slide-contents" src="img/sample/sample0.png" alt="sample"></div>
+                        <div class="slide-contents sp"><img class="slide-contents" src="img/sample/sample1.png" alt="sample"></div>
+                        <div class="slide-contents sp"><img class="slide-contents" src="img/sample/sample2.png" alt="sample"></div>
+                        <div class="slide-contents sp"><img class="slide-contents" src="img/sample/sample3.png" alt="sample"></div>
+                        <div class="slide-contents sp"><img class="slide-contents" src="img/sample/sample4.png" alt="sample"></div>
                     </div>
                 </div>
             </div>
+            <button id="button-previous" class="btn-slide slide-prev" type="button">뒤로</button>
+            <button id="button-next" class="btn-slide slide-next" type="button">다음</button>
+            <button class="btn-slide slide-home" type="button">홈으로</button>
         </div>
 
         <script src="js/vendor/jquery-2.1.3.min.js"></script>
@@ -39,33 +46,42 @@
         <script src="js/main.js"></script>
         <script>
             $(document).ready(function(){
+                $('.sp').first().addClass('active');
+                $('.sp').hide();    
+                $('.active').show();
 
-                var slideLenth = $('.slide-contents').length-1;
-                var currentSlide;
-                
-                console.log('slideLenth '+slideLenth);
+                $('#button-next').click(function(){
 
-                $('.slide-contents').on('click',function(){
-                    if(!$(this).is(':animated')){
-                        currentSlide = $('.slide-contents').index(this);
-
-                        console.log('slide '+currentSlide);
-
-                        if(currentSlide != slideLenth){
-                            $(this).fadeOut().next().fadeIn();
-                        }else{
-                            console.log('end');
-                            $(this).fadeOut();
-                            $('.slide-contents:nth-child(1)').fadeIn();
-                        }
-                    }else{
-                        console.log('is animated!');
+                $('.active').removeClass('active').addClass('oldActive');    
+                            if ( $('.oldActive').is(':last-child')) {
+                    $('.sp').first().addClass('active');
                     }
+                    else{
+                    $('.oldActive').next().addClass('active');
+                    }
+                $('.oldActive').removeClass('oldActive');
+                $('.sp').fadeOut();
+                $('.active').fadeIn();
+                    
                     
                 });
-
-                $('.slide-wrap').height($('.slide-contents').height());
-
+                
+                $('#button-previous').click(function(){
+                $('.active').removeClass('active').addClass('oldActive');    
+                    if ( $('.oldActive').is(':first-child')) {
+                    $('.sp').last().addClass('active');
+                    }
+                    else{
+                $('.oldActive').prev().addClass('active');
+                    }
+                $('.oldActive').removeClass('oldActive');
+                $('.sp').fadeOut();
+                $('.active').fadeIn();
+                });
+                
+                
+                
+                
             });
         </script>
 
