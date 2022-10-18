@@ -1,0 +1,54 @@
+body, html {max-width: 100%;}
+body::-webkit-scrollbar {display: none;}
+.wrap {max-width: 390px; overflow-x: hidden; margin: 0 auto;}
+.page-img {width: 100%;}
+
+.move-btn {position: fixed; width: 150px; height: 150px;  z-index: 999; cursor: pointer;}
+.move-btn.home-btn { left: 50%; transform: translateX(-50%);}
+.move-btn.prev-btn {top: 50%; left:0; transform: translateY(-50%);}
+.move-btn.next-btn {top: 50%; right: 0; transform: translateY(-50%);}
+
+.bottom-fix {position: fixed; bottom: -10px; left: 50%; transform: translateX(-50%); width: 410px;}
+
+section {display: none; position: relative;}
+
+/* 작업 중인 section */
+.section1 {display: block;}
+/* .story-1 {border-bottom: 1px solid black;} */
+.story-2 {position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);}
+
+.chart {width: 100%; height: 100%; position: absolute; top: 0%; left: 0%;}
+.circle-chart__background {opacity: 0.2;}
+.circle-chart {position: absolute; width: 90px; height: 90px;}
+.circle-chart.n1 {top: 25%; right: 11%;}
+.circle-chart.n2 {top: 39.2%; right: 11%;}
+.circle-chart.n3 {top: 53.5%; right: 11%;}
+.circle-chart:last-child {margin-left: 8px;}
+.circle-chart__circle {animation: circle-chart-fill 2s reverse; transform: rotate(-90deg); transform-origin: center;}
+.circle-chart__circle--negative {transform: rotate(-90deg) scale(1,-1);}
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sec-n-story {position: relative; height: 844px; overflow: hidden;}
+.sec-n-story .story-cont {text-align: center;}
+.sec-n-story .story-cont.swiper-container {margin-top: 127px; box-sizing: border-box; text-align: center; overflow: hidden; width: 390px; height: 313px; text-align: center; position: relative;}
+.sec-n-story .story-cont.swiper-container .swiper-wrapper {}
+.sec-n-story .story-cont.swiper-container .swiper-wrapper .swiper-slide {width: 244px !important; height: 313px; text-align: center; position: relative; margin: 0 auto;}
+
+.swiper-button-prev {background: none !important; background-image: url(../img/prev-1.png) !important; z-index: 1000 !important; position: relative !important; width: 60px !important; height: 60px !important; border: none; top: -420px !important; left: 50% !important; transform: translateX(-50%);}
+.swiper-button-prev::after {display: none;}
+.swiper-button-next {background: none !important; background-image: url(../img/next-1.png) !important;  position: relative !important; width: 60px !important; height: 60px !important; bottom: -45px !important; border: none; top: auto !important; left: 50% !important; transform: translateX(-50%);}
+.swiper-button-next::after {display: none;}
+
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {transform: translate3d(356px,-39px,0) !important; }
+.swiper-pagination-bullet {border: 1px solid black !important; opacity: 1 !important; background: var(--swiper-pagination-bullet-inactive-color,#fff) !important;}
+.swiper-pagination-bullet-active {background-color: #000 !important;}
+
+:root {--swiper-theme-color: #000 !important;}
