@@ -1,0 +1,74 @@
+body, html {width: 390px; max-width: 390px; text-align: center; margin: 0 auto; overflow-x: hidden;}
+img {width: 100%;}
+.wrap {position: absolute; width: 390px;}
+.header {position: fixed; width: 390px; top: 0; left: 50%; transform: translateX(-50%); z-index: 10;}
+.header.off {display: none;}
+.click-container {position: fixed; width: 390px; height: 150px; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9; display: flex;}
+.click-container div {flex: 0.2; max-width: 300px;}
+.click-container .center {flex: 0.8} 
+.click-container .left {text-align: left; cursor: pointer;}
+.click-container .right {text-align: right; cursor: pointer;}
+
+.login {width: 390px;}
+.login.off {display: none;}
+.chart {position: absolute; top: 30.9%; left: 36.5%; transform: translateX(-50%);}
+.circle-chart {width: 90px; height: 90px;}
+.circle-chart:last-child {margin-left: 8px;}
+.circle-chart__circle {animation: circle-chart-fill 2s reverse; transform: rotate(-90deg); transform-origin: center;}
+.circle-chart__circle--negative {transform: rotate(-90deg) scale(1,-1);}
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.splash {width: 390px; position: absolute; top: 0; left: 0; z-index: -1; opacity: 0; transition: all ease-in-out 1s;}
+.splash.on {opacity: 1;}
+
+.liiv {position: absolute; top: 0; left: 0; z-index: -1; width: 390px; display: none; background-color: #FCFAF6; overflow-x: hidden;}
+.liiv.on {display: block;}
+
+.header2 {position: fixed; width: 390px; top: 0; left: 50%; transform: translateX(-50%); z-index: 100; background-color: #fff;}
+.header2.off {display: none;}
+.header2 .more {position: fixed; top: 70px; right: 6%; width: 20px; z-index: 100; cursor: pointer;}
+
+.liiv .liivImg {margin-bottom: 60px;}
+.liiv .chart {top: 11.3%;}
+.swiper-container {width: 100%; text-align: center; position: absolute; top: 26%;}
+.swiper-container .swiper-wrapper .swiper-slide {width: 300px !important; max-height: 465px; text-align: center; position: relative; box-shadow: 10px 10px 32px  rgba(204, 208, 219, 0.3); border-radius: 15px;}
+.swiper-slide.n1 .n1 {position: absolute; top: 28%; left: 15%; width: 86px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
+.swiper-slide.n1 .n2 {position: absolute; top: 28%; left: 60%; width: 75px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate; animation-delay: 0.3s;}
+.swiper-slide.n1 .n3 {position: absolute; top: 55%; left: 13%; width: 17px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
+.swiper-slide.n1 .n4 {position: absolute; top: 61%; left: 60%; width: 8px; animation-name: motion; animation-duration: 0.5s; animation-iteration-count: infinite; animation-direction: alternate; animation-delay: 0.3s;}
+.swiper-slide.n2 .n1 {position: absolute; top: 32%; left: 60%; width: 83px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
+.swiper-slide.n3 .n1 {position: absolute; top: 30%; left: 11%; width: 98px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
+@keyframes motion {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(20%);
+  }
+}
+
+.slide-container {position: absolute; top: 74%; width: 390px; height: 240px;}
+.slide {position: absolute; width: 390px; height: 240px; overflow-x: auto; font-size: 0; display: flex; padding-left: 24px; padding-right: 24px;}
+.slide img {width: auto;}
+.slide::-webkit-scrollbar {display: none;}
+.slide_bottom {position: absolute; top: 83%; width: 80px; left: 55px;}
+
+.liiv_footer {position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); display: none; z-index: 1; width: 390px;}
+.liiv_footer.on {display: block;}
+.liiv_footer .chat {position: fixed; bottom: 160px; left: 63%; transform: translateX(-50%); width: 232px; z-index: 1;}
+.liiv_footer .chatImg {width: 60px; position: absolute; top: 0; right: 0; cursor: pointer;}
+.liiv_footer .chat_text {width: 272px; position: absolute; top: -7px; right: 45px; opacity: 0; transition: all ease-in-out 0.3s;}
+.liiv_footer .chat_text.on {opacity: 1;}
+.liiv_footer .star {position: absolute; bottom: 30.5%; right: 7%; width: 57px; cursor: pointer;}
+
+.menu {position: absolute; top: 0; left: 0; display: none; width: 390px; z-index: 10;}
+.menu.on {display: block;}
+.menu .close {position: absolute; top: 64px; right: 20px; width: 30px; cursor: pointer;}
