@@ -56,6 +56,12 @@
         @keyframes circle-chart-fill {
         to { stroke-dasharray: 0 100; }
         }
+
+        .shadow {
+        -webkit-filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.7));
+        filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, 0.7));
+        /* Similar syntax to box-shadow */
+        }
     </style>
 </head>
 <body>
@@ -97,7 +103,7 @@
                         <div class="swiper-slide">
                             <img src="./img/circle1.png" class="circle1">
                             <div class="circle-chart-container">
-                            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="shadow circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
                                 <circle stroke-linecap="round" class="circle-chart-circle" stroke="#64b2d1" stroke-width="5" stroke-dasharray="68,100" fill="none" cx="16.91549431" cy="16.91549431" r="14.91549431" />
                                 </svg>
                             </div>
@@ -105,13 +111,15 @@
                         </div>
                         <div class="swiper-slide">
                             <img src="./img/circle2.png" class="circle2">
-                            <span class="chart chart2" data-percent="40">
-                            </span>
+                            <svg class="shadow circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                            <circle stroke-linecap="round" class="circle-chart-circle" stroke="#64b2d1" stroke-width="5" stroke-dasharray="68,100" fill="none" cx="16.91549431" cy="16.91549431" r="14.91549431" />
+                            </svg>
                         </div>
                         <div class="swiper-slide">
                             <img src="./img/circle3.png" class="circle3">
-                            <span class="chart chart3" data-percent="80">
-                            </span>
+                            <svg class="shadow circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                            <circle stroke-linecap="round" class="circle-chart-circle" stroke="#64b2d1" stroke-width="5" stroke-dasharray="68,100" fill="none" cx="16.91549431" cy="16.91549431" r="14.91549431" />
+                            </svg>
                         </div>
                         <div class="swiper-slide">
                             <div class="bar-graph bar-graph-vertical bar-graph-two">
