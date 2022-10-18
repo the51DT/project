@@ -37,18 +37,48 @@ $(document).ready(function () {
         centeredSlides: true,
         on: {
             activeIndexChange: function () {
+                $('.swiper-button-prev').css({
+                    'opacity':'0'
+                })
+                $('.swiper-button-next').css({
+                    'opacity':'0'
+                })
                 if (this.realIndex ==0){
-                    $('.swiper-button-prev').attr('style', 'background-image: url(../img/prev-1.png) !important');
-                    $('.swiper-button-next').attr('style', 'background-image: url(../img/next-1.png) !important');
+                    // $('.swiper-button-prev').attr('style', 'background-image: url(../img/prev-1.png) !important');
+                    // $('.swiper-button-next').attr('style', 'background-image: url(../img/next-1.png) !important');
+                    $('.swiper-button-prev.prev-1').css({
+                        'opacity':'1'
+                    })
+                    $('.swiper-button-next.next-1').css({
+                        'opacity':'1'
+                    })
                 } else if (this.realIndex == 1){
-                    $('.swiper-button-prev').attr('style', 'background-image: url(../img/prev-2.png) !important');
-                    $('.swiper-button-next').attr('style', 'background-image: url(../img/next-2.png) !important');
+                    // $('.swiper-button-prev').attr('style', 'background-image: url(../img/prev-2.png) !important');
+                    // $('.swiper-button-next').attr('style', 'background-image: url(../img/next-2.png) !important');
+                    $('.swiper-button-prev.prev-2').css({
+                        'opacity':'1'
+                    })
+                    $('.swiper-button-next.next-2').css({
+                        'opacity':'1'
+                    })
                 } else if (this.realIndex == 2) {
-                    $('.swiper-button-prev').attr('style', 'background-image: url(../img/prev-3.png) !important');
-                    $('.swiper-button-next').attr('style', 'background-image: url(../img/next-3.png) !important');
+                    // $('.swiper-button-prev').attr('style', 'background-image: url(../img/prev-3.png) !important');
+                    // $('.swiper-button-next').attr('style', 'background-image: url(../img/next-3.png) !important');
+                    $('.swiper-button-prev.prev-3').css({
+                        'opacity':'1'
+                    })
+                    $('.swiper-button-next.next-3').css({
+                        'opacity':'1'
+                    })
                 } else if (this.realIndex == 3) {
-                    $('.swiper-button-prev').attr('style', 'background-image: url(../img/prev-4.png) !important');
-                    $('.swiper-button-next').attr('style', 'background-image: url(../img/next-4.png) !important');
+                    // $('.swiper-button-prev').attr('style', 'background-image: url(../img/prev-4.png) !important');
+                    // $('.swiper-button-next').attr('style', 'background-image: url(../img/next-4.png) !important');
+                    $('.swiper-button-prev.prev-4').css({
+                        'opacity':'1'
+                    })
+                    $('.swiper-button-next.next-4').css({
+                        'opacity':'1'
+                    })
                 }
             }
         },
