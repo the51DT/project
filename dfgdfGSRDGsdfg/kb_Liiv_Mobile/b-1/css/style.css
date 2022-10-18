@@ -1,6 +1,7 @@
 body, html {max-width: 100%;}
 body::-webkit-scrollbar {display: none;}
-.wrap {width: 390px; overflow-x: hidden; border: 1px solid rgb(180, 180, 180); margin: 0 auto;}
+.wrap {max-width: 390px; overflow-x: hidden; margin: 0 auto;}
+.page-img {width: 100%;}
 
 .move-btn {position: fixed; width: 150px; height: 150px;  z-index: 999; cursor: pointer;}
 .move-btn.home-btn { left: 50%; transform: translateX(-50%);}
@@ -10,7 +11,7 @@ body::-webkit-scrollbar {display: none;}
 section {display: none;}
 
 /* 작업 중인 section */
-.sec-no-member {display: block;}
+.section1 {display: block;}
 
 .sec-main {}
 
@@ -199,6 +200,9 @@ section {display: none;}
 .sec-no-member .no-mem-acco .reason-3-big {display: none;}
 .sec-no-member .no-mem-acco .reason-4 {display: block;}
 .sec-no-member .no-mem-acco .reason-4-big {display: none;}
+
+.sec-no-member .review-cont {margin-top: 16px; margin-bottom: 16px;}
+
 
 .sec-no-member .swiper-container {text-align: center;}
 .sec-no-member .swiper-container .swiper-wrapper .swiper-slide img{border-radius: 14px; box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.05);}
