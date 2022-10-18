@@ -49,8 +49,8 @@ img {width: 100%;}
 .splash_svg.ball2 {width: calc(100vw*22/390); max-width: 22px; top: 50%; left: 23%; animation-delay: 1.8s;}
 .splash_svg.coin3 {width: calc(100vw*32.5/390); max-width: 32.5px; top: 59%; left: 15%; animation-delay: 2s;}
 
-.liiv {position: absolute; top: 0; left: 0; z-index: -1; width: 100%; display: none; background-color: #FCFAF6; overflow-x: hidden;}
-.liiv.on {display: block;}
+.liiv {position: absolute; width: 100%; max-width: 390px; top: 0; left: 0; height: 1px; opacity: 0; background-color: #FCFAF6; overflow-x: hidden;}
+.liiv.on {opacity: 1; height: auto;}
 
 .header2 {position: fixed; width: 100%; max-width: 390px; top: 0; left: 50%; transform: translateX(-50%); z-index: 10; background-color: #fff;}
 .header2.off {display: none;}

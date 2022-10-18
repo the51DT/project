@@ -2,6 +2,7 @@ body, html {width: 100%; max-width: 390px; text-align: center; margin: 0 auto; o
 img {width: 100%;}
 
 .wrap {position: absolute; width: 100%; max-width: 390px;}
+/* .wrap.on {height: initial; overflow: initial;} */
 .header {position: fixed; width: 100%; max-width: 390px; top: 0; left: 50%; transform: translateX(-50%); z-index: 10;}
 .header.off {display: none;}
 .click-container .left {position: fixed; top: 50%; left: 0; transform: translateY(-50%); cursor: pointer; width: 60px; height: 150px; z-index: 10; border: 1px solid red;}
@@ -36,8 +37,8 @@ img {width: 100%;}
 .splash_svg.coin3 {width: calc(100vw*32.5/390); max-width: 32.5px; top: 59%; left: 15%; animation-delay: 2s;}
 
 
-.liiv {position: absolute; top: 0; left: 0; width: 100%; display: none; background-color: #FCFAF6; overflow-x: hidden;}
-.liiv.on {display: block;}
+.liiv {position: absolute; width: 100%; max-width: 390px; top: 0; left: 0; height: 1px; opacity: 0; background-color: #FCFAF6; overflow-x: hidden;}
+.liiv.on {opacity: 1; height: auto;}
 .header2 {position: fixed; width: 100%; max-width: 390px; top: 0; left: 50%; transform: translateX(-50%); z-index: 9; background-color: #fff;}
 .header2.off {display: none;}
 .header2 .more {position: fixed; top: 70px; right: 6%; width: 20px; z-index: 10; cursor: pointer;}
