@@ -124,6 +124,10 @@ $('.chatImg').on('click', function () {
   }, 1000);
 })
 
+$('.signup4_button').on('click', function() {
+  $('.footer').toggleClass('on');
+})
+
 $('.input ul li').on('click', function () {
   if (!$('.signup1').hasClass('off')) {
     $(this).toggleClass('on');
