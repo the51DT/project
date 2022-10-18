@@ -1,12 +1,14 @@
 let step = 0;
 
 $('.left').on('click', function () {
-  if (step === 1) {
-    $('.login').removeClass('off');
-    $('.header').removeClass('off');
-    $('.liiv').removeClass('on');
-    $('.liiv_footer').removeClass('on');
-    step = 0;
+  if ($('.liiv_footer').hasClass('on')) {
+    if (step === 1) {
+      $('.login').removeClass('off');
+      $('.header').removeClass('off');
+      $('.liiv').removeClass('on');
+      $('.liiv_footer').removeClass('on');
+      step = 0;
+    }
   }
 })
 
