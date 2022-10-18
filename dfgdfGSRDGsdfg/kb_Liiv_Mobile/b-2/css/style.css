@@ -20,9 +20,9 @@ section {display: none; position: relative;}
 .chart {width: 100%; height: 100%; position: absolute; top: 0%; left: 0%;}
 .circle-chart__background {opacity: 0.2;}
 .circle-chart {position: absolute; width: 90px; height: 90px;}
-.circle-chart.n1 {top: 25%; right: 11%;}
-.circle-chart.n2 {top: 39.2%; right: 11%;}
-.circle-chart.n3 {top: 53.5%; right: 11%;}
+.circle-chart.n1 {top: 25%; right: 12%;}
+.circle-chart.n2 {top: 39.2%; right: 12%;}
+.circle-chart.n3 {top: 53.5%; right: 12%;}
 .circle-chart:last-child {margin-left: 8px;}
 .circle-chart__circle {animation: circle-chart-fill 2s reverse; transform: rotate(-90deg); transform-origin: center;}
 .circle-chart__circle--negative {transform: rotate(-90deg) scale(1,-1);}
