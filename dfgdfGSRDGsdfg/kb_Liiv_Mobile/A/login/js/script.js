@@ -18,15 +18,31 @@ $('.right').on('click', function () {
     $('.splash').addClass('on');
     $('.login').addClass('off');
     $('.header').addClass('off');
+    $('.splash_svg').addClass('on');
     setTimeout(() => {
       $('.splash').removeClass('on');
-    }, 1000);
+    }, 3000);
     setTimeout(() => {
       $('.liiv').addClass('on');
       $('.liiv_footer').addClass('on');
-    }, 2000);
+    }, 3000);
     step = 1;
   }
+})
+
+$('.login').on('click', function() {
+    $('.splash').addClass('on');
+    $('.login').addClass('off');
+    $('.header').addClass('off');
+    $('.splash_svg').addClass('on');
+    setTimeout(() => {
+      $('.splash').removeClass('on');
+    }, 3000);
+    setTimeout(() => {
+      $('.liiv').addClass('on');
+      $('.liiv_footer').addClass('on');
+    }, 3000);
+    step = 1;
 })
 
 $('.star').on('click', function () {
@@ -55,33 +71,54 @@ $('.chatImg').on('click', function () {
 })
 
 var mySwiper = new Swiper('.swiper-container', {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    },
   loop: false,
   slidesPerView: "auto",
   spaceBetween: 15,
   centeredSlides: true,
+  observer: true,
+  observeParents: true,
 })
 
-let slider = document.querySelector(".slide-container .slide");
-let isGrab = false;
-let startX;
-let scrollLeft;
-
-slider.addEventListener("mousedown", grabSlider);
-slider.addEventListener("mousemove", grabMove);
-slider.addEventListener("mouseup", () => isGrab = false);
-slider.addEventListener("mouseleave", () => isGrab = false);
-
-function grabSlider(e) {
-  e.preventDefault();
-  isGrab = true;
-  startX = e.x;
-  scrollLeft = slider.scrollLeft;
-}
-
-function grabMove(e) {
-  e.preventDefault();
-  if (!isGrab) return;
-  let moveX = e.x;
-  let walk = (moveX - startX) * 2;
-  slider.scrollLeft = scrollLeft - walk;
-}
+var mySwiper2 = new Swiper('.slide-container', {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    },
+  loop: false,
+  slidesPerView: "auto",
+  spaceBetween: 15,
+  centeredSlides: true,
+  observer: true,
+  observeParents: true,
+})
+var mySwiper = new Swiper('.swiper-container', {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    },
+  loop: false,
+  slidesPerView: "auto",
+  spaceBetween: 15,
+  centeredSlides: true,
+  observer: true,
+  observeParents: true,
+})
+mySwiper.autoplay.start();
+var mySwiper2 = new Swiper('.slide-container', {
+  autoplay: {
+    running: true,
+    delay: 2500,
+    disableOnInteraction: false,
+    },
+  loop: false,
+  slidesPerView: "auto",
+  spaceBetween: 15,
+  centeredSlides: true,
+  observer: true,
+  observeParents: true,
+})
+console.log(mySwiper2.autoplay)

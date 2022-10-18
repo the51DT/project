@@ -8,7 +8,7 @@ img {width: 100%;}
 .click-container .right {position: fixed; top: 50%; right: 0; transform: translateY(-50%); cursor: pointer; width: 60px; height: 150px; z-index: 10; border: 1px solid red;}
 .click-container .home {position: fixed; top: 0; left: 50%; transform: translateX(-50%); cursor: pointer; width: 150px; height: 60px; z-index: 10; border: 1px solid red;}
 
-.login {width: 100%;}
+.login {width: 100%; cursor: pointer;}
 .login.off {display: none;}
 .chart {position: absolute; top: 30.9%; left: 36.5%; transform: translateX(-50%);}
 .circle-chart {width: 90px; height: 90px;}
@@ -25,8 +25,29 @@ img {width: 100%;}
   }
 }
 
-.splash {width: 100%; max-width: 390px; position: absolute; top: 0; left: 0; z-index: -1; opacity: 0; transition: all ease-in-out 1s;}
-.splash.on {opacity: 1;}
+.splash {width: 100%; max-width: 390px; position: absolute; top: 0; left: 0; z-index: -1; opacity: 0; display: none; transition: all ease-in-out 1s; overflow: hidden;}
+.splash.on {opacity: 1; display: block;}
+.splash_svg {position: absolute; opacity: 0;}
+.splash_svg.on {animation-name: splashMotion; animation-duration: 1s; animation-fill-mode: forwards;}
+@keyframes splashMotion {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.splash_svg.person {width: calc(100vw*257.5/390); max-width: 257.5px; bottom: -5%; right: 4%; z-index: 2;}
+.splash_svg.wave1 {width: calc(100vw*340.5/390); max-width: 340.5px; top: 7%; left: -37%; animation-delay: 0.3s;}
+.splash_svg.wave2 {width: calc(100vw*356/390); max-width: 356px; top: 13%; left: -46%; animation-delay: 0.4s;}
+.splash_svg.wave3 {width: calc(100vw*103/390); max-width: 103px; top: 45%; right: 32%; animation-delay: 0.6s;}
+.splash_svg.wave4 {width: calc(100vw*80.5/390); max-width: 80.5px; top: 63%; left: 10%; animation-delay: 0.8s;}
+.splash_svg.wave5 {width: calc(100vw*244/390); max-width: 244px; top: 11%; left: -17%; animation-delay: 1.2s; z-index: 1;}
+.splash_svg.wave_shadow {width: calc(100vw*157/390); max-width: 157px; top: 16%; left: 4%; animation-delay: 1.2s;}
+.splash_svg.ball1 {width: calc(100vw*15/390); max-width: 15px; top: 29%; left: 1%; animation-delay: 1.4s;}
+.splash_svg.coin1 {width: calc(100vw*68.5/390); max-width: 68.5px; top: 28%; left: 15%; animation-delay: 1.6s;}
+.splash_svg.ball2 {width: calc(100vw*22/390); max-width: 22px; top: 50%; left: 23%; animation-delay: 1.8s;}
+.splash_svg.coin3 {width: calc(100vw*32.5/390); max-width: 32.5px; top: 59%; left: 15%; animation-delay: 2s;}
 
 .liiv {position: absolute; top: 0; left: 0; z-index: -1; width: 100%; display: none; background-color: #FCFAF6; overflow-x: hidden;}
 .liiv.on {display: block;}
@@ -54,10 +75,9 @@ img {width: 100%;}
   }
 }
 
-.slide-container {position: absolute; top: 73%; width: 100%; max-width: 390px; height: 240px;}
-.slide {position: absolute; width: 100%; height: 240px; overflow-x: auto; font-size: 0; display: flex; padding-left: 24px; padding-right: 24px;}
-.slide img {width: auto;}
-.slide::-webkit-scrollbar {display: none;}
+.slide-container {position: absolute; top: 73%; width: 100%; max-width: 390px; height: 240px; text-align: center;}
+.slide-container .slide-wrapper .slide {width: 315px !important; max-height: 240px; max-height: 240px; text-align: center; position: relative;}
+.slide-container .slide-wrapper .slide:nth-child(1) {width: 300px !important;}
 .slide_bottom {position: absolute; top: 83%; width: 80px; left: 55px;}
 
 .liiv_footer {position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); display: none; z-index: 1; width: 100%; max-width: 390px;}
