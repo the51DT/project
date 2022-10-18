@@ -1,6 +1,6 @@
 body, html {max-width: 100%;}
 body::-webkit-scrollbar {display: none;}
-.wrap {max-width: 100%; overflow-x: hidden; margin: 0 auto;}
+.wrap {max-width: 390px; overflow-x: hidden; margin: 0 auto;}
 .page-img {width: 100%;}
 
 .move-btn {position: fixed; width: 150px; height: 150px;  z-index: 999; cursor: pointer;}
