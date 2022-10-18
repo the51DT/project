@@ -99,7 +99,7 @@ img {width: 100%;}
 .signup2.on {display: block;}
 .signup3 {display: none;}
 .signup3.on {display: block;}
-.signup4 {display: none;}
+.signup4 {display: none; position: relative; overflow: hidden;}
 .signup4.on {display: block;}
 .signup_process.on {display: block;}
 .input {position: absolute; top: 27%; left: 50%; transform: translateX(-50%); width: 100%; height: 347.5px; padding: 0 10px;}
@@ -125,3 +125,7 @@ img {width: 100%;}
 .signup3 .input ul li:last-child {margin-left: 10px;}
 .signup2 .next,
 .signup3 .next {width: 60px;}
+
+.signup4_button {position: absolute; bottom: 0%; left: 0; width: 100%; max-width: 390px; cursor: pointer;}
+.footer {position: absolute; bottom: -100%; left: 0; width: 100%; max-width: 390px; opacity: 0; transition: all ease-in-out 0.5s;}
+.footer.on {bottom: 0%; opacity: 1;}
