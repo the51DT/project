@@ -203,10 +203,8 @@ var mySwiper = new Swiper('.swiper-container', {
   slidesPerView: "auto",
   spaceBetween: 15,
   centeredSlides: true,
-  observer: true,
-  observeParents: true,
 })
-mySwiper.autoplay.run();
+
 var mySwiper2 = new Swiper('.slide-container', {
   autoplay: {
     running: true,
@@ -217,7 +215,4 @@ var mySwiper2 = new Swiper('.slide-container', {
   slidesPerView: "auto",
   spaceBetween: 15,
   centeredSlides: true,
-  observer: true,
-  observeParents: true,
 })
-console.log(mySwiper2.autoplay)
