@@ -2,9 +2,9 @@ body, html {width: 100%; max-width: 390px; text-align: center; margin: 0 auto; o
 img {width: 100%;}
 
 .wrap {position: absolute; width: 100%; max-width: 390px;}
-.header {position: fixed; width: 390px; top: 0; left: 50%; transform: translateX(-50%); z-index: 10;}
+.header {position: fixed; width: 100%; max-width: 390px; top: 0; left: 50%; transform: translateX(-50%); z-index: 10;}
 .header.off {display: none;}
-.click-container {position: fixed; width: 390px; height: 150px; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9; display: flex;}
+.click-container {position: fixed; width: 100%; height: 150px; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9; display: flex;}
 .click-container div {flex: 0.2; max-width: 300px;}
 .click-container .center {flex: 0.8} 
 .click-container .left {text-align: left; cursor: pointer;}
@@ -33,7 +33,7 @@ img {width: 100%;}
 .liiv {position: absolute; top: 0; left: 0; z-index: -1; width: 100%; display: none; background-color: #FCFAF6; overflow-x: hidden;}
 .liiv.on {display: block;}
 
-.header2 {position: fixed; width: 390px; top: 0; left: 50%; transform: translateX(-50%); z-index: 100; background-color: #fff;}
+.header2 {position: fixed; width: 100%; max-width: 390px; top: 0; left: 50%; transform: translateX(-50%); z-index: 100; background-color: #fff;}
 .header2.off {display: none;}
 .header2 .more {position: fixed; top: 70px; right: 6%; width: 20px; z-index: 100; cursor: pointer;}
 
