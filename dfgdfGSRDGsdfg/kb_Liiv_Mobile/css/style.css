@@ -1,0 +1,10 @@
+body, html {width: 100%; max-width: 390px; text-align: center; margin: 0 auto; overflow-x: hidden;}
+img {width: 100%;}
+
+.wrap {position: absolute; width: 100%; max-width: 390px;}
+.link {width: 83px; position: absolute;}
+.link.A {top: 24%; left: 43%;}
+.link.A2 {top: 24%; left: 51%;}
+.link.B {top:60%; left: 39%;}
+.link.C {top:60%; left: 47%;}
+.link.D {top:60%; left: 55%;}
