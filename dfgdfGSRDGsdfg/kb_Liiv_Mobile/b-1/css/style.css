@@ -8,6 +8,12 @@ body::-webkit-scrollbar {display: none;}
 .move-btn.prev-btn {top: 50%; left:0; transform: translateY(-50%);}
 .move-btn.next-btn {top: 50%; right: 0; transform: translateY(-50%);}
 
+/* test */
+.move-btn {border:1px solid red; opacity: .2;}
+.move-btn.home-btn {}
+.move-btn.prev-btn {width: 60px;}
+.move-btn.next-btn {width: 60px;}
+
 section {display: none;}
 
 /* 작업 중인 section */
