@@ -17,38 +17,88 @@ function chartAni(){
     });
 }
 
-$('.home-btn').click(function(){
+// $('.home-btn').click(function(){
+//     $('section').css({
+//         'display':'none'
+//     })
+//     $('.section1').css({
+//         'display':'block'
+//     })
+// })
+// $('section .prev-btn').click(function(){
+//     $(this).parent().css({
+//         'display':'none'
+//     })
+//     $(this).parent().prev().css({
+//         'display':'block'
+//     })
+//     chartAni();
+// })
+// $('section .next-btn').click(function(){
+//     $(this).parent().css({
+//         'display':'none'
+//     })
+//     $(this).parent().next().css({
+//         'display':'block'
+//     })
+//     // findingClass = $(this).parent().attr('class')
+//     // console.log(findingClass)
+//     // if (findingClass == 'sec-main'){
+//     //     console.log('its main')
+//     // }
+//     chartAni();
+// })
+
+let pageNum = 0;
+
+$('.prev-btn').click(function(){
+    pageNum--
     $('section').css({
-        'display':'none'
+        'opacity':'0',
+        'height':'1px'
     })
-    $('.section1').css({
-        'display':'block'
+
+    $('section').eq(pageNum).css({
+        'opacity':'1',
+        'height':'auto'
     })
-})
-$('section .prev-btn').click(function(){
-    $(this).parent().css({
-        'display':'none'
-    })
-    $(this).parent().prev().css({
-        'display':'block'
-    })
-    chartAni();
-})
-$('section .next-btn').click(function(){
-    $(this).parent().css({
-        'display':'none'
-    })
-    $(this).parent().next().css({
-        'display':'block'
-    })
-    // findingClass = $(this).parent().attr('class')
-    // console.log(findingClass)
-    // if (findingClass == 'sec-main'){
-    //     console.log('its main')
-    // }
-    chartAni();
+    console.log('pageNum = '+ pageNum)
 })
 
+$('.next-btn').click(function(){
+    pageNum++
+    $('section').css({
+        'opacity':'0',
+        'height':'1px'
+    })
+
+    $('section').eq(pageNum).css({
+        'opacity':'1',
+        'height':'auto'
+    })
+    console.log('pageNum = '+ pageNum)
+})
+
+$('section').click(function(){
+    pageNum++
+    $('section').css({
+        'opacity':'0',
+        'height':'1px'
+    })
+
+    $('section').eq(pageNum).css({
+        'opacity':'1',
+        'height':'auto'
+    })
+    console.log('pageNum = '+ pageNum)
+})
+
+// for (let i=0; i<20; i++){
+//     // console.log(i)
+//     if (pageNum == i){
+//         $('section')
+//     }
+// }
 
 
 
@@ -311,6 +361,12 @@ $(document).ready(function () {
         slidesPerView: "auto",
         spaceBetween: 15,
         centeredSlides: true,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+        observer: true,
+        observeParents: true,
         on: {
             activeIndexChange: function () {
                 if (this.realIndex ==0){
@@ -408,6 +464,12 @@ $(document).ready(function () {
         slidesPerView: "auto",
         spaceBetween: 0,
         centeredSlides: true,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+        observer: true,
+        observeParents: true,
         on: {
             activeIndexChange: function () {
                 if (this.realIndex ==0){
@@ -427,6 +489,7 @@ $(document).ready(function () {
         slidesPerView: "auto",
         spaceBetween: 15,
         centeredSlides: true,
+        
         on: {
             activeIndexChange: function () {
                 if (this.realIndex ==0){
@@ -437,3 +500,25 @@ $(document).ready(function () {
         }
     })
 });
+
+$('.popup-1').click(function(e){
+    console.log('ha,,,')
+    e.stopPropagation();
+
+    $('.popup-1').css({
+        'transform':'translateY(320px)'
+    })
+    $('.sec-pop-1 .dim').css({
+        'display':'none'
+    })
+})
+$('.popup-2').click(function(e){
+    e.stopPropagation();
+
+    $('.popup-2').css({
+        'transform':'translateY(320px)'
+    })
+    $('.sec-pop-2 .dim').css({
+        'display':'none'
+    })
+})
