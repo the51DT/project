@@ -1,30 +1,82 @@
 // 페이지 이동
 
+let pageNum = 0;
 
-$('.home-btn').click(function(){
+$('.prev-btn').click(function(){
+    pageNum--
     $('section').css({
-        'display':'none'
+        'opacity':'0',
+        'height':'1px'
     })
-    $('.section1').css({
-        'display':'block'
+
+    $('section').eq(pageNum).css({
+        'opacity':'1',
+        'height':'auto'
     })
+    console.log('pageNum = '+ pageNum)
 })
-$('section .prev-btn').click(function(){
-    $(this).parent().css({
-        'display':'none'
+
+$('.next-btn').click(function(){
+    pageNum++
+    $('section').css({
+        'opacity':'0',
+        'height':'1px'
     })
-    $(this).parent().prev().css({
-        'display':'block'
+
+    $('section').eq(pageNum).css({
+        'opacity':'1',
+        'height':'auto'
     })
+    console.log('pageNum = '+ pageNum)
 })
-$('section .next-btn').click(function(){
-    $(this).parent().css({
-        'display':'none'
+
+$('section').click(function(){
+    pageNum++
+    $('section').css({
+        'opacity':'0',
+        'height':'1px'
     })
-    $(this).parent().next().css({
-        'display':'block'
+
+    $('section').eq(pageNum).css({
+        'opacity':'1',
+        'height':'auto'
     })
+    console.log('pageNum = '+ pageNum)
 })
+
+// $('.home-btn').click(function(){
+//     $('section').css({
+//         'display':'none'
+//     })
+//     $('.section1').css({
+//         'display':'block'
+//     })
+// })
+// $('section .prev-btn').click(function(){
+//     $(this).parent().css({
+//         'display':'none'
+//     })
+//     $(this).parent().prev().css({
+//         'display':'block'
+//     })
+// })
+// $('section .next-btn').click(function(){
+//     $(this).parent().css({
+//         'display':'none'
+//     })
+//     $(this).parent().next().css({
+//         'display':'block'
+//     })
+// })
+
+// $('section').click(function(){
+//     $(this).css({
+//         'display':'none'
+//     })
+//     $(this).next().css({
+//         'display':'block'
+//     })
+// })
 
 $(document).ready(function () {
     //initialize swiper when document ready
@@ -35,6 +87,12 @@ $(document).ready(function () {
         slidesPerView: "auto",
         spaceBetween: 15,
         centeredSlides: true,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+        observer: true,
+        observeParents: true,
         on: {
             activeIndexChange: function () {
                 if (this.realIndex ==0){
@@ -115,6 +173,10 @@ $(document).ready(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
     })
 });
 
@@ -127,3 +189,12 @@ $(document).ready(function () {
 // $(document).on("click", ".swiper_button-next-t", function () {
 // 	$(".swiper-button-next").click();
 // });
+
+$('.popup').click(function(){
+    $('.popup').css({
+        'transform':'translateY(320px)'
+    })
+    $('.dim').css({
+        'display':'none'
+    })
+})
