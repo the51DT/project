@@ -93,7 +93,7 @@ $('.signup').on('click', function() {
   step = 1;
 })
 
-$('.button-container').on('click', function () {
+$('.liiv .button-container').on('click', function () {
   $('.signup_process').addClass('on');
   $('.liiv').removeClass('on');
   step = 1;
@@ -124,7 +124,7 @@ $('.chatImg').on('click', function () {
   }, 1000);
 })
 
-$('.signup4_button').on('click', function() {
+$('.signup4 .button-container .button').on('click', function() {
   $('.footer').toggleClass('on');
 })
 
@@ -205,8 +205,19 @@ var mySwiper = new Swiper('.swiper-container', {
     },
   loop: false,
   slidesPerView: "auto",
-  spaceBetween: 15,
+  spaceBetween: 36,
   centeredSlides: true,
+  pagination : {   // 페이저 버튼 사용자 설정
+    el : '.pagination',  // 페이저 버튼을 담을 태그 설정
+    clickable : true,  // 버튼 클릭 여부
+    type : 'bullets', // 버튼 모양 결정 "bullets", "fraction" 
+    renderBullet : function (index, className) {  // className이 기본값이 들어가게 필수 설정
+        return '<a href="#" class="' + className + '">' + '</a>'
+    },
+    renderFraction: function (currentClass, totalClass) { // type이 fraction일 때 사용
+        return '<span class="' + currentClass + '"></span>' + '<span class="' + totalClass + '"></span>';
+    }
+},
 })
 
 var mySwiper2 = new Swiper('.slide-container', {
