@@ -2,6 +2,20 @@
 
 let pageNum = 0;
 
+// 추가
+$('.home-btn').click(function(){
+    pageNum = 0
+    $('section').css({
+        'opacity':'0',
+        'height':'1px'
+    })
+
+    $('.section1').css({
+        'opacity':'1',
+        'height':'auto'
+    })
+})
+
 $('.prev-btn').click(function(){
     pageNum--
     $('section').css({
@@ -42,6 +56,27 @@ $('section').click(function(){
         'height':'auto'
     })
     console.log('pageNum = '+ pageNum)
+})
+
+// 추가
+$('.move-btn').click(function(){
+    if (pageNum == 0){
+        // console
+        $('.prev-btn').css({
+            'display':'none'
+        })
+    }else if(pageNum == 11){
+        $('.next-btn').css({
+            'display':'none'
+        })
+    } else {
+        $('.prev-btn').css({
+            'display':'block'
+        })
+        $('.next-btn').css({
+            'display':'block'
+        })
+    }
 })
 
 // $('.home-btn').click(function(){
