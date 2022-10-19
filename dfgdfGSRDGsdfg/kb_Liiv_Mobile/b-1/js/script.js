@@ -370,60 +370,15 @@ $(document).ready(function () {
         on: {
             activeIndexChange: function () {
                 if (this.realIndex ==0){
-                    $('.chart1 canvas').css({
-                        'display':'none'
-                    })
-                    var chart = window.chart = new EasyPieChart(document.querySelector('span.chart1'), {
-                        easing: 'easeOutElastic',
-                        delay: 3000,
-                        barColor: '#FDBD36',
-                        trackColor: '#FDF5E3',
-                        scaleColor: false,
-                        lineWidth: 40,
-                        trackWidth: 40,
-                        lineCap: 'round',
-                        size:270,
-                        onStep: function(from, to, percent) {
-                            this.el.children[0].innerHTML = Math.round(percent);
-                        }
-                    });
+                    $('.circle-chart__circle').removeClass('on')
+                    $('.data-cont.swiper-container .swiper-wrapper .swiper-slide:nth-child(1) .circle-chart__circle').addClass('on')
                 } else if (this.realIndex == 1){
-                    $('.chart2 canvas').css({
-                        'display':'none'
-                    })
-                    var chart = window.chart = new EasyPieChart(document.querySelector('span.chart2'), {
-                        easing: 'easeOutElastic',
-                        delay: 3000,
-                        barColor: '#22B5E9',
-                        trackColor: '#E2EEF2',
-                        scaleColor: false,
-                        lineWidth: 40,
-                        trackWidth: 40,
-                        lineCap: 'round',
-                        size:270,
-                        onStep: function(from, to, percent) {
-                            this.el.children[0].innerHTML = Math.round(percent);
-                        }
-                    });
+                    $('.circle-chart__circle').removeClass('on')
+                    $('.data-cont.swiper-container .swiper-wrapper .swiper-slide:nth-child(2) .circle-chart__circle').addClass('on')
                 } else if (this.realIndex == 2) {
-                    $('.chart3 canvas').css({
-                        'display':'none'
-                    })
-                    var chart = window.chart = new EasyPieChart(document.querySelector('span.chart3'), {
-                        easing: 'easeOutElastic',
-                        delay: 3000,
-                        barColor: '#4A21F4',
-                        trackColor: '#E2DFED',
-                        scaleColor: false,
-                        lineWidth: 40,
-                        trackWidth: 40,
-                        lineCap: 'round',
-                        size:270,
-                        onStep: function(from, to, percent) {
-                            this.el.children[0].innerHTML = Math.round(percent);
-                        }
-                    });
-                } else if (this.realIndex == 3) {
+                    $('.circle-chart__circle').removeClass('on')
+                    $('.data-cont.swiper-container .swiper-wrapper .swiper-slide:nth-child(3) .circle-chart__circle').addClass('on')
+                } if (this.realIndex == 3) {
                     $('.bar-one .bar').css({
                         '-webkit-animation': 'show-bar-one-vertical 1.2s 0.1s forwards',
                         '-moz-animation': 'show-bar-one-vertical 1.2s 0.1s forwards',
