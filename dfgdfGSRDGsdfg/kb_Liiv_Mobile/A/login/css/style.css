@@ -13,7 +13,8 @@ img {width: 100%;}
 .chart {position: absolute; top: 31%; left: 36.5%; transform: translateX(-50%); width: 50%; display: flex;}
 .circle-chart {width: 90px; height: 90px;}
 .circle-chart:last-child {margin-left: 14px;}
-.circle-chart__circle {animation: circle-chart-fill 2s reverse; transform: rotate(-90deg); transform-origin: center;}
+.circle-chart__circle {transform: rotate(-90deg); transform-origin: center;}
+.circle-chart__circle.on {animation: circle-chart-fill 2s reverse;}
 .circle-chart__circle--negative {transform: rotate(-90deg) scale(1,-1);}
 @keyframes circle-chart-fill {
   to { stroke-dasharray: 0 100; }
