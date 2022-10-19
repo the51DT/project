@@ -45,17 +45,19 @@ $('.next-btn').click(function(){
 })
 
 $('section').click(function(){
-    pageNum++
-    $('section').css({
-        'opacity':'0',
-        'height':'1px'
-    })
-
-    $('section').eq(pageNum).css({
-        'opacity':'1',
-        'height':'auto'
-    })
-    console.log('pageNum = '+ pageNum)
+    if (pageNum != 21){
+        pageNum++
+        $('section').css({
+            'opacity':'0',
+            'height':'1px'
+        })
+    
+        $('section').eq(pageNum).css({
+            'opacity':'1',
+            'height':'auto'
+        })
+        console.log('pageNum = '+ pageNum)
+    }
 })
 
 // 추가
@@ -65,7 +67,7 @@ $('.move-btn').click(function(){
         $('.prev-btn').css({
             'display':'none'
         })
-    }else if(pageNum == 11){
+    }else if(pageNum == 21){
         $('.next-btn').css({
             'display':'none'
         })
