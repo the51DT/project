@@ -18,23 +18,28 @@ $('.left').on('click', function () {
     } else if (step === 2) {
       $('.signup1').removeClass('off');
       $('.signup2').removeClass('on');
-      $('.signup1 .next_on_online').addClass('on');
-      $('.signup1 .next_button').addClass('off');
+      $('.signup1 .next_on_online').removeClass('on');
+      $('.signup1 .next_button').removeClass('off');
       step = 1;
       // signup_process3 off
     } else if (step === 3) {
       $('.signup2').addClass('on');
       $('.signup3').removeClass('on');
-      $('.signup2 .next_on_online').addClass('on');
-      $('.signup2 .next_button').addClass('off');
+      $('.signup2 .next_on_online').removeClass('on');
+      $('.signup2 .next_button').removeClass('off');
       step = 2;
       // signup_process4 off
     } else if (step === 4) {
       $('.signup3').addClass('on');
       $('.signup4').removeClass('on');
       step = 3;
+    }  else if (step === 5) {
+      $('.signup4').addClass('on');
+      $('.last').removeClass('on');
+      step = 4;
     }
   }
+  console.log(step);
 })
 
 $('.right').on('click', function () {
@@ -79,9 +84,14 @@ $('.right').on('click', function () {
       } else if (step === 4) {
         $('.signup3').removeClass('on');
         $('.signup4').addClass('on');
+        step = 5;
+      } else if (step === 5) {
+        $('.signup4').removeClass('on');
+        $('.last').addClass('on');
       }
     }
   }
+  console.log(step);
 })
 
 $('.signup').on('click', function () {
