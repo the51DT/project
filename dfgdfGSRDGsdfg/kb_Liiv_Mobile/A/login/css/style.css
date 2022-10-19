@@ -1,13 +1,13 @@
 body, html {width: 100%; max-width: 390px; text-align: center; margin: 0 auto; overflow-x: hidden; -webkit-tap-highlight-color: rgba(0,0,0,0);}
-a {-webkit-tap-highlight-color: rgba(0,0,0,0);}
+* {-webkit-tap-highlight-color: rgba(0,0,0,0);}
 img {width: 100%;}
 
 .wrap {position: absolute; width: 100%; max-width: 390px;}
 .header {position: fixed; width: 100%; max-width: 390px; top: 0; left: 50%; transform: translateX(-50%); z-index: 10;}
 .header.off {display: none;}
-.click-container .left {position: fixed; top: 50%; left: 0; transform: translateY(-50%); cursor: pointer; width: 60px; height: 150px; z-index: 10; }
-.click-container .right {position: fixed; top: 50%; right: 0; transform: translateY(-50%); cursor: pointer; width: 60px; height: 150px; z-index: 10;}
-.click-container .home {position: fixed; top: 0; left: 50%; transform: translateX(-50%); cursor: pointer; width: 150px; height: 60px; z-index: 11;}
+.click-container .left {position: fixed; top: 50%; left: 0; transform: translateY(-50%); cursor: pointer; width: 60px; height: 150px; z-index: 10; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.click-container .right {position: fixed; top: 50%; right: 0; transform: translateY(-50%); cursor: pointer; width: 60px; height: 150px; z-index: 10;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+.click-container .home {position: fixed; top: 0; left: 50%; transform: translateX(-50%); cursor: pointer; width: 150px; height: 60px; z-index: 11;-webkit-tap-highlight-color: rgba(0,0,0,0);}
 
 .login {width: 100%; cursor: pointer;}
 .login.off {display: none;}
@@ -56,7 +56,7 @@ img {width: 100%;}
 
 .header2 {position: fixed; width: 100%; max-width: 390px; top: 0; left: 50%; transform: translateX(-50%); z-index: 9; background-color: #fff;}
 .header2.off {display: none;}
-.header2 .more {position: fixed; top: 68%; right: 6%; width: calc(100vw*20/390); max-width: 20px; z-index: 100; cursor: pointer;}
+.header2 .more {position: fixed; top: 68%; right: 6%; width: calc(100vw*20/390); max-width: 20px; z-index: 100; cursor: pointer; -webkit-tap-highlight-color: rgba(0,0,0,0);}
 
 .liiv .liivImg {margin-bottom: 60px;}
 .liiv .chart {top: 11.3%;}
@@ -88,14 +88,14 @@ img {width: 100%;}
 .liiv_footer {position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); display: none; z-index: 1; width: 100%; max-width: 390px;}
 .liiv_footer.on {display: block;}
 .liiv_footer .chat {position: fixed; bottom: 160px; left: 63%; transform: translateX(-50%); width: 232px; z-index: 1;}
-.liiv_footer .chatImg {width: 60px; position: absolute; top: 0; right: 0; cursor: pointer;}
+.liiv_footer .chatImg {width: 60px; position: absolute; top: 0; right: 0; cursor: pointer; -webkit-tap-highlight-color: rgba(0,0,0,0);}
 .liiv_footer .chat_text {width: 272px; position: absolute; top: -7px; right: 45px; opacity: 0; transition: all ease-in-out 0.3s;}
 .liiv_footer .chat_text.on {opacity: 1;}
-.liiv_footer .star {position: absolute; bottom: 30.5%; right: 7%; width: 57px; cursor: pointer;}
+.liiv_footer .star {position: absolute; bottom: 30.5%; right: 7%; width: 57px; cursor: pointer; -webkit-tap-highlight-color: rgba(0,0,0,0);}
 
 .menu {position: absolute; top: 0; left: 0; display: none; width: 100%; z-index: 10;}
 .menu.on {display: block;}
-.menu .close {position: absolute; top: 7.5%; right: 6%; width: calc(100vw*30/390); max-width: 30px; cursor: pointer;}
+.menu .close {position: absolute; top: 7.5%; right: 6%; width: calc(100vw*30/390); max-width: 30px; cursor: pointer; -webkit-tap-highlight-color: rgba(0,0,0,0);}
 
 .last {display: none; position: absolute; top: 0; left: 0; width: 100%;}
 .last.on {display: block;}
