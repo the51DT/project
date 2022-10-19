@@ -32,7 +32,7 @@
                         <img class="slide-contents" src="img/type-b3-6.png" alt="">
                         <img class="slide-contents" src="img/type-b3-7.png" alt="">
                         <img class="slide-contents" src="img/type-b3-8.png" alt="">
-                        <img class="slide-contents" src="img/last_page.png" alt="">
+                        <a href="../index.html" class="slide-contents"><img src="img/last_page.png" alt="" style="width:100%"></a>
                     </div>
                 </div>
             </div>
@@ -58,8 +58,6 @@
                             $(this).fadeOut().next().fadeIn();
                         }else{
                             console.log('end');
-                            $(this).fadeOut();
-                            $('.slide-contents:nth-child(1)').fadeIn();
                         }
                     }else{
                         console.log('is animated!');
