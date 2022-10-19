@@ -82,7 +82,7 @@ img {width: 100%;}
 .slide-container {position: absolute; top: 73.5%; width: 100%; max-width: 390px; height: 240px; text-align: center;}
 .slide-container .slide-wrapper .slide {width: 100%; padding: 0 25px; text-align: center; position: relative;}
 .slide-container .slide-wrapper .slide:nth-child(1) {padding: 0 35px;}
-.slide_bottom {position: absolute; top: 82.5%; width: 80px; left: 55px;}
+.slide_bottom {position: absolute; top: 83%; width: 80px; left: 55px;}
 
 .liiv_footer {position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); display: none; z-index: 1; width: 100%; max-width: 390px;}
 .liiv_footer.on {display: block;}

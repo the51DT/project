@@ -1,51 +1,54 @@
 let step = 0;
 
-$('.left').on('click', function () {
+$('.left').unbind('click').on('click', function (e) {
+  e.stopPropagation();
   $('.menu').removeClass('on');
   if (!$('.menu').hasClass('on')) {
-    if (step === 0) {
+    if (step === 1) {
       $('.signup').removeClass('off');
       $('.header').removeClass('off');
       $('.liiv').removeClass('on');
       $('.liiv_footer').removeClass('on');
       // signup_process2 off
+      step = 0;
     }
-    else if (step === 1) {
+    else if (step === 2) {
       $('.signup_process').removeClass('on');
       $('.liiv').addClass('on');
-      step = 0;
+      step = 1;
       // signup_process2 off
-    } else if (step === 2) {
+    } else if (step === 3) {
       $('.signup1').removeClass('off');
       $('.signup2').removeClass('on');
       $('.signup1 .next_on_online').removeClass('on');
       $('.signup1 .next_button').removeClass('off');
-      step = 1;
+      step = 2;
       // signup_process3 off
-    } else if (step === 3) {
+    } else if (step === 4) {
       $('.signup2').addClass('on');
       $('.signup3').removeClass('on');
       $('.signup2 .next_on_online').removeClass('on');
       $('.signup2 .next_button').removeClass('off');
-      step = 2;
+      step = 3;
       // signup_process4 off
-    } else if (step === 4) {
+    } else if (step === 5) {
       $('.signup3').addClass('on');
       $('.signup4').removeClass('on');
-      step = 3;
-    }  else if (step === 5) {
+      step = 4;
+    }  else if (step === 6) {
       $('.signup4').addClass('on');
       $('.last').removeClass('on');
-      step = 4;
+      step = 5;
     }
   }
-  console.log(step);
+  console.log(step, '왼쪽');
 })
 
-$('.right').on('click', function () {
+$('.right').unbind('click').on('click', function (e) {
+  e.stopPropagation();
   $('.menu').removeClass('on');
   if (!$('.menu').hasClass('on')) {
-    // signup on
+    // liiv on
     if (step === 0) {
       $('.splash').addClass('on');
       $('.signup').addClass('off');
@@ -68,6 +71,7 @@ $('.right').on('click', function () {
         step = 2;
         // signup_process2 on
       } else if (step === 2) {
+        console.log(step, '3');
         $('.signup1').addClass('off');
         $('.signup2').addClass('on');
         $('.signup1 .next_on_online').removeClass('on');
@@ -88,10 +92,15 @@ $('.right').on('click', function () {
       } else if (step === 5) {
         $('.signup4').removeClass('on');
         $('.last').addClass('on');
+        step = 6;
       }
     }
   }
-  console.log(step);
+  console.log(step, '오른쪽');
+})
+
+$('input').on('click', function() {
+  console.log('click')
 })
 
 $('.signup').on('click', function () {
