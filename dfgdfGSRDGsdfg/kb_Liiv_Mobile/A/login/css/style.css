@@ -98,3 +98,5 @@ img {width: 100%;}
 
 .last {display: none; position: absolute; top: 0; left: 0; width: 100%;}
 .last.on {display: block;}
+
+.home_button {position: absolute; top: 51%; left: 50%; transform: translate(-50%, -50%); width: calc(100vw*120/390); max-width: 120px;}
