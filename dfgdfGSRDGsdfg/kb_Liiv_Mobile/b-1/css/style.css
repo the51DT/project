@@ -12,7 +12,7 @@ body::-webkit-scrollbar {display: none;}
 /* test */
 .move-btn {border:1px solid red; opacity: .2;}
 .move-btn.home-btn {height: 60px;}
-.move-btn.prev-btn {width: 60px;}
+.move-btn.prev-btn {width: 60px; display: none;}
 .move-btn.next-btn {width: 60px;}
 
 section {opacity: 0; position:absolute; width: 390px; top: 0; overflow-y: hidden; height: 1px;}
@@ -43,7 +43,7 @@ section {opacity: 0; position:absolute; width: 390px; top: 0; overflow-y: hidden
   }
 }
 
-.sec-main {}
+.sec-main {overflow-x: hidden;}
 
 .sec-main .data-cont {padding-top: 40px;}
 .sec-main .data-cont.swiper-container {width: 100%; text-align: center; position: relative;}
@@ -201,7 +201,7 @@ section {opacity: 0; position:absolute; width: 390px; top: 0; overflow-y: hidden
   }
 
 .sec-main .membership-cont {position: relative; width: 100%; height: 133px; margin-top: 16px; margin-bottom: 56px;}
-.sec-main .membership {position: absolute; width: 100%; height: 133px; overflow-x: auto; font-size: 0; display: flex; padding-left: 24px;}
+.sec-main .membership {position: absolute; padding-right: 80px; width: 70%; height: 133px; overflow-x: auto; font-size: 0; display: flex; padding-left: 24px;}
 .sec-main .membership::-webkit-scrollbar {display: none;}
 
 .sec-main .acco {width: 342px;margin: 0 auto;position: relative;}
@@ -216,13 +216,22 @@ section {opacity: 0; position:absolute; width: 390px; top: 0; overflow-y: hidden
 .sec-main .acco .serv-list-3 .serv-3 {display: block;}
 .sec-main .acco .serv-list-3 .serv-3-big {display: none;}
 
-.sec-chat-full  {margin-bottom: 124px;}
-.sec-chat-full .chat-bottom {position: fixed; bottom: 0; width: 100%; max-width: 100%;}
+.sec-chat-full  {margin-bottom: 124px; padding-bottom: 80px;}
+.sec-chat-full .chat-bottom {position: fixed; bottom: 0; width: 100%; max-width: 390px;}
 .sec-chat-full .location-cont {position: relative; width: 100%; height: 40px; margin-top: 16px; margin-bottom: 56px;}
-.sec-chat-full .location {position: absolute; width: 100%; height: 40px; overflow-x: auto; font-size: 0; display: flex; padding-left: 24px;}
+.sec-chat-full .location {position: absolute; padding-right: 24px; width: 90%; height: 40px; overflow-x: auto; font-size: 0; display: flex; padding-left: 24px;}
 .sec-chat-full .location::-webkit-scrollbar {display: none;}
 .sec-chat-full .hashtag-cont {position: relative; width: 100%; height: 40px; margin-top: 16px; margin-bottom: 56px;}
-.sec-chat-full .hashtag {position: absolute; width: 100%; height: 40px; overflow-x: auto; font-size: 0; display: flex; padding-left: 24px;}
+.sec-chat-full .hashtag {
+  padding-right: 24px;
+  position: absolute;
+  width: 90%;
+  height: 40px;
+  overflow-x: auto;
+  font-size: 0;
+  display: flex;
+  padding-left: 24px;
+}
 .sec-chat-full .hashtag::-webkit-scrollbar {display: none;}
 
 .sec-no-member .no-mem-acco {width: 342px; margin: 0 auto; position: relative;}
