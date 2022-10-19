@@ -7,7 +7,7 @@ $('.home-btn').click(function(){
     pageNum = 0
     $('section').css({
         'opacity':'0',
-        'height':'1px'
+        'height':'1px',
     })
 
     $('.section1').css({
@@ -20,12 +20,14 @@ $('.prev-btn').click(function(){
     pageNum--
     $('section').css({
         'opacity':'0',
-        'height':'1px'
+        'height':'1px',
+        'position':'absolute'
     })
 
     $('section').eq(pageNum).css({
         'opacity':'1',
-        'height':'auto'
+        'height':'auto',
+        'position':'relative'
     })
     console.log('pageNum = '+ pageNum)
 })
@@ -34,12 +36,14 @@ $('.next-btn').click(function(){
     pageNum++
     $('section').css({
         'opacity':'0',
-        'height':'1px'
+        'height':'1px',
+        'position':'absolute'
     })
 
     $('section').eq(pageNum).css({
         'opacity':'1',
-        'height':'auto'
+        'height':'auto',
+        'position':'relative'
     })
     console.log('pageNum = '+ pageNum)
 })
@@ -49,12 +53,14 @@ $('section').click(function(){
         pageNum++
         $('section').css({
             'opacity':'0',
-            'height':'1px'
+            'height':'1px',
+            'position':'absolute'
         })
     
         $('section').eq(pageNum).css({
             'opacity':'1',
-            'height':'auto'
+            'height':'auto',
+            'position':'relative'
         })
         console.log('pageNum = '+ pageNum)
     }

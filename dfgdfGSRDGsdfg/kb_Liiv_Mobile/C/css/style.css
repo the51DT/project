@@ -36,7 +36,7 @@ section {opacity: 0; position:absolute; top: 0; overflow-y: hidden; height: 1px;
   }
 }
 
-.sec-pop  {height: 844px; overflow-y: hidden;}
+.sec-pop  {height: 844px; overflow-y: hidden; position: absolute;}
 .sec-pop .dim {position: absolute; top: 0; left: 0;}
 .sec-pop .popup {transition: .5s; position: absolute; bottom: 0; left: 0;}
 
@@ -59,9 +59,9 @@ section {opacity: 0; position:absolute; top: 0; overflow-y: hidden; height: 1px;
 .swiper-button-next.next-4{background-image: url(../img/next-4.png) !important; opacity: 0;}
 .swiper-button-next::after {display: none;}
 
-.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {transform: translate3d(356px,-39px,0) !important; }
-.swiper-pagination-bullet {border: 1px solid black !important; opacity: 1 !important; background: var(--swiper-pagination-bullet-inactive-color,#fff) !important;}
-.swiper-pagination-bullet-active {background-color: #000 !important;}
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {transform: translate3d(356px,21px,0) !important; }
+.swiper-pagination-bullet {width: 8px !important; height: 8px !important; border: 1px solid black !important; opacity: 0.3 !important; background: var(--swiper-pagination-bullet-inactive-color,#fff) !important;}
+.swiper-pagination-bullet-active {background-color: #000 !important; opacity: 1 !important;}
 
 :root {--swiper-theme-color: #000 !important;}
 
@@ -71,6 +71,8 @@ section {opacity: 0; position:absolute; top: 0; overflow-y: hidden; height: 1px;
 .sec-n-plan {padding-bottom: 160px;}
 .sec-n-event {padding-bottom: 160px;}
 
+.section1 {position: relative;}
 .section2 {position: relative;}
+.sec-pop {position: absolute;}
 .sec-n-splash {position: relative;}
 .sec-thank {position: relative;}
