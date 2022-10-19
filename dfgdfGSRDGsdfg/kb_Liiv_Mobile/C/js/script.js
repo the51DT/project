@@ -45,6 +45,11 @@ $('.next-btn').click(function(){
         'height':'auto',
         'position':'relative'
     })
+    if($('.sec-main').css('opacity') == 1) {
+        $('.circle-chart__circle').addClass('on');
+    } else {
+        $('.circle-chart__circle').removeClass('on');
+    }
     console.log('pageNum = '+ pageNum)
 })
 
@@ -62,6 +67,11 @@ $('section').click(function(){
             'height':'auto',
             'position':'relative'
         })
+        if($('.sec-main').css('opacity') == 1) {
+            $('.circle-chart__circle').addClass('on');
+        } else {
+            $('.circle-chart__circle').removeClass('on');
+        }
         console.log('pageNum = '+ pageNum)
     }
 })

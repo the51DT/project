@@ -19,13 +19,12 @@ section {opacity: 0; position:absolute; top: 0; overflow-y: hidden; height: 1px;
 
 .chart {width: 100%; height: 100%; position: absolute; top: 0%; left: 0%;}
 .circle-chart__background {opacity: 0.2;}
-.circle-chart {position: absolute; width: 90px; height: 90px;}
+.circle-chart {position: absolute; width: calc(100vw*90/390); max-width: 90px; height: calc(100vw*90/390); max-height: 90px;}
 .circle-chart.n1 {top: 25%; right: 12%;}
 .circle-chart.n2 {top: 39.2%; right: 12%;}
 .circle-chart.n3 {top: 53.5%; right: 12%;}
-.circle-chart:last-child {margin-left: 8px;}
-.circle-chart__circle {animation: circle-chart-fill 2s reverse; transform: rotate(-90deg); transform-origin: center;}
-.circle-chart__circle--negative {transform: rotate(-90deg) scale(1,-1);}
+.circle-chart__circle {transform: rotate(-90deg); transform-origin: center; background-color: black;}
+.circle-chart__circle.on {animation: circle-chart-fill 0.5s reverse;}
 @keyframes circle-chart-fill {
   to { stroke-dasharray: 0 100; }
 }
