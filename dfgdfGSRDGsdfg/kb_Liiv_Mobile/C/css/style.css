@@ -8,6 +8,12 @@ body::-webkit-scrollbar {display: none;}
 .move-btn.prev-btn {top: 50%; left:0; transform: translateY(-50%); display: none;}
 .move-btn.next-btn {top: 50%; right: 0; transform: translateY(-50%);}
 
+/* test */
+.move-btn {opacity: .2;}
+.move-btn.home-btn {height: 60px;}
+.move-btn.prev-btn {width: 60px; display: none;}
+.move-btn.next-btn {width: 60px;}
+
 .bottom-fix {position: fixed; bottom: -10px; left: 50%; transform: translateX(-50%); width: 390px;}
 
 section {opacity: 0; position:absolute; top: 0; overflow-y: hidden; height: 1px;}
