@@ -45,7 +45,7 @@ $('.next-btn').click(function(){
 })
 
 $('section').click(function(){
-    if (pageNum != 21){
+    if (pageNum != 22){
         pageNum++
         $('section').css({
             'opacity':'0',
@@ -67,7 +67,7 @@ $('.move-btn').click(function(){
         $('.prev-btn').css({
             'display':'none'
         })
-    }else if(pageNum == 21){
+    }else if(pageNum == 22){
         $('.next-btn').css({
             'display':'none'
         })
@@ -234,4 +234,11 @@ $('.popup').click(function(){
     $('.dim').css({
         'display':'none'
     })
+})
+
+$('.swiper-button-prev').click(function(e){
+    e.stopPropagation();
+})
+$('.swiper-button-next').click(function(e){
+    e.stopPropagation();
 })
