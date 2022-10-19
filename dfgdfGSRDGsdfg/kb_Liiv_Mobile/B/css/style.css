@@ -15,7 +15,7 @@ body::-webkit-scrollbar {display: none;}
 .move-btn.prev-btn {width: 60px; display: none;}
 .move-btn.next-btn {width: 60px;}
 
-section {opacity: 0; position:absolute; top: 0; overflow-y: hidden; height: 1px;}
+section {opacity: 0; position:relative; top: 0; overflow-y: hidden; height: 1px;}
 
 /* 작업 중인 section */
 .section1 {opacity:1; height: auto;}
@@ -32,7 +32,7 @@ section {opacity: 0; position:absolute; top: 0; overflow-y: hidden; height: 1px;
 
 
 .circle-chart {width: 100%; height: 100%; position: absolute; top: -12px; left: 0;}
-.circle-chart__circle {transform: rotate(-90deg); transform-origin: center;}
+.circle-chart__circle {transform: rotate(-90deg); transform-origin: center; background-color: black;}
 .circle-chart__circle.on {animation: circle-chart-fill 1s reverse;}
 @keyframes circle-chart-fill {
   to { stroke-dasharray: 0 100; }
@@ -207,6 +207,8 @@ section {opacity: 0; position:absolute; top: 0; overflow-y: hidden; height: 1px;
 
 .sec-main .acco {width: 342px;margin: 0 auto;position: relative;}
 .sec-main .acco {margin-top: 16px; margin-bottom: 32px;}
+.sec-main .acco .serv-list {width: 342px;}
+.sec-main .acco .serv-list img{width: 100%;}
 .sec-main .acco .serv-list-1 {transition: .5s; margin-bottom: 8px;}
 .sec-main .acco .serv-list-1 .serv-1 {display: none;}
 .sec-main .acco .serv-list-1 .serv-1-big {display: block;}
@@ -217,12 +219,14 @@ section {opacity: 0; position:absolute; top: 0; overflow-y: hidden; height: 1px;
 .sec-main .acco .serv-list-3 .serv-3 {display: block;}
 .sec-main .acco .serv-list-3 .serv-3-big {display: none;}
 
-.sec-chat-full  {margin-bottom: 124px; padding-bottom: 80px;}
+.sec-chat-full  {
+  /* margin-bottom: 124px; padding-bottom: 80px; */
+}
 .sec-chat-full .chat-bottom {position: fixed; bottom: 0; width: 100%; max-width: 390px;}
 .sec-chat-full .location-cont {position: relative; width: 100%; height: 40px; margin-top: 16px; margin-bottom: 56px;}
 .sec-chat-full .location {position: absolute; padding-right: 24px; width: 90%; height: 40px; overflow-x: auto; font-size: 0; display: flex; padding-left: 24px;}
 .sec-chat-full .location::-webkit-scrollbar {display: none;}
-.sec-chat-full .hashtag-cont {position: relative; width: 100%; height: 40px; margin-top: 16px; margin-bottom: 56px;}
+.sec-chat-full .hashtag-cont {position: relative; width: 100%; height: 40px; margin-top: 16px; margin-bottom: 56px; padding-bottom: 100px;}
 .sec-chat-full .hashtag {
   padding-right: 24px;
   position: absolute;
@@ -250,7 +254,8 @@ section {opacity: 0; position:absolute; top: 0; overflow-y: hidden; height: 1px;
 
 
 .sec-no-member .swiper-container {text-align: center;}
-.sec-no-member .swiper-container .swiper-wrapper .swiper-slide img{border-radius: 14px; box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.05);width: 342px;}
+.sec-no-member .swiper-container .swiper-wrapper .swiper-slide img.review1{border-radius: 14px; box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.05);width: 342px;}
+.sec-no-member .swiper-container .swiper-wrapper .swiper-slide img.review2{border-radius: 14px; box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.05);width: 342px;}
 
 .sec-splash-2 {position: relative;}
 .sec-no-member {position: relative;}

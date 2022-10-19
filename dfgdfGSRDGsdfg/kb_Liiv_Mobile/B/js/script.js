@@ -94,7 +94,7 @@ $('.next-btn').click(function(){
 })
 
 $('section').click(function(){
-    if (pageNum != 11){
+    if (pageNum != 12){
         pageNum++
         $('section').css({
             'opacity':'0',
@@ -123,7 +123,7 @@ $('.move-btn').click(function(){
         $('.prev-btn').css({
             'display':'none'
         })
-    }else if(pageNum == 11){
+    }else if(pageNum == 12){
         $('.next-btn').css({
             'display':'none'
         })
