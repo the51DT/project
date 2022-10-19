@@ -15,7 +15,7 @@ body::-webkit-scrollbar {display: none;}
 .move-btn.prev-btn {width: 60px; display: none;}
 .move-btn.next-btn {width: 60px;}
 
-section {opacity: 0; position:absolute; width: 390px; top: 0; overflow-y: hidden; height: 1px;}
+section {opacity: 0; position:absolute; top: 0; overflow-y: hidden; height: 1px;}
 
 /* 작업 중인 section */
 .section1 {opacity:1; height: auto;}
@@ -43,7 +43,7 @@ section {opacity: 0; position:absolute; width: 390px; top: 0; overflow-y: hidden
   }
 }
 
-.sec-main {overflow-x: hidden;}
+.sec-main {overflow-x: hidden;position: relative;}
 
 .sec-main .data-cont {padding-top: 40px;}
 .sec-main .data-cont.swiper-container {width: 100%; text-align: center; position: relative;}
