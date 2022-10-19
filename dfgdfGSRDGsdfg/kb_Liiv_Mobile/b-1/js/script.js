@@ -94,17 +94,19 @@ $('.next-btn').click(function(){
 })
 
 $('section').click(function(){
-    pageNum++
-    $('section').css({
-        'opacity':'0',
-        'height':'1px'
-    })
-
-    $('section').eq(pageNum).css({
-        'opacity':'1',
-        'height':'auto'
-    })
-    console.log('pageNum = '+ pageNum)
+    if (pageNum != 11){
+        pageNum++
+        $('section').css({
+            'opacity':'0',
+            'height':'1px'
+        })
+    
+        $('section').eq(pageNum).css({
+            'opacity':'1',
+            'height':'auto'
+        })
+        console.log('pageNum = '+ pageNum)
+    }
 })
 
 // for (let i=0; i<20; i++){
@@ -330,60 +332,6 @@ $('.data-cont').click(function(e){
 
 
 
-// circle graph
-function circleGraph(){
-    document.addEventListener('DOMContentLoaded', function() {
-        var chart = window.chart = new EasyPieChart(document.querySelector('span.chart1'), {
-            easing: 'easeOutElastic',
-            delay: 3000,
-            barColor: '#FDBD36',
-            trackColor: '#FDF5E3',
-            scaleColor: false,
-            lineWidth: 40,
-            trackWidth: 40,
-            lineCap: 'round',
-            size:270,
-            onStep: function(from, to, percent) {
-                this.el.children[0].innerHTML = Math.round(percent);
-            }
-        });
-        var chart = window.chart = new EasyPieChart(document.querySelector('span.chart2'), {
-            easing: 'easeOutElastic',
-            delay: 3000,
-            barColor: '#22B5E9',
-            trackColor: '#E2EEF2',
-            scaleColor: false,
-            lineWidth: 40,
-            trackWidth: 40,
-            lineCap: 'round',
-            size:270,
-            onStep: function(from, to, percent) {
-                this.el.children[0].innerHTML = Math.round(percent);
-            }
-        });
-        var chart = window.chart = new EasyPieChart(document.querySelector('span.chart3'), {
-            easing: 'easeOutElastic',
-            delay: 3000,
-            barColor: '#4A21F4',
-            trackColor: '#E2DFED',
-            scaleColor: false,
-            lineWidth: 40,
-            trackWidth: 40,
-            lineCap: 'round',
-            size:270,
-            onStep: function(from, to, percent) {
-                this.el.children[0].innerHTML = Math.round(percent);
-            }
-        });
-    
-        // document.querySelector('.js_update').addEventListener('click', function(e) {
-        //     chart.update(Math.random()*200-100);
-        // });
-    
-    });
-}
-
-circleGraph();
 
 $(document).ready(function () {
     //initialize swiper when document ready
