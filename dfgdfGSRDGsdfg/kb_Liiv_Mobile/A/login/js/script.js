@@ -9,6 +9,7 @@ $('.left').on('click', function () {
         $('.header').removeClass('off');
         $('.liiv').removeClass('on');
         $('.liiv_footer').removeClass('on');
+        $('.liiv .circle-chart__circle').removeClass('on');
         step = 0;
       }
     }
@@ -30,6 +31,7 @@ $('.right').on('click', function () {
       setTimeout(() => {
         $('.liiv').addClass('on');
         $('.liiv_footer').addClass('on');
+        $('.liiv .circle-chart__circle').addClass('on');
       }, 3000);
       step = 1;
     }
@@ -47,6 +49,7 @@ $('.login').on('click', function () {
   setTimeout(() => {
     $('.liiv').addClass('on');
     $('.liiv_footer').addClass('on');
+    $('.liiv .circle-chart__circle').addClass('on');
   }, 3000);
   step = 1;
 })
@@ -56,17 +59,20 @@ $('.star').on('click', function () {
   $('.header').removeClass('off');
   $('.liiv').removeClass('on');
   $('.liiv_footer').removeClass('on');
+  $('.liiv .circle-chart__circle').removeClass('on');
   step = 0;
 })
 
 $('.more').on('click', function () {
   $('.menu').addClass('on');
   $('.liiv').removeClass('on');
+  $('.liiv .circle-chart__circle').removeClass('on');
 })
 
 $('.close').on('click', function () {
   $('.menu').removeClass('on');
   $('.liiv').addClass('on');
+  $('.liiv .circle-chart__circle').addClass('on');
 })
 
 $('.chatImg').on('click', function () {
