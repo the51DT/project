@@ -42,7 +42,7 @@ section {opacity: 0; position:absolute; top: 0; overflow-y: hidden; height: 1px;
 
 .sec-n-story {position: absolute; height: 844px !important; overflow: hidden;}
 .sec-n-story .story-cont {text-align: center;}
-.sec-n-story .story-cont.swiper-container {margin-top: 127px; box-sizing: border-box; text-align: center; overflow: hidden; width: 390px; height: 313px; text-align: center; position: relative;}
+.sec-n-story .story-cont.swiper-container {margin-top: 127px; box-sizing: border-box; text-align: center; overflow: hidden; width: 100%; height: 313px; text-align: center; position: relative;}
 .sec-n-story .story-cont.swiper-container .swiper-wrapper {}
 .sec-n-story .story-cont.swiper-container .swiper-wrapper .swiper-slide {width: 244px !important; height: 313px; text-align: center; position: relative; margin: 0 auto;}
 

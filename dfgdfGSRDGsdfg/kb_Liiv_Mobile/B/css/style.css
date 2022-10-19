@@ -10,7 +10,7 @@ body::-webkit-scrollbar {display: none;}
 .move-btn.next-btn {top: 50%; right: 0; transform: translateY(-50%);}
 
 /* test */
-.move-btn {border:1px solid red; opacity: .2;}
+.move-btn {opacity: .2;}
 .move-btn.home-btn {height: 60px;}
 .move-btn.prev-btn {width: 60px; display: none;}
 .move-btn.next-btn {width: 60px;}
