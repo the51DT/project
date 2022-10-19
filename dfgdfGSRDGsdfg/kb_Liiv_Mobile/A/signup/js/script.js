@@ -131,6 +131,7 @@ $('.chatImg').on('click', function () {
 })
 
 $('.signup4 .button-container .button').on('click', function () {
+  $(this).toggleClass('on');
   $('.footer').toggleClass('on');
 })
 
