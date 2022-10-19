@@ -1,84 +1,90 @@
 let step = 0;
 
 $('.left').on('click', function () {
-  if (step === 0) {
-    $('.signup').removeClass('off');
-    $('.header').removeClass('off');
-    $('.liiv').removeClass('on');
-    $('.liiv_footer').removeClass('on');
-    // signup_process2 off
-  }
-  else if (step === 1) {
-    $('.signup_process').removeClass('on');
-    $('.liiv').addClass('on');
-    step = 0;
-    // signup_process2 off
-  } else if (step === 2) {
-    $('.signup1').removeClass('off');
-    $('.signup2').removeClass('on');
-    $('.signup1 .next_on_online').addClass('on');
-    $('.signup1 .next_button').addClass('off');
-    step = 1;
-    // signup_process3 off
-  } else if (step === 3) {
-    $('.signup2').addClass('on');
-    $('.signup3').removeClass('on');
-    $('.signup2 .next_on_online').addClass('on');
-    $('.signup2 .next_button').addClass('off');
-    step = 2;
-    // signup_process4 off
-  } else if (step === 4) {
-    $('.signup3').addClass('on');
-    $('.signup4').removeClass('on');
-    step = 3;
-  }
-})
-
-$('.right').on('click', function () {
-  // signup on
-  if (step === 0) {
-    $('.splash').addClass('on');
-    $('.signup').addClass('off');
-    $('.header').addClass('off');
-    $('.splash_svg').addClass('on');
-    setTimeout(() => {
-      $('.splash').removeClass('on');
-    }, 3000);
-    setTimeout(() => {
-      $('.liiv').addClass('on');
-      $('.liiv_footer').addClass('on');
-    }, 3000);
-    step = 1;
-  }
-  // signup_process1 on
-  if ($('.liiv_footer').hasClass('on')) {
-    if (step === 1) {
-      $('.signup_process').addClass('on');
+  $('.menu').removeClass('on');
+  if (!$('.menu').hasClass('on')) {
+    if (step === 0) {
+      $('.signup').removeClass('off');
+      $('.header').removeClass('off');
       $('.liiv').removeClass('on');
-      step = 2;
-      // signup_process2 on
+      $('.liiv_footer').removeClass('on');
+      // signup_process2 off
+    }
+    else if (step === 1) {
+      $('.signup_process').removeClass('on');
+      $('.liiv').addClass('on');
+      step = 0;
+      // signup_process2 off
     } else if (step === 2) {
-      $('.signup1').addClass('off');
-      $('.signup2').addClass('on');
-      $('.signup1 .next_on_online').removeClass('on');
-      $('.signup1 .next_button').removeClass('off');
-      step = 3;
-      // signup_process3 on
-    } else if (step === 3) {
+      $('.signup1').removeClass('off');
       $('.signup2').removeClass('on');
-      $('.signup3').addClass('on');
-      $('.signup2 .next_on_online').removeClass('on');
-      $('.signup2 .next_button').removeClass('off');
-      step = 4;
-      // signup_process4 on
-    } else if (step === 4) {
+      $('.signup1 .next_on_online').addClass('on');
+      $('.signup1 .next_button').addClass('off');
+      step = 1;
+      // signup_process3 off
+    } else if (step === 3) {
+      $('.signup2').addClass('on');
       $('.signup3').removeClass('on');
-      $('.signup4').addClass('on');
+      $('.signup2 .next_on_online').addClass('on');
+      $('.signup2 .next_button').addClass('off');
+      step = 2;
+      // signup_process4 off
+    } else if (step === 4) {
+      $('.signup3').addClass('on');
+      $('.signup4').removeClass('on');
+      step = 3;
     }
   }
 })
 
-$('.signup').on('click', function() {
+$('.right').on('click', function () {
+  $('.menu').removeClass('on');
+  if (!$('.menu').hasClass('on')) {
+    // signup on
+    if (step === 0) {
+      $('.splash').addClass('on');
+      $('.signup').addClass('off');
+      $('.header').addClass('off');
+      $('.splash_svg').addClass('on');
+      setTimeout(() => {
+        $('.splash').removeClass('on');
+      }, 3000);
+      setTimeout(() => {
+        $('.liiv').addClass('on');
+        $('.liiv_footer').addClass('on');
+      }, 3000);
+      step = 1;
+    }
+    // signup_process1 on
+    if ($('.liiv_footer').hasClass('on')) {
+      if (step === 1) {
+        $('.signup_process').addClass('on');
+        $('.liiv').removeClass('on');
+        step = 2;
+        // signup_process2 on
+      } else if (step === 2) {
+        $('.signup1').addClass('off');
+        $('.signup2').addClass('on');
+        $('.signup1 .next_on_online').removeClass('on');
+        $('.signup1 .next_button').removeClass('off');
+        step = 3;
+        // signup_process3 on
+      } else if (step === 3) {
+        $('.signup2').removeClass('on');
+        $('.signup3').addClass('on');
+        $('.signup2 .next_on_online').removeClass('on');
+        $('.signup2 .next_button').removeClass('off');
+        step = 4;
+        // signup_process4 on
+      } else if (step === 4) {
+        $('.signup3').removeClass('on');
+        $('.signup4').addClass('on');
+      }
+    }
+  }
+})
+
+$('.signup').on('click', function () {
   $('.splash').addClass('on');
   $('.signup').addClass('off');
   $('.header').addClass('off');
@@ -124,7 +130,7 @@ $('.chatImg').on('click', function () {
   }, 1000);
 })
 
-$('.signup4 .button-container .button').on('click', function() {
+$('.signup4 .button-container .button').on('click', function () {
   $('.footer').toggleClass('on');
 })
 
@@ -202,22 +208,22 @@ var mySwiper = new Swiper('.swiper-container', {
     running: true,
     delay: 2500,
     disableOnInteraction: false,
-    },
+  },
   loop: false,
   slidesPerView: "auto",
   spaceBetween: 36,
   centeredSlides: true,
-  pagination : {   // 페이저 버튼 사용자 설정
-    el : '.pagination',  // 페이저 버튼을 담을 태그 설정
-    clickable : true,  // 버튼 클릭 여부
-    type : 'bullets', // 버튼 모양 결정 "bullets", "fraction" 
-    renderBullet : function (index, className) {  // className이 기본값이 들어가게 필수 설정
-        return '<a href="#" class="' + className + '">' + '</a>'
+  pagination: {   // 페이저 버튼 사용자 설정
+    el: '.pagination',  // 페이저 버튼을 담을 태그 설정
+    clickable: true,  // 버튼 클릭 여부
+    type: 'bullets', // 버튼 모양 결정 "bullets", "fraction" 
+    renderBullet: function (index, className) {  // className이 기본값이 들어가게 필수 설정
+      return '<a href="#" class="' + className + '">' + '</a>'
     },
     renderFraction: function (currentClass, totalClass) { // type이 fraction일 때 사용
-        return '<span class="' + currentClass + '"></span>' + '<span class="' + totalClass + '"></span>';
+      return '<span class="' + currentClass + '"></span>' + '<span class="' + totalClass + '"></span>';
     }
-},
+  },
 })
 
 var mySwiper2 = new Swiper('.slide-container', {
@@ -225,7 +231,7 @@ var mySwiper2 = new Swiper('.slide-container', {
     running: true,
     delay: 2500,
     disableOnInteraction: false,
-    },
+  },
   loop: false,
   slidesPerView: "auto",
   spaceBetween: 15,

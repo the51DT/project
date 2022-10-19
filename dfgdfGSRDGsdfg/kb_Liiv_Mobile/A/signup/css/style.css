@@ -7,7 +7,7 @@ img {width: 100%;}
 .header.off {display: none;}
 .click-container .left {position: fixed; top: 50%; left: 0; transform: translateY(-50%); cursor: pointer; width: 60px; height: 150px; z-index: 10; border: 1px solid red;}
 .click-container .right {position: fixed; top: 50%; right: 0; transform: translateY(-50%); cursor: pointer; width: 60px; height: 150px; z-index: 10; border: 1px solid red;}
-.click-container .home {position: fixed; top: 0; left: 50%; transform: translateX(-50%); cursor: pointer; width: 150px; height: 60px; z-index: 10; border: 1px solid red;}
+.click-container .home {position: fixed; top: 0; left: 50%; transform: translateX(-50%); cursor: pointer; width: 150px; height: 60px; z-index: 11; border: 1px solid red;}
 
 .signup {width: 100%; cursor: pointer;}
 .signup.off {display: none;}
