@@ -72,42 +72,27 @@ $('.chatImg').on('click', function () {
 
 var mySwiper = new Swiper('.swiper-container', {
   autoplay: {
+    running: true,
     delay: 2500,
     disableOnInteraction: false,
     },
   loop: false,
   slidesPerView: "auto",
-  spaceBetween: 15,
+  spaceBetween: 36,
   centeredSlides: true,
-  observer: true,
-  observeParents: true,
+  pagination : {   // 페이저 버튼 사용자 설정
+    el : '.pagination',  // 페이저 버튼을 담을 태그 설정
+    clickable : true,  // 버튼 클릭 여부
+    type : 'bullets', // 버튼 모양 결정 "bullets", "fraction" 
+    renderBullet : function (index, className) {  // className이 기본값이 들어가게 필수 설정
+        return '<a href="#" class="' + className + '">' + '</a>'
+    },
+    renderFraction: function (currentClass, totalClass) { // type이 fraction일 때 사용
+        return '<span class="' + currentClass + '"></span>' + '<span class="' + totalClass + '"></span>';
+    }
+},
 })
 
-var mySwiper2 = new Swiper('.slide-container', {
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-    },
-  loop: false,
-  slidesPerView: "auto",
-  spaceBetween: 15,
-  centeredSlides: true,
-  observer: true,
-  observeParents: true,
-})
-var mySwiper = new Swiper('.swiper-container', {
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-    },
-  loop: false,
-  slidesPerView: "auto",
-  spaceBetween: 15,
-  centeredSlides: true,
-  observer: true,
-  observeParents: true,
-})
-mySwiper.autoplay.start();
 var mySwiper2 = new Swiper('.slide-container', {
   autoplay: {
     running: true,
@@ -118,7 +103,4 @@ var mySwiper2 = new Swiper('.slide-container', {
   slidesPerView: "auto",
   spaceBetween: 15,
   centeredSlides: true,
-  observer: true,
-  observeParents: true,
 })
-console.log(mySwiper2.autoplay)

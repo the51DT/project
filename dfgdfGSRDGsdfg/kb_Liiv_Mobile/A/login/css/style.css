@@ -52,20 +52,20 @@ img {width: 100%;}
 .liiv {position: absolute; width: 100%; max-width: 390px; top: 0; left: 0; height: 1px; opacity: 0; background-color: #FCFAF6; overflow-x: hidden;}
 .liiv.on {opacity: 1; height: auto;}
 
-.header2 {position: fixed; width: 100%; max-width: 390px; top: 0; left: 50%; transform: translateX(-50%); z-index: 10; background-color: #fff;}
+.header2 {position: fixed; width: 100%; max-width: 390px; top: 0; left: 50%; transform: translateX(-50%); z-index: 9; background-color: #fff;}
 .header2.off {display: none;}
 .header2 .more {position: fixed; top: 70px; right: 6%; width: 20px; z-index: 100; cursor: pointer;}
 
 .liiv .liivImg {margin-bottom: 60px;}
 .liiv .chart {top: 11.3%;}
-.swiper-container {width: 100%; max-width: 390px; text-align: center; position: absolute; top: 26%;}
-.swiper-container .swiper-wrapper .swiper-slide {width: 300px !important; max-height: 465px; text-align: center; position: relative; box-shadow: 10px 10px 32px  rgba(204, 208, 219, 0.3); border-radius: 15px;}
-.swiper-slide.n1 .n1 {position: absolute; top: 28%; left: 15%; width: 86px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
-.swiper-slide.n1 .n2 {position: absolute; top: 28%; left: 60%; width: 75px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate; animation-delay: 0.3s;}
-.swiper-slide.n1 .n3 {position: absolute; top: 55%; left: 13%; width: 17px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
-.swiper-slide.n1 .n4 {position: absolute; top: 61%; left: 60%; width: 8px; animation-name: motion; animation-duration: 0.5s; animation-iteration-count: infinite; animation-direction: alternate; animation-delay: 0.3s;}
-.swiper-slide.n2 .n1 {position: absolute; top: 32%; left: 60%; width: 83px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
-.swiper-slide.n3 .n1 {position: absolute; top: 30%; left: 11%; width: 98px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
+.swiper-container {width: 100%; text-align: center; position: absolute; top: 26%; padding-left: 3px;}
+.swiper-container .swiper-wrapper .swiper-slide {width: 342px !important; max-height: 465px; text-align: center; position: relative; box-shadow: 10px 10px 32px  rgba(204, 208, 219, 0.3); border-radius: 15px;}
+.swiper-slide.n1 .n1 {position: absolute; top: 42%; left: 20%; width: 55px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
+.swiper-slide.n1 .n2 {position: absolute; top: 35%; left: 60%; width: 90px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate; animation-delay: 0.3s;}
+.swiper-slide.n1 .n3 {position: absolute; top: 58%; left: 12%; width: 17px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
+.swiper-slide.n1 .n4 {position: absolute; top: 64%; left: 60%; width: 8px; animation-name: motion; animation-duration: 0.5s; animation-iteration-count: infinite; animation-direction: alternate; animation-delay: 0.3s;}
+.swiper-slide.n2 .n1 {position: absolute; top: 40%; left: 60%; width: 83px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
+.swiper-slide.n3 .n1 {position: absolute; top: 35%; left: 11%; width: 98px; animation-name: motion; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
 @keyframes motion {
   0% {
     transform: translateY(0%);
@@ -74,8 +74,11 @@ img {width: 100%;}
     transform: translateY(20%);
   }
 }
-
-.slide-container {position: absolute; top: 73%; width: 100%; max-width: 390px; height: 240px; text-align: center;}
+.pagination {position: absolute; bottom: -20% !important;}
+.swiper-pagination-bullet {background-color: #CCD0DB !important; opacity: 1 !important;}
+.swiper-pagination-bullet-active {width: 38.5px !important; border-radius: 15px !important; background-color: #07A1E6 !important;}
+.slide-container {position: absolute; top: 73.5%; width: 100%; max-width: 390px; height: 240px; text-align: center;}
+.slide-container .slide-wrapper {position: absolute; left: -20px;}
 .slide-container .slide-wrapper .slide {width: 315px !important; max-height: 240px; max-height: 240px; text-align: center; position: relative;}
 .slide-container .slide-wrapper .slide:nth-child(1) {width: 300px !important;}
 .slide_bottom {position: absolute; top: 83%; width: 80px; left: 55px;}
