@@ -13,6 +13,14 @@ $('.left').on('click', function () {
         step = 0;
       }
     }
+    if (step === 2) {
+      console.log(step, '왼쪽');
+      $('.liiv').addClass('on');
+      $('.liiv_footer').addClass('on');
+      $('.liiv .circle-chart__circle').addClass('on');
+      $('.last').removeClass('on');
+      step = 1;
+    }
   }
 })
 
@@ -34,8 +42,15 @@ $('.right').on('click', function () {
         $('.liiv .circle-chart__circle').addClass('on');
       }, 3000);
       step = 1;
+    } else if (step === 1) {
+      $('.liiv').removeClass('on');
+      $('.liiv_footer').removeClass('on');
+      $('.liiv .circle-chart__circle').removeClass('on');
+      $('.last').addClass('on');
+      step = 2;
     }
   }
+  console.log(step);
 })
 
 $('.login').on('click', function () {
