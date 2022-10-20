@@ -3,7 +3,7 @@ a {-webkit-tap-highlight-color: rgba(0,0,0,0);}
 img {width: 100%;}
 
 .wrap {position: relative; width: 100%; max-width: 390px;}
-.link {width: 83px; position: absolute;}
+.link {width: calc(100vw*83/390); max-width: 83px; position: absolute;}
 .link.A {top: 24%; left: 25.5%;}
 .link.A2 {top: 24%; left: 54%;}
 .link.B {top:60%; left: 10%;}
