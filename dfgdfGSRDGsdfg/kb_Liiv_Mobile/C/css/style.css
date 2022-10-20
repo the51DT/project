@@ -4,7 +4,6 @@ body::-webkit-scrollbar {display: none;}
 .page-img {width: 100%;}
 ::-webkit-scrollbar {display: none;}
 * {-webkit-tap-highlight-color: rgba(0,0,0,0);}
-/* * {-webkit-overflow-scrolling:touch;} */
 
 .move-btn {position: fixed; width: 150px; height: 150px;  z-index: 999; cursor: pointer;}
 .move-btn.home-btn { left: 50%; transform: translateX(-50%);}
@@ -50,9 +49,10 @@ section {opacity: 0; position:absolute; top: 0; overflow-y: hidden; height: 1px;
 
 .sec-n-story {position: absolute; height: 844px !important; overflow: hidden;}
 .sec-n-story .story-cont {text-align: center;}
-.sec-n-story .story-cont.swiper-container {margin-top: 127px; box-sizing: border-box; text-align: center; overflow: hidden; width: 100%; height: 313px; text-align: center; position: relative;}
+.sec-n-story .story-cont.swiper-container {margin-top: 127px; box-sizing: border-box; text-align: center; overflow: hidden; width: 100%; height: 330px; text-align: center; position: relative;}
 .sec-n-story .story-cont.swiper-container .swiper-wrapper {}
-.sec-n-story .story-cont.swiper-container .swiper-wrapper .swiper-slide {width: 244px !important; height: 313px; text-align: center; position: relative; margin: 0 auto;}
+.sec-n-story .story-cont.swiper-container .swiper-wrapper .swiper-slide {width: 244px !important; height: 330px; text-align: center; position: relative; margin: 0 auto;}
+.sec-n-story .story-cont.swiper-container .swiper-wrapper .swiper-slide img {width: 100%;}
 
 .swiper-button-prev {background: none !important; z-index: 1000 !important; position: absolute; width: 60px !important; height: 60px !important; border: none; top: 15% !important; left: 50% !important; transform: translateX(-50%);}
 .swiper-button-prev.prev-1 {background-image: url(../img/prev-1.png) !important; opacity: 1;}
