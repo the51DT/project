@@ -54,9 +54,9 @@ img {width: 100%;}
     transform: translateY(30%);
   }
 }
-.hart.n1 {top: 4%; left: 39%; width: 23px;}
-.hart.n2 {top: 4.5%; left: 10%; width: 15px;}
-.hart.n3 {top: 5.5%; left: 14%; width: 6px;}
+.hart.n1 {top: 4%; left: 39%; width: calc(100vw*23/390); max-width: 23px;}
+.hart.n2 {top: 4.5%; left: 10%; width: calc(100vw*15/390); max-width: 15px;}
+.hart.n3 {top: 5.5%; left: 14%; width: calc(100vw*6/390); max-width: 6px;}
 
 .liiv .button-container {width: calc(100vw*210/390); max-width: 210px; position: absolute; top: 16%; left: 50%; transform: translate(-50%, -50%); cursor: pointer;}
 .liiv .button-container .login {margin-top: 10px;}
@@ -84,15 +84,15 @@ img {width: 100%;}
 .slide-container {position: absolute; top: 73.5%; width: 100%; max-width: 390px; height: 240px; text-align: center;}
 .slide-container .slide-wrapper .slide {width: 100%; padding: 0 25px; text-align: center; position: relative;}
 .slide-container .slide-wrapper .slide:nth-child(1) {padding: 0 35px;}
-.slide_bottom {position: absolute; top: 82.5%; width: 80px; left: 55px;}
+.slide_bottom {position: absolute; top: 82.5%; width: calc(100vw*80/390); max-width: 80px; left: 55px;}
 
 .liiv_footer {width: 100%; max-width: 390px; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); display: none; z-index: 10;}
 .liiv_footer.on {display: block;}
-.liiv_footer .chat {position: fixed; bottom: 160px; left: 63%; transform: translateX(-50%); width: 232px; z-index: 10;}
-.liiv_footer .chatImg {width: 60px; position: absolute; top: 0; right: 0; cursor: pointer;}
-.liiv_footer .chat_text {width: 272px; position: absolute; top: -7px; right: 45px; opacity: 0; transition: all ease-in-out 0.3s;}
+.liiv_footer .chat {position: fixed; bottom: 135%; left: 63%; transform: translateX(-50%); width: calc(100vw*232/390); max-width: 232px; z-index: 10;}
+.liiv_footer .chatImg {width: calc(100vw*60/390); max-width: 60px; position: absolute; top: 0; right: 0; cursor: pointer;}
+.liiv_footer .chat_text {width: calc(100vw*272/390); max-width: 272px; position: absolute; top: -7px; right: 45px; opacity: 0; transition: all ease-in-out 0.3s;}
 .liiv_footer .chat_text.on {opacity: 1;}
-.liiv_footer .star {position: absolute; bottom: 30.5%; right: 7%; width: 57px; cursor: pointer;}
+.liiv_footer .star {position: absolute; bottom: 30.5%; right: 7%; width: calc(100vw*57/390); max-width: 57px; cursor: pointer;}
 .menu {position: absolute; top: 0; left: 0; display: none; width: 100%; z-index: 10;}
 .menu.on {display: block;}
 .menu .close {position: absolute; top: 7.5%; right: 6%; width: calc(100vw*30/390); max-width: 30px; cursor: pointer;}
