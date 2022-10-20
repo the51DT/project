@@ -14,7 +14,6 @@ $('.left').on('click', function () {
       }
     }
     if (step === 2) {
-      console.log(step, '왼쪽');
       $('.liiv').addClass('on');
       $('.liiv_footer').addClass('on');
       $('.liiv .circle-chart__circle').addClass('on');
@@ -50,7 +49,6 @@ $('.right').on('click', function () {
       step = 2;
     }
   }
-  console.log(step);
 })
 
 $('.login').on('click', function () {

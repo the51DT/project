@@ -41,7 +41,6 @@ $('.left').unbind('click').on('click', function (e) {
       step = 5;
     }
   }
-  console.log(step, '왼쪽');
 })
 
 $('.right').unbind('click').on('click', function (e) {
@@ -71,7 +70,6 @@ $('.right').unbind('click').on('click', function (e) {
         step = 2;
         // signup_process2 on
       } else if (step === 2) {
-        console.log(step, '3');
         $('.signup1').addClass('off');
         $('.signup2').addClass('on');
         $('.signup1 .next_on_online').removeClass('on');
@@ -96,11 +94,6 @@ $('.right').unbind('click').on('click', function (e) {
       }
     }
   }
-  console.log(step, '오른쪽');
-})
-
-$('input').on('click', function() {
-  console.log('click')
 })
 
 $('.signup').on('click', function () {
