@@ -1,0 +1,48 @@
+<svg id="gnb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="100" viewBox="0 0 1920 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_8" data-name="사각형 8" width="217.839" height="30.946" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="사각형_2" data-name="사각형 2" width="1920" height="100" fill="rgba(255,255,255,0)"/>
+  <g id="STUDIO-X_U_BI-LOGO" data-name="STUDIO-X+U_BI-LOGO" transform="translate(60 34)">
+    <g id="그룹_6" data-name="그룹 6">
+      <g id="그룹_5" data-name="그룹 5" clip-path="url(#clip-path)">
+        <path id="패스_1" data-name="패스 1" d="M3.326,39.152a5.768,5.768,0,0,1-2.4-1.946A5.108,5.108,0,0,1,0,34.417H2.15a4.083,4.083,0,0,0,1.307,2.6,4.714,4.714,0,0,0,3.4,1.118,4.772,4.772,0,0,0,3.268-1.06,3.423,3.423,0,0,0,1.206-2.687,3.173,3.173,0,0,0-.668-2.106A4.094,4.094,0,0,0,9.005,31.09a25.753,25.753,0,0,0-2.731-.857A23.824,23.824,0,0,1,3.05,29.159a5.125,5.125,0,0,1-2.033-1.627A4.813,4.813,0,0,1,.175,24.54a4.978,4.978,0,0,1,.813-2.8,5.446,5.446,0,0,1,2.295-1.932,7.9,7.9,0,0,1,3.4-.7,7.072,7.072,0,0,1,4.546,1.38,5.184,5.184,0,0,1,1.99,3.558H11.01a3.656,3.656,0,0,0-1.366-2.223,4.733,4.733,0,0,0-3.137-.973,4.74,4.74,0,0,0-3.05.973,3.218,3.218,0,0,0-1.22,2.658,3.069,3.069,0,0,0,.668,2.062,4.254,4.254,0,0,0,1.67,1.191,24.651,24.651,0,0,0,2.716.872,24.6,24.6,0,0,1,3.2,1.089,5.216,5.216,0,0,1,2.062,1.641,4.769,4.769,0,0,1,.842,2.963,5.229,5.229,0,0,1-.755,2.7A5.516,5.516,0,0,1,10.4,39.065a7.483,7.483,0,0,1-3.544.784,8.411,8.411,0,0,1-3.529-.7" transform="translate(0 -14.158)" fill="#919191"/>
+        <path id="패스_2" data-name="패스 2" d="M79.129,20v1.685H73.493V40.31H71.46V21.689H65.8V20Z" transform="translate(-48.752 -14.823)" fill="#919191"/>
+        <path id="패스_3" data-name="패스 3" d="M135.977,20V32.787a6.133,6.133,0,0,0,1.438,4.474,5.287,5.287,0,0,0,3.936,1.452,5.221,5.221,0,0,0,3.908-1.438,6.207,6.207,0,0,0,1.409-4.488V20H148.7V32.757q0,3.864-2.048,5.81a8.273,8.273,0,0,1-10.661,0q-2.048-1.946-2.048-5.81V20Z" transform="translate(-99.247 -14.823)" fill="#919191"/>
+        <path id="패스_4" data-name="패스 4" d="M224.765,21.224a8.522,8.522,0,0,1,3.689,3.515,11.06,11.06,0,0,1,1.278,5.461,10.912,10.912,0,0,1-1.278,5.418,8.454,8.454,0,0,1-3.689,3.486,12.8,12.8,0,0,1-5.781,1.206h-6.013V20h6.013a12.676,12.676,0,0,1,5.781,1.22m.682,15.178a8.383,8.383,0,0,0,2.222-6.2,8.525,8.525,0,0,0-2.222-6.26q-2.222-2.251-6.463-2.251H215V38.624h3.98q4.241,0,6.463-2.222" transform="translate(-157.803 -14.822)" fill="#919191"/>
+        <rect id="사각형_7" data-name="사각형 7" width="2.033" height="20.305" transform="translate(76.86 5.182)" fill="#919191"/>
+        <path id="패스_5" data-name="패스 5" d="M328.306,38.527a9.523,9.523,0,0,1-3.616-3.69,10.8,10.8,0,0,1-1.322-5.359,10.8,10.8,0,0,1,1.322-5.36,9.525,9.525,0,0,1,3.616-3.689,10.6,10.6,0,0,1,10.254,0,9.428,9.428,0,0,1,3.6,3.689,10.9,10.9,0,0,1,1.307,5.36,10.9,10.9,0,0,1-1.307,5.359,9.426,9.426,0,0,1-3.6,3.69,10.606,10.606,0,0,1-10.254,0m9.179-1.5a7.423,7.423,0,0,0,2.847-3.007,9.516,9.516,0,0,0,1.046-4.546,9.433,9.433,0,0,0-1.046-4.532,7.45,7.45,0,0,0-2.847-2.992,8.429,8.429,0,0,0-8.134,0,7.445,7.445,0,0,0-2.847,2.992,9.433,9.433,0,0,0-1.046,4.532,9.516,9.516,0,0,0,1.046,4.546,7.417,7.417,0,0,0,2.847,3.007,8.429,8.429,0,0,0,8.134,0" transform="translate(-239.602 -14.158)" fill="#919191"/>
+      </g>
+    </g>
+    <path id="패스_6" data-name="패스 6" d="M474.96.21l-7.92,9.852L459.12.21h-8.661l12.251,15.239L450.459,30.688h8.661l7.92-9.852,7.92,9.852h8.661L471.37,15.449,483.621.21Z" transform="translate(-333.772 -0.155)" fill="#dbfc00"/>
+    <g id="그룹_8" data-name="그룹 8">
+      <g id="그룹_7" data-name="그룹 7" clip-path="url(#clip-path)">
+        <path id="패스_7" data-name="패스 7" d="M729.642,23.584h16.291V0h7.2V25.911a4.882,4.882,0,0,1-4.876,4.876H727.315a4.882,4.882,0,0,1-4.876-4.876V0h7.2Z" transform="translate(-535.298)" fill="#dbfc00"/>
+        <path id="패스_8" data-name="패스 8" d="M577.8,12.408h12.43V.616h7.2V12.408h12.43v7.2h-12.43V31.4h-7.2V19.61H577.8Z" transform="translate(-428.126 -0.456)" fill="#dbfc00"/>
+      </g>
+    </g>
+  </g>
+  <g id="그룹_1" data-name="그룹 1" transform="translate(33)">
+    <rect id="사각형_3" data-name="사각형 3" width="200" height="100" transform="translate(527)" fill="rgba(255,255,255,0)"/>
+    <text id="ABOUT" transform="translate(592 57)" fill="#fff" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">ABOUT</tspan></text>
+  </g>
+  <g id="그룹_2" data-name="그룹 2" transform="translate(233)">
+    <rect id="사각형_3-2" data-name="사각형 3" width="200" height="100" transform="translate(527)" fill="rgba(255,255,255,0)"/>
+    <text id="WORKS" transform="translate(589 57)" fill="#fff" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">WORKS</tspan></text>
+  </g>
+  <g id="그룹_3" data-name="그룹 3" transform="translate(433)">
+    <rect id="사각형_3-3" data-name="사각형 3" width="200" height="100" transform="translate(527)" fill="rgba(255,255,255,0)"/>
+    <text id="NEWS" transform="translate(598 57)" fill="#fff" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">NEWS</tspan></text>
+  </g>
+  <g id="그룹_4" data-name="그룹 4" transform="translate(623)">
+    <rect id="사각형_3-4" data-name="사각형 3" width="200" height="100" transform="translate(537)" fill="rgba(255,255,255,0)"/>
+    <text id="CONTACT_US" data-name="CONTACT US" transform="translate(572 57)" fill="#fff" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">CONTACT US</tspan></text>
+  </g>
+  <g id="그룹_41" data-name="그룹 41" transform="translate(-5 -2)">
+    <text id="KR" transform="translate(1802 57)" fill="#fff" font-size="16" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">KR</tspan></text>
+    <text id="EN" transform="translate(1845 57)" fill="#919191" font-size="16" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">EN</tspan></text>
+    <rect id="사각형_52" data-name="사각형 52" width="2" height="12" transform="translate(1833 45)" fill="#919191"/>
+  </g>
+</svg>

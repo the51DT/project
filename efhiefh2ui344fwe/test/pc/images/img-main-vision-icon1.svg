@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="그룹_507" data-name="그룹 507" transform="translate(-160 -1470)">
+    <circle id="타원_12" data-name="타원 12" cx="18" cy="18" r="18" transform="translate(180 1534)" fill="#fff"/>
+    <g id="타원_17" data-name="타원 17" transform="translate(224 1534)" fill="none" stroke="#fff" stroke-width="4">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="16" fill="none"/>
+    </g>
+    <g id="타원_15" data-name="타원 15" transform="translate(180 1490)" fill="none" stroke="#fff" stroke-width="4">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="16" fill="none"/>
+    </g>
+    <g id="타원_16" data-name="타원 16" transform="translate(224 1490)" fill="none" stroke="#fff" stroke-width="4">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="16" fill="none"/>
+    </g>
+    <rect id="사각형_611" data-name="사각형 611" width="120" height="120" transform="translate(160 1470)" fill="none"/>
+  </g>
+</svg>

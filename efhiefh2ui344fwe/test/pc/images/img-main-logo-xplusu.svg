@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="40" viewBox="0 0 105 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_8" data-name="사각형 8" width="95" height="28.412" transform="translate(105)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_2" data-name="그룹 2" transform="translate(-135 -27)">
+    <g id="STUDIO-X_U_BI-LOGO" data-name="STUDIO-X+U_BI-LOGO" transform="translate(35 32.8)">
+      <path id="패스_6" data-name="패스 6" d="M474.96.21l-7.92,9.033L459.12.21h-8.661l12.251,13.972L450.459,28.154h8.661l7.92-9.033,7.92,9.033h8.661L471.37,14.182,483.621.21Z" transform="translate(-345.043 -0.155)" fill="#dbfc00"/>
+      <g id="그룹_8" data-name="그룹 8">
+        <g id="그룹_7" data-name="그룹 7" clip-path="url(#clip-path)">
+          <path id="패스_7" data-name="패스 7" d="M729.052,21.653H744.01V0h6.613V23.789a4.482,4.482,0,0,1-4.477,4.477h-19.23a4.482,4.482,0,0,1-4.477-4.477V0h6.613Z" transform="translate(-550.623)" fill="#dbfc00"/>
+          <path id="패스_8" data-name="패스 8" d="M577.8,11.442h11.412V.616h6.613V11.442h11.412v6.613H595.825V28.881h-6.613V18.055H577.8Z" transform="translate(-440.383 -0.469)" fill="#dbfc00"/>
+        </g>
+      </g>
+    </g>
+    <rect id="사각형_527" data-name="사각형 527" width="105" height="40" transform="translate(135 27)" fill="none"/>
+  </g>
+</svg>
