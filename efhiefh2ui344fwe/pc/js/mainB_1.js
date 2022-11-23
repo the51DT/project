@@ -9,7 +9,7 @@ $(document).ready(() => {
         $('.section1 .main-txt').fadeOut(800);
       } else {
         $('.loading-txt').css({'transform':'translateY(60rem)','opacity':'0','transition':'all 0.6s'});
-        $('.mask-area').css({'transform':'scale(200)','transition':'transform 0.8s','transform-origin':'55% center'});
+        $('.mask-area').css({'transform':'scale(500)','transition':'transform 0.8s','transform-origin':'55% center'});
         setTimeout(() => {
           $('.mask-area, .loading-txt').fadeOut(800);
           $('.section1 .main-txt').fadeIn(800);

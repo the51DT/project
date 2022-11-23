@@ -1,6 +1,10 @@
 @charset"utf-8";
 * {box-sizing:border-box}
-html {overflow-x:hidden}
+html {font-size:calc(100vw*10/1920); overflow-x:hidden}
+body {background-color:#000}
+@media (min-width:1920px){
+  html {font-size:10px}
+}
 .wrap {background-color:#000}
 .blind {display:block; position:absolute; width:0; height:0; left:-9999%; top:-9999%; font-size:0; text-indent:-9999%; opacity:0; overflow:hidden}
 h1, h2, h3, h4, h5 {margin:0}
@@ -19,14 +23,8 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:100px; font-wei
 #fp-nav ul li a.active span {width:18px!important; height:16px!important; margin:0!important}
 
 /* loading animation */
-.main-header .header-inner {position:relative; height:100vh}
-.main-header .logo {width:210px; height:40px; background:url(../images/img-main-logo-studio.svg) no-repeat center / contain; z-index:999; opacity:0}
-.main-header .logo a {height:100%; display:flex!important; align-items:center}
-.main-header .logo-x {position:absolute; display:block; width:100%; height:661px; top:50%; transform:translateY(-50%); background:url(../images/img-main-logo-xplusu.svg) no-repeat center / contain; z-index:10; opacity:0}
-.main-header .gnb,
-.main-header .lang-chioce {opacity:0}
-
-.section1 .ani-area {position:absolute; left:0; right:0; top:0; display:flex; align-items:center; width:100%; /* max-width:1920px; */ height:100vh; margin:0 auto; padding:0 55px}
+#header {opacity:0}
+.section1 .ani-area {position:absolute; left:0; right:0; top:0; display:flex; justify-content:center; align-items:center; width:100%; /* max-width:1920px; */ height:100vh; margin:0 auto; padding:0 55px}
 .section1 .ani-area .icon-x {width:50px; height:50px; margin-right:16px; background:url(../images/img-main-plus.svg) no-repeat center / contain}
 .section1 .ani-area .txt {color:#fff; font-size:50px; font-weight:bold; line-height:70px}
 .section1 .ani-area .txt1 {transform:translateX(100%); opacity:0}
@@ -38,6 +36,16 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:100px; font-wei
 .section1 .arrow-down > a {position:relative; display:block; width:100%; height:100%}
 .section1 .arrow-down img {position:absolute; display:block; width:24px; top:50%; left:50%; transform:translate(-50%,-50%)}
 .section1 .arrow-down::before {content:''; display:block; position:absolute; top:0; left:0; right:0; bottom:0; background:url(../images/img-main-scroll-rotate.svg) no-repeat center / contain; animation:rotate 10s linear infinite}
+
+.section1 .mask-area {position:absolute; left:0; right:0; top:0; bottom:0; background:rgba(219,252,0,0.5) url(../images/a-main-mask3.svg) no-repeat center / 100% auto; opacity:0}
+@media (min-width:1920px){
+  .section1 .mask-area {max-width:1920px; margin:0 auto}
+  .section1 .mask-area::before {content:''; display:block; position:absolute; left:calc(-100% + 1px); top:0; bottom:0; width:100%; background:#191919}
+  .section1 .mask-area::after {content:''; display:block; position:absolute; right:calc(-100% + 1px); top:0; bottom:0; width:100%; background:#191919}
+}
+.mask-area .loading-txt {position:absolute; width:54.5rem; height:10.9rem; top:calc(50% - 4rem); right:calc(50% + 9.9rem); background:url(../images/a-mask1.svg) no-repeat center / contain}
+/* .mask-area .loading-txt > img {display:block; width:100%; height:100%} */
+
 @keyframes rotate {
   0% {transform:rotate(0)}
   100% {transform:rotate(360deg)}
