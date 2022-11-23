@@ -349,16 +349,18 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .information .info-box li:first-child dt{width: 137px;}
 .information .info-box li:nth-child(n+2) dd{padding-top: 20px;}
 .information .info-box li:nth-child(n+2) dd li:nth-child(n+2){margin-top: 16px;}
+.information .info-box .tel,
+.information .info-box .email{font-family: 'Poppins', sans-serif;}
 
 .maps-wrap{width: 100%; height:600px; background-color: gray; margin-top: 58px; margin-bottom: 150px;}
 
 .list-type-table table{width: 100%; vertical-align: middle;}
 .list-type-table table td{vertical-align: middle; height: 144px; border-top: 1px solid #444444;}
 .list-type-table table tr:last-child td{border-top: 1px solid #444444; border-bottom: 1px solid #444444;}
-.list-type-table table .num{font-size: 24px; color: #919191; text-align: center;}
-.list-type-table table .title a{font-size: 32px; color: #fff;}
+.list-type-table table .num{font-size: 24px; color: #919191; text-align: center; font-family: 'Poppins', sans-serif;}
+.list-type-table table .title a{font-size: 32px; color: #fff; display: inline-block; line-height: 32px;}
 .list-type-table table .experience{font-size: 22px; color: #DBFC00;}
-.list-type-table table .date{font-size: 24px; color: #919191;}
+.list-type-table table .date{font-size: 24px; color: #919191; font-family: 'Poppins', sans-serif;}
 /* media query 1300px */
 @media (max-width: 1300px) {
     .wrap,
