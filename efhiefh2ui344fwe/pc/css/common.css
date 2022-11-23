@@ -220,7 +220,7 @@ section{position: relative;}
 .notice-top .notice-top-num{display: table-cell;text-align: left;vertical-align: middle;}
 .notice-top .notice-top-sch{display: table-cell;text-align: right;}
 
-.pagination-wrap{overflow: hidden;text-align: center;margin-top:40px;margin-bottom:150px;}
+.pagination-wrap{overflow: hidden;text-align: center;margin-top:40px;margin-bottom:150px; font-family: 'Poppins', sans-serif;}
 .pagination {display: inline-block;}
 .pagination a {color: #fff;float: left;padding: 8px 16px;text-decoration: none; font-size: 50px; opacity: .3;}
 .pagination a.active {color: white;opacity: 1;}
