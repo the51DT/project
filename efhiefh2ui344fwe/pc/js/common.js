@@ -11,10 +11,18 @@ $(document).ready(function(){
     }
   });
 
+  // gnb
+  // $('#header .gnb').hover(function(){
+  //   $('#header').animate({height: '160px'}, 500);
+    
+  // }, function() {
+  //   $('#header').animate({height: '80px'}, 500);
+    
+  // });
+
   // header
   $(window).scroll( function() {
     let csTop = $(document).scrollTop();
-    // console.log(csTop);
     if(csTop > 10){
       $('.main-tool-bar').addClass('main-tool-bar-scrolled');
     }else{
