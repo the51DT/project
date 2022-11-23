@@ -15,7 +15,7 @@ $(document).ready(function(){
   $(window).scroll( function() {
     let csTop = $(document).scrollTop();
     // console.log(csTop);
-    if(csTop > 900){
+    if(csTop > 10){
       $('.main-tool-bar').addClass('main-tool-bar-scrolled');
     }else{
       $('.main-tool-bar').removeClass('main-tool-bar-scrolled');
@@ -204,5 +204,19 @@ $(document).ready(function(){
     ease: Power3.easeOut
     
   })
+
+  const showAnim = gsap.from('.main-tool-bar', { 
+    yPercent: -100,
+    paused: true,
+    duration: 0.2
+  }).progress(1);
+  
+  ScrollTrigger.create({
+    start: "top top",
+    end: 99999,
+    onUpdate: (self) => {
+      self.direction === -1 ? showAnim.play() : showAnim.reverse()
+    }
+  });
 
 });

@@ -45,10 +45,11 @@ $(document).ready(function(){
   // fullpage
   $('#main').fullpage({
     autoScrolling: true,
-    // scrollHorizontally: true,
+    scrollOverflow: true,
     navigation: true,
     navigationPosition: 'right',
     scrollingSpeed: 800,
+    fitToSection: false,
     'onLeave' : (index, nextIndex, direction) => {
 			// if (index == 1 && direction == 'down'){
       //   $('.mask-area, .loading-txt').fadeOut(600);
