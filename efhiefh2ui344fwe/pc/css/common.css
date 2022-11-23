@@ -34,11 +34,12 @@ h4,
 h5{font-weight: bold;margin: 10px 0;}
 
 /* padding & margin */
-.mt6{margin-top: 10px;}
-.mt12{margin-top: 10px;}
-.mt20{margin-top: 10px;}
-.mt30{margin-top: 10px;}
-.mt40{margin-top: 10px;}
+.mt0{margin-top: 0px!important;}
+.mt6{margin-top: 6px;}
+.mt12{margin-top: 12px;}
+.mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.mt40{margin-top: 40px;}
 
 .align-r{text-align: right;}
 .align-l{text-align: left;}
