@@ -14,15 +14,28 @@ $(document).ready(function(){
   // Layer popup
   $('.btn-gnb').click(function(){
     let $gnbHref = $(this).attr('href');
-    layer_gnb($gnbHref);
+    let gnbLoc = $(window).scrollTop();
+    // console.log(gnbLoc);
+    if(!$('.dim-layer').hasClass('menu-on')){
+      layer_gnb($gnbHref);
+    }else{
+      $('a.btn-layerClose').trigger('click');
+      $('.dim-layer').fadeOut().removeClass('menu-on');
+      // if(){
+        $('html').css('overflow','auto');
+      // }
+      
+      return false;
+    }
+    
   });
+
   function layer_gnb(el){
 
     let $gnbEl = $(el);
-    let gnbisDim = $gnbEl.prev().hasClass('dimBg');
-    let gnbScroll = 
 
-    gnbisDim ? $('.dim-layer').fadeIn() : $gnbEl.fadeIn();
+    $('.dim-layer').fadeIn().addClass('menu-on')
+    $gnbEl.fadeIn();
 
     // let $gnbElWidth = ~~($gnbEl.outerWidth()),
     //     $gnbElHeight = ~~($gnbEl.outerHeight()),
@@ -39,28 +52,23 @@ $(document).ready(function(){
     // }
     $gnbEl.css({top: '58px', left: 0});
     $('html').css('overflow','hidden');
-
-
-    $gnbEl.find('a.btn-layerClose').click(function(){
-        gnbisDim ? $('.dim-layer').fadeOut() : $gnbEl.fadeOut();
-        $('html').css('overflow','auto');
-        return false;
-    });
-
-    $('.layer .dimBg').click(function(){
-        $('.dim-layer').fadeOut();
-        return false;
-    });
-
   }
 
   // header
   $(window).scroll( function() {
     let csTop = $(document).scrollTop();
+    let txtAniLoc = $('.section1-start').offset();
+    // console.log(txtAniLoc.top);
     if(csTop > 10){
       $('.main-tool-bar').addClass('main-tool-bar-scrolled');
     }else{
       $('.main-tool-bar').removeClass('main-tool-bar-scrolled');
+    }
+    
+    if(csTop > txtAniLoc.top){
+      $('html').css('overflow-x','auto');
+    }else{
+      $('html').css('overflow-x','hidden');
     }
   });
 
