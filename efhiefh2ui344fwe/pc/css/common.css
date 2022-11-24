@@ -24,7 +24,7 @@ span,em,i,strong,sup{font-size:inherit; font-family:inherit; color:inherit; line
 sup{position:relative; top:-5px;}
 input[type=checkbox],
 input[type=radio] {-o-appearance: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; margin:0;}
-button{border: 0;outline: 0;}
+button{border: 0;outline: 0;background: none;padding: 0; margin: 0;}
 
 /* heading */
 h1,
