@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920.111" height="2400" viewBox="0 0 1920.111 2400">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_91" data-name="사각형 91" width="1920.111" height="970" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_109" data-name="그룹 109" transform="translate(0.111)">
+    <g id="_01" data-name="01" transform="translate(-0.111 715)">
+      <g id="mask">
+        <g id="그룹_108" data-name="그룹 108" clip-path="url(#clip-path)">
+          <path id="패스_22" data-name="패스 22" d="M0,970H1920.111V0H0ZM1071.455,604.883,1018.9,539.5l-52.555,65.38H908.869l81.295-101.127L908.869,402.629h57.476l52.555,65.38,52.555-65.38h57.476l-81.294,101.127,81.294,101.127Zm269.078-75.507h-82.485v78.253h-47.8V529.376h-82.483v-47.8h82.483V403.326h47.8v78.253h82.485Zm239.578,44.839a32.4,32.4,0,0,1-32.359,32.359H1408.764a32.4,32.4,0,0,1-32.361-32.359V402.268h47.8V558.774h108.11V402.268h47.8Z" fill="#191919"/>
+        </g>
+      </g>
+    </g>
+    <rect id="사각형_92" data-name="사각형 92" width="1920" height="725" fill="#191919"/>
+    <rect id="사각형_93" data-name="사각형 93" width="1920" height="725" transform="translate(0 1675)" fill="#191919"/>
+  </g>
+</svg>

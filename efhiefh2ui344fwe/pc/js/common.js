@@ -12,13 +12,9 @@ $(document).ready(function(){
   });
 
   // gnb
-  // $('#header .gnb').hover(function(){
-  //   $('#header').animate({height: '160px'}, 500);
-    
-  // }, function() {
-  //   $('#header').animate({height: '80px'}, 500);
-    
-  // });
+  $('.main-tool-bar').hover(function(){
+    $('.main-tool-bar').toggleClass( "active" );
+  });
 
   // header
   $(window).scroll( function() {
