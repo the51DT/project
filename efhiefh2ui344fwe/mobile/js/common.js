@@ -15,6 +15,7 @@ $(document).ready(function(){
   $('.btn-gnb').click(function(){
     let $gnbHref = $(this).attr('href');
     let gnbLoc = $(window).scrollTop();
+    let txtAniLoc = $('.section1-start').offset();
     // console.log(gnbLoc);
     if(!$('.dim-layer').hasClass('menu-on')){
       layer_gnb($gnbHref);
@@ -54,21 +55,27 @@ $(document).ready(function(){
     $('html').css('overflow','hidden');
   }
 
+  $('.gnb-list a').click(function(e){
+    if(!$(this).hasClass('nm')){
+      $(this).toggleClass('active');
+    }else{
+      e.preventDefault();
+    }
+    
+    
+    
+  });
+  
+
   // header
   $(window).scroll( function() {
     let csTop = $(document).scrollTop();
-    let txtAniLoc = $('.section1-start').offset();
+    
     // console.log(txtAniLoc.top);
     if(csTop > 10){
       $('.main-tool-bar').addClass('main-tool-bar-scrolled');
     }else{
       $('.main-tool-bar').removeClass('main-tool-bar-scrolled');
-    }
-    
-    if(csTop > txtAniLoc.top){
-      $('html').css('overflow-x','auto');
-    }else{
-      $('html').css('overflow-x','hidden');
     }
   });
 
@@ -172,6 +179,23 @@ $(document).ready(function(){
   /* If the user clicks anywhere outside the select box,
   then close all select boxes: */
   document.addEventListener("click", closeAllSelect);
+
+  // $('.select-selected').on("click", function () {
+  //   // console.log('click');
+  //   let ccHeight = $('.custom-select').height();
+  //   let ccHeight2 = $('.select-items').height();
+  //   let ccHeight3 = ccHeight + ccHeight2
+
+  //   if(!$(this).hasClass('expend')){
+  //     $('.footer-inner').css('padding-bottom',ccHeight3);
+  //     $(this).addClass('expend');
+  //   }else{
+  //     $('.footer-inner').attr('style',"");
+  //     $(this).removeClass('expend');
+  //   }
+    
+    
+  // });
 
   // Layer popup
   $('.btn-example').click(function(){

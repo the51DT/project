@@ -12,8 +12,8 @@ $(document).ready(function(){
   });
 
   // gnb
-  $('.main-tool-bar').hover(function(){
-    $('.main-tool-bar').toggleClass( "active" );
+  $('#header').hover(function(){
+    $('#header').toggleClass( "active" );
   });
 
   // header
