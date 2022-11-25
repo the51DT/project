@@ -58,16 +58,21 @@ $(document).ready(function(){
   }
 
   $('.gnb').on('click', '.gnb-list a', function(e) {
+    
     if(!$(this).hasClass('nm')){
-
-      if(!$(this).hasClass('active')){
-        $(this).addClass('active');
-        $(this).next().slideDown();
-      }else{
-        $(this).removeClass('active');
-        $(this).next().slideUp();
-      }
+      if(!$(this).next().is(":animated")){
+        // console.log('animated');
+        if(!$(this).hasClass('active')){
+          $(this).addClass('active');
+          $(this).next().slideDown();
+        }else{
+          $(this).removeClass('active');
+          $(this).next().slideUp();
+        }
       
+      }else{
+        // console.log('stop');
+      }
     }else{
       e.preventDefault();
     }
