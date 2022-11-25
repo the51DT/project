@@ -78,7 +78,7 @@ body{background-color: #000;}
 #header .lang-chioce{position: relative; top:10px; right: 50px;}
 #header .lang-chioce ul{overflow: hidden;}
 #header .lang-chioce ul li {position: relative;float: left;font-size: 16px;color: #fff;opacity: .7;}
-#header .lang-chioce ul li:first-child::before {content: " | ";position: absolute; right: -14px; top: -1px; color: rgba(255,255,255,0.5);}
+#header .lang-chioce ul li:first-child::before {overflow: hidden; content: " | ";position: absolute; right: -14px; top: 2px; color: rgba(255,255,255,0.5); height: 12px;}
 #header .lang-chioce ul li.active {opacity: 1;}
 #header .lang-chioce ul li:last-child {padding-left: 20px;}
 #header .lang-chioce ul li a {font-size: 16px;color: rgba(255,255,255,0.5);}
