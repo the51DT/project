@@ -1,13 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-  <g id="그룹_508" data-name="그룹 508" transform="translate(-960 -1470)">
-    <g id="타원_13" data-name="타원 13" transform="translate(960 1490)" fill="none" stroke="#fff" stroke-width="4">
-      <circle cx="40" cy="40" r="40" stroke="none"/>
-      <circle cx="40" cy="40" r="38" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="그룹_595" data-name="그룹 595" transform="translate(-180 -952)">
+    <g id="그룹_594" data-name="그룹 594" transform="translate(2.5 -5)">
+      <g id="타원_13" data-name="타원 13" transform="translate(180 972)" fill="none" stroke="#fff" stroke-width="3">
+        <circle cx="25" cy="25" r="25" stroke="none"/>
+        <circle cx="25" cy="25" r="23.5" fill="none"/>
+      </g>
+      <g id="타원_14" data-name="타원 14" transform="translate(205 972)" fill="none" stroke="#fff" stroke-width="3">
+        <circle cx="25" cy="25" r="25" stroke="none"/>
+        <circle cx="25" cy="25" r="23.5" fill="none"/>
+      </g>
     </g>
-    <g id="타원_14" data-name="타원 14" transform="translate(1000 1490)" fill="none" stroke="#fff" stroke-width="4">
-      <circle cx="40" cy="40" r="40" stroke="none"/>
-      <circle cx="40" cy="40" r="38" fill="none"/>
-    </g>
-    <rect id="사각형_614" data-name="사각형 614" width="120" height="120" transform="translate(960 1470)" fill="none"/>
+    <rect id="사각형_614" data-name="사각형 614" width="80" height="80" transform="translate(180 952)" fill="none"/>
   </g>
 </svg>

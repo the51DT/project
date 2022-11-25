@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-  <g id="그룹_509" data-name="그룹 509" transform="translate(-160 -1650)">
-    <rect id="사각형_586" data-name="사각형 586" width="80" height="4" transform="translate(180 1708)" fill="#fff"/>
-    <rect id="사각형_587" data-name="사각형 587" width="80" height="4" transform="translate(222 1670) rotate(90)" fill="#fff"/>
-    <rect id="사각형_612" data-name="사각형 612" width="120" height="120" transform="translate(160 1650)" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="그룹_592" data-name="그룹 592" transform="translate(0 -1132)">
+    <g id="그룹_591" data-name="그룹 591" transform="translate(-5 -5)">
+      <rect id="사각형_586" data-name="사각형 586" width="50" height="3" transform="translate(20 1176)" fill="#fff"/>
+      <rect id="사각형_587" data-name="사각형 587" width="50" height="3" transform="translate(47 1152) rotate(90)" fill="#fff"/>
+    </g>
+    <rect id="사각형_612" data-name="사각형 612" width="80" height="80" transform="translate(0 1132)" fill="none"/>
   </g>
 </svg>

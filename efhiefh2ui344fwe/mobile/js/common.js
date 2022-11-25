@@ -275,7 +275,7 @@ $(document).ready(function(){
     transform: 'none',
     top: '680px',
     bottom: 'auto',
-    left: '0',
+    left: '20px',
     fontSize: '50px',
     ease: Power3.easeOut
     

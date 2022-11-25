@@ -1,18 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-  <g id="그룹_507" data-name="그룹 507" transform="translate(-160 -1470)">
-    <circle id="타원_12" data-name="타원 12" cx="18" cy="18" r="18" transform="translate(180 1534)" fill="#fff"/>
-    <g id="타원_17" data-name="타원 17" transform="translate(224 1534)" fill="none" stroke="#fff" stroke-width="4">
-      <circle cx="18" cy="18" r="18" stroke="none"/>
-      <circle cx="18" cy="18" r="16" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="그룹_590" data-name="그룹 590" transform="translate(-20 -962)">
+    <g id="그룹_589" data-name="그룹 589" transform="translate(14)">
+      <circle id="타원_12" data-name="타원 12" cx="12" cy="12" r="12" transform="translate(20 1004)" fill="#fff"/>
+      <g id="타원_17" data-name="타원 17" transform="translate(48 1004)" fill="none" stroke="#fff" stroke-width="3">
+        <circle cx="12" cy="12" r="12" stroke="none"/>
+        <circle cx="12" cy="12" r="10.5" fill="none"/>
+      </g>
+      <g id="타원_15" data-name="타원 15" transform="translate(20 976)" fill="none" stroke="#fff" stroke-width="3">
+        <circle cx="12" cy="12" r="12" stroke="none"/>
+        <circle cx="12" cy="12" r="10.5" fill="none"/>
+      </g>
+      <g id="타원_16" data-name="타원 16" transform="translate(48 976)" fill="none" stroke="#fff" stroke-width="3">
+        <circle cx="12" cy="12" r="12" stroke="none"/>
+        <circle cx="12" cy="12" r="10.5" fill="none"/>
+      </g>
     </g>
-    <g id="타원_15" data-name="타원 15" transform="translate(180 1490)" fill="none" stroke="#fff" stroke-width="4">
-      <circle cx="18" cy="18" r="18" stroke="none"/>
-      <circle cx="18" cy="18" r="16" fill="none"/>
-    </g>
-    <g id="타원_16" data-name="타원 16" transform="translate(224 1490)" fill="none" stroke="#fff" stroke-width="4">
-      <circle cx="18" cy="18" r="18" stroke="none"/>
-      <circle cx="18" cy="18" r="16" fill="none"/>
-    </g>
-    <rect id="사각형_611" data-name="사각형 611" width="120" height="120" transform="translate(160 1470)" fill="none"/>
+    <rect id="사각형_611" data-name="사각형 611" width="80" height="80" transform="translate(20 962)" fill="none"/>
   </g>
 </svg>

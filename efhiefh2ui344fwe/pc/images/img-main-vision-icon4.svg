@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-  <g id="그룹_608" data-name="그룹 608" transform="translate(-960 -1640)">
-    <path id="패스_985" data-name="패스 985" d="M0,0H80V4H0Z" transform="translate(980 1698)" fill="#fff"/>
-    <path id="패스_984" data-name="패스 984" d="M0,0H80V4H0Z" transform="translate(1018 1740) rotate(-90)" fill="#fff"/>
-    <path id="패스_983" data-name="패스 983" d="M0,0H80V4H0Z" transform="translate(1046.569 1729.397) rotate(-135)" fill="#fff"/>
-    <path id="패스_982" data-name="패스 982" d="M0,0H80V4H0Z" transform="translate(990 1726.569) rotate(-45)" fill="#fff"/>
-    <path id="패스_981" data-name="패스 981" d="M0,0H120V120H0Z" transform="translate(960 1640)" fill="none"/>
-    <path id="패스_980" data-name="패스 980" d="M0,0H120V120H0Z" transform="translate(960 1640)" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="그룹_593" data-name="그룹 593" transform="translate(-200 -1152)">
+    <g id="그룹_601" data-name="그룹 601">
+      <rect id="사각형_588" data-name="사각형 588" width="50" height="3" transform="translate(215 1191)" fill="#fff"/>
+      <rect id="사각형_589" data-name="사각형 589" width="50" height="3" transform="translate(241.5 1167) rotate(90)" fill="#fff"/>
+      <rect id="사각형_590" data-name="사각형 590" width="50" height="3" transform="translate(223.383 1173.762) rotate(45)" fill="#fff"/>
+      <rect id="사각형_591" data-name="사각형 591" width="50" height="3" transform="translate(258.738 1175.883) rotate(135)" fill="#fff"/>
+    </g>
+    <rect id="사각형_615" data-name="사각형 615" width="80" height="80" transform="translate(200 1152)" fill="none"/>
   </g>
 </svg>
