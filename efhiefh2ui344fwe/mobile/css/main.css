@@ -35,6 +35,8 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:4rem; font-weig
 .section1 .ani-area .txt2-1 {display:flex; transform:translateX(100%); opacity:0}
 .section1 .ani-area .txt2-2 {margin-left:-0.6rem; transform:translateX(100%); opacity:0}
 .section1 .mask-area {position:absolute; left:0; right:0; top:0; bottom:0; background:rgba(219,252,0,0.5) url(../images/img-main-mask.svg) no-repeat center / 100% auto; opacity:0}
+.section1 .mask-area::before {content:''; display:block; position:absolute; left:0; right:0; top:0; width:100%; height:10%; background:#000}
+.section1 .mask-area::after {content:''; display:block; position:absolute; left:0; right:0; bottom:0; width:100%; height:10%; background:#000}
 .mask-area .loading-txt {position:absolute; width:24.6rem; height:3.38rem; top:calc(50% + 3.38rem); left:0; right:0; margin:0 auto; background:url(../images/img-main-mask-txt.svg) no-repeat center / contain}
 @keyframes rotate {
   0% {transform:rotate(0)}
