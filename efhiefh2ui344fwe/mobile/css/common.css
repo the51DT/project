@@ -74,11 +74,11 @@ body{background-color: #000;}
 .gnb .gnb-list > li > a.active:after {transform: rotate( 180deg )}
 
 .gnb .gnb-list .sub-list {display: none; padding: 10px; padding-bottom: 50px; border-top: 1px solid #fff;}
-.gnb .gnb-list .active+.sub-list {display: block;}
+.gnb .gnb-list .active+.sub-list {}
 .gnb .gnb-list .sub-list a{margin-top: 14px; display: block; font-family: 'Poppins', sans-serif; font-size: 22px; color: #919191;}
 
 #header .main-tool-bar.active{transition: ease 0.4s; background: #000;}
-#header .main-tool-bar.active .sub-list {display:block;}
+#header .main-tool-bar.active .sub-list {}
 #header .main-tool-bar {transition: ease 0.4s;}
 #header .main-tool-bar-scrolled {background: #000;}
 

@@ -57,18 +57,23 @@ $(document).ready(function(){
     $('html').css('overflow','hidden');
   }
 
-  $('.gnb-list a').click(function(e){
+  $('.gnb').on('click', '.gnb-list a', function(e) {
     if(!$(this).hasClass('nm')){
-      $(this).toggleClass('active');
+
+      if(!$(this).hasClass('active')){
+        $(this).addClass('active');
+        $(this).next().slideDown();
+      }else{
+        $(this).removeClass('active');
+        $(this).next().slideUp();
+      }
+      
     }else{
       e.preventDefault();
     }
     
-    
-    
   });
   
-
   // header
   $(window).scroll( function() {
     let csTop = $(document).scrollTop();
