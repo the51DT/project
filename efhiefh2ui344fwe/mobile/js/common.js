@@ -22,6 +22,7 @@ $(document).ready(function(){
     }else{
       $('a.btn-layerClose').trigger('click');
       $('.dim-layer').fadeOut().removeClass('menu-on');
+      $('.all-menu').removeClass('on');
       // if(){
         $('html').css('overflow','auto');
       // }
@@ -35,7 +36,8 @@ $(document).ready(function(){
 
     let $gnbEl = $(el);
 
-    $('.dim-layer').fadeIn().addClass('menu-on')
+    $('.dim-layer').fadeIn().addClass('menu-on');
+    $('.all-menu').addClass('on');
     $gnbEl.fadeIn();
 
     // let $gnbElWidth = ~~($gnbEl.outerWidth()),
@@ -252,7 +254,7 @@ $(document).ready(function(){
       // endTrigger: ".normal-tab-wrap",
       end: 'center 30%',
       scrub: 1,
-      markers: true,
+      // markers: true,
       // onToggle: self => console.log("toggled, isActive:", self.isActive),
       // onUpdate: self => {
       //   console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());

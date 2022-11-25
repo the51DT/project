@@ -74,10 +74,10 @@ body{background-color: #000;}
 #header .lang-chioce{position: relative; top:10px; right: 50px;}
 #header .lang-chioce ul{overflow: hidden;}
 #header .lang-chioce ul li {position: relative;float: left;font-size: 16px;color: #fff;opacity: .7;}
-#header .lang-chioce ul li:first-child::before {content: " | ";position: absolute; right: -14px; top: -1px; color: #555; opacity: .5;}
+#header .lang-chioce ul li:first-child::before {content: " | ";position: absolute; right: -14px; top: -1px; color: rgba(255,255,255,0.5);}
 #header .lang-chioce ul li.active {opacity: 1;}
 #header .lang-chioce ul li:last-child {padding-left: 20px;}
-#header .lang-chioce ul li a {font-size: 16px;color: #555;}
+#header .lang-chioce ul li a {font-size: 16px;color: rgba(255,255,255,0.5);}
 #header .lang-chioce ul li.active a  {color: #fff;}
 
 /* footer */
@@ -91,7 +91,7 @@ body{background-color: #000;}
 
 /* contents */
 .inner {max-width: 1600px;margin: 0 auto;}
-section{position: relative; overflow: hidden;}
+section{position: relative;}
 
 .txt-ani{position: absolute;top: -300px;bottom: auto;left: 50%;transform: translate(-50%,-50%);opacity: 0;}
 .txt-ani img{width: 100%;}
