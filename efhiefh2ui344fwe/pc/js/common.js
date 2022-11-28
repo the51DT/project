@@ -3,26 +3,24 @@ $(document).ready(function(){
 
   // WebFont
   WebFont.load({
-  
     // For google fonts
     google: {
-      families: ['Noto Sans KR', 'Poppins']
-      
-    }
+      families: ["Noto Sans KR", "Poppins"],
+    },
   });
 
   // gnb
-  $('#header').hover(function(){
-    $('#header').toggleClass( "active" );
+  $("#header").hover(function () {
+    $("#header").toggleClass("active");
   });
 
   // header
-  $(window).scroll( function() {
+  $(window).scroll(function () {
     let csTop = $(document).scrollTop();
-    if(csTop > 10){
-      $('.main-tool-bar').addClass('main-tool-bar-scrolled');
-    }else{
-      $('.main-tool-bar').removeClass('main-tool-bar-scrolled');
+    if (csTop > 10) {
+      $(".main-tool-bar").addClass("main-tool-bar-scrolled");
+    } else {
+      $(".main-tool-bar").removeClass("main-tool-bar-scrolled");
     }
   });
 
@@ -34,9 +32,9 @@ $(document).ready(function(){
   });
 
   $(".tabs li a").click(function (e) {
-    e.preventDefault()
+    e.preventDefault();
     $(this).parent().siblings("li").removeClass("active");
-    $(this).parent().addClass("active"); 
+    $(this).parent().addClass("active");
     $(this).parent().parent().parent().parent().find(".tab-content").hide();
     var activeTab = $(this).attr("rel");
     $("#" + activeTab).show();
@@ -63,32 +61,32 @@ $(document).ready(function(){
       create a new DIV that will act as an option item: */
       c = document.createElement("DIV");
       c.innerHTML = selElmnt.options[j].innerHTML;
-      c.addEventListener("click", function(e) {
-          /* When an item is clicked, update the original select box,
+      c.addEventListener("click", function (e) {
+        /* When an item is clicked, update the original select box,
           and the selected item: */
-          var y, i, k, s, h, sl, yl;
-          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-          sl = s.length;
-          h = this.parentNode.previousSibling;
-          for (i = 0; i < sl; i++) {
-            if (s.options[i].innerHTML == this.innerHTML) {
-              s.selectedIndex = i;
-              h.innerHTML = this.innerHTML;
-              y = this.parentNode.getElementsByClassName("same-as-selected");
-              yl = y.length;
-              for (k = 0; k < yl; k++) {
-                y[k].removeAttribute("class");
-              }
-              this.setAttribute("class", "same-as-selected");
-              break;
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
             }
+            this.setAttribute("class", "same-as-selected");
+            break;
           }
-          h.click();
+        }
+        h.click();
       });
       b.appendChild(c);
     }
     x[i].appendChild(b);
-    a.addEventListener("click", function(e) {
+    a.addEventListener("click", function (e) {
       /* When the select box is clicked, close any other select boxes,
       and open/close the current select box: */
       e.stopPropagation();
@@ -101,14 +99,19 @@ $(document).ready(function(){
   function closeAllSelect(elmnt) {
     /* A function that will close all select boxes in the document,
     except the current select box: */
-    var x, y, i, xl, yl, arrNo = [];
+    var x,
+      y,
+      i,
+      xl,
+      yl,
+      arrNo = [];
     x = document.getElementsByClassName("select-items");
     y = document.getElementsByClassName("select-selected");
     xl = x.length;
     yl = y.length;
     for (i = 0; i < yl; i++) {
       if (elmnt == y[i]) {
-        arrNo.push(i)
+        arrNo.push(i);
       } else {
         y[i].classList.remove("select-arrow-active");
       }
@@ -125,16 +128,15 @@ $(document).ready(function(){
   document.addEventListener("click", closeAllSelect);
 
   // Layer popup
-  $('.btn-example').click(function(){
-    var $href = $(this).attr('href');
+  $(".btn-example").click(function () {
+    var $href = $(this).attr("href");
     layer_popup($href);
   });
-  function layer_popup(el){
-
+  function layer_popup(el) {
     var $el = $(el);
-    var isDim = $el.prev().hasClass('dimBg');
+    var isDim = $el.prev().hasClass("dimBg");
 
-    isDim ? $('.dim-layer').fadeIn() : $el.fadeIn();
+    isDim ? $(".dim-layer").fadeIn() : $el.fadeIn();
 
     // var $elWidth = ~~($el.outerWidth()),
     //     $elHeight = ~~($el.outerHeight()),
@@ -150,16 +152,15 @@ $(document).ready(function(){
     //     $el.css({top: 0, left: 0});
     // }
 
-    $el.find('a.btn-layerClose').click(function(){
-        isDim ? $('.dim-layer').fadeOut() : $el.fadeOut();
-        return false;
+    $el.find("a.btn-layerClose").click(function () {
+      isDim ? $(".dim-layer").fadeOut() : $el.fadeOut();
+      return false;
     });
 
-    $('.layer .dimBg').click(function(){
-        $('.dim-layer').fadeOut();
-        return false;
+    $(".layer .dimBg").click(function () {
+      $(".dim-layer").fadeOut();
+      return false;
     });
-
   }
 
   // sub contents
@@ -167,17 +168,17 @@ $(document).ready(function(){
   gsap.registerPlugin(ScrollTrigger);
 
   let subMainAni = gsap.timeline({});
-  subMainAni.to('.txt-ani', {
-    opacity: 1
-  })
+  subMainAni.to(".txt-ani", {
+    opacity: 1,
+  });
 
   // scroll motion
   let subMainAni2 = gsap.timeline({
     scrollTrigger: {
-      trigger: '.section1-start',
-      start: 'top center',
+      trigger: ".section1-start",
+      start: "top center",
       // endTrigger: ".normal-tab-wrap",
-      end: 'center 30%',
+      end: "center 30%",
       scrub: 1,
       // markers: true,
       // onToggle: self => console.log("toggled, isActive:", self.isActive),
@@ -185,42 +186,45 @@ $(document).ready(function(){
       //   console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
       // },
       onLeave: htmlFix,
-      onLeaveBack: htmlFixBack
-    }
+      onLeaveBack: htmlFixBack,
+    },
   });
-  function htmlFix(){
-    $('html').css('overflow-x','auto');
+  function htmlFix() {
+    $("html").css("overflow-x", "auto");
     // console.log('auto')
   }
-  function htmlFixBack(){
-    $('html').css('overflow-x','hidden');
+  function htmlFixBack() {
+    $("html").css("overflow-x", "hidden");
     // console.log('hidden')
   }
-  subMainAni2.to('.txt-ani', {
-    transform: 'none',
+  subMainAni2.to(".txt-ani", {
+    transform: "none",
     // width: '711px',
     // height: '280px',
-    top: '0',
-    bottom: 'auto',
-    left: '0',
+    top: "0",
+    bottom: "auto",
+    left: "0",
     // scale: 1,
-    fontSize: '200px',
-    ease: Power3.easeOut
-    
-  })
-
-  const showAnim = gsap.from('.main-tool-bar', { 
-    yPercent: -100,
-    paused: true,
-    duration: 0.2
-  }).progress(1);
+    fontSize: "200px",
+    ease: Power3.easeOut,
+  });
   
+
+  const showAnim = gsap
+    .from(".main-tool-bar", {
+      yPercent: -100,
+      paused: true,
+      duration: 0.2,
+    })
+    .progress(1);
+
   ScrollTrigger.create({
     start: "top top",
     end: 99999,
     onUpdate: (self) => {
-      self.direction === -1 ? showAnim.play() : showAnim.reverse()
-    }
+      self.direction === -1 ? showAnim.play() : showAnim.reverse();
+    },
   });
 
+  
 });
