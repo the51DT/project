@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="740" viewBox="0 0 360 740">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_4126" data-name="사각형 4126" width="360" height="740" transform="translate(7695 1295)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_57" data-name="마스크 그룹 57" transform="translate(-7695 -1295)" clip-path="url(#clip-path)">
+    <g id="그룹_2106" data-name="그룹 2106" transform="translate(6189.597 -2796.874)">
+      <path id="패스_20" data-name="패스 20" d="M0,170.469H520.35V0H0Zm178.666-38.116-25.079-31.2-25.079,31.2H101.081L139.874,84.1,101.081,35.839h27.427l25.079,31.2,25.079-31.2h27.427L167.3,84.1l38.793,48.257Zm128.4-36.031H267.707v37.343H244.9V96.322h-39.36V73.513H244.9V36.172h22.808V73.513h39.362Zm114.325,21.4a15.459,15.459,0,0,1-15.441,15.441H339.629a15.46,15.46,0,0,1-15.442-15.441V35.666H347v74.685h51.589V35.666h22.809Z" transform="translate(1425 4380)"/>
+      <rect id="사각형_4124" data-name="사각형 4124" width="509" height="297" transform="translate(1427.403 4093.874)"/>
+      <rect id="사각형_4125" data-name="사각형 4125" width="509" height="297" transform="translate(1427.403 4534.874)"/>
+    </g>
+  </g>
+</svg>

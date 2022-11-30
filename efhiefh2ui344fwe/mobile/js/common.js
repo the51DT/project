@@ -64,17 +64,17 @@ $(document).ready(function(){
         // console.log('animated');
         if(!$(this).hasClass('active')){
           $(this).addClass('active');
-          $(this).next().slideDown();
+          $(this).next().slideDown('fast');
         }else{
           $(this).removeClass('active');
-          $(this).next().slideUp();
+          $(this).next().slideUp('fast');
         }
       
       }else{
         // console.log('stop');
       }
     }else{
-      e.preventDefault();
+      // e.preventDefault();
     }
     
   });
@@ -257,22 +257,7 @@ $(document).ready(function(){
   })
 
   // scroll motion
-  let subMainAni2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: '.section1-start',
-      start: 'top center',
-      // endTrigger: ".normal-tab-wrap",
-      end: 'center 30%',
-      scrub: 1,
-      // markers: true,
-      // onToggle: self => console.log("toggled, isActive:", self.isActive),
-      // onUpdate: self => {
-      //   console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
-      // },
-      onLeave: htmlFix,
-      onLeaveBack: htmlFixBack
-    }
-  });
+  let subMainAni2 = gsap.timeline({});
   function htmlFix(){
     $('html').css('overflow-x','auto');
     // console.log('auto')
@@ -281,14 +266,11 @@ $(document).ready(function(){
     $('html').css('overflow-x','hidden');
     // console.log('hidden')
   }
-  subMainAni2.to('.txt-ani', {
-    transform: 'none',
-    top: '680px',
-    bottom: 'auto',
-    left: '20px',
-    fontSize: '50px',
-    ease: Power3.easeOut
-    
+  subMainAni2.to('.txt-ani > span', {
+    delay: 0.2,
+    transform: 'translate(0,0)',
+    ease: 'ease-in-out',
+    duration: 0.8
   })
 
   const showAnim = gsap.from('.main-tool-bar', { 

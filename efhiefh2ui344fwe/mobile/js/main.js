@@ -118,11 +118,11 @@ $(document).ready(function(){
     ease: 'ease-in',
     duration: 0.6
   })
-  tl.to('.ani-area', {
-    x: '-50%',
-    ease: 'ease-in',
-    duration: 0.6
-  },'start0')
+  // tl.to('.ani-area', {
+  //   x: '-50%',
+  //   ease: 'ease-in',
+  //   duration: 0.6
+  // },'start0')
   .add('start1'),
   tl.to('.txt1', {
     delay: 0.1,
@@ -135,6 +135,11 @@ $(document).ready(function(){
     display: 'none',
     duration: 0.1
   })
+  .add('start1-1'),
+  tl.to('.txt2', {
+    display: 'flex',
+    duration: 0.1
+  },'start1-1')
   .add('start2'),
   tl.to('.icon-x', {
     rotation: 0,
