@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
   
-  var worksSlide = new Swiper(".works-slide", {
+  const worksSlide = new Swiper(".works-slide", {
     slidesPerView: 'auto',
     autoplay: true,
     spaceBetween: 50,
@@ -19,7 +19,7 @@ $(document).ready(function(){
     worksSlide.autoplay.start()
   })
 
-  var partnersSlide = new Swiper(".partners-slide", {
+  const partnersSlide = new Swiper(".partners-slide", {
     autoplay: true,
     slidesPerView: 'auto',
     spaceBetween: 120,

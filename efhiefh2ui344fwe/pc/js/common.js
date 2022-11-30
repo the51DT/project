@@ -167,28 +167,28 @@ $(document).ready(function(){
   htmlFixBack();
   gsap.registerPlugin(ScrollTrigger);
 
-  let subMainAni = gsap.timeline({});
-  subMainAni.to(".txt-ani", {
-    opacity: 1,
-  });
+  // let subMainAni = gsap.timeline({});
+  // subMainAni.to(".txt-ani", {
+  //   opacity: 1,
+  // });
 
-  // scroll motion
-  let subMainAni2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".section1-start",
-      start: "top center",
-      // endTrigger: ".normal-tab-wrap",
-      end: "center 30%",
-      scrub: 1,
-      // markers: true,
-      // onToggle: self => console.log("toggled, isActive:", self.isActive),
-      // onUpdate: self => {
-      //   console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
-      // },
-      onLeave: htmlFix,
-      onLeaveBack: htmlFixBack,
-    },
-  });
+  // // scroll motion
+  // let subMainAni2 = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: ".section1-start",
+  //     start: "top center",
+  //     // endTrigger: ".normal-tab-wrap",
+  //     end: "center 30%",
+  //     scrub: 1,
+  //     // markers: true,
+  //     // onToggle: self => console.log("toggled, isActive:", self.isActive),
+  //     // onUpdate: self => {
+  //     //   console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
+  //     // },
+  //     onLeave: htmlFix,
+  //     onLeaveBack: htmlFixBack,
+  //   },
+  // });
   function htmlFix() {
     $("html").css("overflow-x", "auto");
     // console.log('auto')
@@ -197,24 +197,24 @@ $(document).ready(function(){
     $("html").css("overflow-x", "hidden");
     // console.log('hidden')
   }
-  subMainAni2.to(".txt-ani", {
-    transform: "none",
-    // width: '711px',
-    // height: '280px',
-    top: "0",
-    bottom: "auto",
-    left: "0",
-    // scale: 1,
-    fontSize: "200px",
-    ease: Power3.easeOut,
-  });
+  // subMainAni2.to(".txt-ani", {
+  //   transform: "none",
+  //   // width: '711px',
+  //   // height: '280px',
+  //   top: "0",
+  //   bottom: "auto",
+  //   left: "0",
+  //   // scale: 1,
+  //   fontSize: "200px",
+  //   ease: Power3.easeOut,
+  // });
   
 
   const showAnim = gsap
     .from(".main-tool-bar", {
       yPercent: -100,
       paused: true,
-      duration: 0.2,
+      duration: 0.1,
     })
     .progress(1);
 

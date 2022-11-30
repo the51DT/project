@@ -32,6 +32,10 @@ input[type=radio] {-o-appearance: none; -webkit-appearance: none; -moz-appearanc
 button{border: 0;outline: 0;background: none;padding: 0; margin: 0;}
 img{width: 100%;}
 
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* padding & margin */
 .mt0{margin-top: 0px!important;}
 .mt6{margin-top: 6px;}
@@ -111,22 +115,16 @@ body{background-color: #000;}
 /* .inner.type2 {padding-top: 136px;} */
 section{position: relative;}
 
-/* .section1-start{position: absolute; top: 500px;} */
-.txt-ani img{width: 100%;}
-.txt-ani{margin-bottom: 13px; padding: 0 20px; overflow: hidden;}
-.txt-ani > span{display: block; font-family: 'Poppins', sans-serif; font-size: 76px; line-height: 80px; color: #fff; transform-origin: 50% 50%; transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5)}
-.txt-noAni{margin-left: 20px; margin-right: 20px; font-family: 'Poppins', sans-serif; font-size: 73px;color: #fff;}
+h2.tit{margin-bottom: 13px; padding: 0 20px; overflow: hidden; opacity: 0; animation: fadeIn 1.6s forwards;}
+h2.tit > span{display: block; font-family: 'Poppins', sans-serif; font-size: 76px; line-height: 80px; color: #fff; transform-origin: 50% 50%; transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5); animation:skewUp 0.8s forwards}
 
 .overflow-h{overflow: hidden;}
-/* .normal-tab-wrap{} */
 .normal-tab-wrap .normal-tab{position: relative; overflow: hidden; overflow-x: auto; -ms-overflow-style: none; opacity: 0; animation: fadeIn 0.2s ease-in-out forwards; animation-delay: 0.8s;}
-/* .normal-tab-wrap .normal-tab::after {content: ''; display: block; position: absolute; height: 100%; left: 0; right: 0; top: 0; background: #000; animation: wrap-ani 0.4s ease-in forwards; animation-delay: 0.8s;} */
 .normal-tab-wrap .normal-tab::-webkit-scrollbar{display:none;}
 .normal-tab-wrap .normal-tab ul{display: flex; flex-direction: row; box-sizing: border-box; min-width: 100%; padding: 0 20px; float: left;}
 .normal-tab-wrap .normal-tab ul li{flex: 1 1 auto; text-align: center;}
 .normal-tab-wrap .normal-tab ul li + li{margin-left: 24px;}
 .normal-tab-wrap .normal-tab ul li a{position: relative; font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 25px; color: #fff; white-space: nowrap; display: block;}
-/* .normal-tab-wrap .normal-tab ul li a.active{} */
 .normal-tab-wrap .normal-tab ul li a.active:before {opacity: 1;color: #ffffff;width: 100%;position: absolute;bottom: 0;display: block;height: 2px;content: "";background-color: #fff;}
 .normal-tab-wrap .normal-tab ul li a:before,
 .normal-tab-wrap .normal-tab ul li a:after {position: absolute;-webkit-transition: all 0.35s ease;transition: all 0.35s ease;}
@@ -321,6 +319,14 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .contents-pagination ul .prev{width: 24px; height: 24px; background: url(../images/common/news_arrow_prev.svg) no-repeat center 100%;}
 .contents-pagination ul .next{width: 24px; height: 24px; background: url(../images/common/news_arrow_next.svg) no-repeat center 100%;}
 
+.contents-pagination.type2{text-align: center;}
+.contents-pagination.type2 a {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #555;
+}
+
 .information{margin-top: 35px; padding: 0 20px; letter-spacing: -1px; opacity: 0; animation: fadeIn 0.2s ease-in-out forwards; animation-delay: 0.8s;}
 .information+.information{margin-top: 44px;}
 .information dl{display: table;}
@@ -352,10 +358,6 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 /* works - list */
 .works .normal-tab-wrap{margin-top: -5px;}
 .works-list-wrap{position: relative; margin-top: 40px; opacity: 0; animation: fadeIn 0.4s ease-in-out forwards; animation-delay: 1s;}
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
 .works-list-wrap .normal-list{padding: 0 20px;}
 .works-list-wrap .normal-list > ul{display: flex; flex-wrap: wrap; flex: 0 0 auto;}
 .works-list-wrap .normal-list > ul > li{margin-bottom: 60px; flex: 0 0 auto; width: 100%; box-sizing: border-box;}
@@ -393,3 +395,31 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .works-view-wrap .view-cont .cont-img{width: 100%;}
 .works-view-wrap .view-cont .cont-img > img{display:block; width: 100%;}
 .works-view-wrap .view-cont .cont-img > img + img{margin-top: 20px;}
+
+/* partners */
+.partners-list-wrap{margin-top: 40px;margin-left: 20px; margin-right: 20px;}
+.partners-list-wrap .normal-list{margin: 0 -35px;}
+.partners-list-wrap .normal-list > ul{}
+.partners-list-wrap .normal-list > ul > li{margin-bottom: 80px; padding: 0 35px; box-sizing: border-box;}
+.partners-list-wrap .normal-list > ul > li .partners-box{position: relative; border-top:1px solid #444;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-tit{position: absolute; left: 0; top: 30px; font-size: 14px; color: #919191;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo{padding-top: 120px; padding-bottom: 20px; text-align: right;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo1 img{width: 300px; height: 80px;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo2 img{width: 180px; height: 80px;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo3 img{width: 200px; height: 80px;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo4 img{width: 205px; height: 80px;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo5 img{width: 231px; height: 80px;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo6 img{width: 188px; height: 80px;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo7 img{width: 200px; height: 80px;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo8 img{width: 300px; height: 80px;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo9 img{width: 163px; height: 80px;}
+
+/* animation */
+@keyframes skewUp {
+  0% {transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5);}
+  100% {transform: translate(0,0);}
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}

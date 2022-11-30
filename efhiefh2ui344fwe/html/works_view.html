@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../pc/css/reset.css">
   <link rel="stylesheet" href="../pc/css/slick.css"/>
   <link rel="stylesheet" href="../pc/css/common.css">
-  <title>works</title>  
+  <title>works_view</title>  
   <script src="../pc/js/vendor/jquery-2.1.3.min.js"></script>
   <script src="../pc/js/vendor/gsap.min.js"></script>
   <script src="../pc/js/vendor/ScrollTrigger.min.js"></script>
@@ -67,20 +67,7 @@
 
         <section class="section1 works-view">
           <div class="inner">
-            <!-- <span class="section1-start"></span>
-            <div class="txt-ani">Works</div>
-            
-            <div class="normal-tab-wrap">
-              <div class="normal-tab">
-                <ul>
-                  <li><a href="#" title="ALL" class="active">ALL</a></li>
-                  <li><a href="#" title="program">program</a></li>
-                  <li><a href="#" title="story">story</a></li>
-                  <li><a href="#" title="music &amp; concert">music &amp; concert</a></li>
-                  <li><a href="#" title="character IP">character IP</a></li>
-                </ul>
-              </div>
-            </div> -->
+            <h2 class="blind">Works</h2>
 
             <div class="works-view-wrap">
               <div class="works-view-left">
@@ -126,7 +113,7 @@
               </div>
               <div class="works-view-right">
                 <div class="view-cont">
-                  <div class="cont-img">
+                  <div class="cont-img fade">
                     <img src="../pc/images/sub/works-cont-imgs01.jpg" alt="">
                     <img src="../pc/images/sub/works-cont-imgs02.jpg" alt="">
                     <img src="../pc/images/sub/works-cont-imgs03.jpg" alt="">
@@ -178,7 +165,19 @@
     <!--// footer -->
     
   </div>
-  
+  <script>
+    $('.fade').slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 2000,
+      prevArrow: $('.prev'),
+      nextArrow: $('.next')
+    });
+  </script>
 </body>
 
 </html>

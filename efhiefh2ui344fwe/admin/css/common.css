@@ -57,7 +57,7 @@ h5{font-weight: bold;margin: 10px 0;}
 .contents{padding: 65px 55px;}
 
 /* header */
-#header {position: fixed;left: 0; top: 0; width:271px; height: 100vh; background-color: #000; }
+#header {position: absolute;left: 0; top: 0; width:271px; height: 100vh; background-color: #000; }
 #header .header-inner {}
 #header .logo {margin-top:60px; margin-left: 40px;}
 #header .logo a {display:inline-block;}
@@ -269,3 +269,6 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .tabs li.active a {color: #000;font-weight: bold;}
 .tabs li a {padding: 20px;font-size: 14px;color: #222;display: block;height: 100%;/* vertical-align: middle; */text-decoration: none;color: #000}
 
+@media (max-width: 1300px) {
+    .wrap{min-width: 1278px;}
+}

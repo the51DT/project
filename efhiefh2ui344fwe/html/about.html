@@ -83,7 +83,12 @@
           <div class="inner">
             <span class="about-start03"></span>
             <h4 class="tit">Brand Identity & value</h4>
-            <div class="txt-ani04"></div>
+            <div class="txt-ani05">
+              <div class="txt-ani05-box txt-ani05-1">1</div>
+              <div class="txt-ani05-box txt-ani05-2">2</div>
+              <div class="txt-ani05-box txt-ani05-3">3</div>
+              <div class="txt-ani05-box txt-ani05-4">4</div>
+            </div>
           </div>
         </section>
         <section class="section4 about">
@@ -131,6 +136,7 @@
   let section01_text02 = document.querySelector('.txt-ani02')
   let section01_text03 = document.querySelector('.txt-ani03')
   let section01_text04 = document.querySelector('.txt-ani04')
+  let section01_text05 = document.querySelector('.txt-ani05')
   gsap.set(section01_text01, {
     opacity: 0,
     transitionDelay:0,
@@ -195,16 +201,32 @@
   gsap.from(".txt-ani04", {
     scrollTrigger: {
       trigger: ".section2.about",
-      scrub: true,
+      scrub: 3,
       pin: true,
       start: "top center",
-      end: "+=800%",
+      end: "+=400%",
       markers: true,
     },
     // scaleX: 0, 
     xPercent: (window.outerWidth / section01_text04.offsetWidth * 100),
     yPercent: -50,
     // left:100,
+    ease: "none"
+  });
+  // gsap.set(section01_text05, {
+  //   xPercent: -100,
+  // });
+  gsap.from(".txt-ani05", {
+    scrollTrigger: {
+      trigger: ".section3.about",
+      scrub: 3,
+      pin: true,
+      start: "top center",
+      end: "+=100%",
+      markers: true,
+    },
+    // scaleX: 0, 
+    xPercent: (window.outerWidth / section01_text05.offsetWidth * 100),
     ease: "none"
   });
   </script>

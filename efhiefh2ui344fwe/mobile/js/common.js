@@ -251,13 +251,7 @@ $(document).ready(function(){
   htmlFixBack();
   gsap.registerPlugin(ScrollTrigger);
 
-  let subMainAni = gsap.timeline({});
-  subMainAni.to('.txt-ani', {
-    opacity: 1
-  })
-
   // scroll motion
-  let subMainAni2 = gsap.timeline({});
   function htmlFix(){
     $('html').css('overflow-x','auto');
     // console.log('auto')
@@ -266,12 +260,6 @@ $(document).ready(function(){
     $('html').css('overflow-x','hidden');
     // console.log('hidden')
   }
-  subMainAni2.to('.txt-ani > span', {
-    delay: 0.2,
-    transform: 'translate(0,0)',
-    ease: 'ease-in-out',
-    duration: 0.8
-  })
 
   const showAnim = gsap.from('.main-tool-bar', { 
     yPercent: -100,
