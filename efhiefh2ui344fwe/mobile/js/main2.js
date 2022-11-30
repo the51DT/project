@@ -47,18 +47,6 @@ $(document).ready(function(){
       $('.section2').removeClass('fit-change')
     }
   })
-  if($(window).outerHeight() < 800) {
-    $('.section4').addClass('fit-change')
-  } else {
-    $('.section4').removeClass('fit-change')
-  }
-  $(window).on('resize', () => {
-    if($(window).outerHeight() < 800) {
-      $('.section4').addClass('fit-change')
-    } else {
-      $('.section4').removeClass('fit-change')
-    }
-  })
 
   // mask off
   let maskOff = () => {

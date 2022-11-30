@@ -111,7 +111,7 @@ h2.tit > span{display: block; font-family: 'Poppins', sans-serif; font-size: 150
 .section1 .inner{position: relative; padding-top: 200px;}
 .section1-start{position:absolute;top: 0px;}
 
-.section_1 .inner{position: relative; padding-top: 250px;}
+.section_1 .inner{position: relative; padding-top: 200px;}
 .overflow-h{overflow: hidden;}
 
 .normal-tab-wrap .normal-tab ul{display: flex;}

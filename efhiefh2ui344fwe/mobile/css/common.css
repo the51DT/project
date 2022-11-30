@@ -71,29 +71,28 @@ body{background-color: #000;}
 .gnb {}
 .gnb .gnb-list {}
 .gnb .gnb-list > li {}
-.gnb .gnb-list > li > a {position: relative; display: block; padding-top: 20px; padding-bottom: 20px; font-family: 'Poppins', sans-serif; font-size:22px; line-height:40px; color: #fff; font-weight: bold; border-bottom: 1px solid #919191;}
-.gnb .gnb-list > li > a:after {content: ""; position: absolute; right: 2px; top: 36px; width: 19px;;height: 11px;background: url(../images/common/ico_down.png) no-repeat 0 0; background-size: cover; -webkit-transition: all 0.35s ease;transition: all 0.35s ease;}
+.gnb .gnb-list > li > a {position: relative; display: block; padding-top: 10px; padding-bottom: 10px; font-family: 'Poppins', sans-serif; font-size:30px; line-height:40px; color: #fff; font-weight: bold; text-align: center;}
+/* .gnb .gnb-list > li > a:after {content: ""; position: absolute; right: 2px; top: 36px; width: 19px;;height: 11px;background: url(../images/common/ico_down.png) no-repeat 0 0; background-size: cover; -webkit-transition: all 0.35s ease;transition: all 0.35s ease;} */
 .gnb .gnb-list > li > a.nm:after {display: none;}
 .gnb .gnb-list > li > a.active {border-bottom: none}
 .gnb .gnb-list > li > a.active:after {transform: rotate( 180deg )}
 
-.gnb .gnb-list .sub-list {display: none; padding: 10px; padding-bottom: 50px; border-top: 1px solid #fff;}
-.gnb .gnb-list .active+.sub-list {}
-.gnb .gnb-list .sub-list a{margin-top: 14px; display: block; font-family: 'Poppins', sans-serif; font-size: 22px; color: #919191;}
+.gnb .gnb-list .sub-list {display: none; padding-bottom: 20px;}
+.gnb .gnb-list .active+.sub-list {margin-top: 10px;}
+.gnb .gnb-list .sub-list a{margin-top: 4px; display: block; font-family: 'Poppins', sans-serif; font-size: 30px; color: #555; text-align: center;}
+.gnb .gnb-list .sub-list li+li{margin-top: 14px;}
 
 #header .main-tool-bar.active{transition: ease 0.4s; background: #000;}
 #header .main-tool-bar.active .sub-list {}
 #header .main-tool-bar {transition: ease 0.4s;}
 #header .main-tool-bar-scrolled {background: #000;}
 
-.gnb+.lang-chioce{position: fixed; bottom:0; left: 0; padding-top: 20px; padding-bottom: 40px;background: #000; width: 100%;}
+.gnb+.lang-chioce{position: fixed; bottom:0; left: 0; padding-top: 20px; padding-bottom: 40px;background: #000; width: 100%; text-align: center;}
 .gnb+.lang-chioce ul{overflow: hidden; margin-left: 20px;}
-.gnb+.lang-chioce ul li {position: relative;float: left;font-size: 16px;color: #fff;opacity: .7;}
-.gnb+.lang-chioce ul li:first-child::before {content: " | ";position: absolute; right: -14px; top: -1px; color: #555;}
-.gnb+.lang-chioce ul li.active {opacity: 1;}
-.gnb+.lang-chioce ul li:last-child {padding-left: 20px;}
-.gnb+.lang-chioce ul li a {font-family: 'Poppins', sans-serif; font-size: 16px;color: #555;}
-.gnb+.lang-chioce ul li.active a  {color: #fff;}
+.gnb+.lang-chioce ul li {position: relative;float: left;}
+.gnb+.lang-chioce a {position: relative; margin-left: 10px; margin-right: 10px; font-family: 'Poppins', sans-serif; font-size: 20px;color: #919191;}
+.gnb+.lang-chioce a.active {color: #fff; opacity: 1;}
+.gnb+.lang-chioce a:first-child:after {overflow: hidden; content: " | ";position: absolute; right: -14px; top: 8px; height: 12px; color: #919191;}
 
 /* footer */
 .footer-inner {position: relative; padding: 50px 20px; width:100%; max-width:360px; margin:0 auto}
