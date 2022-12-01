@@ -68,7 +68,7 @@ body{background-color: #000;}
 #header .all-menu{margin-right: 20px; width: 21px; height: 21px; background: url(../images/common/menu.png) no-repeat 0 50%; background-size: contain; -webkit-transition: all 0.35s ease;transition: all 0.35s ease;}
 #header .all-menu.on{background: url(../images/common/menu_on.png) no-repeat 0 0; background-size: contain; -webkit-transition: all 0.35s ease;transition: all 0.35s ease;}
 
-.gnb {}
+.gnb {padding-bottom: 40px;}
 .gnb .gnb-list {}
 .gnb .gnb-list > li {}
 .gnb .gnb-list > li > a {position: relative; display: block; padding-top: 10px; padding-bottom: 10px; font-family: 'Poppins', sans-serif; font-size:30px; line-height:40px; color: #fff; font-weight: bold; text-align: center;}
@@ -109,7 +109,8 @@ body{background-color: #000;}
 .sns-link a{display: inline-block;width: 40px; height: 40px;}
 
 /* contents */
-.inner {padding-top: 94px; position: relative; max-width: 360px; margin: 0 auto;}
+.inner {padding-top: 94px; position: relative; margin: 0 auto;}
+/* .inner {max-width: 360px;} */
 .inner.no-padding {padding-top: 0;}
 /* .inner.type2 {padding-top: 136px;} */
 section{position: relative;}
@@ -318,7 +319,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .contents-pagination ul .prev{width: 24px; height: 24px; background: url(../images/common/news_arrow_prev.svg) no-repeat center 100%;}
 .contents-pagination ul .next{width: 24px; height: 24px; background: url(../images/common/news_arrow_next.svg) no-repeat center 100%;}
 
-.contents-pagination.type2{text-align: center;}
+.contents-pagination.type2{margin-top: 50px; text-align: center;}
 .contents-pagination.type2 a {
     display: block;
     font-family: 'Poppins', sans-serif;
@@ -369,7 +370,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .works-list-wrap .normal-list .works-sub{display: block; font-size: 16px; line-height: 22px; color: #919191; margin: 11px 0 21px; letter-spacing: -0.8px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
 .works-list-wrap .normal-list .view-more{font-family: 'Poppins', sans-serif; font-size:12px; color: #DBFC00; }
 .works-img .img-hover-box {display: none;}
-.anchor-box:hover .img-hover-box{display:block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; display: flex; align-items: center; padding: 0 60px; background-color: rgba(0,0,0,0.6);}
+.anchor-box:hover .img-hover-box{display:block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; display: flex; align-items: center; padding: 0 60px; background-color: rgba(0,0,0,0.7);}
 .works-img .img-hover-list{color: #fff; font-size: 30px; line-height: 44px; letter-spacing: -0.6px;}
 .works-img .img-hover-list > li{display: flex;}
 .works-img .img-hover-list > li + li{margin-top: 12px;}
@@ -397,12 +398,12 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 
 /* partners */
 .partners-list-wrap{margin-top: 40px;margin-left: 20px; margin-right: 20px;}
-.partners-list-wrap .normal-list{margin: 0 -35px;}
+.partners-list-wrap .normal-list{}
 .partners-list-wrap .normal-list > ul{}
-.partners-list-wrap .normal-list > ul > li{margin-bottom: 80px; padding: 0 35px; box-sizing: border-box;}
-.partners-list-wrap .normal-list > ul > li .partners-box{position: relative; border-top:1px solid #444;}
-.partners-list-wrap .normal-list > ul > li .partners-box .partners-tit{position: absolute; left: 0; top: 30px; font-size: 14px; color: #919191;}
-.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo{padding-top: 120px; padding-bottom: 20px; text-align: right;}
+.partners-list-wrap .normal-list > ul > li{padding: 0; box-sizing: border-box;}
+.partners-list-wrap .normal-list > ul > li .partners-box{position: relative; background-color: #191919;}
+.partners-list-wrap .normal-list > ul > li .partners-tit{margin-top: 12px; margin-bottom: 26px; font-size: 14px; color: #919191; text-align: center;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo{padding-top: 60px; padding-bottom: 60px; text-align: center;}
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo1 img{width: 300px; height: 80px;}
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo2 img{width: 180px; height: 80px;}
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo3 img{width: 200px; height: 80px;}

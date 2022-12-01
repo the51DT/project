@@ -226,5 +226,35 @@ $(document).ready(function(){
     },
   });
 
+  // news(press)
+  // news
+  const newsSlide = new Swiper('.news-contents-slide', {
+    navigation: {
+      nextEl: '.btn-next',
+      prevEl: '.btn-prev',
+    },
+    pagination: {
+      el: ".slide-pagination",
+      type: "fraction",
+      renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '">' + '</span><span class="' + totalClass + '">';
+      },
+    },
+  });
+
+  // works view
+  // works
+  const worksViewSwiper = new Swiper(".works-view", {
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    effect: "fade",
+    loop: true,
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev",
+    },
+  });
   
 });

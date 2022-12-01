@@ -1,6 +1,28 @@
 
 $(document).ready(function(){
-  
+  // WebFont
+  WebFont.load({
+    // For google fonts
+    google: {
+      families: ["Noto Sans KR", "Poppins"],
+    },
+  });
+
+  // gnb
+  $("#header").hover(function () {
+    $("#header").toggleClass("active");
+  });
+
+  // header
+  $(window).scroll(function () {
+    let csTop = $(document).scrollTop();
+    if (csTop > 10) {
+      $(".main-tool-bar").addClass("main-tool-bar-scrolled");
+    } else {
+      $(".main-tool-bar").removeClass("main-tool-bar-scrolled");
+    }
+  });
+
   const worksSlide = new Swiper(".works-slide", {
     slidesPerView: 'auto',
     autoplay: true,

@@ -1,5 +1,95 @@
 
 $(document).ready(function(){
+  // WebFont
+  WebFont.load({
+  
+    // For google fonts
+    google: {
+      families: ['Noto Sans KR', 'Poppins']
+      
+    }
+  });
+
+  // gnb
+  // Layer popup
+  $('.btn-gnb').click(function(){
+    let $gnbHref = $(this).attr('href');
+    let gnbLoc = $(window).scrollTop();
+    let txtAniLoc = $('.section1-start').offset();
+    // console.log(gnbLoc);
+    if(!$('.dim-layer').hasClass('menu-on')){
+      layer_gnb($gnbHref);
+    }else{
+      $('a.btn-layerClose').trigger('click');
+      $('.dim-layer').fadeOut().removeClass('menu-on');
+      $('.all-menu').removeClass('on');
+      // if(){
+        $('html').css('overflow','auto');
+      // }
+      
+      return false;
+    }
+    
+  });
+
+  function layer_gnb(el){
+
+    let $gnbEl = $(el);
+
+    $('.dim-layer').fadeIn().addClass('menu-on');
+    $('.all-menu').addClass('on');
+    $gnbEl.fadeIn();
+
+    // let $gnbElWidth = ~~($gnbEl.outerWidth()),
+    //     $gnbElHeight = ~~($gnbEl.outerHeight()),
+    //     gnbDocWidth = $(document).width(),
+    //     gnbDocHeight = $(document).height();
+
+    // if ($gnbElHeight < gnbDocHeight || $gnbElWidth < gnbDocWidth) {
+    //     $gnbEl.css({
+    //         marginTop: -$gnbElHeight /2,
+    //         marginLeft: -$gnbElWidth/2
+    //     })
+    // } else {
+    //     $gnbEl.css({top: 0, left: 0});
+    // }
+    $gnbEl.css({top: '58px', left: 0});
+    $('html').css('overflow','hidden');
+  }
+
+  $('.gnb').on('click', '.gnb-list a', function(e) {
+    
+    if(!$(this).hasClass('nm')){
+      if(!$(this).next().is(":animated")){
+        // console.log('animated');
+        if(!$(this).hasClass('active')){
+          $(this).addClass('active');
+          $(this).next().slideDown('fast');
+        }else{
+          $(this).removeClass('active');
+          $(this).next().slideUp('fast');
+        }
+      
+      }else{
+        // console.log('stop');
+      }
+    }else{
+      // e.preventDefault();
+    }
+    
+  });
+  
+  // header
+  $(window).scroll( function() {
+    let csTop = $(document).scrollTop();
+    
+    // console.log(txtAniLoc.top);
+    if(csTop > 10){
+      $('.main-tool-bar').addClass('main-tool-bar-scrolled');
+    }else{
+      $('.main-tool-bar').removeClass('main-tool-bar-scrolled');
+    }
+  });
 
   $('.btn-gnb').on('click',function(){
     if($(this).hasClass('on')){
