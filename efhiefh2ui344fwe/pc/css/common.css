@@ -454,12 +454,19 @@ h2.tit + .search-wrap {margin-top: -80px;}
 .section2.about {height:100vh;}
 .section2.about .inner{padding: 246px 0 350px; overflow: hidden; margin: 0;}
 .section2.about .txt-ani04{font-size: 180px; font-family: 'Poppins', sans-serif; color: #fff; white-space: nowrap; position: absolute; top:0; transform: translateX(0);}
-.section3.about .tit{font-size: 50px; color: #fff;}
-.section4.about .inner{padding-top: 200px}
-.section4.about .tit{font-size: 50px; color: #fff;}
+.section3.about .tit{margin: 0 0 40px 0; font-size: 50px; color: #fff; text-align: center;}
 
-.txt-ani05{display: flex;}
-.txt-ani05-box{width: 200px;height: 200px;border: 1px solid silver;flex: auto;}
+.section3.about .txt-ani05{display: flex; flex-wrap: nowrap;}
+.section3.about .txt-ani05-box{position: relative; width: calc(100% - 13px); min-width: calc(100% - 13px); height:550px; background-color:#191919 }
+.section3.about .txt-ani05-box + .txt-ani05-box{margin-left: 13px;}
+.section3.about .txt-ani05-box.box3{margin-left: 14px;}
+.section3.about .txt-ani05-box .item-tit{position: absolute; max-width:100%; top:50%; left:50%; transform: translate(-50%,-50%); color: #fff; font-family: 'Poppins', sans-serif; font-size: 40px; text-align: center; letter-spacing: -0.7px;}
+.section3.about .txt-ani05-box .item-num{position: absolute; top: 30px; left: 30px; color: #555; font-family: 'Poppins', sans-serif; font-size: 20px; line-height: 28px;}
+.section3.about .txt-ani05-box .item-des{position: absolute; right: 30px; bottom: 30px; color: #919191; font-size: 16px; line-height: 24px; letter-spacing: -0.3px;}
+
+.section4.about .inner{padding-top: 200px}
+.section4.about .tit{font-size: 50px; color: #fff}
+
 
 /* partners */
 .partners-list-wrap{padding-top: 20px;}

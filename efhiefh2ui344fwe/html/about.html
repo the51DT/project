@@ -84,10 +84,26 @@
             <span class="about-start03"></span>
             <h4 class="tit">Brand Identity & value</h4>
             <div class="txt-ani05">
-              <div class="txt-ani05-box txt-ani05-1">1</div>
-              <div class="txt-ani05-box txt-ani05-2">2</div>
-              <div class="txt-ani05-box txt-ani05-3">3</div>
-              <div class="txt-ani05-box txt-ani05-4">4</div>
+              <div class="txt-ani05-box box1 txt-ani05-1">
+                <span class="item-num">1</span>
+                <strong class="item-tit">Innovative</strong>
+                <span class="item-des">혁신적인</span>
+              </div>
+              <div class="txt-ani05-box box2 txt-ani05-2">
+                <span class="item-num">2</span>
+                <strong class="item-tit">Fun</strong>
+                <span class="item-des">재미있는</span>
+              </div>
+              <div class="txt-ani05-box box3 txt-ani05-3">
+                <span class="item-num">3</span>
+                <strong class="item-tit">Empathetic</strong>
+                <span class="item-des">공감가는</span>
+              </div>
+              <div class="txt-ani05-box box4 txt-ani05-4">
+                <span class="item-num">4</span>
+                <strong class="item-tit">Scalable</strong>
+                <span class="item-des">확장가능한</span>
+              </div>
             </div>
           </div>
         </section>
@@ -116,7 +132,7 @@
             <copy>Copyright © STUDIO X+U All rights reserved.</copy>
           </div>
           
-          <div class="custom-select" style="width:200px;">
+          <div class="custom-select" style="width:180px;">
             <select>
               <option value="0">Family site</option>
               <option value="1">site 1</option>
@@ -213,22 +229,44 @@
     // left:100,
     ease: "none"
   });
-  // gsap.set(section01_text05, {
-  //   xPercent: -100,
-  // });
-  gsap.from(".txt-ani05", {
+
+  let boxTl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".section3.about",
-      scrub: 3,
+      trigger: '.section3.about',
+      start: 'top center',
+      end: '+=200%',
+      scrub: 1,
       pin: true,
-      start: "top center",
-      end: "+=100%",
       markers: true,
-    },
-    // scaleX: 0, 
-    xPercent: (window.outerWidth / section01_text05.offsetWidth * 100),
-    ease: "none"
-  });
+    }
+  })
+  boxTl.set('.section3.about', {
+    yPercent: -50
+  })
+  boxTl.to('.txt-ani05-1', {
+    width: 'calc(25% - 10px)',
+    minWidth: 'calc(25% - 10px)',
+    ease: Power2.easeOut,
+    duration: 1
+  })
+  boxTl.to('.txt-ani05-2', {
+    width: 'calc(25% - 10px)',
+    minWidth: 'calc(25% - 10px)',
+    ease: Power2.easeOut,
+    duration: 1
+  })
+  boxTl.to('.txt-ani05-3', {
+    width: 'calc(25% - 10px)',
+    minWidth: 'calc(25% - 10px)',
+    ease: Power2.easeOut,
+    duration: 1
+  })
+  boxTl.to('.txt-ani05-4', {
+    width: 'calc(25% - 10px)',
+    minWidth: 'calc(25% - 10px)',
+    ease: Power2.easeOut,
+    duration: 1
+  })
   </script>
 </body>
 

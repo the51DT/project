@@ -42,6 +42,14 @@ $(document).ready(function(){
   //     $('.main-tool-bar').removeClass('main-tool-bar-scrolled');
   //   }
   // });
+  adminHeaderFix();
+  $(window).resize(function (){
+    adminHeaderFix()
+  });
+  function adminHeaderFix() {
+    let ConHeightFix = $('#container').height();
+    $('#header').css("min-height", ConHeightFix);
+  }
 
   // tab
   $(".tab-content").hide();
