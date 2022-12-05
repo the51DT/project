@@ -211,7 +211,14 @@ $(document).ready(function(){
     anchors: ['home', 'brand-vision', 'program', 'news', 'main-footer'],
     normalScrollElements: '.mask-area, #fp-nav, #header',
     'onLeave' : (index, nextIndex, direction) => {
+			if (direction == 'down'){
+        $('#header.main-tool-bar').css('transform','translateY(-100%)').removeClass('main-tool-bar-scrolled')
+			};
+			if (direction == 'up'){
+        $('#header.main-tool-bar').css('transform','translateY(0)').addClass('main-tool-bar-scrolled')
+			};
 			if (index == 2 && direction == 'up'){
+        $('#header.main-tool-bar').removeClass('main-tool-bar-scrolled');
         mainVideoPlay();
 			};
 		},

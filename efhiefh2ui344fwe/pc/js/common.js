@@ -244,17 +244,18 @@ $(document).ready(function(){
 
   // works view
   // works
-  const worksViewSwiper = new Swiper(".works-view", {
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    effect: "fade",
-    loop: true,
-    navigation: {
-      nextEl: ".next",
-      prevEl: ".prev",
-    },
-  });
+  // const worksViewSwiper = new Swiper(".works-view", {
+  //   autoplay: {
+  //     delay: 2500,
+  //     disableOnInteraction: false,
+  //   },
+  //   effect: "fade",
+  //   loop: true,
+  //   navigation: {
+  //     nextEl: ".next",
+  //     prevEl: ".prev",
+  //   },
+  // });
+  
   
 });

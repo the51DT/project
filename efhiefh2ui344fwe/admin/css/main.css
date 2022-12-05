@@ -22,7 +22,7 @@ button {margin:0; padding:0; background:none}
 #fp-nav ul li:hover a span,
 #fp-nav ul li a.active span {width:1.8rem!important; height:1.6rem!important; margin:0!important}
 .footer-inner {max-width:160rem}
-h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-weight:normal; line-height:12rem; opacity:1; animation:none}
+h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-weight:normal; line-height:12rem}
 
 /* loading animation */
 #header {opacity:0}
