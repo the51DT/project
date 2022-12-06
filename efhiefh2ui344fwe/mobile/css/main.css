@@ -26,18 +26,15 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:4rem; font-weig
 
 /* loading animation */
 #header {opacity:0}
-.section1 .ani-area {position:absolute; left:0; top:0; display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; height:100vh; margin:0 auto; padding:0 2rem}
-.section1 .ani-area .icon-x {width:5.6rem; height:5.6rem; background:url(../images/img-main-plus.svg) no-repeat center / contain}
-.section1 .ani-area .txt {margin-top:1.8rem; color:#fff}
-.section1 .ani-area .txt1 {transform:translateX(100%); opacity:0}
-.section1 .ani-area .txt img {display:block; height:2.8rem}
-.section1 .ani-area .txt2 {display:none}
-.section1 .ani-area .txt2-1 {display:flex; transform:translateX(100%); opacity:0}
-.section1 .ani-area .txt2-2 {margin-left:-0.3rem; transform:translateX(100%); opacity:0}
-.section1 .mask-area {position:absolute; left:0; right:0; top:0; bottom:0; background:rgba(219,252,0,0.5) url(../images/img-main-mask.svg) no-repeat center / 100% auto; opacity:0}
-.section1 .mask-area::before {content:''; display:block; position:absolute; left:0; right:0; top:0; width:100%; height:10%; background:#000}
-.section1 .mask-area::after {content:''; display:block; position:absolute; left:0; right:0; bottom:0; width:100%; height:10%; background:#000}
-.mask-area .loading-txt {position:absolute; width:24.6rem; height:3.38rem; top:calc(50% + 3.38rem); left:0; right:0; margin:0 auto; background:url(../images/img-main-mask-txt.svg) no-repeat center / contain}
+.ani-area {position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; height:auto; margin:0 auto; padding:0 2rem}
+.ani-area .icon-x {width:7rem; height:7rem; background:url(../images/img-main-plus.svg) no-repeat center / contain}
+.ani-area .ani-txts {width:100%; height:4.4rem; margin-top:2rem; overflow:hidden}
+.ani-area .txt {color:#fff; font-size:3rem; font-weight:bold; line-height:4.4rem; text-align:center}
+.ani-area .txt1 {transform:translateY(100%); opacity:0}
+.ani-area .txt2 {}
+.mask-area {position:absolute; left:0; right:0; top:0; bottom:0; opacity:0; z-index:10}
+.mask-area .mask {position:absolute; top:0; left:0; right:0; bottom:0; transform:translateY(14rem); background:rgba(219,252,0,0.5) url(../images/img-main-mask.svg) repeat-y center; background-size:100% auto}
+.mask-area.on::after {content:''; display:block; position:absolute; left:0; right:0; top:calc(50% + 7rem); width:100%; height:50%; background-color:#000}
 @keyframes rotate {
   0% {transform:rotate(0)}
   100% {transform:rotate(360deg)}
@@ -52,15 +49,15 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:4rem; font-weig
 .section1 .main-txt-area {position:absolute; top:0; left:0; right:0; bottom:0}
 .section1 .main-txt {position:absolute; top:50%; left:50%; padding-right:2.8rem; transform:translate(-50%, -50%); text-align:center; white-space:nowrap; opacity:0}
 .section1 .main-txt > .txt {position:relative; display:block; color:#fff; font-size:3.6rem; font-weight:bold; line-height:5rem}
-.section1 .main-txt > .txt::after {content:''; display:block; position:absolute; width:2rem; height:2rem; background:url(../images/img-main-plus.svg) no-repeat center / contain}
-.section1 .main-txt > .txt:first-child::after {top:1.7rem ; right:-2.8rem; background:url(../images/img-main-minus.svg) no-repeat center / contain}
+.section1 .main-txt > .txt::after {content:''; display:block; position:absolute; width:2rem; height:2rem; background:url(../images/img-main-txt-plus.svg) no-repeat center / contain}
+.section1 .main-txt > .txt:first-child::after {top:1.7rem ; right:-2.8rem; background:url(../images/img-main-txt-x.svg) no-repeat center / contain}
 .section1 .main-txt > .txt:last-child::after {top:1.5rem; right:-1rem}
 .section1 .main-txt > img {display:block; width:100%}
 
 .section2 {width:100%; max-width:36rem; margin:0 auto; padding:0 2rem}
 .section2 .section-inner {width:100%; height:100%; margin:0 auto; padding:10rem 0}
 .section2.fit-change .section-inner {padding-top:16rem}
-.vision-list-area {margin-top:2rem}
+.vision-list-area {margin-top:4.4rem}
 .section2.fit-change .vision-list-area {margin-top:4.8rem}
 .vision-list {display:flex; flex-wrap:wrap}
 .vision-list > li {position:relative; width:50%; min-height:12rem; margin:2rem 0}
@@ -70,119 +67,78 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:4rem; font-weig
 .vision-list .icon {width:8rem; height:8rem; background:none}
 .vision-list .icon > svg {display:block; width:100%; height:100%}
 /* icon1 motion */
-#main-icon1-1 {transform:translate(20px,976px); animation:icon1-1 6s ease-out infinite}
-#main-icon1-2 {transform:translate(48px,976px); animation:icon1-2 6s ease-out infinite}
-#main-icon1-3 {transform:translate(48px,1004px); animation:icon1-3 6s ease-out infinite}
-#main-icon1-4 {transform:translate(20px,1004px); animation:icon1-4 6s ease-out infinite}
-
-#main-icon2-1 {transform:translate(180px,972px); animation:icon2-1 3s ease-in-out infinite}
-#main-icon2-2 {transform:translate(205px,972px); animation:icon2-2 3s ease-in-out infinite}
-#main-icon3-1 {width:50px; transform:translate(47px,1152px) rotate(90deg); animation:icon3-1 3s ease-in-out infinite}
-#main-icon3-1-2 {width:50px; transform:translate(20px,1176px); animation:icon3-1-2 3s ease-in-out infinite}
-#main-icon3-2 {width:0; transform:translate(47px,1178px) rotate(135deg); animation:icon3-2 3s ease-in-out infinite}
-#main-icon3-2-2 {width:0; transform:translate(46px,1176px) rotate(45deg); animation:icon3-2-2 3s ease-in-out infinite}
+#main-icon1 {filter:blur(0); animation:icon1 6s ease-out infinite}
+#main-icon2-1 {width:60px; transform:translate(996px,1672px) rotate(90deg); animation:icon2-1 3s ease-in-out infinite}
+#main-icon2-1-2 {width:60px; transform:translate(964px,1700px); animation:icon2-1-2 3s ease-in-out infinite}
+#main-icon2-2 {width:0; transform:translate(1016.256px,1681.828px) rotate(135deg); animation:icon2-2 3s ease-in-out infinite}
+#main-icon2-2-2 {width:0; transform:translate(994.828px,1700px) rotate(45deg); animation:icon2-2-2 3s ease-in-out infinite}
+#main-icon3-1 {transform:translate(173px,1699px); animation:icon3-1 3s ease-in-out infinite}
+#main-icon3-2 {transform:translate(203px,1699px); animation:icon3-2 3s ease-in-out infinite}
 #main-icon4 {transform:rotate(0); animation:icon4 6s ease-in-out infinite}
-@keyframes icon1-1 {
-  0% {transform:translate(20px,976px)}
-  20% {transform:translate(20px,976px)}
-  25% {transform:translate(48px,976px)}
-  45% {transform:translate(48px,976px)}
-  50% {transform:translate(48px,1004px)}
-  70% {transform:translate(48px,1004px)}
-  75% {transform:translate(20px,1004px)}
-  95% {transform:translate(20px,1004px)}
-  100% {transform:translate(20px,976px)}
-}
-@keyframes icon1-2 {
-  0% {transform:translate(48px,976px)}
-  20% {transform:translate(48px,976px)}
-  25% {transform:translate(48px,1004px)}
-  45% {transform:translate(48px,1004px)}
-  50% {transform:translate(20px,1004px)}
-  70% {transform:translate(20px,1004px)}
-  75% {transform:translate(20px,976px)}
-  95% {transform:translate(20px,976px)}
-  100% {transform:translate(48px,976px)}
-}
-@keyframes icon1-3 {
-  0% {transform:translate(48px,1004px)}
-  20% {transform:translate(48px,1004px)}
-  25% {transform:translate(20px,1004px)}
-  45% {transform:translate(20px,1004px)}
-  50% {transform:translate(20px,976px)}
-  70% {transform:translate(20px,976px)}
-  75% {transform:translate(48px,976px)}
-  95% {transform:translate(48px,976px)}
-  100% {transform:translate(48px,1004px)}
-}
-@keyframes icon1-4 {
-  0% {transform:translate(20px,1004px)}
-  20% {transform:translate(20px,1004px)}
-  25% {transform:translate(20px,976px)}
-  45% {transform:translate(20px,976px)}
-  50% {transform:translate(48px,976px)}
-  70% {transform:translate(48px,976px)}
-  75% {transform:translate(48px,1004px)}
-  95% {transform:translate(48px,1004px)}
-  100% {transform:translate(20px,1004px)}
-}
-@keyframes icon2-1 {
-  0% {transform:translate(180px,972px)}
-  25% {transform:translate(180px,972px)}
-  50% {transform:translate(205px,972px)}
-  75% {transform:translate(205px,972px)}
-  100% {transform:translate(180px,972px)}
-}
-@keyframes icon2-2 {
-  0% {transform:translate(205px,972px)}
-  25% {transform:translate(205px,972px)}
-  50% {transform:translate(180px,972px)}
-  75% {transform:translate(180px,972px)}
-  100% {transform:translate(205px,972px)}
+@keyframes icon1 {
+  0% {filter:blur(0)}
+  25% {filter:blur(3px)}
+  50% {filter:blur(6px)}
+  75% {filter:blur(3px)}
+  0% {filter:blur(0)}
 }
 @keyframes icon3-1 {
-  0% {width:50px; transform:translate(47px,1152px) rotate(90deg)}
-  15% {width:50px; transform:translate(47px,1152px) rotate(90deg)}
-  25% {width:0; transform:translate(47px,1177px) rotate(90deg)}
-  35% {width:0; transform:translate(47px,1177px) rotate(90deg)}
-  45% {width:0; transform:translate(47px,1177px) rotate(90deg)}
-  65% {width:0; transform:translate(47px,1177px) rotate(90deg)}
-  75% {width:0; transform:translate(47px,1177px) rotate(90deg)}
-  80% {width:50px; transform:translate(47px,1152px) rotate(90deg)}
-  100% {width:50px; transform:translate(47px,1152px) rotate(90deg)}
-}
-@keyframes icon3-1-2 {
-  0% {width:50px; transform:translate(20px,1176px)}
-  15% {width:50px; transform:translate(20px,1176px)}
-  25% {width:0; transform:translate(45px,1176px)}
-  35% {width:0; transform:translate(45px,1176px)}
-  45% {width:0; transform:translate(45px,1176px)}
-  65% {width:0; transform:translate(45px,1176px)}
-  80% {width:0; transform:translate(45px,1176px)}
-  85% {width:50px; transform:translate(20px,1176px)}
-  100% {width:50px; transform:translate(20px,1176px)}
+  0% {transform:translate(173px,1699px)}
+  25% {transform:translate(173px,1699px)}
+  50% {transform:translate(203px,1699px)}
+  75% {transform:translate(203px,1699px)}
+  100% {transform:translate(173px,1699px)}
 }
 @keyframes icon3-2 {
-  0% {width:0; transform:translate(47px,1178px) rotate(135deg)}
-  15% {width:0; transform:translate(47px,1178px) rotate(135deg)}
-  25% {width:0; transform:translate(47px,1178px) rotate(135deg)}
-  30% {width:50px; transform:translate(64px,1161px) rotate(135deg)}
-  45% {width:50px; transform:translate(64px,1161px) rotate(135deg)}
-  60% {width:50px; transform:translate(64px,1161px) rotate(135deg)}
-  65% {width:0; transform:translate(47px,1178px) rotate(135deg)}
-  90% {width:0; transform:translate(47px,1178px) rotate(135deg)}
-  100% {width:0; transform:translate(47px,1178px) rotate(135deg)}
+  0% {transform:translate(203px,1699px)}
+  25% {transform:translate(203px,1699px)}
+  50% {transform:translate(173px,1699px)}
+  75% {transform:translate(173px,1699px)}
+  100% {transform:translate(203px,1699px)}
 }
-@keyframes icon3-2-2 {
-  0% {width:0; transform:translate(46px,1176px) rotate(45deg)}
-  15% {width:0; transform:translate(46px,1176px) rotate(45deg)}
-  30% {width:0; transform:translate(46px,1176px) rotate(45deg)}
-  35% {width:50px; transform:translate(29px,1159px) rotate(45deg)}
-  45% {width:50px; transform:translate(29px,1159px) rotate(45deg)}
-  60% {width:50px; transform:translate(29px,1159px) rotate(45deg)}
-  65% {width:0; transform:translate(46px,1176px) rotate(45deg)}
-  90% {width:0; transform:translate(46px,1176px) rotate(45deg)}
-  100% {width:0; transform:translate(46px,1176px) rotate(45deg)}
+@keyframes icon2-1 {
+  0% {width:60px; transform:translate(996px,1672px) rotate(90deg)}
+  15% {width:60px; transform:translate(996px,1672px) rotate(90deg)}
+  25% {width:0; transform:translate(996px,1702px) rotate(90deg)}
+  35% {width:0; transform:translate(996px,1702px) rotate(90deg)}
+  45% {width:0; transform:translate(996px,1702px) rotate(90deg)}
+  65% {width:0; transform:translate(996px,1702px) rotate(90deg)}
+  75% {width:0; transform:translate(996px,1702px) rotate(90deg)}
+  80% {width:60px; transform:translate(996px,1672px) rotate(90deg)}
+  100% {width:60px; transform:translate(996px,1672px) rotate(90deg)}
+}
+@keyframes icon2-1-2 {
+  0% {width:60px; transform:translate(964px,1700px)}
+  15% {width:60px; transform:translate(964px,1700px)}
+  25% {width:0; transform:translate(993px,1700px)}
+  35% {width:0; transform:translate(993px,1700px)}
+  45% {width:0; transform:translate(993px,1700px)}
+  65% {width:0; transform:translate(993px,1700px)}
+  80% {width:0; transform:translate(993px,1700px)}
+  85% {width:60px; transform:translate(964px,1700px)}
+  100% {width:60px; transform:translate(964px,1700px)}
+}
+@keyframes icon2-2 {
+  0% {width:0; transform:translate(996.256px,1702.828px) rotate(135deg)}
+  15% {width:0; transform:translate(996.256px,1702.828px) rotate(135deg)}
+  25% {width:0; transform:translate(996.256px,1702.828px) rotate(135deg)}
+  30% {width:60px; transform:translate(1016.256px,1681.828px) rotate(135deg)}
+  45% {width:60px; transform:translate(1016.256px,1681.828px) rotate(135deg)}
+  60% {width:60px; transform:translate(1016.256px,1681.828px) rotate(135deg)}
+  65% {width:0; transform:translate(996.256px,1702.828px) rotate(135deg)}
+  90% {width:0; transform:translate(996.256px,1702.828px) rotate(135deg)}
+  100% {width:0; transform:translate(996.256px,1702.828px) rotate(135deg)}
+}
+@keyframes icon2-2-2 {
+  0% {width:0; transform:translate(994.828px,1700px) rotate(45deg)}
+  15% {width:0; transform:translate(994.828px,1700px) rotate(45deg)}
+  30% {width:0; transform:translate(994.828px,1700px) rotate(45deg)}
+  35% {width:60px; transform:translate(973.828px,1679px) rotate(45deg)}
+  45% {width:60px; transform:translate(973.828px,1679px) rotate(45deg)}
+  60% {width:60px; transform:translate(973.828px,1679px) rotate(45deg)}
+  65% {width:0; transform:translate(994.828px,1700px) rotate(45deg)}
+  90% {width:0; transform:translate(994.828px,1700px) rotate(45deg)}
+  100% {width:0; transform:translate(994.828px,1700px) rotate(45deg)}
 }
 @keyframes icon4 {
   0% {transform:rotate(0)}
@@ -196,8 +152,9 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:4rem; font-weig
   100% {transform:rotate(360deg)}
 }
 
-.vision-list .list-tit {display:block; margin-top:1.5rem; color:#fff; font-family:'Poppins', sans-serif; font-size:2rem; font-weight:bold; line-height:3rem}
-.vision-list .list-txt {margin-top:0.6rem; color:#919191; font-size:1.4rem; font-weight:normal; line-height:2.2rem}
+.vision-list .list-tit {display:block; margin-top:2rem; color:#fff; font-family:'Poppins', sans-serif; font-size:2rem; font-weight:bold; line-height:3rem}
+.vision-list .list-tit > strong {color:#DBFC00; font-weight:bold}
+.vision-list .list-txt {margin-top:0.8rem; color:#fff; font-size:1.2rem; font-weight:normal; line-height:2.2rem; letter-spacing:-0.1rem; word-break:keep-all}
 
 .section3 .program-slide {position:relative; width:100%; height:100%; margin:0 auto}
 .program-slide .program-item-wrap {position:relative; width:100%; height:100%}

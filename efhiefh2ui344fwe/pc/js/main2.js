@@ -16,7 +16,7 @@ $(document).ready(function(){
   // header
   $(window).scroll(function () {
     let csTop = $(document).scrollTop();
-    console.log(csTop);
+    // console.log(csTop);
     if (csTop > 10) {
       $(".main-tool-bar").addClass("main-tool-bar-scrolled");
     } else {
@@ -185,7 +185,7 @@ $(document).ready(function(){
     autoplay: true,
     slidesPerView: 'auto',
     loop: true,
-    centeredSlides: true,
+    // centeredSlides: true,
   });
 
   gsap.registerPlugin(ScrollTrigger);
@@ -233,6 +233,22 @@ $(document).ready(function(){
     ease: 'ease-in',
     duration: 0.5
   },'start3')
+
+  let tl3 = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.section3-trigger',
+      start: 'center center',
+      end: '100% center',
+      scrub: 1,
+      // markers: true
+    }
+  })
+  tl3.to('.section4 .tit-area', {
+    opacity: 1,
+    paddingLeft: '16rem',
+    ease: Power2.easeOut,
+    duration: 1
+  })
 
 });
 

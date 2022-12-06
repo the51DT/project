@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="770" height="970" viewBox="0 0 770 970">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_92" data-name="사각형 92" width="770" height="970" transform="translate(885)" fill="#fff" opacity="0.57"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_91" data-name="사각형 91" width="1920.111" height="970" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_1" data-name="마스크 그룹 1" transform="translate(-885)" clip-path="url(#clip-path)">
+    <g id="mask">
+      <g id="그룹_108" data-name="그룹 108" clip-path="url(#clip-path-2)">
+        <path id="패스_22" data-name="패스 22" d="M0,970H1920.111V0H0ZM1071.455,604.883,1018.9,539.5l-52.555,65.38H908.869l81.295-101.127L908.869,402.629h57.476l52.555,65.38,52.555-65.38h57.476l-81.294,101.127,81.294,101.127Zm269.078-75.507h-82.485v78.253h-47.8V529.376h-82.483v-47.8h82.483V403.326h47.8v78.253h82.485Zm239.578,44.839a32.4,32.4,0,0,1-32.359,32.359H1408.764a32.4,32.4,0,0,1-32.361-32.359V402.268h47.8V558.774h108.11V402.268h47.8Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

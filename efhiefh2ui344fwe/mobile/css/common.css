@@ -82,10 +82,10 @@ body{background-color: #000;}
 .gnb .gnb-list .sub-list a{margin-top: 4px; display: block; font-family: 'Poppins', sans-serif; font-size: 30px; color: #555; text-align: center;}
 .gnb .gnb-list .sub-list li+li{margin-top: 14px;}
 
-#header .main-tool-bar.active{transition: ease 0.4s; background: #000;}
-#header .main-tool-bar.active .sub-list {}
-#header .main-tool-bar {transition: ease 0.4s;}
-#header .main-tool-bar-scrolled {background: #000;}
+#header.main-tool-bar.active{transition: ease 0.4s; background: #000;}
+#header.main-tool-bar.active .sub-list {}
+#header.main-tool-bar {transition: ease 0.4s;}
+#header.main-tool-bar-scrolled {background: #000;}
 
 .gnb+.lang-chioce{position: fixed; bottom:0; left: 0; padding-top: 20px; padding-bottom: 40px;background: #000; width: 100%; text-align: center;}
 .gnb+.lang-chioce ul{overflow: hidden; margin-left: 20px;}
@@ -241,7 +241,7 @@ select::-ms-expand {display: none;}
 .pop-layer p.ctxt {color: #666;line-height: 25px;}
 .pop-layer .btn-r {width: 100%;margin: 10px 0 20px;padding-top: 10px;border-top: 1px solid #DDD;text-align: right;}
 .pop-layer {display: none;position: absolute;top: 50%;left: 50%;width: 100%;height: auto;background-color: #fff;border: 1px solid #ddd;z-index: 10;box-shadow: 5px 5px 10px grey;}
-.dim-layer {display: none;position: fixed;_position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 100;box-shadow: 20px 20px 50px grey;}
+.dim-layer {display: none;position: fixed;_position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 100;}
 .dim-layer .dimBg {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #000;opacity: .5;filter: alpha(opacity=50);}
 .dim-layer .pop-layer {display: block;}
 a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1px solid #ddd;background-color: #ddd;font-size: 13px;color: #000;line-height: 25px;}
@@ -310,6 +310,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .ver-recruit .news-title-wrap .experience{position: absolute; right: 20px; bottom: 28px; font-size: 12px; color: #DBFC00; font-weight: bold;}
 
 .news-contents-box{padding: 40px 0; border-bottom: 1px solid #444444; font-size: 14px; color: #fff; letter-spacing: -1px; line-height: 24px; opacity: 0; animation: fadeIn 0.4s ease-in-out forwards; animation-delay: 1s;}
+.news-contents-box a {color: #fff;}
 .contents-img{margin-bottom: 36px;}
 .contents-img img{width: 100%;}
 .contents-pagination{margin: 40px 0 80px; padding: 0 20px;}

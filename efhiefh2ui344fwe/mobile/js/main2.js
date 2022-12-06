@@ -78,26 +78,6 @@ $(document).ready(function(){
     }
     
   });
-  
-  // header
-  $(window).scroll( function() {
-    let csTop = $(document).scrollTop();
-    
-    // console.log(txtAniLoc.top);
-    if(csTop > 10){
-      $('.main-tool-bar').addClass('main-tool-bar-scrolled');
-    }else{
-      $('.main-tool-bar').removeClass('main-tool-bar-scrolled');
-    }
-  });
-
-  $('.btn-gnb').on('click',function(){
-    if($(this).hasClass('on')){
-      $(this).closest('#header').css('background','#000')
-    } else {
-      $(this).closest('#header').css('background','transparent')
-    }
-  })
 
   //Custom Select
   var x, i, j, l, ll, selElmnt, a, b, c;
@@ -248,7 +228,7 @@ $(document).ready(function(){
   const partnersSlide = new Swiper(".partners-slide", {
     autoplay: true,
     slidesPerView: 'auto',
-    spaceBetween: 40,
+    spaceBetween: 30,
     loop: true,
     centeredSlides: true,
   });
@@ -291,12 +271,18 @@ $(document).ready(function(){
   };
 
   function mainVideoPlay() {
-    $('.main-video').get(0).currentTime = 0;
-    $('.main-video').get(0).play();
+    $('.main-video').load();
+    setTimeout(function(){
+      $('.main-video').get(0).currentTime = 0;
+      $('.main-video').get(0).play();
+    },0);
   };
   function bannerVideoPlay() {
-    $('.banner-video').get(0).currentTime = 0;
-    $('.banner-video').get(0).play();
+    $('.banner-video').load();
+    setTimeout(function(){
+      $('.banner-video').get(0).currentTime = 0;
+      $('.banner-video').get(0).play();
+    },0);
   };
 
   /*-- fullpage --*/
@@ -309,10 +295,21 @@ $(document).ready(function(){
     // anchors: ['home', 'works', 'introduce', 'partners', 'main-footer'],
     normalScrollElements: '.svg-container',
     'onLeave' : (index, nextIndex, direction) => {
+      if (direction == 'down'){
+        $('#header.main-tool-bar').css('transform','translateY(-100%)').removeClass('main-tool-bar-scrolled')
+			};
+			if (direction == 'up'){
+        $('#header.main-tool-bar').css('transform','translateY(0)').addClass('main-tool-bar-scrolled')
+			};
       if (index == 2 && direction == 'up'){
+        $('#header.main-tool-bar').removeClass('main-tool-bar-scrolled');
         mainVideoPlay();
       };
-      if (index == 3 && direction == 'up'){
+      if (index == 1){
+        $('#header.main-tool-bar').removeClass('main-tool-bar-scrolled');
+        mainVideoPlay();
+			};
+      if (index == 4 && direction == 'up'){
         bannerVideoPlay();
       };
       if (index == 2 && direction == 'down'){
