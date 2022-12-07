@@ -17,8 +17,14 @@ $(document).ready(function(){
     let txtAniLoc = $('.section1-start').offset();
     // console.log(gnbLoc);
     if(!$('.dim-layer').hasClass('menu-on')){
+      $('body').on('scroll touchmove mousewheel', (event) => {                    
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+      });
       layer_gnb($gnbHref);
     }else{
+      $('body').off('scroll touchmove mousewheel');
       $('a.btn-layerClose').trigger('click');
       $('.dim-layer').fadeOut().removeClass('menu-on');
       $('.all-menu').removeClass('on');
@@ -254,8 +260,11 @@ $(document).ready(function(){
   };
   function slidePlay() {
     slideVideoPlay();
-    let videoRunTime = document.querySelector('.swiper-slide-active .slide-video').duration; 
-    $('.progress-bar').addClass('active').children('span').css('animation', 'coolTime linear ' + videoRunTime +'s');
+    let slideVideo = document.querySelector('.swiper-slide-active .slide-video');
+    slideVideo.addEventListener('loadedmetadata',function(){
+      let videoRunTime = slideVideo.duration;
+      $('.progress-bar').addClass('active').children('span').css('animation','coolTime linear ' + videoRunTime + 's');
+    })
   };
   function resetProgress() {
     $('.progress-bar').removeClass('active').children('span').removeAttr('style');

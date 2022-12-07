@@ -75,7 +75,7 @@
             </div>
 
             <div class="basic-table-wrap mt100">
-
+              <h2 class="tit">국문</h2>
               <table class="notice-table view-type">
                 <caption></caption>
                 <colgroup>
@@ -84,7 +84,7 @@
                 </colgroup>
                 <tbody>
                   <tr>
-                    <td class="nv-title">카테고리</td>
+                    <td class="nv-title"><span class="essential">카테고리</span></td>
                     <td class="nv-cont form-type">
                       <select name="category" class="select" style="width:300px;">
                         <option disabled selected>PROGRAM</option>
@@ -94,9 +94,32 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title">제목</td>
+                    <td class="nv-title">고정여부</td>
+                    <td class="nv-cont form-type">
+                      <div class="screen-pin-area">
+                        <p class="check-type1 type2">
+                          <label for="screenPinHome">
+                            <input type="checkbox" name="screenPin" id="screenPinHome">
+                            <span class="nv-title">메인화면 노출</span>
+                          </label>
+                          <label for="screenPinList">
+                            <input type="checkbox" name="screenPin" id="screenPinList">
+                            <span class="nv-title">리스트 고정</span>
+                          </label>
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title"><span class="essential">제목</span></td>
                     <td class="nv-cont form-type">
                       <input type="text" title="제목" value="술꾼도시여자들" placeholder="제목을 입력해주세요" style="width: 500px;">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title">장르</td>
+                    <td class="nv-cont form-type">
+                      <input type="text" title="장르" value="드라마" placeholder="장르를 입력해주세요" style="width: 500px;">
                     </td>
                   </tr>
                   <tr>
@@ -106,95 +129,249 @@
                     </td>
                   </tr>
                   <tr class="sub-tit-row">
-                    <td class="nv-cont form-type" colspan="2">
-                      <div class="sub-form-type2">
-                        <input type="text" title="항목값1 제목" value="연출" placeholder="항목을 입력해주세요" style="width: 200px;">
-                        <span class="sub-tit-type2">*항목값</span>
-                      </div>
-                      <input type="text" title="항목값1 내용" value="홍길동" placeholder="내용을 입력해주세요" style="width: 850px;">
-                    </td>
-                  </tr>
-                  <tr class="sub-tit-row">
-                    <td class="nv-cont form-type" colspan="2">
-                      <div class="sub-form-type2">
-                        <input type="text" title="항목값2 제목" value="극본" placeholder="항목을 입력해주세요" style="width: 200px;">
-                        <span class="sub-tit-type2">*항목값</span>
-                      </div>
-                      <input type="text" title="항목값2 내용" value="홍길동" placeholder="내용을 입력해주세요" style="width: 850px;">
-                    </td>
-                  </tr>
-                  <tr class="sub-tit-row">
-                    <td class="nv-cont form-type" colspan="2">
-                      <div class="sub-form-type2">
-                        <input type="text" title="항목값3 제목" value="프로듀서" placeholder="항목을 입력해주세요" style="width: 200px;">
-                        <span class="sub-tit-type2">*항목값</span>
-                      </div>
-                      <input type="text" title="항목값3 내용" value="홍길동" placeholder="내용을 입력해주세요" style="width: 850px;">
-                    </td>
-                  </tr>
-                  <tr class="sub-tit-row">
-                    <td class="nv-cont form-type" colspan="2">
-                      <div class="sub-form-type2">
-                        <input type="text" title="항목값4 제목" value="출연" placeholder="항목을 입력해주세요" style="width: 200px;">
-                        <span class="sub-tit-type2">*항목값</span>
-                      </div>
-                      <input type="text" title="항목값4 내용" value="홍길동" placeholder="내용을 입력해주세요" style="width: 850px;">
-                    </td>
-                  </tr>
-                  <tr class="sub-tit-row">
-                    <td class="nv-cont form-type" colspan="2">
-                      <div class="sub-form-type2">
-                        <input type="text" title="항목값5 제목" value="채널정보" placeholder="항목을 입력해주세요" style="width: 200px;">
-                        <span class="sub-tit-type2">*항목값</span>
-                      </div>
-                      <input type="text" title="항목값5 내용" value="홍길동" placeholder="내용을 입력해주세요" style="width: 850px;">
-                    </td>
-                  </tr>
-                  <tr class="sub-tit-row">
-                    <td class="nv-cont form-type" colspan="2">
-                      <div class="sub-form-type2">
-                        <input type="text" title="항목값6 제목" value="공동제작사" placeholder="항목을 입력해주세요" style="width: 200px;">
-                        <span class="sub-tit-type2">*항목값</span>
-                      </div>
-                      <input type="text" title="항목값6 내용" value="홍길동" placeholder="내용을 입력해주세요" style="width: 850px;">
-                    </td>
-                  </tr>
-                  <tr class="sub-tit-row">
-                    <td class="nv-cont form-type" colspan="2">
-                      <div class="sub-form-type2">
-                        <input type="text" title="항목값7 제목" value="방영기간" placeholder="항목을 입력해주세요" style="width: 200px;">
-                        <span class="sub-tit-type2">*항목값</span>
-                      </div>
-                      <input type="text" title="항목값7 내용" value="홍길동" placeholder="내용을 입력해주세요" style="width: 850px;">
-                    </td>
-                  </tr>
-                  <tr class="sub-tit-row">
-                    <td class="nv-cont form-type" colspan="2">
-                      <div class="sub-form-type2">
-                        <input type="text" title="항목값8 제목" value="" placeholder="항목을 입력해주세요" style="width: 200px;">
-                        <span class="sub-tit-type2">*항목값</span>
-                      </div>
-                      <input type="text" title="항목값8 내용" value="홍길동" placeholder="내용을 입력해주세요" style="width: 850px;">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="nv-title">메인 이미지</td>
+                    <td class="nv-title">상세</td>
                     <td class="nv-cont form-type">
-                      <div class="filebox">
-                        <input type="text" class="upload-name" title="메인 이미지" value="메인 포스터(국내).png" style="width: 500px;">
-                        <label for="file" class="btns">찾아보기</label> 
-                        <input type="file" id="file">
-                    </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값1</span>
+                          <input type="text" title="항목값1 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용1</span>
+                          <input type="text" title="항목값1 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값2</span>
+                          <input type="text" title="항목값2 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용2</span>
+                          <input type="text" title="항목값2 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값3</span>
+                          <input type="text" title="항목값3 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용3</span>
+                          <input type="text" title="항목값3 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값4</span>
+                          <input type="text" title="항목값4 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용4</span>
+                          <input type="text" title="항목값4 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값5</span>
+                          <input type="text" title="항목값5 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용5</span>
+                          <input type="text" title="항목값5 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값6</span>
+                          <input type="text" title="항목값6 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용6</span>
+                          <input type="text" title="항목값6 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값7</span>
+                          <input type="text" title="항목값7 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용7</span>
+                          <input type="text" title="항목값7 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값8</span>
+                          <input type="text" title="항목값8 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용8</span>
+                          <input type="text" title="항목값8 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title">상세 이미지</td>
+                    <td class="nv-title"><span class="essential">상세 이미지</span></td>
                     <td class="nv-cont form-type">
                       <div class="filebox">
                         <input type="text" class="upload-name" title="상세 이미지" value="상세 이미지1.png" style="width: 500px;">
                         <label for="file" class="btns">찾아보기</label> 
                         <input type="file" id="file">
-                    </div>
+                        <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
+                        <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
+                      </div>
+                      <div class="filebox">
+                        <input type="text" class="upload-name" title="상세 이미지" value="상세 이미지1.png" style="width: 500px;">
+                        <label for="file" class="btns">찾아보기</label> 
+                        <input type="file" id="file">
+                        <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
+                        <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
+                      </div>
+                      <div class="filebox">
+                        <input type="text" class="upload-name" title="상세 이미지" value="상세 이미지1.png" style="width: 500px;">
+                        <label for="file" class="btns">찾아보기</label> 
+                        <input type="file" id="file">
+                        <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
+                        <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title">YOUTUBE URL</td>
+                    <td class="nv-cont form-type">
+                      <input type="text" title="YOUTUBE URL" value="www.youtube.com/sdf2fsa" style="width: 500px;">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="pagination-wrap btn-type">
+                <div class="btn-wrap align-r">
+                  <a href="#" class="btns">목록</a>
+                  <a href="#" class="btns type2">등록</a>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="basic-table-wrap mt100">
+              <h2 class="tit">영문</h2>
+              <table class="notice-table view-type">
+                <caption></caption>
+                <colgroup>
+                  <col class="col-wid16">
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="nv-title"><span class="essential">카테고리</span></td>
+                    <td class="nv-cont form-type">
+                      <select name="category" class="select" style="width:300px;">
+                        <option disabled selected>PROGRAM</option>
+                        <option value="MUSIC &amp; CONCERT">MUSIC &amp; CONCERT</option>
+                        <option value="CHARACTER">CHARACTER</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title">고정여부</td>
+                    <td class="nv-cont form-type">
+                      <div class="screen-pin-area">
+                        <p class="check-type1 type2">
+                          <label for="screenPinHome">
+                            <input type="checkbox" name="screenPin" id="screenPinHome">
+                            <span class="nv-title">메인화면 노출</span>
+                          </label>
+                          <label for="screenPinList">
+                            <input type="checkbox" name="screenPin" id="screenPinList">
+                            <span class="nv-title">리스트 고정</span>
+                          </label>
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title"><span class="essential">제목</span></td>
+                    <td class="nv-cont form-type">
+                      <input type="text" title="제목" value="술꾼도시여자들" placeholder="제목을 입력해주세요" style="width: 500px;">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title">장르</td>
+                    <td class="nv-cont form-type">
+                      <input type="text" title="장르" value="드라마" placeholder="장르를 입력해주세요" style="width: 500px;">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title">설명</td>
+                    <td class="nv-cont form-type">
+                      <input type="text" title="설명" value="'나중에 일하고 지금 마셔 '는 인생의 신념이 하루를 마감하는 한 잔인 세 여자의 이야기를 담고 있다." placeholder="설명을 입력해주세요" style="width: 960px;">
+                    </td>
+                  </tr>
+                  <tr class="sub-tit-row">
+                    <td class="nv-title">상세</td>
+                    <td class="nv-cont form-type">
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값1</span>
+                          <input type="text" title="항목값1 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용1</span>
+                          <input type="text" title="항목값1 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값2</span>
+                          <input type="text" title="항목값2 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용2</span>
+                          <input type="text" title="항목값2 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값3</span>
+                          <input type="text" title="항목값3 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용3</span>
+                          <input type="text" title="항목값3 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값4</span>
+                          <input type="text" title="항목값4 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용4</span>
+                          <input type="text" title="항목값4 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값5</span>
+                          <input type="text" title="항목값5 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용5</span>
+                          <input type="text" title="항목값5 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값6</span>
+                          <input type="text" title="항목값6 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용6</span>
+                          <input type="text" title="항목값6 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값7</span>
+                          <input type="text" title="항목값7 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용7</span>
+                          <input type="text" title="항목값7 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                      
+                        <div class="sub-form-type2">
+                          <span class="sub-tit-type2">항목값8</span>
+                          <input type="text" title="항목값8 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
+                          <span class="sub-tit-type2">내용8</span>
+                          <input type="text" title="항목값8 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title"><span class="essential">상세 이미지</span></td>
+                    <td class="nv-cont form-type">
+                      <div class="filebox">
+                        <input type="text" class="upload-name" title="상세 이미지" value="상세 이미지1.png" style="width: 500px;">
+                        <label for="file" class="btns">찾아보기</label> 
+                        <input type="file" id="file">
+                        <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
+                        <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
+                      </div>
+                      <div class="filebox">
+                        <input type="text" class="upload-name" title="상세 이미지" value="상세 이미지1.png" style="width: 500px;">
+                        <label for="file" class="btns">찾아보기</label> 
+                        <input type="file" id="file">
+                        <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
+                        <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
+                      </div>
+                      <div class="filebox">
+                        <input type="text" class="upload-name" title="상세 이미지" value="상세 이미지1.png" style="width: 500px;">
+                        <label for="file" class="btns">찾아보기</label> 
+                        <input type="file" id="file">
+                        <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
+                        <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
+                      </div>
                     </td>
                   </tr>
                   <tr>

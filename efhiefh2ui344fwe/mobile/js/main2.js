@@ -18,8 +18,14 @@ $(document).ready(function(){
     let txtAniLoc = $('.section1-start').offset();
     // console.log(gnbLoc);
     if(!$('.dim-layer').hasClass('menu-on')){
+      $('body').on('scroll touchmove mousewheel', (event) => {                    
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+      });
       layer_gnb($gnbHref);
     }else{
+      $('body').off('scroll touchmove mousewheel');
       $('a.btn-layerClose').trigger('click');
       $('.dim-layer').fadeOut().removeClass('menu-on');
       $('.all-menu').removeClass('on');
