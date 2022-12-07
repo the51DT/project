@@ -26,7 +26,7 @@ button {margin:0; padding:0; background:none}
 h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-weight:normal; line-height:12rem}
 
 /* loading animation */
-#header {opacity:0}
+#header {opacity:0; z-index:-1}
 .intro {position:absolute; left:0; right:0; top:0; height:200vh; min-height:2578px; z-index:100}
 .ani-area {position:absolute; left:50%; top:0; width:100%; max-width:47.6rem; height:100vh; margin:0 auto; transform:translateX(-50%); z-index:11}
 .ani-area .ani-txts {position:absolute; width:100%; height:7rem; top:50%; transform:translateY(-50%); overflow:hidden}

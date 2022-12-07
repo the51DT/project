@@ -74,8 +74,10 @@
               <p><strong>김엘지</strong>님, 안녕하세요! <button type="button" class="btns logout">로그아웃</button></p>
             </div>
 
+            <!-- 국문 -->
             <div class="basic-table-wrap mt100">
 
+              <h2 class="tit">국문</h2>
               <table class="notice-table view-type">
                 <caption></caption>
                 <colgroup>
@@ -83,6 +85,36 @@
                   <col>
                 </colgroup>
                 <tbody>
+                  <tr>
+                    <td class="nv-title">고정 여부</td>
+                    <td class="nv-cont form-type">
+                      <div class="screen-pin-area">
+                        <p class="check-type1 type2">
+                          <label for="screenPinHome">
+                            <input type="checkbox" name="screenPin" id="screenPinHome">
+                            <span class="nv-title">메인화면 노출</span>
+                          </label>
+                          <label for="screenPinList">
+                            <input type="checkbox" name="screenPin" id="screenPinList">
+                            <span class="nv-title">리스트 고정</span>
+                          </label>
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title">날짜</td>
+                    <td class="nv-cont form-type">
+                      <input type="date" title="날짜" placeholder="YYYY-MM-DD" style="width: 240px;">
+                      <p class="check-type1 type3">
+                        <label for="postingDate">
+                          <input type="checkbox" name="screenPin" id="postingDate">
+                          <span class="nv-title">예약게시일</span>
+                        </label>
+                      </p>
+                      <input disabled type="date" title="날짜" placeholder="YYYY-MM-DD" style="width: 240px;">
+                    </td>
+                  </tr>
                   <tr>
                     <td class="nv-title">제목</td>
                     <td class="nv-cont form-type">
@@ -96,13 +128,126 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title">이미지</td>
+                    <td class="nv-title">사진</td>
                     <td class="nv-cont form-type">
                       <div class="filebox">
                         <input type="text" class="upload-name" title="이미지" value="" placeholder="이미지를 추가해주세요" style="width: 500px;">
                         <label for="file" class="btns">찾아보기</label> 
                         <input type="file" id="file">
+                        <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
+                        <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
                         <span class="files-text">※ 파일 형식이 맞지 않아 업로드 할 수 없습니다.</span>
+                        <input type="text" class="upload-des" title="이미지" value="" placeholder="이미지 설명을 작성해주세요" style="width: 960px;">
+                      </div>
+                      <div class="filebox">
+                        <input type="text" class="upload-name" title="이미지" value="" placeholder="이미지를 추가해주세요" style="width: 500px;">
+                        <label for="file" class="btns">찾아보기</label> 
+                        <input type="file" id="file">
+                        <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
+                        <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
+                        <span class="files-text">※ 파일 형식이 맞지 않아 업로드 할 수 없습니다.</span>
+                        <input type="text" class="upload-des" title="이미지" value="" placeholder="이미지 설명을 작성해주세요" style="width: 960px;">
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="pagination-wrap btn-type">
+                <div class="pagination">
+                  <a href="#"><img src="../admin/images/common/n_prev2.png" alt="처음으로"></a>
+                  <a href="#"><img src="../admin/images/common/n_prev.png" alt="이전"></a>
+                  
+                  <a href="#">1</a>
+                  <a class="active" href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">6</a>
+                  <a href="#"><img src="../admin/images/common/n_next.png" alt="다음"></a>
+                  <a href="#"><img src="../admin/images/common/n_next2.png" alt="마지막으로"></a>
+                </div>
+                <div class="btn-wrap align-r">
+                  <a href="#" class="btns">목록</a>
+                  <a href="#" class="btns type2">등록</a>
+                </div>
+              </div>
+              
+            </div>
+
+            <!-- 영문 -->
+            <div class="basic-table-wrap mt100">
+              
+              <h2 class="tit">영문</h2>
+              <table class="notice-table view-type">
+                <caption></caption>
+                <colgroup>
+                  <col class="col-wid10">
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td class="nv-title">고정 여부</td>
+                    <td class="nv-cont form-type">
+                      <div class="screen-pin-area">
+                        <p class="check-type1 type2">
+                          <label for="screenPinHome">
+                            <input type="checkbox" name="screenPin" id="screenPinHome">
+                            <span class="nv-title">메인화면 노출</span>
+                          </label>
+                          <label for="screenPinList">
+                            <input type="checkbox" name="screenPin" id="screenPinList">
+                            <span class="nv-title">리스트 고정</span>
+                          </label>
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title">날짜</td>
+                    <td class="nv-cont form-type">
+                      <input type="date" title="날짜" placeholder="YYYY-MM-DD" style="width: 240px;">
+                      <p class="check-type1 type3">
+                        <label for="postingDate">
+                          <input type="checkbox" name="screenPin" id="postingDate">
+                          <span class="nv-title">예약게시일</span>
+                        </label>
+                      </p>
+                      <input disabled type="date" title="날짜" placeholder="YYYY-MM-DD" style="width: 240px;">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title">제목</td>
+                    <td class="nv-cont form-type">
+                      <input type="text" title="제목" placeholder="제목을 입력해주세요" style="width: 960px;">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title">내용</td>
+                    <td class="nv-cont form-type">
+                      <textarea name="textArea" placeholder="내용을 입력해주세요" style="width: 960px;"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title">사진</td>
+                    <td class="nv-cont form-type">
+                      <div class="filebox">
+                        <input type="text" class="upload-name" title="이미지" value="" placeholder="이미지를 추가해주세요" style="width: 500px;">
+                        <label for="file" class="btns">찾아보기</label> 
+                        <input type="file" id="file">
+                        <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
+                        <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
+                        <span class="files-text">※ 파일 형식이 맞지 않아 업로드 할 수 없습니다.</span>
+                        <input type="text" class="upload-des" title="이미지" value="" placeholder="이미지 설명을 작성해주세요" style="width: 960px;">
+                      </div>
+                      <div class="filebox">
+                        <input type="text" class="upload-name" title="이미지" value="" placeholder="이미지를 추가해주세요" style="width: 500px;">
+                        <label for="file" class="btns">찾아보기</label> 
+                        <input type="file" id="file">
+                        <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
+                        <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
+                        <span class="files-text">※ 파일 형식이 맞지 않아 업로드 할 수 없습니다.</span>
+                        <input type="text" class="upload-des" title="이미지" value="" placeholder="이미지 설명을 작성해주세요" style="width: 960px;">
                       </div>
                     </td>
                   </tr>

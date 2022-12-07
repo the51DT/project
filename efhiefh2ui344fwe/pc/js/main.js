@@ -161,8 +161,11 @@ $(document).ready(function(){
   };
   function slidePlay() {
     slideVideoPlay();
-    let videoRunTime = document.querySelector('.swiper-slide-active .slide-video').duration; 
-    $('.progress-bar').addClass('active').children('span').css('animation', 'coolTime linear ' + videoRunTime +'s');
+    let slideVideo = document.querySelector('.swiper-slide-active .slide-video');
+    slideVideo.addEventListener('loadedmetadata',function(){
+      let videoRunTime = slideVideo.duration;
+      $('.progress-bar').addClass('active').children('span').css('animation','coolTime linear ' + videoRunTime + 's');
+    })
   };
   function resetProgress() {
     $('.progress-bar').removeClass('active').children('span').removeAttr('style');
@@ -224,11 +227,28 @@ $(document).ready(function(){
   // loading animation
   gsap.registerPlugin(ScrollTrigger);
 
-  $('body, .mask-area, #fp-nav, #header').on('scroll touchmove mousewheel', (event) => {                    
-    event.preventDefault();
-    event.stopPropagation();
+  let body = document.querySelector('body');
+
+  function preventDefault(e){
+    e.preventDefault();
+    e.stopPropagation();
     return false;
-  });
+  }
+  function disableScroll() {
+    body.addEventListener('mousewheel', preventDefault, {passive: false});
+    body.addEventListener('DOMMouseScroll', preventDefault, {passive: false});
+  }
+  function enableScroll() {
+    body.removeEventListener('mousewheel', preventDefault, {passive: false});
+    body.removeEventListener('DOMMouseScroll', preventDefault, {passive: false});
+  }
+  disableScroll();
+
+  // $('body, .mask-area, #fp-nav, #header').on('scroll touchmove mousewheel', (event) => {                    
+  //   event.preventDefault();
+  //   event.stopPropagation();
+  //   return false;
+  // });
 
   let tl = gsap.timeline({});
   tl.add('start0'),
@@ -293,7 +313,8 @@ $(document).ready(function(){
     duration: 0.3,
     onComplete: function(){
       $('.bg-area').fadeIn();
-      $('body, .mask-area, #fp-nav, #header').off('scroll touchmove mousewheel');
+      // $('body').off('scroll touchmove mousewheel DOMMouseScroll');
+      enableScroll();
       $('.ani-area').hide();
       $('.mask-area').css({'opacity':'1'})
       $('html').css({'overflow-y':'scroll'});
@@ -301,6 +322,10 @@ $(document).ready(function(){
       $('.mask-area').removeClass('on');
       mainVideoPlay();
     }
+  },'start3')
+  tl.to('#header', {
+    zIndex: 1000,
+    duration: 0.1,
   },'start3')
   
 
