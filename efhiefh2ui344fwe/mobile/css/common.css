@@ -397,6 +397,10 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .works-view-wrap .view-cont .cont-img > img{display:block; width: 100%;}
 .works-view-wrap .view-cont .cont-img > img + img{margin-top: 20px;}
 
+.works-view-wrap .contents-youtube {position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 20px;}
+.works-view-wrap .contents-youtube iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+
 /* partners */
 .partners-list-wrap{margin-top: 40px;margin-left: 20px; margin-right: 20px;}
 .partners-list-wrap .normal-list{}
