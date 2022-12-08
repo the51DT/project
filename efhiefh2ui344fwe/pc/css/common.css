@@ -454,7 +454,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .works-view-right img {width: 100%;}
 
 .works-view .contents-youtube {text-align: center;}
-.works-view .contents-pagination {position: relative; margin-top: 80px;}
+.works-view .contents-pagination {margin-top: 80px;}
 .works-view .contents-pagination:before {content: ""; display: block; margin-bottom: 40px; border-top: 1px solid #444;}
 
 .section1.about{padding-top: 0;}
