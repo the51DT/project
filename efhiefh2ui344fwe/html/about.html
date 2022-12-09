@@ -66,22 +66,64 @@
       <main class="contents">
 
         <section class="section1 about">
+          <div class="bg"></div>
           <div class="inner">
+            <h2 class="motion-tit">
+              <span>About</span>
+            </h2>
             
-          </div>
-        </section>
-        <section class="section2 about">
-          <div class="inner">
-            
-          </div>
-        </section>
-        <section class="section3 about aniBox">
-          <div class="inner">
-            <span class="about-start03"></span>
-            <h4 class="tit">Brand Identity & value</h4>
-            <div class="sec3-ani">
+            <h3 class="blind">STUDIO X+U</h3>
 
-              <div class="sec3-ani-box box1">
+            <div class="sec1-txt-area">
+              <p class="txt1">
+                STUDIO X+U는 새로운 콘텐츠 창작으로 <br>
+                고객에게 차별화된 <br>
+                즐거움과 경험을 선사합니다
+              </p>
+
+              <p class="txt2">
+                재미있고(Fun), 누구나 공감 가고 (Empathetic), <br>
+                혁신적이며(Innovative), 확장 가능한(Scalable) 콘텐츠를 <br>
+                기획, 제작하여 고객들이 보는 즐거움에서 나아가 <br>
+                몰입, 참여, 재상산의 즐거움을 이어가고, <br>
+                창의적인 IP와 기술로 새로운 팬덤 창출을 돕고 <br>
+                팬덤을 기반으로 함께 성장합니다. <br>
+                <br>
+                STUDIO X+U는 내재화 된 콘텐츠 기획/제작 역량을 바탕으로 <br>
+                국내외 파트너사와 함께 전세계로 뻗어 나가 <br>
+                새로운 문화를 주도해 나갈 것입니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section2 about aniBox">
+          <div class="inner">
+            <div class="sec2-top-area">
+              <h3 class="tit">Brand Identity</h3>
+              <div class="txt-wrap">
+                <p class="txt">
+                  모두가 찾는 미지의 <strong>X</strong><br>
+                  <br>
+                  보지 못했던 형식과 소재, <br>
+                  새로운 콘텐츠 경험을 선보이기 위해 <br>
+                  <br>
+                  STUDIO X+U는 고객들의 콘텐츠 경험 안에서 추구하는 <br>
+                  새로운 <strong>X</strong>를 계속해서 찾아가고 있습니다.<br>
+                  <br>
+                  즐거움을 배가하고 새로움을 더하다.
+                </p>
+  
+                <div class="logo">
+                  <img src="../pc/images/sub/img-about-bi.svg" alt="STUDIO X+U">
+                </div>
+
+              </div>
+            </div>
+
+            <div class="sec2-ani-area">
+              
+              <div class="sec2-ani-box box1">
                 <span class="item-num">1</span>
                 <strong class="item-tit">Fun</strong>
                 <span class="item-des">전 세계 고객들이 즐길 수 있는<br> <strong>재미있는</strong> 콘텐츠를 만듭니다</span>
@@ -96,7 +138,7 @@
                 </div>
               </div>
 
-              <div class="sec3-ani-box box2">
+              <div class="sec2-ani-box box2">
                 <span class="item-num">2</span>
                 <strong class="item-tit">Innovative</strong>
                 <span class="item-des">Tech-driven을 기반으로<br> <strong>혁신적인</strong> 콘텐츠를 제작합니다</span>
@@ -116,7 +158,7 @@
                 </div>
               </div>
 
-              <div class="sec3-ani-box box3">
+              <div class="sec2-ani-box box3">
                 <span class="item-num">3</span>
                 <strong class="item-tit">Empathetic</strong>
                 <span class="item-des">다양한 취향 속, 모두가<br> <strong>공감할 수 있는</strong> 콘텐츠를 추구합니다</span>
@@ -139,7 +181,7 @@
                 </div>
               </div>
 
-              <div class="sec3-ani-box box4">
+              <div class="sec2-ani-box box4">
                 <span class="item-num">4</span>
                 <strong class="item-tit">Scalable</strong>
                 <span class="item-des"><strong>확장 가능한 IP</strong>로 다양한 형태로<br> 다양한 플랫폼에서 콘텐츠를 만날 수 있습니다</span>
@@ -164,10 +206,24 @@
             </div>
           </div>
         </section>
-        <section class="section4 about">
+        <section class="section3 about">
           <div class="inner">
-            <span class="about-start04"></span>
-            <h4 class="tit">Corporate Identity</h4>
+            <h3 class="tit">Corporate Identity</h3>
+
+            <div class="sec3-ci-area">
+              <div class="logo-wrap">
+                <div class="logo logo1">
+                  <img src="../pc/images/sub/img-about-ci-logo1.svg" alt="X+U STUDIO">
+                </div>
+                <div class="logo logo2">
+                  <img src="../pc/images/sub/img-about-ci-logo2.svg" alt="STUDIO X+U">
+                </div>
+              </div>
+              <div class="btn-wrap">
+                <button type="button" class="btn-down"><span>CI</span> 다운로드</button>
+                <button type="button" class="btn-down">브랜드 가이드 다운로드</button>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -206,72 +262,69 @@
   <script>
     let boxTl = gsap.timeline({
       scrollTrigger: {
-        trigger: '.section3.about',
-        start: 'top center',
-        end: '+=300%',
+        trigger: '.section2.about',
+        start: 'center top',
+        end: '+=200%',
         scrub: 1,
         pin: true,
-        markers: true
+        // markers: true
       }
     })
-    boxTl.set('.section3.about', {
-      // yPercent: -50
-    })
-    boxTl.to('.sec3-ani-box.box1', {
+    boxTl.to('.sec2-ani-box.box1', {
       width: 'calc(25% - 10px)',
       minWidth: 'calc(25% - 10px)',
       ease: Power2.easeOut,
       duration: 1,
       onComplete: function(){
-        $('.sec3-ani-box.box1').addClass('on');
+        $('.sec2-ani-box.box1').addClass('on');
       }
     })
     boxTl.to('.box1 .item-tit, .box1 .item-des, .box1 .motions', {
       opacity: 1,
       duration: 0.1
     })
-    boxTl.to('.sec3-ani-box.box2', {
+    boxTl.to('.sec2-ani-box.box2', {
       width: 'calc(25% - 10px)',
       minWidth: 'calc(25% - 10px)',
       ease: Power2.easeOut,
       duration: 1,
       onComplete: function(){
-        $('.sec3-ani-box.box2').addClass('on');
+        $('.sec2-ani-box.box2').addClass('on');
       }
     })
     boxTl.to('.box2 .item-tit, .box2 .item-des, .box2 .motions', {
       opacity: 1,
       duration: 0.1
     })
-    boxTl.to('.sec3-ani-box.box3', {
+    boxTl.to('.sec2-ani-box.box3', {
       width: 'calc(25% - 10px)',
       minWidth: 'calc(25% - 10px)',
       ease: Power2.easeOut,
       duration: 1,
       onComplete: function(){
-        $('.sec3-ani-box.box3').addClass('on');
+        $('.sec2-ani-box.box3').addClass('on');
       }
     })
     boxTl.to('.box3 .item-tit, .box3 .item-des, .box3 .motions', {
       opacity: 1,
       duration: 0.1
     })
-    boxTl.to('.sec3-ani-box.box4', {
+    boxTl.to('.sec2-ani-box.box4', {
       width: 'calc(25% - 10px)',
       minWidth: 'calc(25% - 10px)',
       ease: Power2.easeOut,
       duration: 1,
       onComplete: function(){
-        $('.sec3-ani-box.box4').addClass('on');
+        $('.sec2-ani-box.box4').addClass('on');
       }
     })
     boxTl.to('.box4 .item-tit, .box4 .item-des, .box4 .motions', {
       opacity: 1,
-      duration: 0.1,
-      // onComplete: function(){
-      //   $('.sec3-ani-box').removeClass('on');
-      // }
+      duration: 0.1
     })
+    // boxTl.to('.sec2-ani-box.box4', {
+    //   duration: 1
+    // })
     
   </script>
 </body>
