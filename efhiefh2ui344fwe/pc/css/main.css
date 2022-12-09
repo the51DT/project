@@ -99,7 +99,7 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-wei
   25% {filter:blur(3px)}
   50% {filter:blur(6px)}
   75% {filter:blur(3px)}
-  0% {filter:blur(0)}
+  100% {filter:blur(0)}
 }
 @keyframes icon3-1 {
   0% {transform:translate(173px,1699px)}
