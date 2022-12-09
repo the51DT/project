@@ -674,6 +674,10 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
         box-sizing: border-box;
         padding: 0 83px;
     }
+    #main.contents,
+    .contents.main {
+        padding: 0;
+    }
     .footer-inner {
         box-sizing: border-box;
         padding-left: 83px;
