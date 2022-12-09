@@ -648,7 +648,6 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
         background-size: cover;
     }
 }
-
 @media (max-width: 1239px) {
     #header .gnb-list > li {
         min-width: 150px;
@@ -666,5 +665,25 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     .wrap,
     #footer{
         min-width: 942px;
+    }
+}
+
+/* 1366px design */
+@media (max-width: 1366px) {
+    .contents {
+        box-sizing: border-box;
+        padding: 0 83px;
+    }
+    .footer-inner {
+        box-sizing: border-box;
+        padding-left: 83px;
+        padding-right: 83px;
+    }
+    .footer-inner .footer-conts .custom-select {
+        right: 83px;
+        
+    }
+    .footer-inner .footer-conts .sns-footer {
+        right: 83px;
     }
 }
