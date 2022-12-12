@@ -250,124 +250,126 @@ $(window).on('load', function(){
   //   return false;
   // });
 
-  let tl = gsap.timeline({});
-  tl.add('start0'),
-  tl.to('.txt1', {
-    y: 0,
-    opacity: 1,
-    ease: 'ease-in',
-    duration: 0.4
-  })
-  tl.to('.icon-x', {
-    delay: 0.3,
-    width: '7rem',
-    height: '7rem',
-    rotation: 45,
-    y: '-50%',
-    ease: 'ease-in-out',
-    duration: 0.2
-  },'start0')
-  tl.to('.txt1', {
-    delay: 0.3,
-    y: '-100%',
-    opacity: 0,
-    ease: 'ease-out',
-    duration: 0.3
-  })
-  .add('start1'),
-  tl.to('.txt2', {
-    delay: '-0.3',
-    y: '-100%',
-    opacity: 1,
-    ease: 'ease-in',
-    duration: 0.3
-  },'start1')
-  tl.to('.icon-x', {
-    delay: '-0.3',
-    rotation: 90,
-    ease: 'ease-in-out',
-    duration: 0.3,
-    onComplete: function(){
-      $('.mask-area').addClass('on');
-    }
-  },'start1')
-  tl.to('.ani-txts', {
-    delay: 0.3,
-    y: '-100%',
-    opacity: 0,
-    ease: 'ease-in',
-    duration: 0.3
-  })
-  .add('start2'),
-  tl.to('.mask-area, .mask-area .mask, .loading-txt', {
-    delay: '-0.3',
-    opacity: 1,
-    y: 0,
-    ease: 'ease-in',
-    duration: 0.3,
-  },'start2')
-  .add('start3'),
-  tl.to('.mask-area, #header, .lang-chioce', {
-    opacity: 1,
-    ease: 'ease-in',
-    duration: 0.3,
-    onComplete: function(){
-      $('.bg-area').fadeIn();
-      // $('body').off('scroll touchmove mousewheel DOMMouseScroll');
-      enableScroll();
-      $('.ani-area').hide();
-      $('.mask-area').css({'opacity':'1'})
-      $('html').css({'overflow-y':'scroll'});
-      $('#container').css({'position':'fixed'});
-      $('.mask-area').removeClass('on');
-      mainVideoPlay();
-    }
-  },'start3')
-  tl.to('#header', {
-    zIndex: 1000,
-    duration: 0.1,
-  },'start3')
-  
+  setTimeout(function(){
+    let tl = gsap.timeline({});
+    tl.add('start0'),
+    tl.to('.txt1', {
+      y: 0,
+      opacity: 1,
+      ease: 'ease-in',
+      duration: 0.4
+    })
+    tl.to('.icon-x', {
+      // delay: 0.3,
+      width: '7rem',
+      height: '7rem',
+      rotation: 45,
+      y: '-50%',
+      ease: 'ease-in-out',
+      duration: 0.2
+    },'start0')
+    tl.to('.txt1', {
+      delay: 0.3,
+      y: '-100%',
+      opacity: 0,
+      ease: 'ease-out',
+      duration: 0.3
+    })
+    .add('start1'),
+    tl.to('.txt2', {
+      delay: '-0.3',
+      y: '-100%',
+      opacity: 1,
+      ease: 'ease-in',
+      duration: 0.3
+    },'start1')
+    tl.to('.icon-x', {
+      delay: '-0.3',
+      rotation: 90,
+      ease: 'ease-in-out',
+      duration: 0.3,
+      onComplete: function(){
+        $('.mask-area').addClass('on');
+      }
+    },'start1')
+    tl.to('.ani-txts', {
+      delay: 0.3,
+      y: '-100%',
+      opacity: 0,
+      ease: 'ease-in',
+      duration: 0.3
+    })
+    .add('start2'),
+    tl.to('.mask-area, .mask-area .mask, .loading-txt', {
+      delay: '-0.3',
+      opacity: 1,
+      y: 0,
+      ease: 'ease-in',
+      duration: 0.3,
+    },'start2')
+    .add('start3'),
+    tl.to('.mask-area, #header, .lang-chioce', {
+      opacity: 1,
+      ease: 'ease-in',
+      duration: 0.3,
+      onComplete: function(){
+        $('.bg-area').fadeIn();
+        // $('body').off('scroll touchmove mousewheel DOMMouseScroll');
+        enableScroll();
+        $('.ani-area').hide();
+        $('.mask-area').css({'opacity':'1'})
+        $('html').css({'overflow-y':'scroll'});
+        $('#container').css({'position':'fixed'});
+        $('.mask-area').removeClass('on');
+        mainVideoPlay();
+      }
+    },'start3')
+    tl.to('#header', {
+      zIndex: 1000,
+      duration: 0.1,
+    },'start3')
+    
 
-  // scroll motion
-  let tl2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: '.intro',
-      start: 'top top',
-      end: '+=100%',
-      scrub: 1,
-      // markers: true
-    }
-  })
-  tl2.to('.loading-txt', {
-    opacity: 0,
-    // ease: Power2.easeOut,
-    duration: 0.1
-  })
-  tl2.to('.mask-area .mask', {
-    scale: 2.4,
-    transition: 'all 0.2s',
-    x: '-35%',
-    ease: Power4.easeOut,
-    duration: 0.5
-  })
-  tl2.to('.mask-area', {
-    scale: 16,
-    ease: Power4.easeOut,
-    transition: 'all 0.2s',
-    duration: 0.2,
-    onComplete: function(){
-      $('.main-txt, .arrow-down, #fp-nav').css({'opacity':'1','transition':'all 0.2s'});
-    }
-  })
-  tl2.to('.mask-area', {
-    opacity: 0,
-    ease: Power4.easeOut,
-    duration: 0.1,
-    onComplete: function(){
-      $('.intro').hide();
-    }
-  })
+    // scroll motion
+    let tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.intro',
+        start: 'top top',
+        end: '+=100%',
+        scrub: 1,
+        // markers: true
+      }
+    })
+    tl2.to('.loading-txt', {
+      opacity: 0,
+      // ease: Power2.easeOut,
+      duration: 0.1
+    })
+    tl2.to('.mask-area .mask', {
+      scale: 2.4,
+      transition: 'all 0.2s',
+      x: '-35%',
+      ease: Power4.easeOut,
+      duration: 0.5
+    })
+    tl2.to('.mask-area', {
+      scale: 16,
+      ease: Power4.easeOut,
+      transition: 'all 0.2s',
+      duration: 0.2,
+      onComplete: function(){
+        $('.main-txt, .arrow-down, #fp-nav').css({'opacity':'1','transition':'all 0.2s'});
+      }
+    })
+    tl2.to('.mask-area', {
+      opacity: 0,
+      ease: Power4.easeOut,
+      duration: 0.1,
+      onComplete: function(){
+        $('.intro').hide();
+      }
+    })
+  },1000)
 
   $('.arrow-down > a').on('click', (e) => {
     e.preventDefault();

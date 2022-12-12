@@ -27,7 +27,7 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:4rem; font-weig
 /* loading animation */
 #header {opacity:0}
 .ani-area {position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; height:auto; margin:0 auto; padding:0 2rem}
-.ani-area .icon-x {width:7rem; height:7rem; background:url(../images/img-main-plus.svg) no-repeat center / contain}
+.ani-area .icon-x {width:7rem; height:7rem; background:url(../images/img-main-plus.svg) no-repeat center / contain; opacity:0}
 .ani-area .ani-txts {width:100%; height:4.4rem; margin-top:2rem; overflow:hidden}
 .ani-area .txt {color:#fff; font-size:3rem; font-weight:bold; line-height:4.4rem; text-align:center}
 .ani-area .txt1 {transform:translateY(100%); opacity:0}

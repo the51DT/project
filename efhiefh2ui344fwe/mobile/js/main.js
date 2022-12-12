@@ -344,74 +344,77 @@ $(window).on('load', function(){
     return false;
   });
 
-  let tl = gsap.timeline({});
-  tl.add('start0'),
-  tl.to('.txt1', {
-    y: 0,
-    opacity: 1,
-    ease: 'ease-in',
-    duration: 0.4
-  })
-  tl.to('.icon-x', {
-    delay: 0.3,
-    width: '7rem',
-    height: '7rem',
-    rotation: 45,
-    ease: 'ease-in-out',
-    duration: 0.2
-  },'start0')
-  tl.to('.txt1', {
-    delay: 0.3,
-    y: '-100%',
-    opacity: 0,
-    ease: 'ease-out',
-    duration: 0.3
-  })
-  .add('start1'),
-  tl.to('.txt2', {
-    delay: '-0.3',
-    y: '-100%',
-    opacity: 1,
-    ease: 'ease-in',
-    duration: 0.3
-  },'start1')
-  tl.to('.icon-x', {
-    delay: '-0.3',
-    rotation: 90,
-    ease: 'ease-in-out',
-    duration: 0.3,
-    onComplete: function(){
-      $('.mask-area').addClass('on');
-    }
-  },'start1')
-  tl.to('.ani-area', {
-    delay: 0.3,
-    y: '-100%',
-    opacity: 0,
-    ease: 'ease-in',
-    duration: 0.3
-  })
-  .add('start2'),
-  tl.to('.mask-area, .mask-area .mask, .loading-txt', {
-    delay: '-0.3',
-    opacity: 1,
-    y: 0,
-    ease: 'ease-in',
-    duration: 0.3,
-  },'start2')
-  .add('start3'),
-  tl.to('.mask-area, #header', {
-    opacity: 1,
-    ease: 'ease-in',
-    duration: 0.8,
-    onComplete: function(){
-      $('.bg-area').fadeIn();
-      $('body').off('scroll touchmove mousewheel');
-      $('.ani-area').hide();
-      maskOff();
-      mainVideoPlay();
-    }
-  },'start3');
+  setTimeout(function(){
+    let tl = gsap.timeline({});
+    tl.add('start0'),
+    tl.to('.txt1', {
+      y: 0,
+      opacity: 1,
+      ease: 'ease-in',
+      duration: 0.4
+    })
+    tl.to('.icon-x', {
+      delay: 0.3,
+      opacity: 1,
+      width: '7rem',
+      height: '7rem',
+      rotation: 45,
+      ease: 'ease-in-out',
+      duration: 0.2
+    },'start0')
+    tl.to('.txt1', {
+      delay: 0.3,
+      y: '-100%',
+      opacity: 0,
+      ease: 'ease-out',
+      duration: 0.3
+    })
+    .add('start1'),
+    tl.to('.txt2', {
+      delay: '-0.3',
+      y: '-100%',
+      opacity: 1,
+      ease: 'ease-in',
+      duration: 0.3
+    },'start1')
+    tl.to('.icon-x', {
+      delay: '-0.3',
+      rotation: 90,
+      ease: 'ease-in-out',
+      duration: 0.3,
+      onComplete: function(){
+        $('.mask-area').addClass('on');
+      }
+    },'start1')
+    tl.to('.ani-area', {
+      delay: 0.3,
+      y: '-100%',
+      opacity: 0,
+      ease: 'ease-in',
+      duration: 0.3
+    })
+    .add('start2'),
+    tl.to('.mask-area, .mask-area .mask, .loading-txt', {
+      delay: '-0.3',
+      opacity: 1,
+      y: 0,
+      ease: 'ease-in',
+      duration: 0.3,
+    },'start2')
+    .add('start3'),
+    tl.to('.mask-area, #header', {
+      opacity: 1,
+      ease: 'ease-in',
+      duration: 0.8,
+      onComplete: function(){
+        $('.bg-area').fadeIn();
+        $('body').off('scroll touchmove mousewheel');
+        $('.ani-area').hide();
+        maskOff();
+        mainVideoPlay();
+      }
+    },'start3');
+  },1000)
   
   // news-list-slide
   const swiper2 = new Swiper('.news-list-slide', {
