@@ -258,10 +258,10 @@
   </div>
   <script>
     $(window).scroll(function() {
-      let wHeight = $(window).outerHeight() / 2;
+      let wHeight = $(window).outerHeight();
       let wTop = $(window).scrollTop() + wHeight;
-      let sec3Height = $('.section3').outerHeight() / 2;
-      let sec3Top = $('.section3').position().top + sec3Height;
+      // let sec3Height = $('.section3').outerHeight() / 2;
+      let sec3Top = $('.section3').position().top + 387;
 
       if(wTop > sec3Top) {
         let boxTl = gsap.timeline({
