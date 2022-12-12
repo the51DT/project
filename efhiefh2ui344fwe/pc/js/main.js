@@ -136,7 +136,7 @@ $(window).on('load', function(){
   /*-- section3 --*/
   // program-slide
   const swiper = new Swiper('.program-slide', {
-    // loop: true,
+    loop: true,
     touchRatio: 0,
     navigation: {
       nextEl: '.btn-next',
