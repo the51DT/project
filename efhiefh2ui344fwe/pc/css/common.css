@@ -477,6 +477,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section3.about{margin-top:317px}
 .section3.about .sec3-ani-area{display: flex; flex-wrap: nowrap; align-items: center; margin-top: 43px;}
 .section3.about .sec3-ani-box{position: relative; width: calc(100% - 13px); min-width: calc(100% - 13px); height:550px; background-color:#191919 }
+.section3.about .sec3-ani-box.box1{width: calc(25% - 10px); min-width: 390px;}
 .section3.about .sec3-ani-box + .sec3-ani-box{margin-left: 13px;}
 .section3.about .sec3-ani-box.box3{margin-left: 14px;}
 .section3.about .sec3-ani-box .item-num{position: absolute; top: 30px; left: 30px; color: #555; font-family: 'Poppins', sans-serif; font-size: 20px; line-height: 28px}
