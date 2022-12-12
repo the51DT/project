@@ -257,71 +257,82 @@
 
   </div>
   <script>
-    let boxTl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.section3.about',
-        start: 'center center',
-        end: '+=200%',
-        scrub: 1,
-        pin: true,
-        // markers: true
+    $(window).scroll(function() {
+      let wHeight = $(window).outerHeight() / 2;
+      let wTop = $(window).scrollTop() + wHeight;
+      let sec3Height = $('.section3').outerHeight() / 2;
+      let sec3Top = $('.section3').position().top + sec3Height;
+
+      if(wTop > sec3Top) {
+        let boxTl = gsap.timeline({
+          // scrollTrigger: {
+          //   trigger: '.section3.about',
+          //   start: 'center center',
+          //   end: '+=200%',
+          //   scrub: 1,
+          //   pin: true,
+          //   // markers: true
+          // }
+        })
+        boxTl.to('.sec3-ani-box.box1', {
+          width: 'calc(25% - 10px)',
+          minWidth: 'calc(25% - 10px)',
+          ease: Power2.easeOut,
+          duration: 1,
+          onComplete: function(){
+            $('.sec3-ani-box.box1').addClass('on');
+          }
+        })
+        boxTl.to('.box1 .item-tit, .box1 .item-des, .box1 .motions', {
+          opacity: 1,
+          duration: 0.1
+        })
+        boxTl.to('.sec3-ani-box.box2', {
+          width: 'calc(25% - 10px)',
+          minWidth: 'calc(25% - 10px)',
+          ease: Power2.easeOut,
+          duration: 1,
+          onComplete: function(){
+            $('.sec3-ani-box.box2').addClass('on');
+          }
+        })
+        boxTl.to('.box2 .item-tit, .box2 .item-des, .box2 .motions', {
+          opacity: 1,
+          duration: 0.1
+        })
+        boxTl.to('.sec3-ani-box.box3', {
+          width: 'calc(25% - 10px)',
+          minWidth: 'calc(25% - 10px)',
+          ease: Power2.easeOut,
+          duration: 1,
+          onComplete: function(){
+            $('.sec3-ani-box.box3').addClass('on');
+          }
+        })
+        boxTl.to('.box3 .item-tit, .box3 .item-des, .box3 .motions', {
+          opacity: 1,
+          duration: 0.1
+        })
+        boxTl.to('.sec3-ani-box.box4', {
+          width: 'calc(25% - 10px)',
+          minWidth: 'calc(25% - 10px)',
+          ease: Power2.easeOut,
+          duration: 1,
+          onComplete: function(){
+            $('.sec3-ani-box.box4').addClass('on');
+          }
+        })
+        boxTl.to('.box4 .item-tit, .box4 .item-des, .box4 .motions', {
+          opacity: 1,
+          duration: 0.1
+        })
+        boxTl.to('.sec3-ani-box.box4', {
+          duration: 1
+        })
       }
+      
     })
-    boxTl.to('.sec3-ani-box.box1', {
-      width: 'calc(25% - 10px)',
-      minWidth: 'calc(25% - 10px)',
-      ease: Power2.easeOut,
-      duration: 1,
-      onComplete: function(){
-        $('.sec3-ani-box.box1').addClass('on');
-      }
-    })
-    boxTl.to('.box1 .item-tit, .box1 .item-des, .box1 .motions', {
-      opacity: 1,
-      duration: 0.1
-    })
-    boxTl.to('.sec3-ani-box.box2', {
-      width: 'calc(25% - 10px)',
-      minWidth: 'calc(25% - 10px)',
-      ease: Power2.easeOut,
-      duration: 1,
-      onComplete: function(){
-        $('.sec3-ani-box.box2').addClass('on');
-      }
-    })
-    boxTl.to('.box2 .item-tit, .box2 .item-des, .box2 .motions', {
-      opacity: 1,
-      duration: 0.1
-    })
-    boxTl.to('.sec3-ani-box.box3', {
-      width: 'calc(25% - 10px)',
-      minWidth: 'calc(25% - 10px)',
-      ease: Power2.easeOut,
-      duration: 1,
-      onComplete: function(){
-        $('.sec3-ani-box.box3').addClass('on');
-      }
-    })
-    boxTl.to('.box3 .item-tit, .box3 .item-des, .box3 .motions', {
-      opacity: 1,
-      duration: 0.1
-    })
-    boxTl.to('.sec3-ani-box.box4', {
-      width: 'calc(25% - 10px)',
-      minWidth: 'calc(25% - 10px)',
-      ease: Power2.easeOut,
-      duration: 1,
-      onComplete: function(){
-        $('.sec3-ani-box.box4').addClass('on');
-      }
-    })
-    boxTl.to('.box4 .item-tit, .box4 .item-des, .box4 .motions', {
-      opacity: 1,
-      duration: 0.1
-    })
-    boxTl.to('.sec3-ani-box.box4', {
-      duration: 1
-    })
+    
     
   </script>
 </body>
