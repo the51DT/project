@@ -640,6 +640,8 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
         background-size: cover;
     }
 }
+
+
 @media (max-width: 1400px) {
     .works-view-right section{
         width: 500px;
