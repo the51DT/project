@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+$(window).on('load', function(){
   // WebFont
   WebFont.load({
     // For google fonts

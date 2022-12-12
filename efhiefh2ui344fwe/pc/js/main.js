@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).on('load', function(){
   history.scrollRestoration = "manual";
   // WebFont
   WebFont.load({
@@ -136,7 +136,7 @@ $(document).ready(function(){
   /*-- section3 --*/
   // program-slide
   const swiper = new Swiper('.program-slide', {
-    loop: true,
+    // loop: true,
     touchRatio: 0,
     navigation: {
       nextEl: '.btn-next',
