@@ -181,12 +181,34 @@ $(document).ready(function(){
     worksSlide.autoplay.start()
   })
 
+  // const partnersSlide = new Swiper(".partners-slide", {
+  //   autoplay: true,
+  //   slidesPerView: 'auto',
+  //   loop: true,
+  //   centeredSlides: true,
+  // });
+
   const partnersSlide = new Swiper(".partners-slide", {
-    autoplay: true,
-    slidesPerView: 'auto',
-    loop: true,
+    spaceBetween: 0,
     // centeredSlides: true,
+    speed: 5000,
+    autoplay: {
+      delay: 1,
+    },
+    loop: true,
+    slidesPerView:'auto',
+    allowTouchMove: false,
+    disableOnInteraction: true,
+    // pauseOnMouseEnter: false
   });
+
+  // $('.partners-slide').on('mouseover', function(){
+  //   partnersSlide.autoplay.stop()
+  // })
+  // $('.partners-slide').on('mouseout', function(){
+  //   partnersSlide.autoplay.start()
+  // })
+
 
   gsap.registerPlugin(ScrollTrigger);
 
