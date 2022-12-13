@@ -28,6 +28,7 @@ $(window).on('load', function(){
       $('a.btn-layerClose').trigger('click');
       $('.dim-layer').fadeOut().removeClass('menu-on');
       $('.all-menu').removeClass('on');
+      $('#header').removeClass('active');
       // if(){
         $('html').css('overflow','auto');
       // }
@@ -43,6 +44,7 @@ $(window).on('load', function(){
 
     $('.dim-layer').fadeIn().addClass('menu-on');
     $('.all-menu').addClass('on');
+    $('#header').addClass('active');
     $gnbEl.fadeIn();
 
     // let $gnbElWidth = ~~($gnbEl.outerWidth()),
@@ -305,6 +307,12 @@ $(window).on('load', function(){
       if (index == 2 && direction == 'up'){
         mainVideoPlay();
 			};
+      if (index == 2 && direction == 'down'){
+        slidePlay();
+			};
+      if (index == 4 && direction == 'up'){
+        slidePlay();
+			};
       if (index == 1){
         $('#header.main-tool-bar').removeClass('main-tool-bar-scrolled');
         mainVideoPlay();
@@ -312,6 +320,7 @@ $(window).on('load', function(){
 		},
     'afterLoad': (anchorLink, index) => {
       if (index === 1){
+        $('#header.main-tool-bar').removeClass('main-tool-bar-scrolled');
         mainVideoPlay();
 			};
 			if (index === 3){

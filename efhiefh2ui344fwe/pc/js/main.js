@@ -207,6 +207,12 @@ $(window).on('load', function(){
         $('#header.main-tool-bar').removeClass('main-tool-bar-scrolled');
         mainVideoPlay();
 			};
+      if (index == 2 && direction == 'down'){
+        slidePlay();
+			};
+      if (index == 4 && direction == 'up'){
+        slidePlay();
+			};
 			if (index == 1){
         $('#header.main-tool-bar').removeClass('main-tool-bar-scrolled');
         mainVideoPlay();
@@ -214,6 +220,7 @@ $(window).on('load', function(){
 		},
     'afterLoad': (anchorLink, index) => {
       if (index === 1){
+        $('#header.main-tool-bar').removeClass('main-tool-bar-scrolled');
         mainVideoPlay();
 			};
 			if (index === 3){

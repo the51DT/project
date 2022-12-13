@@ -76,6 +76,7 @@ body{background-color: #000;}
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
 }
+#header.main-tool-bar.active {background-color:rgba(0,0,0,0.5);}
 #header.main-tool-bar.active .sub-list {display:block;}
 #header.main-tool-bar {transition: ease 0.4s;}
 #header.main-tool-bar-scrolled {
