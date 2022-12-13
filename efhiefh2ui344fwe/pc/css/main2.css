@@ -84,7 +84,7 @@ button {margin:0; padding:0; background:none}
 .section4 .btn-more {position:relative; margin-top:1.3rem; padding-right:4.2rem; color:#DBFC00; font-family:'Poppins', sans-serif; font-size:2.4rem; line-height:3.3rem}
 .section4 .btn-more::after {content:''; display:block; position:absolute; width:3.2rem; height:3.2rem; bottom:0; right:0; background:url(../images/img-arrow-right-green.svg) no-repeat center / contain}
 .section4 .partners-slide {position:relative; width:auto; padding:5.3rem 0; margin-left:calc(50% - 24.2rem); overflow:hidden}
-.section4 .partners-slide .swiper-slide-active::after {content:''; display:block; position:absolute; width:50%; left:0; top:0; bottom:0; background:linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,0)); z-index:5}
+.section4 .partners-slide::after {content:''; display:block; position:absolute; width:25%; left:0; top:0; bottom:0; background:linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,0)); z-index:5}
 .section4 .partners-slide .swiper-slide-active:hover::after {display:none}
 .section4 .partners-slide .swiper-wrapper {-webkit-transition-timing-function: linear !important; transition-timing-function: linear !important;}
 .section4 .partners-slide .swiper-slide {width:auto!important; margin:0 6rem}
