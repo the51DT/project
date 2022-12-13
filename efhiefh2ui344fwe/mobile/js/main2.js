@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+$(window).on('load', function(){
   // WebFont
   WebFont.load({
   
@@ -29,6 +29,7 @@ $(document).ready(function(){
       $('a.btn-layerClose').trigger('click');
       $('.dim-layer').fadeOut().removeClass('menu-on');
       $('.all-menu').removeClass('on');
+      $('#header').removeClass('active');
       // if(){
         $('html').css('overflow','auto');
       // }
@@ -44,6 +45,7 @@ $(document).ready(function(){
 
     $('.dim-layer').fadeIn().addClass('menu-on');
     $('.all-menu').addClass('on');
+    $('#header').addClass('active');
     $gnbEl.fadeIn();
 
     // let $gnbElWidth = ~~($gnbEl.outerWidth()),
@@ -315,15 +317,16 @@ $(document).ready(function(){
         $('#header.main-tool-bar').removeClass('main-tool-bar-scrolled');
         mainVideoPlay();
 			};
-      if (index == 4 && direction == 'up'){
+      if (index == 2 && direction == 'down'){
         bannerVideoPlay();
       };
-      if (index == 2 && direction == 'down'){
+      if (index == 4 && direction == 'up'){
         bannerVideoPlay();
       };
     },
     'afterLoad': (anchorLink, index) => {
       if (index === 1){
+        $('#header.main-tool-bar').removeClass('main-tool-bar-scrolled');
         mainVideoPlay();
       }
       if (index === 3){
