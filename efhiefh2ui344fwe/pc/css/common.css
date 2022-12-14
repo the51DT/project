@@ -324,6 +324,9 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .search-wrap .search-box .unit-box [type="search"]::-webkit-search-results-decoration {display: none;}
 
 /* .news-contents-wrap{margin-top: 100px;} */
+.news-contents-wrap.ver-recruit .news-title-wrap{display: block;}
+.news-contents-wrap.ver-recruit .n-notice{display: inline-block; vertical-align: middle; padding-right: 40px;}
+.news-contents-wrap.ver-recruit .inner-news-title-wrap{display: inline-block; max-width: 1300px; vertical-align: middle;}
 .news-title-wrap{position: relative; padding: 60px 0; border-top: 1px solid #444444; border-bottom: 1px solid #444444;}
 .news-title-wrap h4{font-size: 50px; font-weight: 600; color: #fff; margin: 0; line-height: 50px;}
 .news-title-wrap p.date{margin-top: 24px; color: #919191; font-size: 20px;}
