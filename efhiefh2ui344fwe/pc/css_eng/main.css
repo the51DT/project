@@ -71,8 +71,8 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-wei
 .section1 .main-txt {position:absolute; top:50%; left:calc(50% - 7.8rem); transform:translate(-50%, -50%); text-align:center; opacity:0}
 .section1 .main-txt > .txt {position:relative; display:block; color:#fff; font-size:10rem; font-weight:bold; line-height:13rem}
 .section1 .main-txt > .txt::after {content:''; display:block; position:absolute; width:6rem; height:6rem; background:url(../images/img-main-txt-plus.svg) no-repeat center / contain}
-.section1 .main-txt > .txt:first-child::after {top:3.8rem; right:-7.8rem; transform:rotate(45deg)}
-.section1 .main-txt > .txt:last-child::after {top: 3.5rem; right:-4.1rem}
+.section1 .main-txt > .txt:first-child::after {top:4rem; right:-7.8rem; transform:rotate(45deg)}
+.section1 .main-txt > .txt:last-child::after {top: 4.5rem; right:-4.1rem}
 .section1 .main-txt > img {display:block; width:100%}
 
 .section2 {width:100%; max-width:192rem; margin:0 auto; padding:0 5rem}
