@@ -275,4 +275,13 @@ $(document).ready(function(){
     }
   });
 
+    const newsSlide = new Swiper(".news-contents-slide", {
+    navigation: {
+      nextEl: ".btn-next",
+      prevEl: ".btn-prev",
+    },
+    pagination: {
+      el: ".slide-pagination",
+    },
+  });
 });
