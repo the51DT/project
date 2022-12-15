@@ -35,13 +35,13 @@ h1, h2, h3, h4, h5 {margin:0}
     transform:translate3d(0, -3rem, 0);
   }
 }
-.section2 {position:relative; padding:0 2rem}
+.section2 {position:relative}
 .section2 .section-inner {height:100%; padding:10rem 0}
 .section2.fit-change .section-inner {padding-top:7.5rem}
-.section2 .tit {color:#fff; font-family:'Poppins', sans-serif; font-size:4rem; font-weight:normal; line-height:5.6rem}
-.section2 .works-slide {width:100%; margin-top:4rem; overflow:hidden; box-sizing:border-box}
+.section2 .tit {margin:0 2rem; color:#fff; font-family:'Poppins', sans-serif; font-size:4rem; font-weight:normal; line-height:5.6rem}
+.section2 .works-slide {width:100%; margin-top:4rem; padding:0 1rem; overflow:hidden; box-sizing:border-box}
 .section2.fit-change .works-slide {margin-top:2rem}
-.section2 .works-slide .swiper-slide {position:relative; width:28.6rem!important}
+.section2 .works-slide .swiper-slide {position:relative; width:28.6rem!important; margin:0 1rem}
 .section2 .works-slide .works-item-wrap {position:relative}
 .section2 .works-slide .works-item-wrap > a {display:block; position:absolute; left:0; right:0; top:0; bottom:0}
 .section2 .works-slide .item-tit {margin-top:1.6rem; color:#fff; font-size:2rem; font-weight:500; line-height:3rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
