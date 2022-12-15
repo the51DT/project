@@ -601,7 +601,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section4.about{margin-top: 120px;}
 .section4.about .inner{padding-bottom: 160px;}
 .section4.about .sec3-ci-area {width: 100%;}
-.section4.about .sec3-ci-area .logo-wrap{display: flex; align-items: center; width: 100%; height: 400px; margin-top: 40px; border: 1px solid #111; background: url(../images/sub/img-ablout-ci-bg.svg) repeat-x center / auto 100%;}
+.section4.about .sec3-ci-area .logo-wrap{display: flex; align-items: center; width: 100%; height: 400px; margin-top: 40px; border: 1px solid #222; background: url(../images/sub/img-ablout-ci-bg.svg) repeat-x center / auto 100%;}
 .section4.about .sec3-ci-area .logo-wrap .logo{width: 50%}
 .section4.about .sec3-ci-area .logo-wrap .logo > img{display: block; margin: 0 auto;}
 .section4.about .sec3-ci-area .btn-wrap{margin: 24px 0 0 0; text-align: right;}
