@@ -479,7 +479,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .about h3.tit{margin: 0; color: #fff; font-family: 'Poppins', sans-serif; font-size: 50px; font-weight: normal; line-height: 70px}
 .section1.about{padding-bottom: 845px;}
 .section1.about .sec1-txt-area .txt1{color: #fff; font-size: 70px; font-weight: 500; line-height: 1.4; letter-spacing: 0.5px;}
-.section1.about .sec1-txt-area .txt2{display: inline-block; padding-top: 83px; color: #fff; font-size: 30px; line-height: 1.6666; text-align: left; letter-spacing: 0;}
+.section1.about .sec1-txt-area .txt2{display: inline-block; padding-top: 83px; color: #919191; font-size: 30px; line-height: 1.6666; text-align: left; letter-spacing: 0;}
 .section1.about .sec1-txt-area .txt2+.txt2{padding-top:31px;}
 .section1.about .bg{position: absolute; width: 100%; height: 800px; left: 0; right: 0; bottom: 0; background: url(../images/sub/img-about-bg.png) no-repeat center / 100% auto;}
 .section1.about .bg::before {content: ''; display: block; position: absolute; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0.4) 80%, rgba(0,0,0,1) 100%);}
@@ -487,7 +487,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section2.about{margin-top: -190px;}
 .section2.about .sec2-txt-area .txt1{color: #fff; font-size: 70px; font-weight: 500; line-height: 110px; letter-spacing: 0.5px;}
 .section2.about .sec2-txt-area .txt1 .icon-x{display: inline-block; width: 72.8px; height: 66.5px; margin-left: 12px; background: url(../images/sub/icon-x.svg) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
-.section2.about .sec2-txt-area .txt2{margin-top: 73px; color: #fff; font-size: 30px; font-weight: 500; line-height: 1.44; text-align: left; letter-spacing: 0;}
+.section2.about .sec2-txt-area .txt2{margin-top: 73px; color: #919191; font-size: 30px; font-weight: 400; line-height: 1.44; text-align: left; letter-spacing: 0;}
 .section2.about .sec2-txt-area .txt2 .icon-x{display: inline-block; width: 27.37px; height: 25px; margin-left: 6px; background: url(../images/sub/icon-x.svg) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
 .section2.about .sec2-txt-area .logo{margin-top: 81px}
 .section2.about .sec2-txt-area .logo > img{display: block;width:300px;}
@@ -499,7 +499,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section3.about .sec3-ani-box + .sec3-ani-box{margin-left: 13px;}
 .section3.about .sec3-ani-box.box3{margin-left: 14px;}
 .section3.about .sec3-ani-box .item-num{position: absolute; top: 30px; left: 30px; color: #555; font-family: 'Poppins', sans-serif; font-size: 20px; line-height: 28px}
-.section3.about .sec3-ani-box .item-tit{position: absolute; max-width:100%; top:50%; left:50%; transform: translate(-50%,-50%); color: #fff; font-family: 'Poppins', sans-serif; font-size: 50px; font-weight: bold; text-align: center; letter-spacing: 0; z-index: 10; opacity: 0; transition: opacity 0.4s;}
+.section3.about .sec3-ani-box .item-tit{position: absolute; max-width:100%; top:50%; left:50%; transform: translate(-50%,-50%); color: #fff; font-family: 'Poppins', sans-serif; font-size: 50px; font-weight: 500; text-align: center; letter-spacing: 0; z-index: 10; opacity: 0; transition: opacity 0.4s;}
 .section3.about .sec3-ani-box .item-des{position: absolute; left: 0; right: 0; bottom: 40px; color: #919191; font-size: 14px; line-height: 22px; text-align: center; letter-spacing: 0; opacity: 0; transition: opacity 0.4s;}
 .section3.about .sec3-ani-box .item-des > strong {color: #fff}
 .section3.about .sec3-ani-box .motions{position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; transition: opacity 0.2s;}
@@ -532,16 +532,16 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .sec3-ani-box.on #motion4-7{animation: motion4-7 0.6s ease-in forwards}
 .sec3-ani-box.on #motion4-8{animation: motion4-8 0.6s ease-in forwards}
 @keyframes motion1-1 {
-    0% {transform: translate(187.91px, 2827px) rotate(-135deg)}
-    100% {transform: translate(387.91px, 3027px) rotate(-135deg)}
+  0% {transform: translate(174.91px, 3767.891px) rotate(-135deg)}
+  100% {transform: translate(374.91px, 3967.891px) rotate(-135deg)}
 }
 @keyframes motion1-2 {
-    0% {transform: matrix(0.766, -0.643, 0.643, 0.766, 620.501, 3038.543)}
-    100% {transform: matrix(0.766, -0.643, 0.643, 0.766, 420.501, 3238.543)}
+  0% {transform: matrix(0.766, -0.643, 0.643, 0.766, 638, 4016.513)}
+  100% {transform: matrix(0.766, -0.643, 0.643, 0.766, 438, 4216.513)}
 }
 @keyframes motion1-3 {
-    0% {transform: translate(297.431px, 3441.388px) rotate(48deg)}
-    100% {transform: translate(197.431px, 3341.388px) rotate(48deg)}
+  0% {transform: translate(303.431px, 4390.388px) rotate(48deg)}
+  100% {transform: translate(203.431px, 4290.388px) rotate(48deg)}
 }
 @keyframes motion2-1 {
     0% {transform: translate(22px, 2342px) rotate(-180deg)}
@@ -599,7 +599,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section4.about{margin-top: 119px;}
 .section4.about .inner{padding-bottom: 160px;}
 .section4.about .sec3-ci-area {width: 100%;}
-.section4.about .sec3-ci-area .logo-wrap{display: flex; align-items: center; width: 100%; height: 400px; margin-top: 40px; border: 1px solid #111; background: url(../images/sub/img-ablout-ci-bg.svg) repeat-x center / auto 100%;}
+.section4.about .sec3-ci-area .logo-wrap{display: flex; align-items: center; width: 100%; height: 400px; margin-top: 40px; border: 1px solid #222; background: url(../images/sub/img-ablout-ci-bg.svg) repeat-x center / auto 100%;}
 .section4.about .sec3-ci-area .logo-wrap .logo{width: 50%}
 .section4.about .sec3-ci-area .logo-wrap .logo > img{display: block; margin: 0 auto;}
 .section4.about .sec3-ci-area .btn-wrap{margin: 20px 0 0 0; text-align: right;}
