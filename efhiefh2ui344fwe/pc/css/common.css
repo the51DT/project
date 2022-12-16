@@ -101,7 +101,7 @@ body{background-color: #000;}
 /* .footer-inner .footer-conts .footer-info {} */
 .footer-inner .footer-conts .footer-info p {font-size: 16px;color: #919191;}
 .footer-inner .footer-conts .footer-info p a {font-size: 16px;color: #919191;}
-.footer-inner .footer-conts .footer-info p span {overflow: hidden; position: relative; top: 2px; display: inline-block; color: #555;}
+.footer-inner .footer-conts .footer-info p span {overflow: hidden; position: relative; top: 2px; display: inline-block; color: #444;}
 .footer-inner .footer-conts .footer-info p+p {margin-top: 14px;}
 .footer-inner .footer-conts .footer-info copy {display: block; margin-top: 28px; font-size: 14px;color: #535353;}
 .footer-inner .footer-conts .footer-info .link-sitemap {margin-left: 6px; font-size: 16px; color: #919191;}
@@ -391,8 +391,8 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .information .info-box .email{font-family: 'Poppins', sans-serif;}
 
 .information .info-box .sns-wrap {}
-.information .info-box .sns-wrap a {padding-left: 34px; background: url(../images/common/ico-facebook.png) no-repeat 0 3px;}
-.information .info-box .sns-wrap a+a {margin-left: 26px;}
+.information .info-box .sns-wrap a {padding-left: 44px; background: url(../images/common/ico-facebook.png) no-repeat 0 -4px;}
+.information .info-box .sns-wrap a+a {margin-left: 17px;}
 .information .info-box .sns-wrap .ico-facebook {background-image: url(../images/common/ico-facebook.png);}
 .information .info-box .sns-wrap .ico-instagram {background-image: url(../images/common/ico-instagram.png);}
 .information .info-box .sns-wrap .ico-youtube {background-image: url(../images/common/ico-youtube.png);}
@@ -631,7 +631,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .site-map .site-map-wrap .site-map-inn ul li a {color: #919191;}
 .site-map .site-map-wrap .site-map-inn ul li a:hover {color: #fff;}
 
-/* 2022-12-16 추가 시작 */
+/* 2022-12-15 추가 시작 */
 /* about - effect */
 .group-effect .effect-tit {
   margin: 0 0 100px 0;
@@ -687,7 +687,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   -o-transform: translateY(0);
   transform: translateY(0);
 }
-/* 2022-12-16 추가 끝 */
+/* 2022-12-15 추가 끝 */
 
 @keyframes skewUp {
   0% {transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5);}
