@@ -425,13 +425,12 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section1.about .bg::before {content: ''; display: block; position: absolute; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(to bottom, rgba(0,0,0,1) 15%, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 80%, rgba(0,0,0,1) 90%);}
 
 .section2.about{margin-top: -195px; padding: 0 20px;}
-.section2.about .sec2-txt-area{animation: fadeIn 1.6s forwards;}
 .section2.about .sec2-txt-area .txt1{display: flex; padding-left: 20px; color: #fff; font-size: 28px; font-weight: 500; line-height: 86px;}
 .section2.about .sec2-txt-area .txt1 .icon-x{display: inline-block; width: 32.8px; height: 67.5px; margin-left: 10px; background: url(../images/sub/icon-x.svg) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
-.section2.about .sec2-txt-area .txt2{margin-top: 20px; color: #919191; font-size: 14px; font-weight: 500; line-height: 26px; text-align: left; letter-spacing: -1px;  transform-origin: 50% 50%; transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5); animation:skewUp 0.8s forwards}
+.section2.about .sec2-txt-area .txt2{margin-top: 20px; color: #919191; font-size: 14px; font-weight: 500; line-height: 26px; text-align: left; letter-spacing: -1px;}
 .section2.about .sec2-txt-area .txt2 .icon-x{display: inline-block; width: 14px; height: 11px; margin-left: 3px; background: url(../images/sub/icon-x-gray.svg) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
-.section2.about .sec2-txt-area .logo{width: 100%; margin-top: 40px; animation: fadeIn 1.6s forwards;}
-.section2.about .sec2-txt-area .logo > img{display: block; width: 100%; transform-origin: 50% 50%; transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5); animation:skewUp 0.8s forwards}
+.section2.about .sec2-txt-area .logo{width: 100%; margin-top: 40px;}
+.section2.about .sec2-txt-area .logo > img{display: block; width: 100%;}
 
 .section3.about{margin-top:80px; padding: 0 20px;}
 .section3.about .inner{padding-top: 0;}
