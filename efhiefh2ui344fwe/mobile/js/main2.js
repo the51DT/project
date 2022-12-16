@@ -227,7 +227,7 @@ $(window).on('load', function(){
   // slides
   const worksSlide = new Swiper(".works-slide", {
     slidesPerView: 'auto',
-    spaceBetween: 20,
+    // spaceBetween: 20,
     scrollbar: {
       el: ".scrollbar",
     }
