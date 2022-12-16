@@ -631,7 +631,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .site-map .site-map-wrap .site-map-inn ul li a {color: #919191;}
 .site-map .site-map-wrap .site-map-inn ul li a:hover {color: #fff;}
 
-/* 2022-12-16 추가 시작 */
+/* 2022-12-15 추가 시작 */
 /* about - effect */
 .group-effect .effect-tit {
   margin: 0 0 100px 0;
@@ -687,7 +687,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   -o-transform: translateY(0);
   transform: translateY(0);
 }
-/* 2022-12-16 추가 끝 */
+/* 2022-12-15 추가 끝 */
 
 @keyframes skewUp {
   0% {transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5);}

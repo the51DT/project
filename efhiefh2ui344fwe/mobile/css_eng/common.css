@@ -515,7 +515,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   100% {opacity: 1;}
 }
 
-/* 2022-12-16 추가 시작 */
+/* 2022-12-15 추가 시작 */
 /* about - effect */
 .group-effect .effect-tit {
   overflow: hidden;
@@ -572,4 +572,4 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   -o-transform: translateY(0);
   transform: translateY(0);
 }
-/* 2022-12-16 추가 끝 */
+/* 2022-12-15 추가 끝 */

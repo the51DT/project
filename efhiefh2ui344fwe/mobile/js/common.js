@@ -285,7 +285,7 @@ $(document).ready(function(){
     },
   });
 
-  /* 2022-12-16 추가 시작 */
+  /* 2022-12-15 추가 시작 */
   /**
    * @author denver
    * https://github.com/github-denver
@@ -372,5 +372,5 @@ $(document).ready(function(){
 
     _activate()
   })()
-  /* 2022-12-16 추가 끝 */
+  /* 2022-12-15 추가 끝 */
 });
