@@ -120,11 +120,11 @@
         <!-- // 2022-12-15 수정 끝 -->
         <!-- 2022-12-15 수정 시작 -->
         <!-- [D] sec3-ani-box box2와 sec3-ani-box box3 순서가 변경되었으며, item-num 요소가 주석 처리되었습니다. -->
-        <section class="section3 about aniBox">
+        <section class="section3 about aniBox group-effect">
           <div class="inner">
-            <h3 class="tit">Brand Identity</h3>
+            <h3 class="tit effect">Brand Identity</h3>
 
-            <div class="sec3-ani-area">
+            <div class="sec3-ani-area effect">
 
               <div class="sec3-ani-box box1">
                 <!-- <span class="item-num">1</span> -->
@@ -212,12 +212,12 @@
         <!-- // 2022-12-15 수정 끝 -->
         <!-- 2022-12-15 수정 시작 -->
         <!-- [D] tit 제목, btn-down 버튼 텍스트가 변경되었습니다. -->
-        <section class="section4 about">
+        <section class="section4 about group-effect">
           <div class="inner">
-            <h3 class="tit">brand logo</h3>
+            <h3 class="tit effect">brand logo</h3>
 
             <div class="sec3-ci-area">
-              <div class="logo-wrap">
+              <div class="logo-wrap effect">
                 <div class="logo logo1">
                   <img src="../pc/images/sub/img-about-ci-logo1.svg" alt="X+U STUDIO">
                 </div>
@@ -225,7 +225,7 @@
                   <img src="../pc/images/sub/img-about-ci-logo2.svg" alt="STUDIO X+U">
                 </div>
               </div>
-              <div class="btn-wrap">
+              <div class="btn-wrap effect">
                 <button type="button" class="btn-down"><span class="eng">BI</span> 다운로드</button>
                 <button type="button" class="btn-down">브랜드 가이드 다운로드</button>
               </div>
@@ -267,15 +267,15 @@
 
   </div>
   <script>
-  
     $(window).scroll(function() {
       let wHeight = $(window).outerHeight();
       let wTop = $(window).scrollTop() + wHeight;
       // let sec3Height = $('.section3').outerHeight() / 2;
       let sec3Top = $('.section3').position().top + 310;
 
-      if(wTop > sec3Top) {
-        $('.sec3-ani-box.box1').addClass('on');
+      // if(wTop > sec3Top) {
+      if(wTop  + wHeight >= $(".sec3-ani-area").offset().top) {
+        // $('.sec3-ani-box.box1').addClass('on'); // 2022-12-15 주석
         let boxTl = gsap.timeline({
           // scrollTrigger: {
           //   trigger: '.section3.about',
@@ -299,7 +299,11 @@
         /* 2022-12-15 수정 시작 */
         boxTl.to('.box1 .item-tit, .box1 .item-des, .box1 .motions', {
           opacity: 1,
-          duration: 0.1
+          duration: 0.1, // 2022-12-15 수정
+          delay: 2, // 2022-12-15 수정
+          onComplete: function(){ // 2022-12-15 수정
+            $('.sec3-ani-box.box1').addClass('on');
+          }
         })
         boxTl.to('.sec3-ani-box.box3', {
           width: '25%',
@@ -345,10 +349,7 @@
         })
         /* 2022-12-15 수정 끝 */
       }
-
     })
-
-
   </script>
 </body>
 
