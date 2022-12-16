@@ -284,4 +284,93 @@ $(document).ready(function(){
       el: ".slide-pagination",
     },
   });
+
+  /* 2022-12-16 추가 시작 */
+  /**
+   * @author denver
+   * https://github.com/github-denver
+   */
+  ;(function () {
+    var st = 0
+    var tempSt = 0
+    var timer = null
+
+    var distance = 0
+    var active = 'active'
+    var delay = 1
+
+    var intro = '.group-effect.intro'
+    var introDelay = 400
+
+    function _mouseWheelDown() {
+      var element = arguments[0].element
+      var intro = arguments[0].intro
+
+      if (intro) {
+        $(element).addClass(active)
+        return
+      }
+
+      if (st + $(window).height() - distance > $(element).offset().top) {
+        $(element).addClass(active)
+      }
+    }
+
+    function effect() {
+      clearTimeout(timer)
+
+      timer = setTimeout(function () {
+        st = $(this).scrollTop()
+
+        $('[class *="section"]')
+          .filter('.about')
+          .not('.intro')
+          .find('[class *= "effect"]')
+          .each(function (index, element) {
+            ;(function (j) {
+              // st >= tempSt && _mouseWheelDown({ index: index, element: element })
+
+              // if (st >= tempSt) {
+              setTimeout(function () {
+                _mouseWheelDown({ index: j, element: element })
+              }, j * 400)
+              // }
+            })(index)
+          })
+
+        tempSt = st
+      }, delay)
+    }
+
+    function _activate() {
+      $(intro)
+        .find('[class *= "effect"]')
+        .each(function (index, element) {
+          ;(function (j) {
+            setTimeout(function () {
+              _mouseWheelDown({ index: j, element: element, intro: true })
+            }, j * introDelay)
+          })(index)
+        })
+    }
+
+    $(window).on('scroll', function () {
+      scrollTop = $(this).scrollTop()
+
+      if (this.scrollTO) {
+        clearTimeout(this.scrollTO)
+      }
+
+      this.scrollTO = setTimeout(function () {
+        $(this).trigger('scrollEnd')
+      }, 40)
+    })
+
+    $(window).on('scrollEnd', function () {
+      effect()
+    })
+
+    _activate()
+  })()
+  /* 2022-12-16 추가 끝 */
 });

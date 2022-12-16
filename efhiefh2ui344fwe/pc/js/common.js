@@ -297,9 +297,17 @@ $(document).ready(function(){
         $('[class *="section"]')
           .filter('.about')
           .not('.intro')
-          .find('.effect')
+          .find('[class *= "effect"]')
           .each(function (index, element) {
-            st >= tempSt && _mouseWheelDown({ index: index, element: element })
+            ;(function (j) {
+              // st >= tempSt && _mouseWheelDown({ index: index, element: element })
+
+              // if (st >= tempSt) {
+              setTimeout(function () {
+                _mouseWheelDown({ index: j, element: element })
+              }, j * 400)
+              // }
+            })(index)
           })
 
         tempSt = st
@@ -308,7 +316,7 @@ $(document).ready(function(){
 
     function _activate() {
       $(intro)
-        .find('.effect')
+        .find('[class *= "effect"]')
         .each(function (index, element) {
           ;(function (j) {
             setTimeout(function () {
