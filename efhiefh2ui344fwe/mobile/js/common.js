@@ -333,7 +333,7 @@ $(document).ready(function(){
               // if (st >= tempSt) {
               setTimeout(function () {
                 _mouseWheelDown({ index: j, element: element })
-              }, j * 400)
+              }, j * 300)
               // }
             })(index)
           })
