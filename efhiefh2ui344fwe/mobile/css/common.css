@@ -440,8 +440,9 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section3.about .sec3-brand-box .item-tit{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: 'Poppins', sans-serif; font-size: 40px; color: #DBFC00; font-weight: 500;}
 .section3.about .sec3-brand-box .item-des{position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); width: 100%; font-size: 14px; line-height: 22px; color: #919191; text-align: center; font-weight: normal;}
 .section3.about .sec3-brand-box .item-des > .eng{font-family: 'Poppins', sans-serif;}
-/* // 2022-12-20 수정 끝 */
 .section3.about .sec3-brand-box .item-des strong{color: #fff;}
+.section3.about .sec3-brand-box .motions svg {width: 100%; height: 100%;}
+/* // 2022-12-20 수정 끝 */
 
 /* .section3.about .sec3-ani-area{display: flex; flex-direction: column; flex-wrap: nowrap; align-items: center; margin-top: 15px;}
 .section3.about .sec3-ani-box{position: relative; width: 100%; min-height:415px; background-color:#191919 }
