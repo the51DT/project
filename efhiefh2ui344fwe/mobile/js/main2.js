@@ -236,7 +236,7 @@ $(window).on('load', function(){
   const partnersSlide = new Swiper(".partners-slide", {
     autoplay: true,
     slidesPerView: 'auto',
-    spaceBetween: 30,
+    spaceBetween: 80, // 2022-12-20 v2 수정
     loop: true,
     centeredSlides: true,
   });

@@ -97,16 +97,23 @@ body{background-color: #000;}
 /* footer */
 .footer-inner {position: relative; padding: 50px 20px; width:100%; max-width:360px; margin:0 auto}
 .footer-inner .logo {width: 210px; height: 40px;}
-.footer-inner .footer-conts {margin-top: 30px;}
+/* 2022-12-20 v2 수정 시작 */
+.footer-inner .footer-conts {margin-top: 21px;}
+/* 2022-12-20 v2 수정 끝 */
 .footer-inner .footer-conts .custom-select {margin-top: 30px; }
 .footer-inner .footer-conts .select-items {background-color: #000;}
 /* .footer-inner .footer-conts .footer-info {} */
+/* 2022-12-20 v2 수정 시작 */
 .footer-inner .footer-conts .footer-info p {font-size: 14px;color: #919191;}
-.footer-inner .footer-conts .footer-info p+p {margin-top: 14px;}
+.footer-inner .footer-conts .footer-info p+p {margin-top: 18px;}
+/* 2022-12-20 v2 수정 끝 */
 .footer-inner .footer-conts .footer-info p > span {display:inline-block;position: relative;top:-1px; margin:0 2px;width:1px;height:11px;background-color: #444;vertical-align: middle;font-size:0;}
-.footer-inner .footer-conts .footer-info copy {display: block; margin-top: 30px; font-size: 14px;color: #555;}
-
-.sns-link ul{display: flex; justify-content: center; margin-top: 40px;}
+/* 2022-12-20 v2 수정 시작 */
+.footer-inner .footer-conts .footer-info copy {display: block; margin-top: 29px; font-size: 14px;color: #555;}
+.sns-link ul{display: flex; justify-content: center; margin-top: 43px;}
+.sns-link ul li {margin-left: 20px;}
+.sns-link ul li:first-child {margin-left:0;}
+/* 2022-12-20 v2 수정 끝 */
 .sns-link a{display: inline-block;width: 40px; height: 40px;}
 
 /* contents */
@@ -496,6 +503,10 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo10 img{width: 180px; height: 60px;}
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo11 img{width: 130px; height: 60px;}
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo12 img{width: 60px; height: 60px;}
+/* 2022-12-20 v2 추가 시작 */
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo13 img{width: auto;max-width: 100%; height: 80px;}
+.partners-list-wrap .normal-list > ul > li .partners-box13 .partners-logo {padding:50px 0}
+/* // 2022-12-20 v2 추가 끝 */
 
 /* contact */
 .list-sns {margin-top:-6px;font-size:0;}
