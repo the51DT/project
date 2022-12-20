@@ -328,7 +328,9 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .news-contents-wrap.ver-recruit .n-notice{display: inline-block; vertical-align: middle; padding-right: 40px;}
 .news-contents-wrap.ver-recruit .inner-news-title-wrap{display: inline-block; max-width: 1300px; vertical-align: middle;}
 .news-title-wrap{position: relative; padding: 60px 0; border-top: 1px solid #444444; border-bottom: 1px solid #444444;}
-.news-title-wrap h4{font-size: 50px; font-weight: 600; color: #fff; margin: 0; line-height: 50px;}
+/* 2022-12-20 수정 시작 */
+.news-title-wrap h4{font-size: 50px; font-weight: 600; color: #fff; margin: 0; line-height: 1.4;}
+/* 2022-12-20 수정 끝 */
 .news-title-wrap p.date{margin-top: 24px; color: #919191; font-size: 20px;}
 .ver-recruit .news-title-wrap .experience{position: absolute; right: 60px; top: 50%; font-size: 22px; color: #DBFC00; transform: translateY(-50%);}
 .news-contents-box{padding: 40px 0 120px; border-bottom: 1px solid #444444; font-size: 22px; color: #fff; letter-spacing: -1px; line-height: 36px;}
@@ -447,6 +449,29 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     .works-img .img-hover-list {
         margin-bottom: 40px;
     }
+    /* 2022-12-20 추가 시작 */
+    .list-type-table table{
+      table-layout: fixed;
+    }
+    .list-type-table table .title a {
+      overflow: hidden;
+      max-width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .list-type-table table .experience {
+      text-align: center;
+    }
+    .news-contents-wrap.ver-recruit .n-notice {
+      padding: 0 48px 0 40px;
+    }
+    .news-contents-wrap.ver-recruit .inner-news-title-wrap {
+      width: calc(100% - 321px)
+    }
+    .ver-recruit .news-title-wrap .experience {
+      right: 40px;
+    }
+    /* 2022-12-20 추가 끝 */
 }
 
 /* works - view */
@@ -794,4 +819,22 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     .section3.about .sec3-ani-box.box1{min-width: calc(25% - 10px);}
     .section3.about .sec3-ani-box + .sec3-ani-box{margin-left: 8px;}
     .section3.about .sec3-ani-box .item-tit{font-size: 40px; letter-spacing: -0.4px;}
+}
+
+/* 1366px design */
+@media (max-width: 1366px) {
+  /* 2022-12-20 추가 시작 */
+  .site-map {
+    margin: 194px 9px 138px;
+  }
+  .site-map .motion-tit {
+    margin-bottom: 192px;
+  }
+  .site-map .site-map-wrap .site-map-inn h4 {
+    margin-bottom: 35px;
+  }
+  .site-map .site-map-wrap .site-map-inn ul li {
+    margin-bottom: 16px;
+  }
+  /* 2022-12-20 추가 끝 */
 }
