@@ -435,10 +435,14 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section3.about{margin-top:80px; padding: 0 20px;}
 .section3.about .inner{padding-top: 0;}
 .section3.about .tit{font-size: 30px; line-height: 62px;}
-.section3.about .sec3-brand-box{position: relative; margin-bottom: 16px;}
-.section3.about .sec3-brand-box .item-tit{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 40px; color: #fff; font-weight: 500;}
+/* 2022-12-20 수정 시작 */
+.section3.about .sec3-brand-box{position: relative; margin-bottom: 16px; background-color: #191919;}
+.section3.about .sec3-brand-box .item-tit{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: 'Poppins', sans-serif; font-size: 40px; color: #DBFC00; font-weight: 500;}
 .section3.about .sec3-brand-box .item-des{position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); width: 100%; font-size: 14px; line-height: 22px; color: #919191; text-align: center; font-weight: normal;}
+.section3.about .sec3-brand-box .item-des > .eng{font-family: 'Poppins', sans-serif;}
 .section3.about .sec3-brand-box .item-des strong{color: #fff;}
+.section3.about .sec3-brand-box .motions svg {width: 100%; height: 100%;}
+/* // 2022-12-20 수정 끝 */
 
 /* .section3.about .sec3-ani-area{display: flex; flex-direction: column; flex-wrap: nowrap; align-items: center; margin-top: 15px;}
 .section3.about .sec3-ani-box{position: relative; width: 100%; min-height:415px; background-color:#191919 }
@@ -458,7 +462,9 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section4.about .inner{padding-top: 0; padding-bottom: 80px;}
 .section4.about .tit{font-size: 30px; line-height: 62px;}
 .section4.about .sec3-ci-area {width: 100%;}
-.section4.about .sec3-ci-area .logo-wrap{display: flex; align-items: center; flex-direction: column; width: 100%; margin-top: 40px; border: 1px solid #111; background: url(../images/sub/img-ablout-ci-bg.svg) repeat-x center / auto 100%;}
+/* 2022-12-20 수정 시작 */
+.section4.about .sec3-ci-area .logo-wrap{display: flex; align-items: center; flex-direction: column; width: 100%; border: 1px solid #111; background: url(../images/sub/img-ablout-ci-bg.svg) repeat-x center / auto 100%;}
+/* // 2022-12-20 수정 끝 */
 .section4.about .sec3-ci-area .logo-wrap .logo{width: 100%; background-color: #191919;}
 .section4.about .sec3-ci-area .logo-wrap .logo > img{display: block; margin: 0 auto;}
 .section4.about .sec3-ci-area .btn-wrap{display: flex; flex-direction: column; margin: 15px 0 0 0;}
@@ -583,3 +589,96 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   transform: translateY(0);
 }
 /* 2022-12-15 추가 끝 */
+/* 2022-12-20 추가 시작 */
+.effect.active .sec3-brand-box #motion1-1{animation: motion1-1 0.6s ease-in forwards}
+.effect.active .sec3-brand-box #motion1-2{animation: motion1-2 0.6s 0.2s ease-in forwards}
+.effect.active .sec3-brand-box #motion1-3{animation: motion1-3 0.8s ease-in forwards}
+
+.effect.active .sec3-brand-box #motion2-1{animation: motion2 0.1s ease-in forwards}
+.effect.active .sec3-brand-box #motion2-2{animation: motion2 0.1s 0.1s ease-in forwards}
+.effect.active .sec3-brand-box #motion2-3{animation: motion2 0.1s 0.2s ease-in forwards}
+.effect.active .sec3-brand-box #motion2-4{animation: motion2 0.1s 0.3s ease-in forwards}
+.effect.active .sec3-brand-box #motion2-5{animation: motion2 0.1s 0.4s ease-in forwards}
+.effect.active .sec3-brand-box #motion2-6{animation: motion2 0.1s 0.5s ease-in forwards}
+.effect.active .sec3-brand-box #motion2-7{animation: motion2 0.1s 0.6s ease-in forwards}
+.effect.active .sec3-brand-box #motion2-8{animation: motion2 0.1s 0.7s ease-in forwards}
+.effect.active .sec3-brand-box #motion2-9{animation: motion2 0.1s 0.8s ease-in forwards}
+
+.effect.active .sec3-brand-box #motion3-1{animation: motion3-1 0.6s ease-in forwards}
+.effect.active .sec3-brand-box #motion3-2{animation: motion3-2 0.6s ease-in forwards}
+.effect.active .sec3-brand-box #motion3-3{animation: motion3-3 0.6s ease-in forwards}
+.effect.active .sec3-brand-box #motion3-4{animation: motion3-4 0.6s ease-in forwards}
+
+.effect.active .sec3-brand-box #motion4-1{animation: motion4-1 0.6s ease-in forwards}
+.effect.active .sec3-brand-box #motion4-2{animation: motion4-2 0.6s ease-in forwards}
+.effect.active .sec3-brand-box #motion4-3{animation: motion4-3 0.6s ease-in forwards}
+.effect.active .sec3-brand-box #motion4-4{animation: motion4-4 0.6s ease-in forwards}
+.effect.active .sec3-brand-box #motion4-5{animation: motion4-5 0.6s ease-in forwards}
+.effect.active .sec3-brand-box #motion4-6{animation: motion4-6 0.6s ease-in forwards}
+.effect.active .sec3-brand-box #motion4-7{animation: motion4-7 0.6s ease-in forwards}
+.effect.active .sec3-brand-box #motion4-8{animation: motion4-8 0.6s ease-in forwards}
+@keyframes motion1-1 {
+    0% {transform: translate(47.711px, 1327.305px) rotate(-135deg)}
+    100% {transform: translate(147.711px, 1427.305px) rotate(-135deg)}
+}
+@keyframes motion1-2 {
+    0% {transform: matrix(0.766, -0.643, 0.643, 0.766, 322.77, 1443.279)}
+    100% {transform: matrix(0.766, -0.643, 0.643, 0.766, 222.77, 1543.279)}
+}
+@keyframes motion1-3 {
+    0% {transform: translate(153.431px, 1729.388px) rotate(48deg)}
+    100% {transform: translate(53.431px, 1629.388px) rotate(48deg)}
+}
+@keyframes motion2 {
+    0% {width: 0}
+    100% {width: 6px}
+}
+@keyframes motion3-1 {
+    0% {transform: translate(392.711px, 2787.781px) rotate(-135deg)}
+    100% {transform: translate(492.711px, 2887.781px) rotate(-135deg)}
+}
+@keyframes motion3-2 {
+    0% {transform: translate(734.132px, 3129.203px) rotate(-135deg)}
+    100% {transform: translate(634.132px, 3029.203px) rotate(-135deg)}
+}
+@keyframes motion3-3 {
+    0% {transform: translate(741.203px, 2717.071px) rotate(135deg)}
+    100% {transform: translate(641.203px, 2817.071px) rotate(135deg)}
+}
+@keyframes motion3-4 {
+    0% {transform: translate(399.782px, 3058.493px) rotate(135deg)}
+    100% {transform: translate(499.782px, 2958.493px) rotate(135deg)}
+}
+@keyframes motion4-1 {
+    0% {width: 0; transform: translate(1560px, 2267px)}
+    100% {width: 200px; transform: translate(1460px, 2267px)}
+}
+@keyframes motion4-2 {
+    0% {width: 0; transform: translate(1563px, 2270px) rotate(90deg)}
+    100% {width: 200px; transform: translate(1563px, 2170px) rotate(90deg)}
+}
+@keyframes motion4-3 {
+    0% {width: 0; transform: translate(1563.242px, 2268px) rotate(45deg)}
+    100% {width: 200px; transform: translate(1491.242px, 2197px) rotate(45deg)}
+}
+@keyframes motion4-4 {
+    0% {width: 0; transform: translate(1560.664px, 2272.243px) rotate(135deg)}
+    100% {width: 200px; transform: translate(1632.664px, 2201.243px) rotate(135deg)}
+}
+@keyframes motion4-5 {
+    0% {width: 0; transform: translate(1561.296px, 2268px) rotate(22.5deg)}
+    100% {width: 200px; transform: translate(1468.296px, 2229px) rotate(22.5deg)}
+}
+@keyframes motion4-6 {
+    0% {width: 0; transform: translate(1562.081px, 2272.296px) rotate(112.5deg)}
+    100% {width: 200px; transform: translate(1601.081px, 2178.296px) rotate(112.5deg)}
+}
+@keyframes motion4-7 {
+    0% {width: 0; transform: translate(1563.543px, 2269px) rotate(67.5deg)}
+    100% {width: 200px; transform: translate(1524.543px, 2176px) rotate(67.5deg)}
+}
+@keyframes motion4-8 {
+    0% {width: 0; transform: translate(1562.072px, 2272.544px) rotate(157.5deg)}
+    100% {width: 200px; transform: translate(1653.072px, 2234.544px) rotate(157.5deg)}
+}
+/* 2022-12-20 추가 끝 */
