@@ -445,6 +445,29 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     .works-img .img-hover-list {
         margin-bottom: 40px;
     }
+    /* 2022-12-20 추가 시작 */
+    .list-type-table table{
+      table-layout: fixed;
+    }
+    .list-type-table table .title a {
+      overflow: hidden;
+      max-width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .list-type-table table .experience {
+      text-align: center;
+    }
+    .news-contents-wrap.ver-recruit .n-notice {
+      padding: 0 48px 0 40px;
+    }
+    .news-contents-wrap.ver-recruit .inner-news-title-wrap {
+      width: calc(100% - 321px)
+    }
+    .ver-recruit .news-title-wrap .experience {
+      right: 40px;
+    }
+    /* 2022-12-20 추가 끝 */
 }
 
 /* works - view */
@@ -626,6 +649,11 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .site-map .site-map-wrap .site-map-inn ul li {margin-bottom: 20px; font-size: 40px; line-height: 60px; color: #919191; font-weight: normal; text-align: center; font-family: 'Poppins', sans-serif;}
 .site-map .site-map-wrap .site-map-inn ul li a {color: #919191;}
 .site-map .site-map-wrap .site-map-inn ul li a:hover {color: #fff;}
+
+/* 1366px design */
+@media (max-width: 1366px) {
+    .site-map {margin: 180px 0 150px;}
+}
 
 /* 2022-12-15 추가 시작 */
 /* about - effect */
