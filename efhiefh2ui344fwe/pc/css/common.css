@@ -731,7 +731,6 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .group-effect .effect-tit {
   margin: 0 0 100px 0;
   /* overflow: hidden; */
-  opacity: 0;
 }
 .group-effect .effect-tit > span {
   display: block;
@@ -755,11 +754,11 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   -o-transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5);
   transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5); */
 
-  -webkit-transform: translate(0%, 100px) ;
-  -ms-transform: translate(0%, 100px) ;
-  -moz-transform: translate(0%, 100px) ;
-  -o-transform: translate(0%, 100px) ;
-  transform: translate(0%, 100px) ;
+  -webkit-transform: translate(0%, 100px);
+  -ms-transform: translate(0%, 100px);
+  -moz-transform: translate(0%, 100px);
+  -o-transform: translate(0%, 100px);
+  transform: translate(0%, 100px);
 
   -webkit-animation: skewUp 0.8s forwards;
   -moz-animation: skewUp 0.8s forwards;
@@ -773,201 +772,156 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   opacity: 1;
 }
 
-/* 1 STUDIO X+U는 새로운 콘텐츠 창작으로 */
-.sec1-txt-area .txt1.effect.active,
-.sec1-txt-area .txt2.effect.active {
+[class*='section'].about [class*='txt'].effect.active,
+[class*='section'].about .logo.effect.active,
+[class*='section'].about [class^='tit'].effect.active,
+[class*='section'].about [class*='-ani-area'].effect.active,
+[class*='section'].about .logo-wrap.effect.active,
+[class*='section'].about .btn-wrap.effect.active {
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
   -o-animation-play-state: running;
   animation-play-state: running;
 }
 
-.sec1-txt-area .txt1.effect {
+[class*='section'].about [class*='txt'].effect,
+[class*='section'].about .logo.effect,
+[class*='section'].about [class^='tit'].effect,
+[class*='section'].about [class*='-ani-area'].effect,
+[class*='section'].about .logo-wrap.effect,
+[class*='section'].about .btn-wrap.effect {
   opacity: 0;
-
-  -webkit-animation: text_effect 0.8s ease 0.1s forwards;
-  -moz-animation: text_effect 0.8s ease 0.1s forwards;
-  -o-animation: text_effect 0.8s ease 0.1s forwards;
-  animation: text_effect 0.8s ease 0.1s forwards;
 
   -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
   animation-play-state: paused;
+}
+
+/* about section - 1 */
+.sec1-txt-area .txt1.effect {
+  -webkit-animation: text_effect 0.8s ease 0.1s forwards;
+  -moz-animation: text_effect 0.8s ease 0.1s forwards;
+  -o-animation: text_effect 0.8s ease 0.1s forwards;
+  animation: text_effect 0.8s ease 0.1s forwards;
 }
 
 .sec1-txt-area .txt2.effect {
-  opacity: 0;
-
   -webkit-animation: text_effect 0.8s ease 0.2s forwards;
   -moz-animation: text_effect 0.8s ease 0.2s forwards;
   -o-animation: text_effect 0.8s ease 0.2s forwards;
   animation: text_effect 0.8s ease 0.2s forwards;
-
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
 }
 
-/* 2 새로운 즐거움의 */
-.sec2-txt-area .txt1.effect.active,
-.sec2-txt-area .txt2.effect.active,
-.sec2-txt-area .logo.effect.active {
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
-  -o-animation-play-state: running;
-  animation-play-state: running;
-}
-
+/* about section - 2 */
 .sec2-txt-area .txt1.effect {
-  opacity: 0;
-
-  -webkit-animation: text_effect 0.8s ease  0.1s forwards;
-  -moz-animation: text_effect 0.8s ease  0.1s forwards;
-  -o-animation: text_effect 0.8s ease  0.1s forwards;
-  animation: text_effect 0.8s ease  0.1s forwards;
-
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
+  -webkit-animation: text_effect 0.8s ease 0.1s forwards;
+  -moz-animation: text_effect 0.8s ease 0.1s forwards;
+  -o-animation: text_effect 0.8s ease 0.1s forwards;
+  animation: text_effect 0.8s ease 0.1s forwards;
 }
 
 .sec2-txt-area .txt2.effect {
-  opacity: 0;
-
   -webkit-animation: text_effect 0.8s ease 0.2s forwards;
   -moz-animation: text_effect 0.8s ease 0.2s forwards;
   -o-animation: text_effect 0.8s ease 0.2s forwards;
   animation: text_effect 0.8s ease 0.2s forwards;
-
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
 }
 
 .sec2-txt-area .logo.effect {
-  opacity: 0;
-
   -webkit-animation: text_effect 0.8s ease 0.3s forwards;
   -moz-animation: text_effect 0.8s ease 0.3s forwards;
   -o-animation: text_effect 0.8s ease 0.3s forwards;
   animation: text_effect 0.8s ease 0.3s forwards;
-
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
 }
 
-/* 3 BRAND IDENTITY */
-.section3 .tit.effect.active,
-.section3 .sec3-ani-area.effect.active {
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
-  -o-animation-play-state: running;
-  animation-play-state: running;
-}
-
+/* about section - 3 */
 .section3 .tit.effect {
-  opacity: 0;
-
   -webkit-animation: text_effect 0.8s ease 0.1s forwards;
   -moz-animation: text_effect 0.8s ease 0.1s forwards;
   -o-animation: text_effect 0.8s ease 0.1s forwards;
   animation: text_effect 0.8s ease 0.1s forwards;
-
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
 }
 
 .section3 .sec3-ani-area.effect {
-  opacity: 0;
-
   -webkit-animation: text_effect 0.8s ease 0.2s forwards;
   -moz-animation: text_effect 0.8s ease 0.2s forwards;
   -o-animation: text_effect 0.8s ease 0.2s forwards;
   animation: text_effect 0.8s ease 0.2s forwards;
-
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
 }
 
-/* 4 BRAND LOGO */
-.section4 .tit.effect.active,
-.section4 .logo-wrap.effect.active,
-.section4 .btn-wrap.effect.active {
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
-  -o-animation-play-state: running;
-  animation-play-state: running;
-}
-
+/* about section - 4 */
 .section4 .tit.effect {
-  opacity: 0;
-
   -webkit-animation: text_effect 0.8s ease 0.1s forwards;
   -moz-animation: text_effect 0.8s ease 0.1s forwards;
   -o-animation: text_effect 0.8s ease 0.1s forwards;
   animation: text_effect 0.8s ease 0.1s forwards;
-
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
 }
 
 .section4 .logo-wrap.effect {
-  opacity: 0;
-
   -webkit-animation: text_effect 0.8s ease 0.2s forwards;
   -moz-animation: text_effect 0.8s ease 0.2s forwards;
   -o-animation: text_effect 0.8s ease 0.2s forwards;
   animation: text_effect 0.8s ease 0.2s forwards;
-
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
 }
 
 .section4 .btn-wrap.effect {
-  opacity: 0;
-
   -webkit-animation: text_effect 0.8s ease 0.3s forwards;
   -moz-animation: text_effect 0.8s ease 0.3s forwards;
   -o-animation: text_effect 0.8s ease 0.3s forwards;
   animation: text_effect 0.8s ease 0.3s forwards;
+}
 
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
+@-webkit-keyframes text_effect {
+  0% {
+    opacity: 0;
+
+    -webkit-transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes text_effect {
+  0% {
+    opacity: 0;
+
+    -moz-transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes text_effect {
+  0% {
+    opacity: 0;
+
+    -o-transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+
+    -o-transform: translateY(0);
+  }
 }
 
 @keyframes text_effect {
   0% {
     opacity: 0;
 
-    -webkit-transform: translateY(100px);
     -ms-transform: translateY(100px);
-    -moz-transform: translateY(100px);
-    -o-transform: translateY(100px);
     transform: translateY(100px);
   }
   100% {
     opacity: 1;
 
-    -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -o-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -977,8 +931,14 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   /* 0% {transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5);}
   100% {transform: translate(0,0);} */
 
-  0% {  opacity: 0;transform: translate(0%, 100px)}
-  100% {  opacity: 1;transform: translate(0,0);}
+  0% {
+    opacity: 0;
+    transform: translate(0%, 100px)
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0);
+  }
 }
 @keyframes fadeIn {
   0% {opacity: 0;}
