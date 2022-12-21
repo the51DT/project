@@ -257,7 +257,7 @@ $(document).ready(function(){
   //   },
   // });
 
-  /* 2022-12-15 추가 시작 */
+  /* 2022-12-21 수정 시작 */
   /**
    * @author denver
    * https://github.com/github-denver
@@ -299,15 +299,7 @@ $(document).ready(function(){
           .not('.intro')
           .find('[class *= "effect"]')
           .each(function (index, element) {
-            ;(function (j) {
-              // st >= tempSt && _mouseWheelDown({ index: index, element: element })
-
-              // if (st >= tempSt) {
-              setTimeout(function () {
-                _mouseWheelDown({ index: j, element: element })
-              }, j * 400)
-              // }
-            })(index)
+            _mouseWheelDown({ index: j, element: element })
           })
 
         tempSt = st
@@ -318,11 +310,7 @@ $(document).ready(function(){
       $(intro)
         .find('[class *= "effect"]')
         .each(function (index, element) {
-          ;(function (j) {
-            setTimeout(function () {
-              _mouseWheelDown({ index: j, element: element, intro: true })
-            }, j * introDelay)
-          })(index)
+          _mouseWheelDown({ index: j, element: element, intro: true })
         })
     }
 
@@ -344,5 +332,5 @@ $(document).ready(function(){
 
     _activate()
   })()
-  /* 2022-12-15 추가 끝 */
+  /* // 2022-12-21 수정 끝 */
 });

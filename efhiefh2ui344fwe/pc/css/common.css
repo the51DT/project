@@ -108,7 +108,7 @@ body{background-color: #000;}
 .footer-inner .footer-conts .footer-info p+p {margin-top: 14px;}
 .footer-inner .footer-conts .footer-info copy {display: block; margin-top: 28px; font-size: 14px;color: #535353;}
 .footer-inner .footer-conts .footer-info .link-sitemap {margin-left: 6px; font-size: 16px; color: #919191;}
-.footer-inner .footer-conts .sns-footer {display: flex; justify-content: space-between; width: 160px; position: absolute; right: 0px; bottom: 42px; -webkit-transition: all 0.35s ease;transition: all 0.35s ease;}
+.footer-inner .footer-conts .sns-footer {display: flex; justify-content: space-between; width: 160px; position: absolute; right: 0px; bottom: 47px; -webkit-transition: all 0.35s ease;transition: all 0.35s ease;}
 .footer-inner .footer-conts .sns-footer a {opacity: .4;}
 .footer-inner .footer-conts .sns-footer a:hover {opacity: 1;}
 
@@ -127,8 +127,8 @@ section{position: relative;}
 .overflow-h{overflow: hidden;}
 
 .normal-tab-wrap .normal-tab ul{display: flex;}
-.normal-tab-wrap .normal-tab ul li + li{margin-left: 30px;}
-.normal-tab-wrap .normal-tab ul li a{position: relative; font-family: 'Poppins', sans-serif; font-size: 22px;color: #fff; line-height: 30px;}
+.normal-tab-wrap .normal-tab ul li + li{margin-left: 31px;}
+.normal-tab-wrap .normal-tab ul li a{position: relative; font-family: 'Poppins', sans-serif; font-size: 22px;color: #fff; line-height: 30px; font-weight: 500;letter-spacing: 0.25px;}
 .normal-tab-wrap .normal-tab ul li a.active:before {opacity: 1;color: #ffffff;width: 100%;position: absolute;bottom: -2px;display: block;height: 2px;content: "";background-color: #fff;}
 .normal-tab-wrap .normal-tab ul li a:before,
 .normal-tab-wrap .normal-tab ul li a:after {position: absolute;-webkit-transition: all 0.35s ease;transition: all 0.35s ease;}
@@ -331,9 +331,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .news-contents-wrap.ver-recruit .n-notice{display: inline-block; vertical-align: middle; padding-right: 40px;}
 .news-contents-wrap.ver-recruit .inner-news-title-wrap{display: inline-block; max-width: 1300px; vertical-align: middle;}
 .news-title-wrap{position: relative; padding: 60px 0; border-top: 1px solid #444444; border-bottom: 1px solid #444444;}
-/* 2022-12-20 수정 시작 */
 .news-title-wrap h4{font-size: 50px; font-weight: 600; color: #fff; margin: 0; line-height: 1.4;}
-/* 2022-12-20 수정 끝 */
 .news-title-wrap p.date{margin-top: 24px; color: #919191; font-size: 20px;}
 .ver-recruit .news-title-wrap .experience{position: absolute; right: 60px; top: 50%; font-size: 22px; color: #DBFC00; transform: translateY(-50%);}
 .news-contents-box{padding: 40px 0 120px; border-bottom: 1px solid #444444; font-size: 22px; color: #fff; letter-spacing: -1px; line-height: 36px;}
@@ -363,14 +361,12 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .contents-pagination ul .next{width: 50px; height: 50px; background: url(../images/common/news_arrow_next.svg) no-repeat center 100%;}
 
 .contents-pagination.type2{margin-top: 80px; text-align: center;}
-/* 2022-12-19 수정 시작 */
 .contents-pagination.type2 a {
     display: block;
     /* font-family: 'Poppins', sans-serif; */
     font-size: 40px;
     color: #555;
 }
-/* // 2022-12-19 수정 끝 */
 
 .tabs ul::after{display: block; content: ''; clear: both; float: inherit;}
 .tabs ul li{float: left; background-color: transparent; border: 0; padding: 0;}
@@ -417,7 +413,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 
 /* works */
 /* works - list */
-.works .normal-tab-wrap{margin-top: -84px;}
+.works .normal-tab-wrap{margin-top: -90px;}
 .works-list-wrap{margin-top: 102px;}
 .works-list-wrap .normal-list{margin: 0 -25px;}
 .works-list-wrap .normal-list > ul{display: flex; flex-wrap: wrap; flex: 0 0 auto;}
@@ -452,7 +448,6 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     .works-img .img-hover-list {
         margin-bottom: 40px;
     }
-    /* 2022-12-20 추가 시작 */
     .list-type-table table{
       table-layout: fixed;
     }
@@ -474,7 +469,6 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     .ver-recruit .news-title-wrap .experience {
       right: 40px;
     }
-    /* 2022-12-20 추가 끝 */
 }
 
 /* works - view */
@@ -508,38 +502,38 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 /* about */
 .pc-1366{display: none;}
 .about h3.tit{margin: 0; color: #fff; font-family: 'Poppins', sans-serif; font-size: 50px; font-weight: normal; line-height: 70px;text-transform: uppercase;}
-.section1.about{padding-bottom: 845px;}
-.section1.about .sec1-txt-area .txt1{color: #fff; font-size: 70px; font-weight: 500; line-height: 100px; letter-spacing: -2.5px;}
-.section1.about .sec1-txt-area .txt2{display: inline-block; padding-top: 77px; color: #919191; font-size: 30px; line-height: 50px; text-align: left; letter-spacing: -1.25px;}
+.section1.about{padding-bottom: 927px;}
+.section1.about .sec1-txt-area .txt1{color: #fff; font-size: 70px; font-weight: 500; line-height: 1.4; letter-spacing: -2.5px;}
+.section1.about .sec1-txt-area .txt2{display: inline-block; padding-top: 55px; color: #919191; font-size: 30px; line-height: 1.6666; text-align: left; letter-spacing: -1.25px;}
+.section1.about .sec1-txt-area .eng {font-family: 'Poppins', sans-serif;}
 .section1.about .sec1-txt-area .txt2+.txt2{padding-top:34px;}
-.section1.about .bg{position: absolute; width: 100%; height: 800px; left: 0; right: 0; bottom: 0; background: url(../images/sub/img-about-bg.png) no-repeat center / 100% auto;}
+.section1.about .bg{position: absolute; height: 800px; left: -80px; right: -80px; bottom: 0; background: url(../images/sub/img-about-bg.png) no-repeat center / 100% auto;}
 .section1.about .bg::before {content: ''; display: block; position: absolute; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0.4) 80%, rgba(0,0,0,1) 100%);}
 
 .section2.about{margin-top: -216px;}
 .section2.about .sec2-txt-area .txt1{display: flex; align-items: center; color: #fff; font-size: 70px; font-weight: 500; line-height: 100px; letter-spacing: -3px;}
-.section2.about .sec2-txt-area .txt1 .icon-x{display: inline-block; width: 72.8px; height: 66.5px; margin-left: 35px; background: url(../images/sub/icon-x.svg) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
-.section2.about .sec2-txt-area .txt2{margin-top: 80px; color: #919191; font-size: 30px; font-weight: 500; line-height: 50px; text-align: left; letter-spacing: -1.25px;}
+.section2.about .sec2-txt-area .txt1 .icon-x{display: inline-block; width: 72.8px; height: 66.5px; margin-left: 35px; background: url(../images/sub/icon-x.png) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
+.section2.about .sec2-txt-area .txt2{margin-top: 58px; color: #919191; font-size: 30px; font-weight: 500; line-height: 50px; text-align: left; letter-spacing: -1.25px;}
 .section2.about .sec2-txt-area .txt2+.txt2{margin-top: 0;}
-.section2.about .sec2-txt-area .txt2 .icon-x{display: inline-block; width: 27.37px; height: 25px; margin-left: 6px; margin-right: 3px; background: url(../images/sub/icon-x-gray.svg) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
-.section2.about .sec2-txt-area .logo{width: 550px; margin-top: 38px}
+.section2.about .sec2-txt-area .txt2 .icon-x{display: inline-block; width: 27.37px; height: 25px; margin-left: 6px; margin-right: 3px; background: url(../images/sub/icon-x-gray.png) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
+.section2.about .sec2-txt-area .logo{width: 550px; margin-top: 57px}
 .section2.about .sec2-txt-area .logo > img{display: block; width: 100%;}
 
-.section3.about{margin-top:200px}
-.section3.about .sec3-ani-area{display: flex; flex-wrap: nowrap; align-items: center; margin-top: 40px;}
+.section3.about{margin-top:161px}
+.section3.about .sec3-ani-area{display: flex; flex-wrap: nowrap; align-items: center; margin-top: 41px;}
 .section3.about .sec3-ani-box{position: relative; width: calc(100% - 13px); min-width: calc(100% - 13px); height:550px; background-color:#191919 }
 .section3.about .sec3-ani-box.box1{width: 25%; min-width: calc(25% - 10px);}
 .section3.about .sec3-ani-box + .sec3-ani-box{margin-left: 13px;}
 .section3.about .sec3-ani-box.box3{margin-left: 14px;}
 .section3.about .sec3-ani-box .item-num{position: absolute; top: 30px; left: 30px; color: #555; font-family: 'Poppins', sans-serif; font-size: 20px; line-height: 28px}
-/* 2022-12-19 수정 시작 */
 .section3.about .sec3-ani-box .item-tit{position: absolute; max-width:100%; top:50%; left:50%; transform: translate(-50%,-50%); color: #dbfc00; font-family: 'Poppins', sans-serif; font-size: 50px; font-weight: 500; text-align: center; letter-spacing: -0.7px; z-index: 10; opacity: 0; transition: opacity 0.4s;}
-/* // 2022-12-19 수정 끝 */
-.section3.about .sec3-ani-box .item-des{position: absolute; left: 0; right: 0; bottom: 40px; color: #919191; font-size: 16px; line-height: 1.625; text-align: center; letter-spacing: -0.5px; opacity: 0; transition: opacity 0.4s;}
+.section3.about .sec3-ani-box .item-des{position: absolute; left: 0; right: 0; bottom: 37px; color: #919191; font-size: 16px; line-height: 1.666; text-align: center; letter-spacing: -0.5px; opacity: 0; transition: opacity 0.4s;}
 .section3.about .sec3-ani-box .item-des > strong{color: #fff;}
 .section3.about .sec3-ani-box .item-des > .eng{font-family: 'Poppins', sans-serif;}
 .section3.about .sec3-ani-box .motions{position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; transition: opacity 0.2s;}
 .section3.about .sec3-ani-box .motions svg {width: 100%; height: 100%;}
 
+/*
 .sec3-ani-box.on #motion1-1{animation: motion1-1 0.6s ease-in forwards}
 .sec3-ani-box.on #motion1-2{animation: motion1-2 0.6s 0.2s ease-in forwards}
 .sec3-ani-box.on #motion1-3{animation: motion1-3 0.8s ease-in forwards}
@@ -567,6 +561,36 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .sec3-ani-box.on #motion4-6{animation: motion4-6 0.6s ease-in forwards}
 .sec3-ani-box.on #motion4-7{animation: motion4-7 0.6s ease-in forwards}
 .sec3-ani-box.on #motion4-8{animation: motion4-8 0.6s ease-in forwards}
+*/
+
+.sec3-ani-box.on #motion1-1{animation: motion1-1 0.4s ease-in forwards}
+.sec3-ani-box.on #motion1-2{animation: motion1-2 0.4s 0.2s ease-in forwards}
+.sec3-ani-box.on #motion1-3{animation: motion1-3 0.6s ease-in forwards}
+
+.sec3-ani-box.on #motion3-1{animation: motion3 0.1s ease-in forwards}
+.sec3-ani-box.on #motion3-2{animation: motion3 0.1s 0.1s ease-in forwards}
+.sec3-ani-box.on #motion3-3{animation: motion3 0.1s 0.2s ease-in forwards}
+.sec3-ani-box.on #motion3-4{animation: motion3 0.1s 0.3s ease-in forwards}
+.sec3-ani-box.on #motion3-5{animation: motion3 0.1s 0.4s ease-in forwards}
+.sec3-ani-box.on #motion3-6{animation: motion3 0.1s 0.5s ease-in forwards}
+.sec3-ani-box.on #motion3-7{animation: motion3 0.1s 0.6s ease-in forwards}
+.sec3-ani-box.on #motion3-8{animation: motion3 0.1s 0.7s ease-in forwards}
+.sec3-ani-box.on #motion3-9{animation: motion3 0.1s 0.8s ease-in forwards}
+
+.sec3-ani-box.on #motion2-1{animation: motion2-1 0.4s ease-in forwards}
+.sec3-ani-box.on #motion2-2{animation: motion2-2 0.4s ease-in forwards}
+.sec3-ani-box.on #motion2-3{animation: motion2-3 0.4s ease-in forwards}
+.sec3-ani-box.on #motion2-4{animation: motion2-4 0.4s ease-in forwards}
+
+.sec3-ani-box.on #motion4-1{animation: motion4-1 0.4s ease-in forwards}
+.sec3-ani-box.on #motion4-2{animation: motion4-2 0.4s ease-in forwards}
+.sec3-ani-box.on #motion4-3{animation: motion4-3 0.4s ease-in forwards}
+.sec3-ani-box.on #motion4-4{animation: motion4-4 0.4s ease-in forwards}
+.sec3-ani-box.on #motion4-5{animation: motion4-5 0.4s ease-in forwards}
+.sec3-ani-box.on #motion4-6{animation: motion4-6 0.4s ease-in forwards}
+.sec3-ani-box.on #motion4-7{animation: motion4-7 0.4s ease-in forwards}
+.sec3-ani-box.on #motion4-8{animation: motion4-8 0.4s ease-in forwards}
+
 @keyframes motion1-1 {
     0% {transform: translate(174.91px, 3767.891px) rotate(-135deg)}
     100% {transform: translate(374.91px, 3967.891px) rotate(-135deg)}
@@ -632,10 +656,10 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     100% {width: 300px; transform: translate(1705.28px, 2266.696px) rotate(157.5deg)}
 }
 
-.section4.about{margin-top: 120px;}
-.section4.about .inner{padding-bottom: 156px;}
+.section4.about{margin-top: 101px;}
+.section4.about .inner{padding-bottom: 154px;}
 .section4.about .sec3-ci-area {width: 100%;}
-.section4.about .sec3-ci-area .logo-wrap{display: flex; align-items: center; width: 100%; height: 400px; margin-top: 40px; border: 1px solid #111; background: #191919 url(../images/sub/img-ablout-ci-bg.svg) repeat-x center / auto 100%;}
+.section4.about .sec3-ci-area .logo-wrap{display: flex; align-items: center; width: 100%; height: 400px; margin-top: 40px; border: 1px solid #111; background: url(../images/sub/img-ablout-ci-bg.svg) repeat-x center / auto 100%;}
 .section4.about .sec3-ci-area .logo-wrap .logo{width: 50%}
 .section4.about .sec3-ci-area .logo-wrap .logo > img{display: block; margin: 0 auto;}
 .section4.about .sec3-ci-area .btn-wrap{margin: 24px 0 0 0; text-align: right;}
@@ -647,8 +671,8 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 /* partners */
 /* .partners-list-wrap{padding-top: 20px;} */
 .partners-list-wrap .normal-list{margin: 0 -35px;}
-.partners-list-wrap .normal-list > ul{display: flex; flex-wrap: wrap; flex: 0 0 auto;}
-.partners-list-wrap .normal-list > ul > li{ flex: 0 0 auto; width: 33.333%; padding: 0 25px; box-sizing: border-box;}
+.partners-list-wrap .normal-list > ul{display: flex; flex-wrap: wrap; flex: 0 0 auto; margin-top: -10px}
+.partners-list-wrap .normal-list > ul > li{ flex: 0 0 auto; width: 33.333%; padding: 0 25px; box-sizing: border-box; margin-top: 10px;}
 .partners-list-wrap .normal-list > ul > li .partners-box{position: relative; background-color: #191919;}
 .partners-list-wrap .normal-list > ul > li .partners-tit{margin-top: 20px; margin-bottom: 20px; text-align: center; font-size: 22px; color: #919191;}
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo{display: flex; align-items: center; justify-content: center; height:200px;}
@@ -668,12 +692,10 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     .site-map {margin: 180px 0 150px;}
 }
 
-/* 2022-12-15 추가 시작 */
 /* about - effect */
 .group-effect .effect-tit {
   margin: 0 0 100px 0;
-  overflow: hidden;
-  opacity: 0;
+  /* overflow: hidden; */
 }
 .group-effect .effect-tit > span {
   display: block;
@@ -681,6 +703,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   font-size: 120px;
   line-height: 168px;
   color: #fff;
+  opacity: 0;
 
   text-transform: uppercase;
 
@@ -690,11 +713,17 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   -o-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 
-  -webkit-transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5);
+  /* -webkit-transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5);
   -ms-transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5);
   -moz-transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5);
   -o-transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5);
-  transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5);
+  transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5); */
+
+  -webkit-transform: translate(0%, 100px);
+  -ms-transform: translate(0%, 100px);
+  -moz-transform: translate(0%, 100px);
+  -o-transform: translate(0%, 100px);
+  transform: translate(0%, 100px);
 
   -webkit-animation: skewUp 0.8s forwards;
   -moz-animation: skewUp 0.8s forwards;
@@ -703,32 +732,177 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 }
 .group-effect .effect {
   opacity: 0;
-
-  -webkit-transform: translateY(50px);
-  -ms-transform: translateY(50px);
-  -moz-transform: translateY(50px);
-  -o-transform: translateY(50px);
-  transform: translateY(50px);
-
-  -webkit-transition: opacity 0.8s, transform 0.8s;
-  -moz-transition: opacity 0.8s, transform 0.8s;
-  -o-transition: opacity 0.8s, transform 0.8s;
-  transition: opacity 0.8s, transform 0.8s;
 }
 .group-effect .effect.active {
   opacity: 1;
-
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
 }
-/* 2022-12-15 추가 끝 */
+
+[class*='section'].about [class*='txt'].effect.active,
+[class*='section'].about .logo.effect.active,
+[class*='section'].about [class^='tit'].effect.active,
+[class*='section'].about [class*='-ani-area'].effect.active,
+[class*='section'].about .logo-wrap.effect.active,
+[class*='section'].about .btn-wrap.effect.active {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+[class*='section'].about [class*='txt'].effect,
+[class*='section'].about .logo.effect,
+[class*='section'].about [class^='tit'].effect,
+[class*='section'].about [class*='-ani-area'].effect,
+[class*='section'].about .logo-wrap.effect,
+[class*='section'].about .btn-wrap.effect {
+  opacity: 0;
+
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* about section - 1 */
+.sec1-txt-area .txt1.effect {
+  -webkit-animation: text_effect 0.8s ease 0.1s forwards;
+  -moz-animation: text_effect 0.8s ease 0.1s forwards;
+  -o-animation: text_effect 0.8s ease 0.1s forwards;
+  animation: text_effect 0.8s ease 0.1s forwards;
+}
+
+.sec1-txt-area .txt2.effect {
+  -webkit-animation: text_effect 0.8s ease 0.2s forwards;
+  -moz-animation: text_effect 0.8s ease 0.2s forwards;
+  -o-animation: text_effect 0.8s ease 0.2s forwards;
+  animation: text_effect 0.8s ease 0.2s forwards;
+}
+
+/* about section - 2 */
+.sec2-txt-area .txt1.effect {
+  -webkit-animation: text_effect 0.8s ease 0.1s forwards;
+  -moz-animation: text_effect 0.8s ease 0.1s forwards;
+  -o-animation: text_effect 0.8s ease 0.1s forwards;
+  animation: text_effect 0.8s ease 0.1s forwards;
+}
+
+.sec2-txt-area .txt2.effect {
+  -webkit-animation: text_effect 0.8s ease 0.2s forwards;
+  -moz-animation: text_effect 0.8s ease 0.2s forwards;
+  -o-animation: text_effect 0.8s ease 0.2s forwards;
+  animation: text_effect 0.8s ease 0.2s forwards;
+}
+
+.sec2-txt-area .logo.effect {
+  -webkit-animation: text_effect 0.8s ease 0.3s forwards;
+  -moz-animation: text_effect 0.8s ease 0.3s forwards;
+  -o-animation: text_effect 0.8s ease 0.3s forwards;
+  animation: text_effect 0.8s ease 0.3s forwards;
+}
+
+/* about section - 3 */
+.section3 .tit.effect {
+  -webkit-animation: text_effect 0.8s ease 0.1s forwards;
+  -moz-animation: text_effect 0.8s ease 0.1s forwards;
+  -o-animation: text_effect 0.8s ease 0.1s forwards;
+  animation: text_effect 0.8s ease 0.1s forwards;
+}
+
+.section3 .sec3-ani-area.effect {
+  -webkit-animation: text_effect 0.8s ease 0.2s forwards;
+  -moz-animation: text_effect 0.8s ease 0.2s forwards;
+  -o-animation: text_effect 0.8s ease 0.2s forwards;
+  animation: text_effect 0.8s ease 0.2s forwards;
+}
+
+/* about section - 4 */
+.section4 .tit.effect {
+  -webkit-animation: text_effect 0.8s ease 0.1s forwards;
+  -moz-animation: text_effect 0.8s ease 0.1s forwards;
+  -o-animation: text_effect 0.8s ease 0.1s forwards;
+  animation: text_effect 0.8s ease 0.1s forwards;
+}
+
+.section4 .logo-wrap.effect {
+  -webkit-animation: text_effect 0.8s ease 0.2s forwards;
+  -moz-animation: text_effect 0.8s ease 0.2s forwards;
+  -o-animation: text_effect 0.8s ease 0.2s forwards;
+  animation: text_effect 0.8s ease 0.2s forwards;
+}
+
+.section4 .btn-wrap.effect {
+  -webkit-animation: text_effect 0.8s ease 0.3s forwards;
+  -moz-animation: text_effect 0.8s ease 0.3s forwards;
+  -o-animation: text_effect 0.8s ease 0.3s forwards;
+  animation: text_effect 0.8s ease 0.3s forwards;
+}
+
+@-webkit-keyframes text_effect {
+  0% {
+    opacity: 0;
+
+    -webkit-transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes text_effect {
+  0% {
+    opacity: 0;
+
+    -moz-transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes text_effect {
+  0% {
+    opacity: 0;
+
+    -o-transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes text_effect {
+  0% {
+    opacity: 0;
+
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 
 @keyframes skewUp {
-  0% {transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5);}
-  100% {transform: translate(0,0);}
+  /* 0% {transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5);}
+  100% {transform: translate(0,0);} */
+
+  0% {
+    opacity: 0;
+    transform: translate(0%, 100px)
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0);
+  }
 }
 @keyframes fadeIn {
   0% {opacity: 0;}
@@ -838,7 +1012,6 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 
 /* 1366px design */
 @media (max-width: 1366px) {
-  /* 2022-12-20 추가 시작 */
   .site-map {
     margin: 194px 9px 138px;
   }
@@ -851,5 +1024,4 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   .site-map .site-map-wrap .site-map-inn ul li {
     margin-bottom: 16px;
   }
-  /* 2022-12-20 추가 끝 */
 }
