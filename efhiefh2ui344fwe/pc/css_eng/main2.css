@@ -9,6 +9,9 @@ body {background-color:#000}
 h1, h2, h3, h4, h5 {margin:0}
 button {margin:0; padding:0; background:none}
 
+/* 텍스트 드래그 컬러 */
+::selection{background-color: #DBFC00; color: #000;}
+
 .main section {position:relative; padding-top:0; min-height:0}
 .section1 {height:97rem}
 .section1-trigger {position:absolute; top:0; height:60%}
