@@ -323,6 +323,7 @@ $(window).on('load', function(){
         $('.bg-area').fadeIn();
         // $('body').off('scroll touchmove mousewheel DOMMouseScroll');
         enableScroll();
+        maskOff();
         $('.ani-area').hide();
         $('.mask-area').css({'opacity':'1'})
         $('html').css({'overflow-y':'scroll'});
@@ -338,44 +339,60 @@ $(window).on('load', function(){
     
 
     // scroll motion
-    let tl2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.intro',
-        start: 'top top',
-        end: '+=100%',
-        scrub: 1,
-        // markers: true
-      }
-    })
-    tl2.to('.loading-txt', {
-      opacity: 0,
-      // ease: Power2.easeOut,
-      duration: 0.1
-    })
-    tl2.to('.mask-area .mask', {
-      scale: 2.4,
-      transition: 'all 0.2s',
-      x: '-35%',
-      ease: Power4.easeOut,
-      duration: 0.5
-    })
-    tl2.to('.mask-area', {
-      scale: 16,
-      ease: Power4.easeOut,
-      transition: 'all 0.2s',
-      duration: 0.2,
-      onComplete: function(){
-        $('.main-txt, .arrow-down, #fp-nav').css({'opacity':'1','transition':'all 0.2s'});
-      }
-    })
-    tl2.to('.mask-area', {
-      opacity: 0,
-      ease: Power4.easeOut,
-      duration: 0.1,
-      onComplete: function(){
-        $('.intro').hide();
-      }
-    })
+    // let tl2 = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: '.intro',
+    //     start: 'top top',
+    //     end: '+=100%',
+    //     scrub: 1,
+    //     markers: true
+    //   }
+    // })
+    // tl2.to('.loading-txt', {
+    //   opacity: 0,
+    //   // ease: Power2.easeOut,
+    //   duration: 0.1
+    // })
+    // tl2.to('.mask-area .mask', {
+    //   scale: 2.4,
+    //   transition: 'all 0.2s',
+    //   x: '-35%',
+    //   ease: Power4.easeOut,
+    //   duration: 0.5
+    // })
+    // tl2.to('.mask-area', {
+    //   scale: 16,
+    //   ease: Power4.easeOut,
+    //   transition: 'all 0.2s',
+    //   duration: 0.2,
+    //   onComplete: function(){
+    //     $('.main-txt, .arrow-down, #fp-nav').css({'opacity':'1','transition':'all 0.2s'});
+    //   }
+    // })
+    // tl2.to('.mask-area', {
+    //   opacity: 0,
+    //   ease: Power4.easeOut,
+    //   duration: 0.1,
+    //   onComplete: function(){
+    //     $('.intro').hide();
+    //   }
+    // })
+
+    // mask off
+    let maskOff = () => {
+      $('.mask-area, #fp-nav, #header').on('scroll mousewheel', (e) => {
+        var wheel = e.originalEvent.wheelDelta;
+        if(!(wheel > 0)) {
+          $('.loading-txt').css({'transform':'translateY(60rem)','opacity':'0','transition':'all 0.6s'});
+          $('.mask-area').css({'transform':'scale(16)','transition':'transform linear 1s, opacity 0.6s ease 0.2s','transform-origin':'55% center', 'opacity':'0'});
+          $('.main-txt, .arrow-down, #fp-nav').css({'opacity':'1','transition':'all 0.6s'});
+          setTimeout(() => {
+            $('.mask-area').fadeOut(600);
+          }, 600);
+        };
+      });
+    };
+
   },1000)
 
   $('.arrow-down > a').on('click', (e) => {
