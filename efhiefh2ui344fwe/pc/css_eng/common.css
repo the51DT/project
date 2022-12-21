@@ -26,6 +26,9 @@ input[type=checkbox],
 input[type=radio] {-o-appearance: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; margin:0;}
 button{border: 0;outline: 0;background: none;padding: 0; margin: 0;}
 
+/* 텍스트 드래그 컬러 */
+::selection{background-color: #DBFC00; color: #000;}
+
 /* heading */
 h1,
 h2,
@@ -432,10 +435,10 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .anchor-box:hover .works-img img{transform: scale(1.05); transition: transform .2s; /* Animation */ }
 
 .works-img .img-hover-list{color: #000000; font-size: 22px; line-height: 44px; letter-spacing: 0; width: 100%; margin-bottom: 50px;}
-.works-img .img-hover-list > li{display: flex; justify-content: space-between; border-bottom: 1px solid rgba(115, 129, 24, 0.4);}
+.works-img .img-hover-list > li{display: flex; border-bottom: 1px solid rgba(115, 129, 24, 0.4);}
 .works-img .img-hover-list > li:last-child{border-bottom: 0;}
 .works-img .img-hover-list > li + li{margin-top: 20px;}
-.works-img .img-hover-list > li span{display: block; margin-bottom: 20px;}
+.works-img .img-hover-list > li span{display: block; margin-bottom: 20px; padding-right: 30px;}
 
 /* 1366px design */
 @media (max-width: 1366px) {
@@ -638,7 +641,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .partners-list-wrap .normal-list > ul > li{ flex: 0 0 auto; width: 33.333%; padding: 0 25px; box-sizing: border-box;}
 .partners-list-wrap .normal-list > ul > li .partners-box{position: relative; background-color: #191919;}
 .partners-list-wrap .normal-list > ul > li .partners-tit{margin-top: 20px; margin-bottom: 20px; text-align: center; font-size: 22px; color: #919191;}
-.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo{padding-top: 60px; padding-bottom: 60px; text-align: center;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo{display: flex; align-items: center; justify-content: center; height:200px;}
 
 /* site map */
 .site-map {margin: 180px 160px 250px;}
