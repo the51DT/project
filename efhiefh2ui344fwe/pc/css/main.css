@@ -182,7 +182,9 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-wei
 .program-slide .item-bg-wrap .video-dim {position:absolute; left:0; right:0; top:0; height:100%; background:rgba(0,0,0,0.5)}
 .program-slide .item-txt-wrap {position:absolute; width:100%; max-width:160rem; min-height:61.8rem; left:5rem; right:5rem; top:50%; margin:0 auto; transform:translateY(-50%)}
 .program-slide .item-txt-wrap .item-tit {display:block; color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-weight:normal; line-height:12rem}
-.program-slide .item-txt-wrap .item-des {margin-top:2rem; color:rgba(255,255,255,0.7); font-size:2rem; font-weight:normal; line-height:3rem}
+/* 2022-12-21 수정 시작 */
+.program-slide .item-txt-wrap .item-des {margin-top:2.1rem; color:rgba(255,255,255,0.7); font-size:2.2rem; font-weight:normal; line-height:1.5454}
+/* 2022-12-21 수정 끝 */
 /* 2022-12-20 v2 추가 시작 */
 .program-slide .item-txt-wrap .item-link {display:inline-block; margin-top: 4rem;font-size:1.8rem;color:#DBFC00;}
 /* 2022-12-20 v2 추가 끝 */
@@ -201,7 +203,9 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-wei
 
 .section4 {width:100%; max-width:192rem; margin:0 auto; padding:0 5rem}
 .section4 .fp-tableCell {padding-top:8rem}
-.section4 .section-inner {width:100%; max-width:160rem; margin:0 auto; padding:2rem 0 15rem}
+/* 2022-12-21 수정 시작 */
+.section4 .section-inner {width:100%; max-width:160rem; margin:0 auto; padding:2rem 0 23rem}
+/* // 2022-12-21 수정 끝 */
 .news-list-area {margin-top:5rem}
 .news-list {display:flex; width:100%}
 .news-list > li + li {margin-left:4rem}

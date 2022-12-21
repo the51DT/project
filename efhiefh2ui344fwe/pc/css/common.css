@@ -105,7 +105,9 @@ body{background-color: #000;}
 .footer-inner .footer-conts .footer-info p+p {margin-top: 14px;}
 .footer-inner .footer-conts .footer-info copy {display: block; margin-top: 28px; font-size: 14px;color: #535353;}
 .footer-inner .footer-conts .footer-info .link-sitemap {margin-left: 6px; font-size: 16px; color: #919191;}
-.footer-inner .footer-conts .sns-footer {display: flex; justify-content: space-between; width: 160px; position: absolute; right: 0px; bottom: 42px; -webkit-transition: all 0.35s ease;transition: all 0.35s ease;}
+/* 2022-12-21 수정 시작 */
+.footer-inner .footer-conts .sns-footer {display: flex; justify-content: space-between; width: 160px; position: absolute; right: 0px; bottom: 47px; -webkit-transition: all 0.35s ease;transition: all 0.35s ease;}
+/* // 2022-12-21 수정 끝 */
 .footer-inner .footer-conts .sns-footer a {opacity: .4;}
 .footer-inner .footer-conts .sns-footer a:hover {opacity: 1;}
 
@@ -124,8 +126,10 @@ section{position: relative;}
 .overflow-h{overflow: hidden;}
 
 .normal-tab-wrap .normal-tab ul{display: flex;}
-.normal-tab-wrap .normal-tab ul li + li{margin-left: 30px;}
-.normal-tab-wrap .normal-tab ul li a{position: relative; font-family: 'Poppins', sans-serif; font-size: 22px;color: #fff; line-height: 30px;}
+/* 2022-12-21 수정 시작 */
+.normal-tab-wrap .normal-tab ul li + li{margin-left: 31px;}
+.normal-tab-wrap .normal-tab ul li a{position: relative; font-family: 'Poppins', sans-serif; font-size: 22px;color: #fff; line-height: 30px; font-weight: 500;letter-spacing: 0.25px;}
+/* // 2022-12-21 수정 끝 */
 .normal-tab-wrap .normal-tab ul li a.active:before {opacity: 1;color: #ffffff;width: 100%;position: absolute;bottom: -2px;display: block;height: 2px;content: "";background-color: #fff;}
 .normal-tab-wrap .normal-tab ul li a:before,
 .normal-tab-wrap .normal-tab ul li a:after {position: absolute;-webkit-transition: all 0.35s ease;transition: all 0.35s ease;}
@@ -414,7 +418,9 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 
 /* works */
 /* works - list */
-.works .normal-tab-wrap{margin-top: -84px;}
+/* 2022-12-21 수정 시작 */
+.works .normal-tab-wrap{margin-top: -90px;}
+/* // 2022-12-21 수정 끝 */
 .works-list-wrap{margin-top: 102px;}
 .works-list-wrap .normal-list{margin: 0 -25px;}
 .works-list-wrap .normal-list > ul{display: flex; flex-wrap: wrap; flex: 0 0 auto;}
@@ -435,11 +441,13 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .anchor-box .works-img img{transition: all .6s;}
 .anchor-box:hover .works-img img{transform: scale(1.05); transition: transform .2s; /* Animation */ }
 
-.works-img .img-hover-list{color: #000000; font-size: 22px; line-height: 44px; letter-spacing: -0.6px; width: 100%; margin-bottom: 50px;}
+.works-img .img-hover-list{color: #000000; font-size: 22px; line-height: 44px; letter-spacing: -0.6px; width: 100%; margin-bottom: 9px;}
 .works-img .img-hover-list > li{display: flex; justify-content: space-between; border-bottom: 1px solid rgba(115, 129, 24, 0.4);}
 .works-img .img-hover-list > li:last-child{border-bottom: 0;}
-.works-img .img-hover-list > li + li{margin-top: 20px;}
-.works-img .img-hover-list > li span{display: block; margin-bottom: 20px;}
+/* 2022-12-21 수정 시작 */
+.works-img .img-hover-list > li + li{margin-top: 14px;}
+.works-img .img-hover-list > li span{display: block; margin-bottom: 14px;}
+/* // 2022-12-21 수정 끝 */
 
 /* 1366px design */
 @media (max-width: 1366px) {
@@ -522,7 +530,9 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section2.about .sec2-txt-area .logo > img{display: block; width: 100%;}
 
 .section3.about{margin-top:200px}
-.section3.about .sec3-ani-area{display: flex; flex-wrap: nowrap; align-items: center; margin-top: 40px;}
+/* 2022-12-21 수정 시작 */
+.section3.about .sec3-ani-area{display: flex; flex-wrap: nowrap; align-items: center; margin-top: 46px;}
+/* // 2022-12-21 수정 끝 */
 .section3.about .sec3-ani-box{position: relative; width: calc(100% - 13px); min-width: calc(100% - 13px); height:550px; background-color:#191919 }
 .section3.about .sec3-ani-box.box1{width: 25%; min-width: calc(25% - 10px);}
 .section3.about .sec3-ani-box + .sec3-ani-box{margin-left: 13px;}
@@ -531,7 +541,9 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 /* 2022-12-19 수정 시작 */
 .section3.about .sec3-ani-box .item-tit{position: absolute; max-width:100%; top:50%; left:50%; transform: translate(-50%,-50%); color: #dbfc00; font-family: 'Poppins', sans-serif; font-size: 50px; font-weight: 500; text-align: center; letter-spacing: -0.7px; z-index: 10; opacity: 0; transition: opacity 0.4s;}
 /* // 2022-12-19 수정 끝 */
-.section3.about .sec3-ani-box .item-des{position: absolute; left: 0; right: 0; bottom: 40px; color: #919191; font-size: 16px; line-height: 1.625; text-align: center; letter-spacing: -0.5px; opacity: 0; transition: opacity 0.4s;}
+/* 2022-12-21 수정 시작 */
+.section3.about .sec3-ani-box .item-des{position: absolute; left: 0; right: 0; bottom: 37px; color: #919191; font-size: 16px; line-height: 1.625; text-align: center; letter-spacing: -0.5px; opacity: 0; transition: opacity 0.4s;}
+/* // 2022-12-21 수정 끝 */
 .section3.about .sec3-ani-box .item-des > strong{color: #fff;}
 .section3.about .sec3-ani-box .item-des > .eng{font-family: 'Poppins', sans-serif;}
 .section3.about .sec3-ani-box .motions{position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; transition: opacity 0.2s;}
@@ -629,8 +641,10 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     100% {width: 300px; transform: translate(1705.28px, 2266.696px) rotate(157.5deg)}
 }
 
-.section4.about{margin-top: 120px;}
-.section4.about .inner{padding-bottom: 156px;}
+/* 2022-12-21 수정 시작 */
+.section4.about{margin-top: 116px;}
+.section4.about .inner{padding-bottom: 154px;}
+/* // 2022-12-21 수정 끝 */
 .section4.about .sec3-ci-area {width: 100%;}
 .section4.about .sec3-ci-area .logo-wrap{display: flex; align-items: center; width: 100%; height: 400px; margin-top: 40px; border: 1px solid #111; background: #191919 url(../images/sub/img-ablout-ci-bg.svg) repeat-x center / auto 100%;}
 .section4.about .sec3-ci-area .logo-wrap .logo{width: 50%}
@@ -644,8 +658,10 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 /* partners */
 /* .partners-list-wrap{padding-top: 20px;} */
 .partners-list-wrap .normal-list{margin: 0 -35px;}
-.partners-list-wrap .normal-list > ul{display: flex; flex-wrap: wrap; flex: 0 0 auto;}
-.partners-list-wrap .normal-list > ul > li{ flex: 0 0 auto; width: 33.333%; padding: 0 25px; box-sizing: border-box;}
+.partners-list-wrap .normal-list > ul{display: flex; flex-wrap: wrap; flex: 0 0 auto; margin-top: -10px}
+/* 2022-12-21 수정 시작 */
+.partners-list-wrap .normal-list > ul > li{ flex: 0 0 auto; width: 33.333%; padding: 0 25px; box-sizing: border-box; margin-top: 10px;}
+/* // 2022-12-21 수정 끝 */
 .partners-list-wrap .normal-list > ul > li .partners-box{position: relative; background-color: #191919;}
 .partners-list-wrap .normal-list > ul > li .partners-tit{margin-top: 20px; margin-bottom: 20px; text-align: center; font-size: 22px; color: #919191;}
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo{padding-top: 60px; padding-bottom: 60px; text-align: center;}
