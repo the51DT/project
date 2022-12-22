@@ -434,11 +434,11 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .anchor-box .works-img img{transition: all .6s;}
 .anchor-box:hover .works-img img{transform: scale(1.05); transition: transform .2s; /* Animation */ }
 
-.works-img .img-hover-list{color: #000000; font-size: 22px; line-height: 44px; letter-spacing: -0.6px; width: 100%; margin-bottom: 50px;}
+.works-img .img-hover-list{color: #000000; font-size: 22px; line-height: 44px; letter-spacing: -0.6px; width: 100%; margin-bottom: 39px;}
 .works-img .img-hover-list > li{display: flex; border-bottom: 1px solid rgba(115, 129, 24, 0.4);}
 .works-img .img-hover-list > li:last-child{border-bottom: 0;}
-.works-img .img-hover-list > li + li{margin-top: 20px;}
-.works-img .img-hover-list > li span{display: block; margin-bottom: 20px; padding-right: 30px;}
+.works-img .img-hover-list > li + li{margin-top: 14px;}
+.works-img .img-hover-list > li span{display: block; margin-bottom: 14px; padding-right: 30px;}
 
 /* 1366px design */
 @media (max-width: 1366px) {
@@ -997,13 +997,15 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 
     /* about */
     .pc-1366{display: block;}
-    .section1.about{padding-bottom: 917px;}
-    .section1.about .sec1-txt-area .txt1{font-size: 60px; line-height: 86px;}
-    .section1.about .bg{width:calc(100% + 166px); margin-left: -83px; background-size: cover;}
-    .section2.about{margin-top:-170px;}
-    .section2.about .sec2-txt-area .txt1{font-size: 60px; line-height: 86px;}
-    .section2.about .sec2-txt-area .txt1 .icon-x{width: 54.74px; height: 50px; margin-left: 21.5px;}
-    .section2.about .sec2-txt-area .txt2{margin-top: 80px;}
+    .pc-1366-invisible {display: none}
+    .section1.about{padding-bottom: 900px;}
+    .section1.about .sec1-txt-area .txt1{font-size: 70px; line-height: 1.4;}
+    .section1.about .sec1-txt-area .txt2 {padding-top: 61px;line-height:1.6;}
+    .section1.about .bg{width:calc(100% + 166px); margin-left: 0; background-size: cover;}
+    .section2.about{margin-top:-118px;}
+    .section2.about .sec2-txt-area .txt1{font-size: 70px; line-height: 86px;}
+    .section2.about .sec2-txt-area .txt1 .icon-x{width: 70px; height: 64px; margin-left: 35px;}
+    .section2.about .sec2-txt-area .txt2{margin-top: 63px;}
     .section3.about .sec3-ani-box{height: 414px;}
     .section3.about .sec3-ani-box.box1{min-width: calc(25% - 10px);}
     .section3.about .sec3-ani-box + .sec3-ani-box{margin-left: 8px;}
