@@ -388,6 +388,7 @@ $(window).on('load', function(){
           $('.main-txt, .arrow-down, #fp-nav').css({'opacity':'1','transition':'all 0.6s'});
           setTimeout(() => {
             $('.mask-area').fadeOut(600);
+            $('.intro').css({ 'display': 'none' }); // 2022-12-21 추가
           }, 600);
         };
       });
