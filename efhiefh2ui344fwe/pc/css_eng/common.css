@@ -530,6 +530,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section3.about .sec3-ani-box .item-des > strong {color: #fff}
 .section3.about .sec3-ani-box .motions{position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; transition: opacity 0.2s;}
 .section3.about .sec3-ani-box .motions svg {width: 100%; height: 100%;}
+.section3.about .sec3-ani-box .motions .svg-motion1 {padding: 45px;box-sizing: border-box;}
 
 /*
 .sec3-ani-box.on #motion1-1{animation: motion1-1 0.6s ease-in forwards}
@@ -561,9 +562,17 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .sec3-ani-box.on #motion4-8{animation: motion4-8 0.6s ease-in forwards}
 */
 
+/*
 .sec3-ani-box.on #motion1-1{animation: motion1-1 0.4s ease-in forwards}
 .sec3-ani-box.on #motion1-2{animation: motion1-2 0.4s 0.2s ease-in forwards}
 .sec3-ani-box.on #motion1-3{animation: motion1-3 0.6s ease-in forwards}
+*/
+
+.sec3-ani-box.on #motion1-1{animation: motion1 0.2s 0.3s ease-in forwards}
+.sec3-ani-box.on #motion1-2{animation: motion1 0.2s 0.25s ease-in forwards}
+.sec3-ani-box.on #motion1-3{animation: motion1 0.2s 0.2s ease-in forwards}
+.sec3-ani-box.on #motion1-4{animation: motion1 0.2s 0.15s ease-in forwards}
+.sec3-ani-box.on #motion1-5{animation: motion1 0.2s 0.1s ease-in forwards}
 
 .sec3-ani-box.on #motion3-1{animation: motion3 0.1s ease-in forwards}
 .sec3-ani-box.on #motion3-2{animation: motion3 0.1s 0.1s ease-in forwards}
@@ -589,7 +598,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .sec3-ani-box.on #motion4-7{animation: motion4-7 0.4s ease-in forwards}
 .sec3-ani-box.on #motion4-8{animation: motion4-8 0.4s ease-in forwards}
 
-@keyframes motion1-1 {
+/* @keyframes motion1-1 {
   0% {transform: translate(174.91px, 3767.891px) rotate(-135deg)}
   100% {transform: translate(374.91px, 3967.891px) rotate(-135deg)}
 }
@@ -600,7 +609,41 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 @keyframes motion1-3 {
   0% {transform: translate(303.431px, 4390.388px) rotate(48deg)}
   100% {transform: translate(203.431px, 4290.388px) rotate(48deg)}
+} */
+
+@-webkit-keyframes motion1 {
+  0% {
+    stroke-width: 0px;
+  }
+  100% {
+    stroke-width: 10px;
+  }
 }
+@-moz-keyframes motion1 {
+  0% {
+    stroke-width: 0px;
+  }
+  100% {
+    stroke-width: 10px;
+  }
+}
+@-o-keyframes motion1 {
+  0% {
+    stroke-width: 0px;
+  }
+  100% {
+    stroke-width: 10px;
+  }
+}
+@keyframes motion1 {
+  0% {
+    stroke-width: 0px;
+  }
+  100% {
+    stroke-width: 10px;
+  }
+}
+
 @keyframes motion2-1 {
     0% {transform: translate(22px, 2342px) rotate(-180deg)}
     100% {transform: translate(322px, 2342px) rotate(-180deg)}
