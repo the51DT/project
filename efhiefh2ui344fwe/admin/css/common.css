@@ -69,7 +69,7 @@ h5{font-weight: bold;margin: 10px 0;}
 .contents{padding: 65px 60px;}
 
 /* header */
-#header {background-color: #000; height: 100vh;}
+#header {background-color: #000; /* height: 100vh; */}
 #header .header-inner {width:271px;}
 #header .logo {margin-top:60px; margin-left: 40px;}
 #header .logo a {display:inline-block;}
@@ -234,16 +234,16 @@ h2.tit {margin: 0 0 20px 0; color: #000; font-size: 30px; font-weight: bold; lin
 .notice-table td.nv-title{text-align: left; padding-left: 0; vertical-align: top;}
 .notice-table td .nv-title{font-size: 20px; font-weight: bold; line-height: 26px;}
 .notice-table .sub-tit-row {position: relative;}
-.notice-table .sub-tit-row td span{display: inline-block; font-size: 20px; color: #999;}
+.notice-table .sub-tit-row td span{display: table-cell; font-size: 20px; color: #999; line-height: 32px;}
 .notice-table .sub-tit-row td .sub-form-type2 {width: 100%; display: table;}
-.notice-table .sub-tit-row td .sub-form-type2+.sub-form-type2 {margin-top: 20px; }
-.notice-table .sub-tit-row td .sub-form-type2 .sub-form-type2-row {width: 50%; display: table-cell;}
-.notice-table .sub-tit-row td .sub-form-type2 .sub-form-type2-row .sub-tit-type2 {}
+.notice-table .sub-tit-row td .sub-form-type2+.sub-form-type2 {margin-top: 20px;}
+.notice-table .sub-tit-row td .sub-form-type2 .sub-form-type2-row {width: 50%; display: table-cell; padding: 35px 0;}
+.notice-table .sub-tit-row td .sub-form-type2 .sub-form-type2-row .sub-tit-type2 {width: 120px; padding-right: 12px; box-sizing: border-box; word-break: break-all;}
 .notice-table .sub-tit-row td .sub-form-type2 .sub-form-type2-row .sub-ip-txt {color: #000; font-weight: bold;}
-.notice-table .sub-tit-row td span.sub-tit-type2{margin-left: 80px ;margin-right: 20px}
+.notice-table .sub-tit-row td span.sub-tit-type2{margin-left: 80px;}
 .notice-table .sub-tit-row td span:first-child.sub-tit-type2{margin-left: 0;}
 .notice-table .sub-tit-row td.nv-title{text-align: left; padding-left: 0;}
-.sub-ip-txt {padding-left: 56px;}
+/* .sub-ip-txt {padding-left: 56px;} */
 
 .notice-table td.nv-cont{text-align: left; font-weight: bold; font-size: 20px;}
 .notice-table td.nv-cont.form-type{padding-top:20px; padding-bottom:20px}
@@ -297,6 +297,7 @@ a.btns{padding: 19px 6px 17px;/* padding-top: 14px; */vertical-align: top;height
 .btns.type2{background-color: #000; color: #fff;}
 .btns.logout{padding: 9px 6px 8px; height: auto;color: #333; border-radius: 20px; background-color: #E9E9E9; font-size: 18px; color: #000; vertical-align: top; border:none}
 .btns+.btns{margin-left: 4px;}
+.btn.disable{display: inline-block; margin-left: 4px; border-radius: 4px; border: 1px solid #000; background: #fff; height: 56px; min-width: 134px; font-size: 18px; box-sizing: border-box; font-family: "Noto Sans KR","Malgun Gothic","맑은 고딕",Dotum,"돋움",sans-serif;}
 
 .pagination-wrap.btn-type{position: relative;}
 .pagination-wrap.btn-type .btn-wrap {position: absolute; right: 0; top: 0; margin: 0;}
