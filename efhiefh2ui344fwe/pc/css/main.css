@@ -224,6 +224,12 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-wei
 .news-list .list-item.big .news-cont {position:absolute; left:0; right:0; bottom:0; padding:4.7rem 5rem}
 .news-list .list-item.big .btn-view-more {margin-top:1.8rem}
 
+@media (max-width: 1920px) {
+  .contents {
+      padding: 0;
+  }
+}
+
 /* 1366px design */
 @media (max-width: 1366px) {
   /* .program-slide .item-txt-wrap .item-link {font-size:1.8rem;} */
