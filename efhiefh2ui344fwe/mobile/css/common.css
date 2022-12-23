@@ -495,13 +495,13 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 /* 2022-12-21 수정 시작 */
 .section1.about{margin-top: 36px; padding: 0 20px;}
 /* // 2022-12-21 수정 끝 */
-.section1.about .section1-inner{padding-bottom: 245px;}
-.section1.about .sec1-txt-area .txt1{display: block; color: #fff; font-size: 28px; font-weight: 500; line-height: 44px;}
+.section1.about .section1-inner{padding-bottom: 309px;}
+.section1.about .sec1-txt-area .txt1{display: block; color: #fff; font-size: 28px; font-weight: 500; line-height: 44px; letter-spacing: -1.25px;}
 /* 2022-12-21 수정 시작 */
 .section1.about .sec1-txt-area .txt1 > .eng{font-family: 'Poppins', sans-serif;}
 .section1.about .sec1-txt-area .txt2{display: inline-block; padding-top: 17px; color: #919191; font-size: 14px; line-height: 1.8571; text-align: left; letter-spacing: -0.8px;}
 /* // 2022-12-21 수정 끝 */
-.section1.about .bg{position: absolute; width: 100%; height: 204px; max-height: 100%; left: 0; right: 0; bottom: 0; background: url(../images/sub/img-about-bg.png) no-repeat center / 100% auto;}
+.section1.about .bg{position: absolute; width: 100%; height: 204px; max-height: 100%; left: 0; right: 0; bottom: 14px; background: url(../images/sub/img-about-bg.png) 50% 50% no-repeat; background-size: cover;}
 .section1.about .bg::before {content: ''; display: block; position: absolute; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(to bottom, rgba(0,0,0,1) 15%, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 80%, rgba(0,0,0,1) 90%);}
 
 .section2.about{margin-top: -195px; padding: 0 20px;}
@@ -509,17 +509,17 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section2.about .inner {padding-top: 121px;}
 /* // 2022-12-21 추가 끝 */
 /* 2022-12-20 v2 수정 시작 */
-.section2.about .sec2-txt-area .txt1{display: flex; padding-left: 0; color: #fff; font-size: 28px; font-weight: 500; line-height: 86px;}
+.section2.about .sec2-txt-area .txt1{display: flex; padding-left: 0; color: #fff; font-size: 28px; font-weight: 500; line-height: 86px;align-items: center;}
 /* // 2022-12-20 v2 수정 끝 */
-.section2.about .sec2-txt-area .txt1 .icon-x{display: inline-block; width: 32.8px; height: 67.5px; margin-left: 10px; background: url(../images/sub/icon-x.svg) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
+.section2.about .sec2-txt-area .txt1 .icon-x{display: inline-block; width: 26px; height: 24px; margin-left: 5px; background: url(../images/sub/icon-x.png) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
 /* 2022-12-21 수정 시작 */
 .section2.about .sec2-txt-area .txt2{margin-top: -3px; color: #919191; font-size: 14px; font-weight: 500; line-height: 26px; text-align: left; letter-spacing: -1px;}
 /* // 2022-12-21 수정 끝 */
-.section2.about .sec2-txt-area .txt2 .icon-x{display: inline-block; width: 14px; height: 11px; margin-left: 3px; background: url(../images/sub/icon-x-gray.svg) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
+.section2.about .sec2-txt-area .txt2 .icon-x{display: inline-block; width: 14px; height: 11px; margin-left: 3px; background: url(../images/sub/icon-x-gray.png) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
 .section2.about .sec2-txt-area .logo{width: 100%; margin-top: 40px;}
 .section2.about .sec2-txt-area .logo > img{display: block; width: 100%;}
 /* 2022-12-21 수정 시작 */
-.section3.about{margin-top:77px; padding: 0 20px;}
+.section3.about{margin-top:71px; padding: 0 20px;}
 .section3.about .sec3-brand-area{margin-top:6px;}
 /* // 2022-12-21 수정 끝 */
 .section3.about .inner{padding-top: 0;}
@@ -570,7 +570,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section4.about .sec3-ci-area .btn-wrap .btn-down .btn-inn{padding: 10px 0; border: 1px solid #444;}
 /* // 2022-12-21 수정 끝 */
 .section4.about .sec3-ci-area .btn-wrap .btn-down .btn-inn .btn-ico{position: relative; display: inline-block;}
-.section4.about .sec3-ci-area .btn-wrap .btn-down .btn-inn .btn-ico::after{content: ''; display: block; position: absolute; width: 24px; height: 24px; top: calc(50% - 12px); right: -30px; background: url(../images/sub/icon-download-919191.svg) no-repeat center / contain;}
+.section4.about .sec3-ci-area .btn-wrap .btn-down .btn-inn .btn-ico::after{content: ''; display: block; position: absolute; width: 24px; height: 24px; top: calc(50% - 14px); right: -30px; background: url(../images/sub/icon-download-919191.svg) no-repeat center / contain;}
 .section4.about .sec3-ci-area .btn-wrap .btn-down > span{font-family: 'Poppins', sans-serif;}
 
 
@@ -903,13 +903,28 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .effect.active .sec3-brand-box #motion1-3{animation: motion1-3 0.8s ease-in forwards}
 */
 
-.effect.active .sec3-brand-box #motion1-1{animation: motion1 0.2s 1s ease-in forwards}
-.effect.active .sec3-brand-box #motion1-2{animation: motion1 0.2s 0.8s ease-in forwards}
-.effect.active .sec3-brand-box #motion1-3{animation: motion1 0.2s 0.6s ease-in forwards}
-.effect.active .sec3-brand-box #motion1-4{animation: motion1 0.2s 0.4s ease-in forwards}
-.effect.active .sec3-brand-box #motion1-5{animation: motion1 0.2s 0.2s ease-in forwards}
 
-.effect.active .sec3-brand-box #motion2-1{animation: motion2 0.1s ease-in forwards}
+.effect.active .sec3-brand-box #motion1-1{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-2{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-3{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-4{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-5{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-6{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-7{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-8{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-9{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-10{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-11{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-12{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-13{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-14{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-15{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.effect.active .sec3-brand-box #motion1-16{animation: motion1 0.4s 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+
+
+ 
+
+.effect.active .sec3-brand-box #motion2-1{animation: motion2 0.1s cubic-bezier(0.075, 0.82, 0.165, 1)-in forwards}
 .effect.active .sec3-brand-box #motion2-2{animation: motion2 0.1s 0.1s ease-in forwards}
 .effect.active .sec3-brand-box #motion2-3{animation: motion2 0.1s 0.2s ease-in forwards}
 .effect.active .sec3-brand-box #motion2-4{animation: motion2 0.1s 0.3s ease-in forwards}
@@ -949,34 +964,34 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 
 @-webkit-keyframes motion1 {
   0% {
-    stroke-width: 0px;
+    width: 0;
   }
   100% {
-    stroke-width: 6px;
+    width: 40px;
   }
 }
 @-moz-keyframes motion1 {
   0% {
-    stroke-width: 0px;
+    width: 0;
   }
   100% {
-    stroke-width: 6px;
+    width: 40px;
   }
 }
 @-o-keyframes motion1 {
   0% {
-    stroke-width: 0px;
+    width: 0;
   }
   100% {
-    stroke-width: 6px;
+    width: 40px;
   }
 }
 @keyframes motion1 {
   0% {
-    stroke-width: 0px;
+    width: 0;
   }
   100% {
-    stroke-width: 6px;
+    width: 40px;
   }
 }
 
