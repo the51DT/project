@@ -475,7 +475,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 
 /* works - view */
 .section1.works-view{min-height: 0; padding-top: 0;}
-.works-view-wrap{position: relative; margin-top: -100px; padding-bottom: 247px; display: flex; width: 100%;}
+.works-view-wrap{position: relative; margin-top: -100px; padding-bottom: 120px; display: flex; width: 100%;}
 .works-view-wrap::after{content: ''; display: block; clear: both;}
 .works-view-left{ top: 0; width: 55%; padding-top: 100px; padding-right: 80px; box-sizing: border-box;}
 .works-view-right{top: 0; width: 45%; padding-top: 100px; box-sizing: border-box;}
