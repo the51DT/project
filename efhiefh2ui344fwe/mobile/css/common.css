@@ -585,7 +585,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .partners-list-wrap .normal-list > ul > li .partners-box{position: relative; background-color: #191919;}
 /* 2022-12-21 수정 시작 */
 .partners-list-wrap .normal-list > ul > li .partners-tit{margin-top: 10px; margin-bottom: 28px; font-size: 14px; color: #919191; text-align: center;}
-.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo{padding-top: 50px; padding-bottom: 50px; text-align: center;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo{display: flex; align-items: center; justify-content: center; height: 160px;}
 /* // 2022-12-21 수정 끝 */
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo1 img{width: 160px; height: 60px;}
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo2 img{width: 136px; height: 60px;}
@@ -601,7 +601,6 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo12 img{width: 60px; height: 60px;}
 /* 2022-12-21 수정 시작 */
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo13 img{width: auto;max-width: 100%; height: 80px;}
-.partners-list-wrap .normal-list > ul > li .partners-box13 .partners-logo {padding:40px 0}
 /* // 2022-12-21 수정 끝 */
 
 /* contact */
