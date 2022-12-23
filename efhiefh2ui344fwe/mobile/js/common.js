@@ -351,7 +351,7 @@ $(document).ready(function(){
 
       this.scrollTO = setTimeout(function () {
         $(this).trigger('scrollEnd')
-      }, 40)
+      }, 1)
     })
 
     $(window).on('scrollEnd', function () {
