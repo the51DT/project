@@ -636,9 +636,11 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   100% {transform: translate(0,0);} */
 
   0% {
+    opacity: 0;
     transform: translate(0%, 130%);
   }
   100% {
+    opacity: 1;
     transform: translate(0, 0);
   }
 }
@@ -657,7 +659,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   /* overflow: hidden; */
   margin-bottom: 13px;
   padding: 0 20px;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .group-effect .effect-tit > span {
   display: block;
@@ -665,6 +667,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   font-size: 56px;
   line-height: 80px;
   color: #fff;
+  opacity: 0;
 
   text-transform: uppercase;
 
