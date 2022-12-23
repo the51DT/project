@@ -297,7 +297,7 @@ $(document).ready(function(){
 
     var distance = 0
     var active = 'active'
-    var delay = 100
+    var delay = 1
 
     var intro = '.group-effect.intro'
     var introDelay = 400
