@@ -402,11 +402,11 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 
 .maps-wrap{width: 100%; height:600px; background-color: gray; margin-top: 58px; margin-bottom: 150px;}
 
-.list-type-table table{width: 100%; vertical-align: middle;}
+.list-type-table table{table-layout: fixed;width: 100%; vertical-align: middle;}
 .list-type-table table td{vertical-align: middle; height: 144px; border-top: 1px solid #444444;}
 .list-type-table table tr:last-child td{border-top: 1px solid #444444; border-bottom: 1px solid #444444;}
 .list-type-table table .num{font-size: 24px; color: #919191; text-align: center; font-family: 'Poppins', sans-serif;}
-.list-type-table table .title a{font-size: 32px; color: #fff; display: inline-block; line-height: 32px;}
+.list-type-table table .title a{overflow: hidden;max-width: 100%;font-size: 32px; color: #fff; display: inline-block; line-height: 32px;text-overflow: ellipsis;white-space: nowrap;}
 .list-type-table table .experience{font-size: 22px; color: #DBFC00; text-align: center;}
 .list-type-table table .date{font-size: 24px; color: #919191; font-family: 'Poppins', sans-serif;}
 .list-type-table table .n-notice{padding-top: 2px; text-align: center;}
@@ -449,15 +449,6 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
         margin-bottom: 40px;
     }
     /* 2022-12-20 추가 시작 */
-    .list-type-table table{
-      table-layout: fixed;
-    }
-    .list-type-table table .title a {
-      overflow: hidden;
-      max-width: 100%;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
     .list-type-table table .experience {
       text-align: center;
     }
@@ -999,6 +990,10 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     .footer-inner .footer-conts .sns-footer {
         right: 83px;
     }
+
+    /* news */
+    .news-list-wrap .normal-list ul li .news-title,
+    .news-list-wrap .normal-list ul li .news-sub {-webkit-line-clamp: 3}
 
     /* about */
     .pc-1366{display: block;}
