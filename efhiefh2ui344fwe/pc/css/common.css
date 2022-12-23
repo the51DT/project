@@ -302,7 +302,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .news-list-wrap .normal-list ul li .anchor-box a{position: absolute; width: 100%; height: 100%;}
 .news-list-wrap .normal-list ul li .news-img{margin-bottom: 40px;}
 .news-list-wrap .normal-list ul li .news-img img{display: block; width: 100%;}
-.news-list-wrap .normal-list ul li .news-title{font-size: 32px; line-height: 44px; color: #FFFFFF;}
+.news-list-wrap .normal-list ul li .news-title{display:-webkit-box; font-size: 32px; line-height: 44px; color: #FFFFFF; word-break:keep-all; letter-spacing:0; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden}
 .news-list-wrap .normal-list ul li .news-sub{display: block; font-size: 20px; line-height: 32px; color: #919191; margin: 20px 0 40px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
 .news-list-wrap .normal-list ul li .view-more{font-family: 'Poppins', sans-serif; font-size:16px; color: #DBFC00; }
 .more-btn-box{text-align: center; margin-bottom: 150px;}
@@ -403,12 +403,12 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 
 .maps-wrap{width: 100%; height:600px; background-color: gray; margin-top: 86px; margin-bottom: 157px;}
 
-.list-type-table table{width: 100%; vertical-align: middle;}
+.list-type-table table{table-layout: fixed;width: 100%; vertical-align: middle;}
 .list-type-table table td{vertical-align: middle; height: 144px; border-top: 1px solid #444444;}
 .list-type-table table tr:last-child td{border-top: 1px solid #444444; border-bottom: 1px solid #444444;}
 .list-type-table table .num{font-size: 24px; color: #919191; text-align: center; font-family: 'Poppins', sans-serif;}
-.list-type-table table .title a{font-size: 32px; color: #fff; display: inline-block; line-height: 32px;}
-.list-type-table table .experience{font-size: 22px; color: #DBFC00;}
+.list-type-table table .title a{overflow: hidden;max-width: 100%;font-size: 32px; color: #fff; display: inline-block; line-height: 32px;text-overflow: ellipsis;white-space: nowrap;}
+.list-type-table table .experience{font-size: 22px; color: #DBFC00; text-align: center;}
 .list-type-table table .date{font-size: 24px; color: #919191; font-family: 'Poppins', sans-serif;}
 .list-type-table table .n-notice{padding-top: 2px; text-align: center;}
 
@@ -448,15 +448,6 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     }
     .works-img .img-hover-list {
         margin-bottom:21px;
-    }
-    .list-type-table table{
-      table-layout: fixed;
-    }
-    .list-type-table table .title a {
-      overflow: hidden;
-      max-width: 100%;
-      text-overflow: ellipsis;
-      white-space: nowrap;
     }
     .list-type-table table .experience {
       text-align: center;
@@ -533,49 +524,23 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section3.about .sec3-ani-box .item-des > .eng{font-family: 'Poppins', sans-serif;}
 .section3.about .sec3-ani-box .motions{position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; transition: opacity 0.2s;}
 .section3.about .sec3-ani-box .motions svg {width: 100%; height: 100%;}
-.section3.about .sec3-ani-box .motions .svg-motion1 {padding: 45px;box-sizing: border-box;}
 
-/*
-.sec3-ani-box.on #motion1-1{animation: motion1-1 0.6s ease-in forwards}
-.sec3-ani-box.on #motion1-2{animation: motion1-2 0.6s 0.2s ease-in forwards}
-.sec3-ani-box.on #motion1-3{animation: motion1-3 0.8s ease-in forwards}
-
-.sec3-ani-box.on #motion2-1{animation: motion2-1 0.6s ease-in forwards}
-.sec3-ani-box.on #motion2-2{animation: motion2-2 0.6s ease-in forwards}
-.sec3-ani-box.on #motion2-3{animation: motion2-3 0.6s ease-in forwards}
-.sec3-ani-box.on #motion2-4{animation: motion2-4 0.6s ease-in forwards}
-
-.sec3-ani-box.on #motion3-1{animation: motion3 0.1s ease-in forwards}
-.sec3-ani-box.on #motion3-2{animation: motion3 0.1s 0.1s ease-in forwards}
-.sec3-ani-box.on #motion3-3{animation: motion3 0.1s 0.2s ease-in forwards}
-.sec3-ani-box.on #motion3-4{animation: motion3 0.1s 0.3s ease-in forwards}
-.sec3-ani-box.on #motion3-5{animation: motion3 0.1s 0.4s ease-in forwards}
-.sec3-ani-box.on #motion3-6{animation: motion3 0.1s 0.5s ease-in forwards}
-.sec3-ani-box.on #motion3-7{animation: motion3 0.1s 0.6s ease-in forwards}
-.sec3-ani-box.on #motion3-8{animation: motion3 0.1s 0.7s ease-in forwards}
-.sec3-ani-box.on #motion3-9{animation: motion3 0.1s 0.8s ease-in forwards}
-
-.sec3-ani-box.on #motion4-1{animation: motion4-1 0.6s ease-in forwards}
-.sec3-ani-box.on #motion4-2{animation: motion4-2 0.6s ease-in forwards}
-.sec3-ani-box.on #motion4-3{animation: motion4-3 0.6s ease-in forwards}
-.sec3-ani-box.on #motion4-4{animation: motion4-4 0.6s ease-in forwards}
-.sec3-ani-box.on #motion4-5{animation: motion4-5 0.6s ease-in forwards}
-.sec3-ani-box.on #motion4-6{animation: motion4-6 0.6s ease-in forwards}
-.sec3-ani-box.on #motion4-7{animation: motion4-7 0.6s ease-in forwards}
-.sec3-ani-box.on #motion4-8{animation: motion4-8 0.6s ease-in forwards}
-*/
-
-/*
-.sec3-ani-box.on #motion1-1{animation: motion1-1 0.4s ease-in forwards}
-.sec3-ani-box.on #motion1-2{animation: motion1-2 0.4s 0.2s ease-in forwards}
-.sec3-ani-box.on #motion1-3{animation: motion1-3 0.6s ease-in forwards}
-*/
-
-.sec3-ani-box.on #motion1-1{animation: motion1 0.2s 0.3s ease-in forwards}
-.sec3-ani-box.on #motion1-2{animation: motion1 0.2s 0.25s ease-in forwards}
-.sec3-ani-box.on #motion1-3{animation: motion1 0.2s 0.2s ease-in forwards}
-.sec3-ani-box.on #motion1-4{animation: motion1 0.2s 0.15s ease-in forwards}
-.sec3-ani-box.on #motion1-5{animation: motion1 0.2s 0.1s ease-in forwards}
+.sec3-ani-box.on #motion1-1{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-2{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-3{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-4{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-5{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-6{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-7{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-8{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-9{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-10{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-11{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-12{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-13{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-14{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-15{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
+.sec3-ani-box.on #motion1-16{animation: motion1 0.4s 0.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards}
 
 .sec3-ani-box.on #motion3-1{animation: motion3 0.1s ease-in forwards}
 .sec3-ani-box.on #motion3-2{animation: motion3 0.1s 0.1s ease-in forwards}
@@ -618,34 +583,34 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 
 @-webkit-keyframes motion1 {
   0% {
-    stroke-width: 0px;
+    width: 0;
   }
   100% {
-    stroke-width: 10px;
+    width: 60px;
   }
 }
 @-moz-keyframes motion1 {
   0% {
-    stroke-width: 0px;
+    width: 0;
   }
   100% {
-    stroke-width: 10px;
+    width: 60px;
   }
 }
 @-o-keyframes motion1 {
   0% {
-    stroke-width: 0px;
+    width: 0;
   }
   100% {
-    stroke-width: 10px;
+    width: 60px;
   }
 }
 @keyframes motion1 {
   0% {
-    stroke-width: 0px;
+    width: 0;
   }
   100% {
-    stroke-width: 10px;
+    width: 60px;
   }
 }
 
@@ -1071,6 +1036,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     .news-list-wrap .normal-list {margin: 0 -15px;}
     .news-list-wrap .normal-list ul li {margin-bottom:123px;padding: 0 15px;}
     .news-list-wrap .normal-list ul li .news-img {margin-bottom:42px;}
+    .news-list-wrap .normal-list ul li .news-title,
     .news-list-wrap .normal-list ul li .news-sub {-webkit-line-clamp: 3}
 
     /* news view */
