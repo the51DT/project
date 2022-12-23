@@ -481,7 +481,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .partners-list-wrap .normal-list > ul > li{padding: 0; box-sizing: border-box;}
 .partners-list-wrap .normal-list > ul > li .partners-box{position: relative; background-color: #191919;}
 .partners-list-wrap .normal-list > ul > li .partners-tit{margin-top: 12px; margin-bottom: 26px; font-size: 14px; color: #919191; text-align: center;}
-.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo{padding-top: 60px; padding-bottom: 60px; text-align: center;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo{display: flex; align-items: center; justify-content: center; height: 160px;}
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo1 img{width: 160px; height: 60px;}
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo2 img{width: 136px; height: 60px;}
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo.mp-logo3 img{width: 160px; height: 60px;}
