@@ -242,7 +242,7 @@ a.btns{padding: 15px 6px 14px;/* padding-top: 14px; */vertical-align: top;height
 .select-selected {background-color: transparent;border: 1px solid #535353 !important;}
 
 /* Style the arrow inside the select element: */
-.select-selected:after {position: absolute;content: "";top: 14px;right: 20px;width: 24px; height: 20px; background: url(..//images/sub/select_down.png) no-repeat 0 0; transition: all ease .5s;}
+.select-selected:after {position: absolute;content: "";top: 14px;right: 20px;width: 24px; height: 20px; background: url(../images/sub/select_down.png) no-repeat 0 0; transition: all ease .5s;}
 
 /* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active:after {transform: rotate( 180deg );}
