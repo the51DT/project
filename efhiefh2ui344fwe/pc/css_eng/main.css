@@ -215,7 +215,7 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-wei
 .news-list .list-item a {position:absolute; display:block; left:0; right:0; top:0; bottom:0; z-index:10}
 .news-list .list-item a:hover + .news-thumb > img {transform:translate(-50%,-50%) scale(1.05); transition:transform 0.2s}
 .news-list .news-thumb {position:relative; width:100%; height:24.3rem; overflow:hidden}
-.news-list .news-thumb > img {position:absolute; display:block; max-width:100%; height:auto; left:50%; top:50%; transform:translate(-50%,-50%)}
+.news-list .news-thumb > img {position:absolute; display:block; max-width:760px; width: 100%;  height:auto; left:50%; top:50%; transform:translate(-50%,-50%)}
 .news-list .news-tit {display: -webkit-box; color:#fff; font-size:2.2rem; font-weight:500; line-height:3.4rem; word-break:keep-all; letter-spacing:0; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden}
 .news-list .news-cont {margin-top:4rem;}
 .news-list .news-date {display:block; margin-top:1rem; color:#444; font-family:'Poppins', sans-serif; font-size:1.6rem; font-weight:normal; line-height:2rem}
@@ -225,6 +225,6 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-wei
 .news-list .list-item.big .news-thumb {width:100%; height:52.3rem}
 .news-list .list-item.big .news-thumb::after {content:''; display:block; position:absolute; height:33rem; left:0; right:0; bottom:0; background:linear-gradient(to bottom, transparent, #000); opacity:0; transition:opacity 0.2s}
 .news-list .list-item.big a:hover + .news-thumb::after {content:''; display:block; position:absolute; height:33rem; left:0; right:0; bottom:0; background:linear-gradient(to bottom, transparent, #000); opacity:0.55}
-.news-list .list-item.big .news-tit {color:#fff; font-size:3.2rem; font-weight:500; line-height:4.4rem;}
+.news-list .list-item.big .news-tit {display: -webkit-box; color:#fff; font-size:3.2rem; font-weight:500; line-height:4.4rem; word-break: keep-all; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden;}
 .news-list .list-item.big .news-cont {position:absolute; left:0; right:0; bottom:0; padding:4.7rem 5rem}
 .news-list .list-item.big .btn-view-more {margin-top:1.8rem}
