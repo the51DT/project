@@ -436,14 +436,12 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section3.about{margin-top:80px; padding: 0 20px;}
 .section3.about .inner{padding-top: 0;}
 .section3.about .tit{font-size: 30px; line-height: 62px;}
-/* 2022-12-20 수정 시작 */
 .section3.about .sec3-brand-box{position: relative; margin-bottom: 16px; background-color: #191919;}
 .section3.about .sec3-brand-box .item-tit{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: 'Poppins', sans-serif; font-size: 40px; color: #DBFC00; font-weight: 500;}
 .section3.about .sec3-brand-box .item-des{position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); width: 100%; font-size: 14px; line-height: 22px; color: #919191; text-align: center; font-weight: normal;}
 .section3.about .sec3-brand-box .item-des > .eng{font-family: 'Poppins', sans-serif;}
 .section3.about .sec3-brand-box .item-des strong{color: #fff;}
 .section3.about .sec3-brand-box .motions svg {width: 100%; height: 100%;}
-/* // 2022-12-20 수정 끝 */
 /* .section3.about .sec3-ani-area{display: flex; flex-direction: column; flex-wrap: nowrap; align-items: center; margin-top: 15px;}
 .section3.about{margin-top:80px; padding: 0 20px;}
 .section3.about .inner{padding-top: 0;}
@@ -458,9 +456,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section4.about .inner{padding-top: 0; padding-bottom: 80px;}
 .section4.about .tit{font-size: 30px; line-height: 62px;}
 .section4.about .sec3-ci-area {width: 100%;}
-/* 2022-12-20 수정 시작 */
 .section4.about .sec3-ci-area .logo-wrap{display: flex; align-items: center; flex-direction: column; width: 100%; border: 1px solid #111; background: url(../images/sub/img-ablout-ci-bg.svg) repeat-x center / auto 100%;}
-/* // 2022-12-20 수정 끝 */
 .section4.about .sec3-ci-area .logo-wrap{display: flex; align-items: center; flex-direction: column; width: 100%; margin-top: 40px; border: 1px solid #111; background: url(../images/sub/img-ablout-ci-bg.svg) repeat-x center / auto 100%;}
 .section4.about .sec3-ci-area .logo-wrap .logo{width: 100%; margin-top:16px; background-color: #191919;}
 .section4.about .sec3-ci-area .logo-wrap .logo:first-child,
@@ -543,7 +539,6 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   }
 }
 
-/* 2022-12-15 추가 시작 */
 /* about - effect */
 .group-effect .effect-tit {
   /* overflow: hidden; */
@@ -786,8 +781,6 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   }
 }
 
-/* 2022-12-15 추가 끝 */
-/* 2022-12-20 추가 시작 */
 /*
 .effect.active .sec3-brand-box #motion1-1{animation: motion1-1 0.6s ease-in forwards}
 .effect.active .sec3-brand-box #motion1-2{animation: motion1-2 0.6s 0.2s ease-in forwards}
@@ -938,4 +931,3 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     0% {width: 0; transform: translate(1562.072px, 2272.544px) rotate(157.5deg)}
     100% {width: 200px; transform: translate(1653.072px, 2234.544px) rotate(157.5deg)}
 }
-/* 2022-12-20 추가 끝 */
