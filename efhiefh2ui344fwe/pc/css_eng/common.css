@@ -241,7 +241,7 @@ a.btns{padding: 15px 6px 14px;/* padding-top: 14px; */vertical-align: top;height
 .select-selected {background-color: transparent;border: 1px solid #535353 !important;}
 
 /* Style the arrow inside the select element: */
-.select-selected:after {position: absolute;content: "";top: 14px;right: 20px;width: 24px; height: 20px; background: url(..//images/sub/select_down.png) no-repeat 0 0; transition: all ease .5s;}
+.select-selected:after {position: absolute;content: "";top: 14px;right: 20px;width: 24px; height: 20px; background: url(../images/sub/select_down.png) no-repeat 0 0; transition: all ease .5s;}
 
 /* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active:after {transform: rotate( 180deg );}
@@ -506,9 +506,9 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 
 .section2.about{margin-top: -190px;}
 .section2.about .sec2-txt-area .txt1{color: #fff; font-size: 70px; font-weight: 500; line-height: 110px; letter-spacing: 0.5px;}
-.section2.about .sec2-txt-area .txt1 .icon-x{display: inline-block; width: 72.8px; height: 66.5px; margin-left: 12px; background: url(../images/sub/icon-x.svg) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
+.section2.about .sec2-txt-area .txt1 .icon-x{display: inline-block; width: 72.8px; height: 66.5px; margin-left: 12px; background: url(../images/sub/icon-x.png) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
 .section2.about .sec2-txt-area .txt2{margin-top: 73px; color: #919191; font-size: 30px; font-weight: 400; line-height: 1.6666; text-align: left; letter-spacing: 0;}
-.section2.about .sec2-txt-area .txt2 .icon-x{display: inline-block; width: 27.37px; height: 25px; margin-left: 6px; background: url(../images/sub/icon-x.svg) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
+.section2.about .sec2-txt-area .txt2 .icon-x{display: inline-block; width: 27.37px; height: 25px; margin-left: 6px; background: url(../images/sub/icon-x-gray.png) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
 .section2.about .sec2-txt-area .logo{margin-top: 35px}
 .section2.about .sec2-txt-area .logo > img{display: block;width:550px;}
 
