@@ -497,6 +497,9 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .works-view .contents-pagination:before {content: ""; display: block; margin-bottom: 40px; border-top: 1px solid #444;}
 
 /* about */
+.pc-1366{display: none;}
+.pc-1366-invisible {display: none;}
+.pc-1920 {display: block;}
 .about h3.tit{margin: 0; color: #fff; font-family: 'Poppins', sans-serif; font-size: 50px; font-weight: normal; line-height: 70px;text-transform: uppercase;}
 .section1.about{padding-bottom: 845px;}
 .section1.about .sec1-txt-area .txt1{color: #fff; font-size: 70px; font-weight: 500; line-height: 1.4; letter-spacing: 0;}
@@ -1000,13 +1003,15 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     .news-list-wrap .normal-list ul li .news-sub {-webkit-line-clamp: 3}
 
     /* about */
+    .pc-1920 {display:none;}
     .pc-1366{display: block;}
+    .pc-1366-invisible {display: none}
     .section1.about{padding-bottom: 917px;}
     .section1.about .sec1-txt-area .txt1{font-size: 60px; line-height: 86px;}
     .section1.about .bg{width:calc(100% + 166px); margin-left: -83px; background-size: cover;}
     .section2.about{margin-top:-170px;}
     .section2.about .sec2-txt-area .txt1{font-size: 60px; line-height: 86px;}
-    .section2.about .sec2-txt-area .txt1 .icon-x{width: 54.74px; height: 50px; margin-left: 21.5px;}
+    .section2.about .sec2-txt-area .txt1 .icon-x{width: 54.74px; height: 50px; margin-left: 0;}
     .section2.about .sec2-txt-area .txt2{margin-top: 80px;}
     .section3.about .sec3-ani-box{height: 414px;}
     .section3.about .sec3-ani-box.box1{min-width: calc(25% - 10px);}
