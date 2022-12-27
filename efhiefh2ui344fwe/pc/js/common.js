@@ -237,6 +237,7 @@ $(document).ready(function(){
     pagination: {
       el: ".slide-pagination",
       type: "fraction",
+      watchOverflow : true,
       renderFraction: function (currentClass, totalClass) {
         return '<span class="' + currentClass + '">' + '</span><span class="' + totalClass + '">';
       },

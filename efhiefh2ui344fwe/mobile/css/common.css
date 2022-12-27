@@ -410,7 +410,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .works-view-wrap .cont-info-list > li{/* display: flex; */padding: 18px 0 35px;}
 .works-view-wrap .cont-info-list > li + li{border-top: 1px solid #444;}
 .works-view-wrap .cont-info-list .list-tit{/* min-width: 108px; */display:block;color: #919191; font-size: 14px; letter-spacing: -0.6px;}
-.works-view-wrap .cont-info-list .list-txt{display:block;margin-top:15px;color: #fff; font-size: 14px;letter-spacing: -0.6px;}
+.works-view-wrap .cont-info-list .list-txt{display:block;margin-top:15px;color: #fff; font-size: 14px; line-height: 32px; letter-spacing: -0.6px;}
 .works-view-wrap .view-cont .cont-img{width: 100%;}
 .works-view-wrap .view-cont .cont-img > img{display:block; width: 100%;}
 .works-view-wrap .view-cont .cont-img > img + img{margin-top: 24px;}
