@@ -110,6 +110,8 @@ body{background-color: #000;}
 .footer-inner .footer-conts .footer-info copy {display: block; margin-top: 30px; font-size: 14px;color: #555;}
 
 .sns-link ul{display: flex; justify-content: center; margin-top: 40px;}
+.sns-link ul li {margin-left: 20px;}
+.sns-link ul li:first-child {margin-left:0;}
 .sns-link a{display: inline-block;width: 40px; height: 40px;}
 
 /* contents */
@@ -424,7 +426,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section1.about{margin-top: 40px; padding: 0 20px;}
 .section1.about .section1-inner{padding-bottom: 245px;}
 .section1.about .sec1-txt-area .txt1{display: block; color: #fff; font-size: 28px; font-weight: 500; line-height: 44px;}
-.section1.about .sec1-txt-area .txt2{display: inline-block; padding-top: 24px; color: #919191; font-size: 14px; line-height: 26px; text-align: left; letter-spacing: -0.8px;}
+.section1.about .sec1-txt-area .txt2{display: inline-block; padding-top: 24px; color: #919191; font-size: 14px; line-height: 26px; text-align: left; letter-spacing: 0;}
 .section1.about .bg{position: absolute; width: 100%; height: 204px; max-height: 100%; left: 0; right: 0; bottom: 0; background: url(../images/sub/img-about-bg.png) no-repeat center / 100% auto;}
 .section1.about .bg::before {content: ''; display: block; position: absolute; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(to bottom, rgba(0,0,0,1) 15%, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0.4) 80%, rgba(0,0,0,1) 90%);}
 
@@ -432,7 +434,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section2.about .sec2-txt-area .txt1{display: flex; color: #fff; font-size: 28px; font-weight: 500; line-height: 34px;}
 .section2.about .sec2-txt-area .txt1 .icon-x{display: inline-block; width: 28px; height: 26px; margin-left: 0; background: url(../images/sub/m-icon-x.png) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
 .section2.about .sec2-txt-area .txt1 .txt_l {display:inline-block;vertical-align: middle;margin-top: -5px;margin-left:8px;}
-.section2.about .sec2-txt-area .txt2{margin-top: 20px; color: #919191; font-size: 14px; font-weight: 500; line-height: 26px; text-align: left; letter-spacing: -1px;}
+.section2.about .sec2-txt-area .txt2{margin-top: 20px; color: #919191; font-size: 14px; font-weight: 500; line-height: 26px; text-align: left; letter-spacing: 0;}
 .section2.about .sec2-txt-area .txt2 .icon-x{display: inline-block; width: 14px; height: 11px; margin-left: 3px; background: url(../images/sub/icon-x-gray.png) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
 .section2.about .sec2-txt-area .logo{width: 100%; margin-top: 40px;}
 .section2.about .sec2-txt-area .logo > img{display: block; width: 100%;}

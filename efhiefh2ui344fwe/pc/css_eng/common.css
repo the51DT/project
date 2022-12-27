@@ -509,7 +509,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section1.about .bg::before {content: ''; display: block; position: absolute; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0.4) 80%, rgba(0,0,0,1) 100%);}
 
 .section2.about{margin-top: -190px;}
-.section2.about .sec2-txt-area .txt1{color: #fff; font-size: 70px; font-weight: 500; line-height: 110px; letter-spacing: 0.5px;}
+.section2.about .sec2-txt-area .txt1{color: #fff; font-size: 70px; font-weight: 500; line-height: 110px; letter-spacing: 0;}
 .section2.about .sec2-txt-area .txt1 .icon-x{display: inline-block; width: 72.8px; height: 66.5px; background: url(../images/sub/icon-x.png) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
 .section2.about .sec2-txt-area .txt2{margin-top: 73px; color: #919191; font-size: 30px; font-weight: 400; line-height: 1.6666; text-align: left; letter-spacing: 0;}
 .section2.about .sec2-txt-area .txt2 .icon-x{display: inline-block; width: 27.37px; height: 25px; margin-left: 6px; background: url(../images/sub/icon-x-gray.png) no-repeat center / contain; font-size: 0; text-indent: -9999%; overflow: hidden;}
@@ -1016,5 +1016,5 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     .section3.about .sec3-ani-box{height: 414px;}
     .section3.about .sec3-ani-box.box1{min-width: calc(25% - 10px);}
     .section3.about .sec3-ani-box + .sec3-ani-box{margin-left: 8px;}
-    .section3.about .sec3-ani-box .item-tit{font-size: 40px; letter-spacing: -0.4px;}
+    .section3.about .sec3-ani-box .item-tit{font-size: 40px; letter-spacing: 0;}
 }
