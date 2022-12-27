@@ -195,7 +195,7 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:4rem; font-weig
 .news-list .news-date {display:block; margin-top:0.8rem; color:#444; font-family:'Poppins', sans-serif; font-size:1.4rem; font-weight:normal; line-height:2.2rem}
 .news-list .news-txt {display:-webkit-box; margin-top:1.6rem; color:#919191; font-size:1.4rem; font-weight:normal; line-height:2.2rem; word-break:keep-all; letter-spacing:0; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden}
 .news-cont .btn-view-more {display:block; margin-top:2.2rem; font-family:'Poppins', sans-serif; color:#DBFC00; font-size:1.2rem; line-height:1.7rem}
-.news-list-slide .scrollbar {height:1px; margin-top:4rem; background-color:rgba(255,255,255,0.5)}
+.news-list-slide .scrollbar {height:1px; margin:4rem 0 0 2rem; background-color:rgba(255,255,255,0.5)}
 .news-list-slide .scrollbar .swiper-scrollbar-drag {background-color:#DBFC00}
 
 .iScrollLoneScrollbar {display:none}
