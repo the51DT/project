@@ -9,9 +9,50 @@ $(window).on('load', function(){
   });
 
   // gnb
-  $("#header").hover(function () {
-    $("#header").toggleClass("active");
-  });
+  // $("#header").hover(function () {
+  //   $("#header").toggleClass("active");
+  // });
+  // 2022-12-28 수정 시작
+  $('#header .gnb-list li a')
+    .off('mouseenter focus')
+    .on('mouseenter focus', function () {
+      if (!$('#header').hasClass('active')) {
+        $('#header').addClass('active')
+      }
+    })
+
+  $('#header .gnb')
+    .off('mouseleave blur')
+    .on('mouseleave blur', function () {
+      $('#header').removeClass('active')
+    })
+
+  $('#header .gnb-list > li:first-child')
+    .find(' > a')
+    .off('keydown')
+    .on('keydown', function (event) {
+      if (event.which == 9 && event.shiftKey) {
+
+        $('#header').removeClass('active')
+      }
+    })
+
+  $('#header .gnb-list > li:last-child .sub-list > li:last-child')
+    .find(' > a')
+    .off('keydown')
+    .on('keydown', function (event) {
+      if (event.which == 9 && !event.shiftKey) {
+        $('#header').removeClass('active')
+      }
+    })
+
+  $(document).on('click', function (event) {
+    console.log("$('.gnb').has(event.target).length: ", $('.gnb').has(event.target).length)
+    if ($('.gnb').has(event.target).length === 0) {
+      $('#header').removeClass('active')
+    }
+  })
+  // 2022-12-28 수정 끝
 
   //Custom Select
   var x, i, j, l, ll, selElmnt, a, b, c;
