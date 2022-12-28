@@ -99,7 +99,7 @@ body{background-color: #000;}
 .gnb+.lang-chioce a:first-child:after {overflow: hidden; content: " | ";position: absolute; right: -14px; top: 8px; height: 12px; color: #919191;}
 
 /* footer */
-.footer-inner {position: relative; padding: 50px 20px; width:100%; max-width:360px; margin:0 auto;text-align: center;}
+.footer-inner {position: relative; padding: 40px 0; width:100%; max-width:360px; margin:0 auto;text-align: center;}
 .footer-inner .logo {width: 210px; height: 40px;margin: 0 auto;}
 .footer-inner .footer-conts {margin-top: 21px;}
 .footer-inner .footer-conts .custom-select {margin-top: 30px; }
