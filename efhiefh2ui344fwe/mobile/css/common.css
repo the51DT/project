@@ -121,7 +121,7 @@ body{background-color: #000;}
 /* .inner.type2 {padding-top: 136px;} */
 section{position: relative;}
 
-.motion-tit{margin-bottom: 13px; padding: 0 20px; overflow: hidden; opacity: 0; animation: fadeIn 1.6s forwards;}
+.motion-tit{margin-bottom: 13px; padding: 0 20px; overflow: hidden; opacity: 0; animation: fadeIn 1.6s forwards; text-transform: uppercase;}
 .motion-tit > span{display: block; font-family: 'Poppins', sans-serif; font-size: 56px; line-height: 80px; color: #fff; transform-origin: 50% 50%; transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5); animation:skewUp 0.8s forwards; text-transform: uppercase;}
 .motion-tit ~ .normal-tab-wrap {margin-top: -6px;}
 .overflow-h{overflow: hidden;}
