@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>Guide (mobile)</title>
+  <meta name="description" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi"/>
+  <meta name="format-detection" content="telephone=no, email=no, address=no" />
+  <meta http-equiv="cleartype" content="on">
+  <link rel="stylesheet" href="../mobile/css/reset.css">
+  <link rel="stylesheet" href="../mobile/css/common.css">
+  <script src="../mobile/js/vendor/jquery-2.1.3.min.js"></script>
+  <script src="../mobile/js/common.js"></script>
+  <style>
+    /* guide */
+    .guide .pages-table, .guide .pages-table th, .guide .pages-table td {padding:4px 2px;border: 1px solid darkgray;width: 100%;border-collapse: collapse;table-layout: fixed;font-size: .8em;background-color: #fff;}
+    .guide .pages-table td.etc{font-size: .7em;}
+    .guide .pages-table th{background-color: ivory;}
+    .guide .row-done{opacity: 0.2;}
+    .guide .pages-list{padding: 0 20px}
+    .guide .pages-list-cp{margin: 10px auto;margin-bottom:40px;}
+    .guide .pages-table{margin: 10px auto;}
+    .guide .table-date{text-align: right;}
+    .guide .pages-table-wrap{position: relative;}
+    .guide .pages-table-wrap:after{z-index: -1;position: absolute;content: "";bottom: 15px;right: 10px;left: auto;width: 50%;top: 80%;max-width:300px;background: #777;-webkit-box-shadow: 0 10px 10px #777;-moz-box-shadow: 0 10px 10px #777;box-shadow: 0 10px 10px #777;-webkit-transform: rotate(3deg);-moz-transform: rotate(3deg);-o-transform: rotate(3deg);-ms-transform: rotate(3deg);transform: rotate(3deg);}
+    .guide .header{padding: 10px 0px}
+    .guide .header h1{padding-left: 20px;padding-right: 20px;}
+    .guide .header.type2,
+    .guide .sub-header.type2{display: table;width: 100%;box-sizing: border-box;}
+    .guide .header h3,
+    .guide .header .table-date,
+    .guide .sub-header.type2 h3,
+    .guide .sub-header.type2 .table-date{display: table-cell;vertical-align: middle;}
+    .guide .sub-header.type2 .table-date{text-align: right;font-size: .7em;}
+    .guide .table-date.date-main span{font-weight: bold;}
+    .guide .table-date.date-main > span{font-size: .8em;}
+    /* .guide .content{} */
+    .guide footer{padding:0 20px;margin:20px auto 40px;font-size: small;color: silver;box-sizing: border-box;}
+    .guide .pages-list-content{margin:20px 0;}
+
+    body{color: #fff;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap guide">
+    <div class="container">
+      <div class="content">
+        <header class="header">
+          <h1>가이드 (Mobile)</h1>
+        </header>
+        <div class="pages-list">
+          <header class="header">
+            <h2>개요</h2>
+            <div class="title-pages-list">
+              <p>지방자치단체는 주민의 복리에 관한 사무를 처리하고 재산을 관리하며, 법령의 범위안에서 자치에 관한 규정을 제정할 수 있다.</p>
+
+              <p class="mt12">대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일 현재 40세에 달하여야 한다. 국무총리는 국무위원의 해임을 대통령에게 건의할 수 있다.</p>
+            </div>
+          </header>
+
+          <div class="pages-list-wrap">
+
+            <div class="pages-list-cp">
+              <header class="sub-header">
+                <h3>구조</h3>
+              </header>
+              <div class="pages-list-content">
+                <!-- <h4>Semantically marked-up ASCII art tree structure</h4> -->
+                <pre>
+root/
+├── html/
+├── html_m/
+├── pc/
+│   ├── css/
+│   ├── images/
+│   └── js/
+└── mobile/
+│   ├── css/
+│   ├── images/
+│   └── js/
+                </pre>
+              </div>
+            </div>
+
+            <div class="pages-list-cp">
+              <header class="sub-header">
+                <h3>Text</h3>
+              </header>
+              <div class="pages-list-content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+            </div>
+
+            <div class="pages-list-cp">
+              <header class="sub-header">
+                <h3>List</h3>
+              </header>
+              <div class="pages-list-content">
+
+                <h4>An Custom Dash HTML List</h4>
+
+                <ul class="list-ul-2">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+                </ul>
+
+                <br><br>
+                
+                <h4>An Unordered HTML List</h4>
+
+                <ul class="list-ul-1">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+                </ul>  
+
+                <br><br>
+                
+                <h4>An Ordered HTML List</h4>
+                
+                <ol class="list-ol-1">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+                </ol> 
+
+              </div>
+            </div>
+
+            <div class="pages-list-cp">
+              <header class="sub-header">
+                <h3>Tab</h3>
+              </header>
+              <div class="pages-list-content">
+                <h4>첫번째 탭메뉴</h4>
+                <div class="tab-container">
+                  <!--탭 메뉴 영역 -->
+                  <div class="tabs">
+                    <ul>
+                      <li class="active"><a href="#" rel="tab1">탭1-1</a></li>
+                      <li><a href="#" rel="tab2">탭1-2탭1-2 탭1-2 탭1-2탭1-2 탭1-2</a></li>
+                    </ul>
+                  </div>
+                  <div id="tab1" class="tab-content">
+                    탭1
+                    선거와 국민투표의 공정한 관리 및 정당에 관한 사무를 처리하기 위하여 선거관리위원회를 둔다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.
+                  </div>
+
+                  <div id="tab2" class="tab-content">
+                    탭2
+                    선거와 국민투표의 공정한 관리 및 정당에 관한 사무를 처리하기 위하여 선거관리위원회를 둔다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.
+                  </div>
+                </div>
+
+                <h4>두번째 탭메뉴</h4>
+                <div class="tab-container">
+                  <!--탭 메뉴 영역 -->
+                  <div class="tabs">
+                    <ul>
+                      <li class="active"><a href="#" rel="tab3">탭2-1</a></li>
+                      <li><a href="#" rel="tab4">탭2-3탭2-3탭2-3</a></li>
+                      <li><a href="#" rel="tab5">탭2-3탭2-3탭2-3탭2-3탭2-3</a></li>
+                    </ul>
+                  </div>
+                  <div id="tab3" class="tab-content">
+                    탭1
+                    선거와 국민투표의 공정한 관리 및 정당에 관한 사무를 처리하기 위하여 선거관리위원회를 둔다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.
+                  </div>
+
+                  <div id="tab4" class="tab-content">
+                    탭2
+                    근로자는 근로조건의 향상을 위하여 자주적인 단결권·단체교섭권 및 단체행동권을 가진다. 국정감사 및 조사에 관한 절차 기타 필요한 사항은 법률로 정한다.
+                  </div>
+                  <div id="tab5" class="tab-content">
+                    탭2
+                    선거와 국민투표의 공정한 관리 및 정당에 관한 사무를 처리하기 위하여 선거관리위원회를 둔다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.
+
+근로자는 근로조건의 향상을 위하여 자주적인 단결권·단체교섭권 및 단체행동권을 가진다. 국정감사 및 조사에 관한 절차 기타 필요한 사항은 법률로 정한다.
+                  </div>
+                </div>
+                        
+              </div>
+            </div>
+
+            <div class="pages-list-cp">
+              <header class="sub-header">
+                <h3>Table</h3>
+              </header>
+              <div class="pages-list-content">
+
+                <div class="basic-table-wrap">
+                  <table class="basic-table">
+                    <caption></caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">순번</th>
+                        <th scope="col">1Depth</th>
+                        <th scope="col">URL</th>
+                        <th scope="col">상태</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" class="col-num">1</th>
+                        <td>Alfreds Futterkiste</td>
+                        <td><a href="#">/menu2/index.html</a></td>
+                        <td>완료</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="col-num">1</th>
+                        <td>Alfreds Futterkiste</td>
+                        <td><a href="#">/menu2/index.html</a></td>
+                        <td>완료</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="col-num">1</th>
+                        <td>Alfreds Futterkiste</td>
+                        <td><a href="#">/menu2/index.html</a></td>
+                        <td>완료</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="basic-table-wrap">
+                  <table class="basic-table">
+                    <caption></caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">1Depth</th>
+                        <th scope="col">URL</th>
+                        <th scope="col">완료일</th>
+                        <th scope="col">상태</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td><a href="#">/menu2/index.html</a></td>
+                        <td>2022/4/5</td>
+                        <td>완료</td>
+                      </tr>
+                      <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td><a href="#">/menu2/index.html</a></td>
+                        <td>2022/4/5</td>
+                        <td>완료</td>
+                      </tr>
+                      <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td><a href="#">/menu2/index.html</a></td>
+                        <td>2022/4/5</td>
+                        <td>완료</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="pages-list-cp">
+              <header class="sub-header">
+                <h3>Form</h3>
+              </header>
+              <div class="pages-list-content">
+
+                <input type="text" title="타이틀" placeholder="텍스트를 입력해 주세요.">
+
+                <br><br>
+
+                <form action="/action_page.php">
+                  <fieldset>
+                    <legend>ddd</legend>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="이름"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="성"><br><br>
+                    <input type="submit" class="btns" value="Submit">
+                  </fieldset>
+                </form>
+
+                <br><br>
+
+                <p class="check-type1"><label><input type="checkbox" name="comp" class=""><span></span></label></p>
+                
+                <br><br>
+
+                <p class="check-type1">
+                  <label for="cheese">
+                    <input type="checkbox" name="comp" id="cheese">
+                    <span>Do you like cheese?</span>
+                  </label>
+                </p>
+                
+                <br><br>
+                    
+                <div class="custom-select">
+                  <select>
+                    <option value="0">Select car:</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                  </select>
+                </div>
+
+                <br><br>
+
+                <select name="fruits" class="select">
+                  <option disabled selected>fruits</option>
+                  <option value="apple">apple</option>
+                  <option value="orange">orange</option>
+                  <option value="grape">grape</option>
+                  <option value="melon">melon</option>
+                </select>
+
+                <br><br>
+
+                <div class="ip-wrap">
+                  <strong>구분</strong>
+                  <p class="radio-type1"><label><input type="radio" name="radio1" value="" checked="checked"><span>전체</span></label></p>
+                  <p class="radio-type1"><label><input type="radio" name="radio1" value="LTE"><span>LTE</span></label></p>
+                  <p class="radio-type1"><label><input type="radio" name="radio1" value="5G"><span>5G</span></label></p>
+                </div>
+
+                <br><br>
+
+                <label for="w3review">Review of W3Schools:</label>
+
+                <textarea id="w3review" name="w3review" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+                </textarea>
+                
+              </div>
+            </div>
+
+            <div class="pages-list-cp">
+              <header class="sub-header">
+                <h3>Button</h3>
+              </header>
+              <div class="pages-list-content">
+                
+                <button type="button" class="btns">button</button>
+                <a href="#" class="btns">a</a>
+
+              </div>
+            </div>
+
+            <div class="pages-list-cp">
+              <header class="sub-header">
+                <h3>Icon</h3>
+              </header>
+              <div class="pages-list-content">
+                <i class='icon'></i> <i class='icon'></i> <i class='icon'></i>
+
+                <br><br>
+
+                <i class='icon'></i>
+
+                <br><br>
+
+                <i class='icon'></i>
+              </div>
+            </div>
+
+            <div class="pages-list-cp">
+              <header class="sub-header">
+                <h3>Popup(layer)</h3>
+              </header>
+              <div class="pages-list-content">
+                <a href="#layer1" class="btn-example">기본 레이어(absolute)</a>
+
+                <br><br>
+
+                <a href="#layer2" class="btn-example">dim 레이어(dim,fixed)</a>
+              </div>
+            </div>
+
+            <div class="pages-list-cp">
+              <header class="sub-header">
+                <h3>게시판(리스트)</h3>
+              </header>
+              <div class="pages-list-content">
+                
+                <div class="basic-table-wrap">
+                  <div class="notice-top">
+                    <div class="notice-top-num">검색결과 : 2,293건</div>
+                    <div class="notice-top-sch">
+                      <form>
+                        <fieldset>
+                          <legend>검색</legend>
+                          <select name="fruits" class="select">
+                            <option disabled selected>fruits</option>
+                            <option value="apple">apple</option>
+                            <option value="orange">orange</option>
+                            <option value="grape">grape</option>
+                            <option value="melon">melon</option>
+                          </select>
+                          <input type="text" title="타이틀" placeholder="텍스트를 입력해 주세요.">
+                          <input type="submit" class="btns" value="검색">
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div>
+                  <table class="notice-table">
+                    <caption></caption>
+                    <colgroup>
+                      <col class="col-wid20">
+                      <col class="col-wid60">
+                      <col class="col-wid20">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">등록일</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td class="notice-title">모든 국민은 인간다운 생활을 할 권리를 가진다. 국회는 국민의 보통·평등·직접·비밀선거에</td>
+                        <td>2021-01-18</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td class="notice-title">모든 국민은 인간다운 생활을 할 권리를 가진다. 국회는 국민의 보통·평등·직접·비밀선거에</td>
+                        <td>2021-01-18</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td class="notice-title">모든 국민은 인간다운 생활을 할 권리를 가진다. 국회는 국민의 보통·평등·직접·비밀선거에</td>
+                        <td>2021-01-18</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td class="notice-title">모든 국민은 인간다운 생활을 할 권리를 가진다. 국회는 국민의 보통·평등·직접·비밀선거에</td>
+                        <td>2021-01-18</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td class="notice-title">모든 국민은 인간다운 생활을 할 권리를 가진다. 국회는 국민의 보통·평등·직접·비밀선거에</td>
+                        <td>2021-01-18</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="pagination-wrap">
+                    <div class="pagination">
+                      <a href="#">&laquo;</a>
+                      <a href="#">1</a>
+                      <a class="active" href="#">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                      <a href="#">5</a>
+                      <a href="#">6</a>
+                      <a href="#">&raquo;</a>
+                    </div>
+                  </div>
+                  <div class="pagination-wrap">
+                    <ul class="pagination small-type">
+                      <li><a href="javascript:void(0)" class="border-right">❮ &nbsp;</a></li>
+                      <li><a href="javascript:void(0)">&nbsp; ❯</a></li>
+                    </ul>
+                  </div>
+                  <div class="pagination-wrap">
+                    <a href="#" class="btns">더보기</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="pages-list-cp">
+              <header class="sub-header">
+                <h3>게시판(상세)</h3>
+              </header>
+              <div class="pages-list-content">
+                
+                <div class="basic-table-wrap">
+                  <div class="notice-view-top">
+                    <p>모든 국민은 인간다운 생활을 할 권리를 가진다.</p>
+                    <div class="notice-view-info">
+                      <span><em>작성자:</em> 국민</span>
+                      <span><em>등록일:</em> 2022-09-04</span>
+                      <span><em>조회수:</em> 437</span>
+                    </div>
+                  </div>
+                  <div class="notice-view-ct">
+                    <p>모든 국민은 인간다운 생활을 할 권리를 가진다. 국회는 국민의 보통·평등·직접·비밀선거에 의하여 선출된 국회의원으로 구성한다. 대통령·국무총리·국무위원·행정각부의 장·헌법재판소 재판관·법관·중앙선거관리위원회 위원·감사원장·감사위원 기타 법률이 정한 공무원이 그 직무집행에 있어서 헌법이나 법률을 위배한 때에는 국회는 탄핵의 소추를 의결할 수 있다.</p>
+
+                    <p>타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다. 대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일 현재 40세에 달하여야 한다.</p>
+                  </div>
+                  <div class="btn-wrap align-r">
+                    <a href="#" class="btns">목록</a>
+                  </div>
+                  <div class="notice-view-link">
+                    <dl>
+                      <dt><a href="#">다음 글:</a></dt>
+                      <dd><a href="#">모든 국민은 인간다운 생활을 할 권리를 가진다.</a></dd>
+                    </dl>
+                    <dl>
+                      <dt><a href="#">이전 글:</a></dt>
+                      <dd><a href="#">국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다.</a></dd>
+                    </dl>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="pages-list-cp">
+              <header class="sub-header">
+                <h3>gnb, footer</h3>
+              </header>
+              <div class="pages-list-content">
+                <a href="gnb_m.html">gnb, footer</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <footer>Copyright 2022. AAA all rights reserved.</footer>
+    </div>
+  </div>
+
+  <div id="layer1" class="pop-layer">
+    <div class="pop-container">
+        <div class="pop-conts">
+            <!--content //-->
+            <p class="ctxt mb20">명령·규칙 또는 처분<br>
+              명령·규칙 또는 처분이 헌법이나 법률에 위반되는 여부가 재판의 전제가 된 경우에는 대법원은 이를 최종적으로 심사할 권한을 가진다. <br><br> 국토와 자원은 국가의 보호를 받으며, 국가는 그 균형있는 개발과 이용을 위하여 필요한 계획을 수립한다.
+            </p>
+
+            <div class="btn-r">
+                <a href="#" class="btn-layerClose">Close</a>
+            </div>
+            <!--// content-->
+        </div>
+    </div>
+  </div>
+
+  <div class="dim-layer">
+    <div class="dimBg"></div>
+    <div id="layer2" class="pop-layer">
+        <div class="pop-container">
+            <div class="pop-conts">
+                <!--content //-->
+                <p class="ctxt mb20">명령·규칙<br>
+                  명령·규칙 또는 처분이 헌법이나 법률에 위반되는 여부가 재판의 전제가 된 경우에는 대법원은 이를 최종적으로 심사할 권한을 가진다. <br><br> 국토와 자원은 국가의 보호를 받으며, 국가는 그 균형있는 개발과 이용을 위하여 필요한 계획을 수립한다.
+                </p>
+
+                <div class="btn-r">
+                    <a href="#" class="btn-layerClose">Close</a>
+                </div>
+                <!--// content-->
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    
+  </script>
+</body>
+
+</html>
+
+
