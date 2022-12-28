@@ -47,7 +47,6 @@ $(window).on('load', function(){
     })
 
   $(document).on('click', function (event) {
-    console.log("$('.gnb').has(event.target).length: ", $('.gnb').has(event.target).length)
     if ($('.gnb').has(event.target).length === 0) {
       $('#header').removeClass('active')
     }

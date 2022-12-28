@@ -48,7 +48,6 @@ $(document).ready(function(){
     })
 
   $(document).on('click', function (event) {
-    console.log("$('.gnb').has(event.target).length: ", $('.gnb').has(event.target).length)
     if ($('.gnb').has(event.target).length === 0) {
       $('#header').removeClass('active')
     }
@@ -303,7 +302,6 @@ $(document).ready(function(){
   /* 2022-12-21 수정 시작 */
   /**
    * @author denver
-   * https://github.com/github-denver
    */
   ;(function () {
     var st = 0
