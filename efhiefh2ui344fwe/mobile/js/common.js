@@ -289,7 +289,6 @@ $(document).ready(function(){
   /* 2022-12-23 추가 시작 */
   /**
    * @author denver
-   * https://github.com/github-denver
    */
   ;(function () {
     var st = 0
