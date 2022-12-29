@@ -276,6 +276,7 @@ $(document).ready(function(){
   });
 
     const newsSlide = new Swiper(".news-contents-slide", {
+    autoHeight : true, // 2022-12-29 추가
     navigation: {
       nextEl: ".btn-next",
       prevEl: ".btn-prev",
