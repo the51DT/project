@@ -372,16 +372,21 @@
 
   <script>
  
-
- $(window).on('load', function () {
-
+ 
 
 setTimeout(function () {
-  alert()
-   $('.main-video').get(0).play();
+ 
+   $('.main-video').get(0).pause();
    
 }, 8000)
- })
+ 
+
+ setTimeout(function () {
+ 
+   $('.main-video').get(0).play();
+   
+}, 16000)
+ 
 
   </script>
 
