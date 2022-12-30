@@ -55,7 +55,7 @@
 
           <div class="bg-area">
             <div class="video-wrap">
-              <video id="video" class="main-video" muted playsinline poster="http://122.40.193.152:5555/files/ed1e3e3d-bedb-48c1-bd77-49d00f1e8ac4.png" src="../mobile/images/main-video.mp4"></video>
+              <video id="video" class="main-video"  muted playsinline loop poster="http://122.40.193.152:5555/files/ed1e3e3d-bedb-48c1-bd77-49d00f1e8ac4.png" src="../mobile/images/main-video.mp4"></video>
               <div class="video-dim"></div>
             </div>
           </div>
@@ -369,6 +369,21 @@
         </div>
     </div>
   </div>
+
+  <script>
+ 
+
+ $(window).on('load', function () {
+
+
+setTimeout(function () {
+  alert()
+   $('.main-video').get(0).play();
+   
+}, 8000)
+ })
+
+  </script>
 
 </body>
 
