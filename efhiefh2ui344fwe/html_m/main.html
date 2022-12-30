@@ -62,7 +62,12 @@
 
           <div class="bg-area">
             <div class="video-wrap">
-              <video id="video" class="main-video" muted playsinline loop poster="" src="../mobile/images/main-video.mp4"></video>
+              <!-- 2022-12-30 포스터 이미지 및 동영 상태 그 변경 시작 -->
+              <video id="video" class="main-video" muted playsinline loop poster="../mobile/images/img-main-poster.png">
+                <source src="../mobile/images/main-video.mp4" type="video/mp4">
+              </video>
+              <!-- // 2022-12-30 포스터 이미지 및 동영 상태 그 변경 끝 -->
+
               <div class="video-dim"></div>
             </div>
           </div>
@@ -168,7 +173,12 @@
               <div class="swiper-slide">
                 <div class="program-item-wrap">
                   <div class="item-bg-wrap">
-                    <video class="slide-video" muted playsinline poster="" src="../mobile/images/main-slide-video2.mp4"></video> <!-- 2022.12.29 경로 수정 -->
+                    <!-- 2022-12-30 포스터 이미지 및 동영 상태 그 변경 시작 -->
+                    <video class="slide-video" muted playsinline poster="../mobile/images/img-slide-poster2.png">
+                      <source src="../mobile/images/main-slide-video2.mp4" type="video/mp4">
+                    </video>
+                    <!-- // 2022-12-30 포스터 이미지 및 동영 상태 그 변경 끝 -->
+
                     <div class="video-dim"></div>
                   </div>
 
@@ -183,7 +193,12 @@
               <div class="swiper-slide">
                 <div class="program-item-wrap">
                   <div class="item-bg-wrap">
-                    <video class="slide-video" muted playsinline poster="" src="../mobile/images/main-slide-video1.mp4"></video> <!-- 2022.12.29 경로 수정 -->
+                    <!-- 2022-12-30 포스터 이미지 및 동영 상태 그 변경 시작 -->
+                    <video class="slide-video" muted playsinline poster="../mobile/images/img-slide-poster1.png">
+                      <source src="../mobile/images/main-slide-video1.mp4" type="video/mp4">
+                    </video>
+                    <!-- // 2022-12-30 포스터 이미지 및 동영 상태 그 변경 끝 -->
+
                     <div class="video-dim"></div>
                   </div>
 
@@ -198,7 +213,12 @@
               <div class="swiper-slide">
                 <div class="program-item-wrap">
                   <div class="item-bg-wrap">
-                    <video class="slide-video" muted playsinline poster="" src="../mobile/images/main-slide-video3.mp4"></video> <!-- 2022.12.29 경로 수정 -->
+                    <!-- 2022-12-30 포스터 이미지 및 동영 상태 그 변경 시작 -->
+                    <video class="slide-video" muted playsinline poster="../mobile/images/img-slide-poster3.png">
+                      <source src="../mobile/images/main-slide-video3.mp4" type="video/mp4">
+                    </video>
+                    <!-- // 2022-12-30 포스터 이미지 및 동영 상태 그 변경 끝 -->
+
                     <div class="video-dim"></div>
                   </div>
 
@@ -377,17 +397,6 @@
     </div>
   </div>
 
-  <script>
-    setTimeout(function () {
-      alert('동영상 정지')
-      $('.main-video').get(0).pause()
-    }, 8000)
-
-    setTimeout(function () {
-      alert('동영상 재생')
-      $('.main-video').get(0).play()
-    }, 16000)
-  </script>
 </body>
 
 </html>
