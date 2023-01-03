@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../pc/css/reset.css">
+  <link rel="stylesheet" href="../pc/css/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../pc/css/main.css">
+  <link rel="stylesheet" href="../pc/css/common.css">
+  <title>Guide (pc)</title>
+  <script src="../pc/js/vendor/jquery-2.1.3.min.js"></script>
+  <script src="../pc/js/vendor/scrolloverflow.min.js"></script>
+  <script src="../pc/js/vendor/ScrollTrigger.min.js"></script>
+  <script src="../pc/js/vendor/jquery.fullPage.js"></script>
+  <script src="../pc/js/vendor/gsap.min.js"></script>
+  <script src="../pc/js/vendor/swiper-bundle.min.js"></script>
+  <script src="../pc/js/vendor/webfont.js"></script>
+  <script src="../pc/js/main.js" defer></script>
+  <style>
+	body {color: #fff;}
+	.mb100 {margin-bottom: 100px;}
+  .guide .recruit h3:after, 
+  .guide .view-content h3:after {border-bottom: 0;}
+  
+/* guide */
+	.guide .content {min-width: 1920px; max-width: 1920px; margin: 0 auto; padding: 80px 80px 200px;}
+	.guide h3 {position: relative; font-size: 60px; line-height: 120px; font-weight: 500; margin-bottom: 30px;}
+	.guide h3:after {content: ""; display: block; position: absolute; width: 100%; height: 1px; border-bottom: 1px solid #444;}
+	.guide .header h1 {font-size: 50px; line-height: 66px; margin-bottom: 100px;}
+	.guide .tab {margin-bottom: 100px;}
+	.guide .tab .tab-inn ul {display: flex; justify-content: space-around; font-size: 32px; line-height: 60px; font-weight: 500; font-family: 'Poppins', sans-serif;}
+	.guide .tab .tab-inn ul li {cursor: pointer;}
+	.guide .tab .tab-inn ul li a {position: relative; color: #fff;}
+	.guide .tab .tab-inn ul li a.active:before {opacity: 1; color: #ffffff; width: 100%; position: absolute; bottom: -2px; display: block; height: 2px;content: ""; background-color: #fff;}
+	.guide .tab .tab-inn ul li a:before,
+	.guide .tab .tab-inn ul li a:after {position: absolute; -webkit-transition: all 0.35s ease; transition: all 0.35s ease;}
+	.guide .tab .tab-inn ul li a:before {bottom: -2px; display: block; height: 2px; width: 0%; content: ""; background-color: #fff;}
+	.guide .tab .tab-inn ul li a:after {left: 0;top: 0;padding: 0.5em 0;position: absolute;content: attr(data-hover);color: #ffffff;white-space: nowrap;max-width: 0%;overflow: hidden;}
+	.guide .tab .tab-inn ul li a:hover:before {opacity: 1;width: 100%;}
+	.guide .tab .tab-inn ul li a:hover:after {max-width: 100%;}
+
+	/* color */
+	.guide .common-wrap .color-inn ul, 
+	.guide .common-wrap .font-color ul {display: flex;}
+	.guide .common-wrap .color-inn ul li,
+	.guide .common-wrap .font-color ul li {margin-right: 20px;}
+	.guide .common-wrap .color-inn .black {display: flex; justify-content: center; align-items: center; width: 160px; height: 160px; border-radius: 6px; border: 1px solid #444; background-color: #000; }
+	.guide .common-wrap .color-inn .lime {display: flex; justify-content: center; align-items: center; width: 160px; height: 160px; color: #000; border-radius: 6px; border: 1px solid #444; background-color: #DDFF00; }
+	.guide .common-wrap .color-inn .line {display: flex; justify-content: center; align-items: center; width: 160px; height: 160px; border-radius: 6px; border: 1px solid #444; background-color: #444; }
+	.guide .common-wrap .color-inn .box {display: flex; justify-content: center; align-items: center; width: 160px; height: 160px; border-radius: 6px; border: 1px solid #444; background-color: #191919; }
+
+	.guide .common-wrap .font-color .txt01 {display: flex; justify-content: center; align-items: center; color: #000; width: 160px; height: 160px; border-radius: 6px; border: 1px solid #444; background-color: #fff; }
+	.guide .common-wrap .font-color .txt02 {display: flex; justify-content: center; align-items: center; color: #fff; width: 160px; height: 160px; border-radius: 6px; border: 1px solid #444; background-color: #919191; }
+	.guide .common-wrap .font-color .txt03 {display: flex; justify-content: center; align-items: center; width: 160px; height: 160px; border-radius: 6px; border: 1px solid #444; background-color: #555; }
+		
+	/* button */
+    
+  </style>
+</head>
+
+<body>
+  <div class="wrap guide">
+    <div class="container">
+		<div class="content">
+			<header class="header">
+				<h1>studio x+u Publishing guide (PC)</h1>
+			</header>
+			<div class="tab">
+				<div class="tab-inn">
+					<ul>
+						<li><a href="#tab01" class="active">COMMON</a></li>
+						<li><a href="#tab02">BUTTON</a></li>
+						<li><a href="#tab03">LIST</a></li>
+						<li><a href="#tab04">BOARD</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="tab-content">
+				<!-- common -->
+				<div id="tab01" class="common-wrap">
+	
+					<div class="common-color">
+						<div class="color mb100">
+							<h3>Color</h3>
+							<div class="color-inn">
+								<ul>
+									<li class="black">#000000</li>
+									<li class="lime">#DDFF00</li>
+									<li class="line">#444444</li>
+									<li class="box">#191919</li>
+								</ul>
+							</div>
+						</div>
+						<div class="font-color mb100">
+							<h3>Font Color</h3>
+							<div class="font-color-inn">
+								<ul>
+									<li class="txt01">#FFFFFF</li>
+									<li class="txt02">#919191</li>
+									<li class="txt03">#555555</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+	
+					<div class="font-style">
+						<div class="head-tit mb100">
+							<h3>Head Title</h3>
+							<div class="motion-tit">
+								<span>H1 페이지 타이틀에 사용(모션)</span>
+							</div>
+							<h2 class="tit">H2 페이지 타이틀에 사용</span>
+						</div>
+						<div class="body-tit mb100">
+							<h3>Body Title</h3>
+							<div class="motion-tit">
+								<span>H1 페이지 타이틀에 사용(모션)</span>
+							</div>
+							<h2 class="tit">H2 페이지 타이틀에 사용</span>
+						</div>
+						<div class="body-txt">
+							<h3>Body Text</h3>
+							<div class="motion-tit">
+								<span>H1 페이지 타이틀에 사용(모션)</span>
+							</div>
+							<h2 class="tit">H2 페이지 타이틀에 사용</span>
+						</div>
+					</div>
+				</div>
+				<!-- //common -->
+	
+				<!-- button -->
+				<div id="tab02" class="btn-wrap">
+	
+					<div class="btn mb100">
+						<h3>Button</h3>
+						<div class="btn-inn">
+							<span class="view-more">
+								
+							</span>
+	
+						</div>
+					</div>
+	
+				</div>
+				<!-- //button -->
+	
+				<!-- list -->
+				<div id="tab03" class="list-wrap">
+          <div class="partners mb100">
+            <h3>Pateners</h3>
+            <div class="partners-list-wrap">
+              <div class="normal-list">
+                <ul>
+                  <li>
+                    <div class="partners-box">
+                      <div class="partners-logo"><img src="../pc/images/sub/partner_log.png" alt="U+ 모바일tv"></div>
+                    </div>
+                    <div class="partners-tit">U+ 모바일tv</div>
+                  </li>
+                  <li>
+                    <div class="partners-box">
+                      <div class="partners-logo"><img src="../pc/images/sub/partner_log2.png" alt="U+ tv"></div>
+                    </div>
+                    <div class="partners-tit">U+ tv</div>
+                  </li>
+                  <li>
+                    <div class="partners-box">
+                      <div class="partners-logo"><img src="../pc/images/sub/partner_log3.png" alt="BIGC"></div>
+                    </div>
+                    <div class="partners-tit">BIGC</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>          
+          <div class="works-list">
+            <h3>Works List</h3>
+            <div class="works-list-wrap">
+              <div class="normal-list">
+                <ul>
+                  <li>
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="works-img">
+                        <img src="../pc/images/sub/works-imgs01.jpg" alt="">
+                        <div class="img-hover-box">
+                          <ul class="img-hover-list">
+                            <li>
+                              <span>연출</span>
+                              <strong>임태환&middot;윤원섭</strong>
+                            </li>
+                            <li>
+                              <span>극본</span>
+                              <strong>권지연&middot;최현경</strong>
+                            </li>
+                            <li>
+                              <span>출연</span>
+                              <strong>이수근&middot;김수로&middot;이진호 외</strong>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <strong class="works-title">북유럽 with 캐리어</strong>
+                      <p class="works-sub">당신이 사랑한 책이 도서관의 한 켠을 채웁니다! 셀럽의 책장에서 찾은 인생책을 기부받아 채운 북캐리어로 12개의 지역 도서관</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="works-img">
+                        <img src="../pc/images/sub/works-imgs02.jpg" alt="">
+                        <div class="img-hover-box">
+                          <ul class="img-hover-list">
+                            <li>
+                              <span>연출</span>
+                              <strong>임태환&middot;윤원섭</strong>
+                            </li>
+                            <li>
+                              <span>극본</span>
+                              <strong>권지연&middot;최현경</strong>
+                            </li>
+                            <li>
+                              <span>출연</span>
+                              <strong>이수근&middot;김수로&middot;이진호 외</strong>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <strong class="works-title">우리동네클라쓰</strong>
+                      <p class="works-sub">전국 방방곡곡 찾아가는 신개념 동네 메이크오버 버라이어티 쇼 잊혀가는 우리 지역에 활력과 행복을 되찾아 줄 핫플 원정대가</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="press">
+            <h3>Press</h3>
+            <div class="news-list-wrap">
+              <div class="normal-list">
+                <ul>
+                  <li>
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="news-img">
+                        <img src="../pc/images/sub/news-imgs01.jpg" alt="">
+                      </div>
+                      <strong class="news-title">‘올빼미’ 밤이 되면 앞이 잘 보인다?</strong>
+                      <p class="news-sub">새로운 스타일의 스릴러 ‘올빼미’가 어디서도 본 적 없는 새로운 소재인 주맹증을 다루고 있는 가운데, 예비 관객들의 궁금증을</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="news-img">
+                        <img src="../pc/images/sub/news-imgs02.jpg" alt="">
+                      </div>
+                      <strong class="news-title">영화 ‘데시벨’ 검색량 관객수 1위</strong>
+                      <p class="news-sub">TDI(티디아이)에 따르면 영화 ‘데시벨’이 누적 검색량과 관객 수 (16일) 모두 1위를 달리는 중이라고 밝혔다.</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="news-img">
+                        <img src="../pc/images/sub/news-imgs03.jpg" alt="">
+                      </div>
+                      <strong class="news-title">이번엔 뷰티도시…영화 ‘압꾸정’ 마동석 “구강액션 도전”</strong>
+                      <p class="news-sub">영화 ‘범죄도시’ 시리즈 제작진과 주연 마동석이 한국의 ‘뷰티도시’ 서울 압구정을 배경으로 한 작품으로 관객과 만난다. 오는 30일</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                  <li class="bigger"><!-- bigger size -->
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="news-img">
+                        <img src="../pc/images/sub/news-imgs04.jpg" alt="">
+                      </div>
+                      <strong class="news-title">윌 스미스 신작 ‘해방’, 12월 9일 애플TV+서 공개</strong>
+                      <p class="news-sub">윌 스미스의 신작 ‘해방’이 12월 9일(금)애플TV+를 통해 공개된다. ‘해방’은 노예제도로부터 해방된 ‘피터’(윌 스미스)가 지혜와 믿음, 
+                        그리고 가족에 대한 사랑으로 루이지애나의 혹독한 자연을 극복하고 냉혹한 사냥꾼들을 피해 자유를 찾아 나서는 여정을 그린 영화다.</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="news-img">
+                        <img src="../pc/images/sub/news-noimg.png" alt="">
+                        <!-- <img src="../pc/images/sub/news-imgs05.jpg" alt=""> -->
+                      </div>
+                      <strong class="news-title">이미지가 없을 경우 노출되는 이미지</strong>
+                      <p class="news-sub">이미지 없이 등록되는 뉴스의 경우 노출 되는 이미지 입니다. 
+                        이미지 없이 등록되는 뉴스의 경우 노출 되는 이미지 입니다.</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="recruit">
+            <h3>Recruit</h3>
+            <div class="list-type-table">
+              <table>
+                <colgroup>
+                  <!-- 2022-12-19 수정 시작 -->
+                  <col style="width: 140px;">
+                  <!-- // 2022-12-19 수정 끝 -->
+                  <col >
+                  <col style="width: 140px;">
+                  <col style="width: 320px;">
+                </colgroup>
+                <thead class="blind">
+                  <tr>
+                    <th>순서</th>
+                    <th>제목</th>
+                    <th>경력</th>
+                    <th>날짜</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td class="n-notice"><img src="../pc/images/common/ico-notice.png" alt="공지"></td>
+                    <td class="title"><a href="">2022 하반기 STUDIO X+U 컨텐츠 기획 신입사원 모집</a></td>
+                    <td class="experience">신입</td>
+                    <td class="date">2022.10.18 ~ 2022.10.30</td>
+                  </tr>
+                  <tr>
+                    <td class="num">1</td>
+                    <td class="title"><a href="">2022 하반기 STUDIO X+U 컨텐츠 기획 신입사원 모집</a></td>
+                    <td class="experience">신입</td>
+                    <td class="date">2022.10.18 ~ 2022.10.30</td>
+                  </tr>
+                  <tr>
+                    <td class="num">2</td>
+                    <td class="title"><a href="">2022 하반기 경력 매니저 채용 공고</a></td>
+                    <td class="experience">경력</td>
+                    <td class="date">2022.10.18 ~ 2022.10.30</td>
+                  </tr>
+                  <tr>
+                    <td class="num">3</td>
+                    <td class="title"><a href="">신LMD Hub운영 신입사원 모집</a></td>
+                    <td class="experience">신입</td>
+                    <td class="date">2022.10.18 ~ 2022.10.30</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>            
+          </div>
+				</div>
+				<!-- //list -->
+	
+				<!-- board --> 
+				<div id="tab04" class="board-wrap">
+          <div class="works-view">
+            <h3>Works View</h3>
+            <div class="works-view-wrap">
+              <div class="works-view-left">
+                <div class="view-tag">
+                    <span class="tag">VARIETY &amp; SERIES</span>
+                    <!-- <span class="tag">music &amp; concert</span>
+                    <span class="tag">2022</span>
+                    <span class="tag">TVING</span> -->
+                </div>
+                <div class="view-title">우리동네 클라쓰</div>
+                <div class="view-sub">
+                  전국 방방곡곡 찾아가는 신개념 동네 메이크오버 버라이어티 쇼. 잊혀가는 우리 지역에 
+                  활력과 행복을 되찾아 줄 핫플 원정대가 찾아간다! 사람들의 감동스토리는 덤! 
+                  SNS를 뜨겁게 달굴 힙한 명소로 부활시키는 신개념 동네 메이크오버 프로젝트
+                </div>
+                <div class="view-cont">
+                  <ul class="cont-info-list">
+                    <li>
+                      <span class="list-tit">장르</span>
+                      <strong class="list-txt">예능</strong>
+                    </li>
+                    <li>
+                      <span class="list-tit">연출</span>
+                      <strong class="list-txt">한국화, 최아연, 차인희, 박아랑, 조수희, 정희재, 송지윤</strong>
+                    </li>
+                    <li>
+                      <span class="list-tit">프로듀서</span>
+                      <strong class="list-txt">이평수 CP</strong>
+                    </li>
+                    <li>
+                      <span class="list-tit">제작</span>
+                      <strong class="list-txt">VIVO</strong>
+                    </li>
+                    <li>
+                      <span class="list-tit">출연</span>
+                      <strong class="list-txt">송은이, 김숙, 유세윤, 김중혁</strong>
+                    </li>
+                    <li>
+                      <span class="list-tit">공동제작사</span>
+                      <strong class="list-txt">LG헬로비전, 더라이프</strong>
+                    </li>
+                    <li>
+                      <span class="list-tit">방영기간</span>
+                      <strong class="list-txt">2021.06.07~2021.08.23</strong>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 2022.12.14 콘텐츠 내용 변경 -->
+
+              </div>
+              <div class="works-view-right">
+                <div class="cont-img">
+                  <div class="cont-img-inn"><img src="../pc/images/sub/works-cont-imgs01.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="view-content">
+            <h3>content</h3>
+            <div class="news-contents-wrap">
+              <div class="news-title-wrap">
+                <h4>올빼미, 밤이 되면 앞이 잘 보인다?</h4>
+                <p class="date">2022.11.17</p>
+              </div>
+              <div class="news-contents-box">
+                <div class="news-contents-slide">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="contents-img">
+                        <img src="../pc/images/sub/news_cont_imgs.png" alt="">
+                        <p>왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="contents-img">
+                        <img src="../pc/images/sub/news_cont_imgs03.png" alt="">
+  
+                        <p>왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="contents-img">
+                        <img src="../pc/images/sub/news_cont_imgs03.png" alt="">
+                        <p>왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="btn-prev"></div>
+                  <div class="btn-next"></div>
+                  <div class="slide-pagination"></div>
+  
+                </div>
+                <div>
+                  LG유플러스가 미디어 서비스 경쟁력을 강화하기 위해 콘텐츠 제작을 중심으로 조직 개편을 단행하고 전문 인재 영입 및 파트너사 투자를 지속 확대 추진한다고 9일 밝혔다. 차별화된 오리지널 콘텐츠를 통해 미디어 경쟁력을 강화하고 플랫폼 기업으로 전환에 속도를 내기 위한 U+3.0 전략의 일환이다.<br><br>
+                </div>
+              </div>
+            </div>
+            <div class="contents-pagination type2">
+              <ul>
+                <li><a href="#" class="prev"><span class="blind">이전</span></a></li>
+                <li><a href="#" class="go-list">목록<span class="blind">목록으로 이동</span></a></li>
+                <li><a href="#" class="next"><span class="blind">다음</span></a></li>
+              </ul>
+            </div>
+          </div>
+				</div>
+				<!-- //board -->
+			</div>
+		</div>
+    </div>
+  </div>
+  
+
+  <script>
+    $(function(){
+		$('.tab-content > div').hide();
+		$('ul a').click(function () {
+			$('.tab-content > div').hide().filter(this.hash).fadeIn();
+			$('ul a').removeClass('active');
+			$(this).addClass('active');
+			return false;
+		}).filter(':eq(0)').click();
+  	});
+  </script>
+</body>
+
+</html>
+
+
