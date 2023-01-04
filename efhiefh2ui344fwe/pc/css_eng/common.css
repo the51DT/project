@@ -305,7 +305,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .news-list-wrap .normal-list ul li .news-img img{display: block; width: 100%;}
 .news-list-wrap .normal-list ul li .news-title{display:-webkit-box; font-size: 32px; line-height: 44px; color: #FFFFFF; word-break:keep-all; letter-spacing:0; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden}
 .news-list-wrap .normal-list ul li .news-sub{display: block; font-size: 20px; line-height: 32px; color: #919191; margin: 20px 0 40px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
-.news-list-wrap .normal-list ul li .view-more{font-family: 'Poppins', sans-serif; font-size:16px; color: #DBFC00; }
+.news-list-wrap .normal-list ul li .view-more{font-family: 'Poppins', sans-serif; font-size:16px; color: #DBFC00;}
 .more-btn-box{text-align: center; margin-bottom: 150px;}
 .more-btn-box button{font-family: 'Poppins', sans-serif; font-size:50px; color: #555; background-color: transparent;}
 /* search-wrap */
@@ -410,7 +410,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .list-type-table table .num{font-size: 24px; color: #919191; text-align: center; font-family: 'Poppins', sans-serif;}
 .list-type-table table .title a{overflow: hidden;max-width: 100%;font-size: 32px; color: #fff; display: inline-block; line-height: 110px;text-overflow: ellipsis;white-space: nowrap;}
 .list-type-table table .experience{font-size: 22px; color: #DBFC00; text-align: center;}
-.list-type-table table .date{font-size: 24px; color: #919191; font-family: 'Poppins', sans-serif;}
+.list-type-table table .date{font-size: 22px; color: #919191; font-family: 'Poppins', sans-serif;}
 .list-type-table table .n-notice{padding-top: 2px; text-align: center;}
 
 /* works */

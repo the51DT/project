@@ -34,7 +34,7 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-wei
 .ani-area {position:absolute; left:45%; top:0; width:100%; max-width:47.6rem; height:100vh; margin:0 auto; transform:translateX(-50%); z-index:11}
 .ani-area .ani-txts {position:absolute; width:795px; height:7rem; top:50%; transform:translateY(-50%); overflow:hidden}
 .ani-area .icon-x {position:absolute; width:0; height:0; left:0; top:50%; transform:translateY(-50%); background:url(../images/img-main-plus.svg) no-repeat center / contain}
-.ani-area .txt {padding-left:9.4rem; color:#fff; font-size:5rem; font-weight:bold; line-height:6.5rem}
+.ani-area .txt {padding-left:9.4rem; color:#fff; font-size:5rem; font-weight:500; line-height:6.5rem}
 .ani-area .txt1 {transform:translateY(100%); opacity:0}
 .ani-area .txt img {display:block; height:4.6rem}
 .mask-area {position:sticky; left:0; right:0; top:0; height:100vh; z-index:10; opacity:0; transform-origin:28% center}
@@ -74,8 +74,8 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-wei
 .section1 .main-txt {position:absolute; top:50%; left:calc(50% - 7.8rem); transform:translate(-50%, -50%); text-align:center; opacity:0}
 .section1 .main-txt > .txt, 
 .section1 .main-txt > .fir-txt
-{position:relative; display:inline-block; color:#fff; font-size:10rem; font-weight: bold; line-height:13rem}
-.section1 .main-txt .fir-txt span {font-weight:bold;}
+{position:relative; display:inline-block; color:#fff; font-size:10rem; font-weight: 500; line-height:13rem}
+.section1 .main-txt .fir-txt span {font-weight:500;}
 .section1 .main-txt .x-ico-location {position: relative;}
 .section1 .main-txt > .txt::after {content:''; display:block; position:absolute; width:6rem; height:6rem; background:url(../images/img-main-txt-plus.svg) no-repeat center / contain}
 .section1 .main-txt .x-ico-location .txt01::after {content:''; display:block; position:absolute; width:6rem; height:6rem; background:url(../images/img-main-txt-plus.svg) no-repeat center / contain}
