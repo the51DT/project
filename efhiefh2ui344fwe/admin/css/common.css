@@ -208,6 +208,7 @@ h2.tit {margin: 0 0 20px 0; color: #000; font-size: 30px; font-weight: bold; lin
 
 .notice-table td.n-num{color: #999;}
 .notice-table td.n-title{font-size: 20px; text-align: left; font-weight: bold;}
+.notice-table td.n-title a{display: -webkit-box; text-overflow: ellipsis; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
 .notice-table td.n-cont{font-size: 20px; text-align: left; color: #666;}
 .notice-table td.n-writer{color: #999;}
 .notice-table td.n-date,
