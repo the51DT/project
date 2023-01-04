@@ -687,8 +687,9 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .partners-list-wrap .normal-list > ul{display: flex; flex-wrap: wrap; flex: 0 0 auto;}
 .partners-list-wrap .normal-list > ul > li{ flex: 0 0 auto; width: 33.333%; padding: 0 25px; box-sizing: border-box;}
 .partners-list-wrap .normal-list > ul > li .partners-box{position: relative; background-color: #191919;}
-.partners-list-wrap .normal-list > ul > li .partners-tit{margin-top: 20px; margin-bottom: 20px; text-align: center; font-size: 22px; color: #919191;}
+.partners-list-wrap .normal-list > ul > li .partners-tit{margin-top: 20px; margin-bottom: 40px; text-align: center; font-size: 22px; color: #919191;}
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo{display: flex; align-items: center; justify-content: center; height:200px;}
+.partners-list-wrap .normal-list > ul > li .partners-box .partners-logo img{max-width: 100%;}
 
 /* site map */
 .site-map {margin: 180px 160px 250px;}
