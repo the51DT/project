@@ -309,7 +309,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .news-contents-wrap{margin-top: 35px; padding: 0 20px;}
 .news-contents-wrap ~ .contents-pagination {margin-right: 20px;margin-left: 20px}
 .news-title-wrap{position: relative; padding: 24px 0 26px; border-top: 1px solid #444444; border-bottom: 1px solid #444444; opacity: 0; animation: fadeIn 0.2s ease-in-out forwards; animation-delay: 0.8s;}
-.news-title-wrap h4{overflow: hidden;display: -webkit-box;font-size: 20px; font-weight: 600; color: #fff; margin: 0; line-height: 1.6;-webkit-line-clamp: 4;-webkit-box-orient: vertical;text-overflow: ellipsis;}
+.news-title-wrap h4{overflow: hidden;display: -webkit-box;font-size: 20px; font-weight: 500; color: #fff; margin: 0; line-height: 1.6;-webkit-line-clamp: 4;-webkit-box-orient: vertical;text-overflow: ellipsis;}
 .news-title-wrap p.date{margin-top: 8px; color: #919191; font-size: 12px;}
 .ver-recruit .news-title-wrap {padding: 25px 0 26px;}
 .ver-recruit .news-title-wrap h4{font-size: 20px; line-height: 35px; letter-spacing: 0; word-break: keep-all;  word-wrap: break-word;line-height:1.2222}

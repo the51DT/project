@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Guide (mobile)</title>
   <meta name="description" content="">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -11,563 +10,541 @@
   <meta name="format-detection" content="telephone=no, email=no, address=no" />
   <meta http-equiv="cleartype" content="on">
   <link rel="stylesheet" href="../mobile/css/reset.css">
+  <link rel="stylesheet" href="../mobile/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../mobile/css/main.css">
+  <link rel="stylesheet" href="../mobile/css/main2.css">
   <link rel="stylesheet" href="../mobile/css/common.css">
+  <title>Guide (mobile)</title>
   <script src="../mobile/js/vendor/jquery-2.1.3.min.js"></script>
+  <script src="../mobile/js/vendor/gsap.min.js"></script>
+  <script src="../mobile/js/vendor/ScrollTrigger.min.js"></script>
+  <script src="../mobile/js/vendor/swiper-bundle.min.js"></script>
   <script src="../mobile/js/common.js"></script>
+  <!-- <script src="../mobile/js/main.js" defer></script> -->
+  <script src="../pc/js/vendor/jquery-2.1.3.min.js"></script>
+  
   <style>
+    body {color: #fff;}
+    .mb100 {margin-bottom: 100px;}
+    .mb50 {margin-bottom: 50px;}
+    .pr100 {padding-right: 100px;}
+    .guide .recruit h3:after, 
+    .guide .view-content h3:after {border-bottom: 0;}
+    .guide .section3 .view-more {width: 100%;}
+    .guide .section4.about {padding: 0; margin-top: 0;}
+    .guide .news-contents-wrap {padding: 0;}
+    .guide .partners-list-wrap {margin-left: 0; margin-right: 0;}
+    .guide .works-list-wrap .normal-list {padding: 0;}
+    .guide .news-list-wrap {padding: 0;}
+    .guide .list-type-table {padding: 0;}
+    .guide .section2 {padding: 0; margin-bottom: 30px;}
+    .guide .section2 .works-slide {padding: 0;}
+    
     /* guide */
-    .guide .pages-table, .guide .pages-table th, .guide .pages-table td {padding:4px 2px;border: 1px solid darkgray;width: 100%;border-collapse: collapse;table-layout: fixed;font-size: .8em;background-color: #fff;}
-    .guide .pages-table td.etc{font-size: .7em;}
-    .guide .pages-table th{background-color: ivory;}
-    .guide .row-done{opacity: 0.2;}
-    .guide .pages-list{padding: 0 20px}
-    .guide .pages-list-cp{margin: 10px auto;margin-bottom:40px;}
-    .guide .pages-table{margin: 10px auto;}
-    .guide .table-date{text-align: right;}
-    .guide .pages-table-wrap{position: relative;}
-    .guide .pages-table-wrap:after{z-index: -1;position: absolute;content: "";bottom: 15px;right: 10px;left: auto;width: 50%;top: 80%;max-width:300px;background: #777;-webkit-box-shadow: 0 10px 10px #777;-moz-box-shadow: 0 10px 10px #777;box-shadow: 0 10px 10px #777;-webkit-transform: rotate(3deg);-moz-transform: rotate(3deg);-o-transform: rotate(3deg);-ms-transform: rotate(3deg);transform: rotate(3deg);}
-    .guide .header{padding: 10px 0px}
-    .guide .header h1{padding-left: 20px;padding-right: 20px;}
-    .guide .header.type2,
-    .guide .sub-header.type2{display: table;width: 100%;box-sizing: border-box;}
-    .guide .header h3,
-    .guide .header .table-date,
-    .guide .sub-header.type2 h3,
-    .guide .sub-header.type2 .table-date{display: table-cell;vertical-align: middle;}
-    .guide .sub-header.type2 .table-date{text-align: right;font-size: .7em;}
-    .guide .table-date.date-main span{font-weight: bold;}
-    .guide .table-date.date-main > span{font-size: .8em;}
-    /* .guide .content{} */
-    .guide footer{padding:0 20px;margin:20px auto 40px;font-size: small;color: silver;box-sizing: border-box;}
-    .guide .pages-list-content{margin:20px 0;}
+    .guide .content {max-width: 100%; margin: 0 auto; padding: 40px 20px 80px;}
+    .guide .guide-tit {position: relative; font-size: 32px; line-height: 60px; font-weight: 500; margin-bottom: 30px;}
+    .guide .guide-tit:after {content: ""; display: block; position: absolute; width: 100%; height: 1px; border-bottom: 1px solid #444;}
+    .guide .header h1 {font-size: 40px; line-height: 66px; margin-bottom: 60px;}
+    .guide .tab {margin-bottom: 60px;}
+    .guide .tab .tab-inn ul {display: flex;}
+    .guide .tab .tab-inn ul li {padding-right: 25px; font-size: 16px; line-height: 25px; font-weight: 500; font-family: 'Poppins', sans-serif; cursor: pointer;}
+    .guide .tab .tab-inn ul li a {position: relative; color: #fff;}
+    .guide .tab .tab-inn ul li a.active:before {opacity: 1; color: #ffffff; width: 100%; position: absolute; bottom: -2px; display: block; height: 2px;content: ""; background-color: #fff;}
+    .guide .tab .tab-inn ul li a:before,
+    .guide .tab .tab-inn ul li a:after {position: absolute; -webkit-transition: all 0.35s ease; transition: all 0.35s ease;}
+    .guide .tab .tab-inn ul li a:before {bottom: -2px; display: block; height: 2px; width: 0%; content: ""; background-color: #fff;}
+    .guide .tab .tab-inn ul li a:after {left: 0;top: 0;padding: 0.5em 0;position: absolute;content: attr(data-hover);color: #ffffff;white-space: nowrap;max-width: 0%;overflow: hidden;}
+    .guide .tab .tab-inn ul li a:hover:before {opacity: 1;width: 100%;}
+    .guide .tab .tab-inn ul li a:hover:after {max-width: 100%;}
 
-    body{color: #fff;}
+    /* color */
+    .guide .common-wrap .color-inn ul, 
+    .guide .common-wrap .font-color ul {display: flex;}
+    .guide .common-wrap .color-inn ul li,
+    .guide .common-wrap .font-color ul li {margin-right: 20px;}
+    .guide .common-wrap .color-inn .black {display: flex; justify-content: center; align-items: center; max-width: 120px; width: 100%; min-height: 120px; height: 100%; border-radius: 6px; border: 1px solid #444; background-color: #000; }
+    .guide .common-wrap .color-inn .lime {display: flex; justify-content: center; align-items: center; max-width: 120px; width: 100%; min-height: 120px; height: 100%; color: #000; border-radius: 6px; border: 1px solid #444; background-color: #DDFF00; }
+    .guide .common-wrap .color-inn .line {display: flex; justify-content: center; align-items: center; max-width: 120px; width: 100%; min-height: 120px; height: 100%; border-radius: 6px; border: 1px solid #444; background-color: #444; }
+    .guide .common-wrap .color-inn .box {display: flex; justify-content: center; align-items: center; max-width: 120px; width: 100%; min-height: 120px; height: 100%; border-radius: 6px; border: 1px solid #444; background-color: #191919; }
+    .guide .common-wrap .font-color .txt01 {display: flex; justify-content: center; align-items: center; color: #000; max-width: 120px; width: 100%; min-height: 120px; height: 100%; border-radius: 6px; border: 1px solid #444; background-color: #fff; }
+    .guide .common-wrap .font-color .txt02 {display: flex; justify-content: center; align-items: center; color: #fff; max-width: 120px; width: 100%; min-height: 120px; height: 100%; border-radius: 6px; border: 1px solid #444; background-color: #919191; }
+    .guide .common-wrap .font-color .txt03 {display: flex; justify-content: center; align-items: center; max-width: 120px; width: 100%; min-height: 120px; height: 100%; border-radius: 6px; border: 1px solid #444; background-color: #555; }
+      
+    /* font size */
+    .guide .motion-tit {padding: 0;}
+    .guide .works-view-wrap {margin-top: 0; padding: 0; margin-bottom: 80px;}
+    .guide .works-list-wrap {margin-top: 0;}
+    .guide .works-list-wrap .normal-list {margin: 0;}
+
+    /* list */
+    .guide .partners-logo img {max-width: 100%;}
+
+    /* form */
+    .guide .btn-view-more-wrap {display: block; position: relative; padding-bottom: 30px; text-align: center;} 
+    /* .guide .btn-view-more-wrap::before {content: ""; position: absolute; display:block; width: 100%; height: 1px; bottom: 0; left: 0; border-bottom: 1px dashed #444;}  */
+    .guide .btn-view-more-wrap h4 {font-size: 18px; line-height: 32px; text-align: center; margin-bottom: 20px;} 
+    .guide .btn-view-more {display:block; width:10rem; padding:2.8rem 0; border-radius:50%; background-color:#DBFC00; color:#000; font-family:'Poppins', sans-serif; font-size:2rem; font-weight:600; line-height:2.2rem; text-align:center; z-index:101}
+    .guide .view-more{font-family: 'Poppins', sans-serif; font-size:12px; color: #DBFC00;}
+    .guide .btn-more {display:inline-block;position:relative; margin-top:0.9rem; padding-right:2.2rem; color:#DBFC00; font-family:'Poppins', sans-serif; font-size:1.2rem; line-height:1.6rem}
+    .guide .btn-more::after {content:''; display:block; position:absolute; width:3.2rem; height:3.2rem; bottom:0; right:0; background:url(../images/img-arrow-right-green.svg) no-repeat center / contain}
+    .guide .search-wrap {flex-direction: inherit; padding: 0;}
+    .guide .view-tag .tag{display: inline-block; padding: 0 11px; border: 1px solid #919191; border-radius: 30px; color: #919191; font-family: 'Poppins', sans-serif; font-size:16px; line-height: 28px;}
+    .guide .list-type-table table tr:last-child td {border-top: 0; border-bottom: 0;}
+
+
+    @media (max-width: 960px) {
+      .wrap {
+          min-width: auto;
+      }
+    }
+    
   </style>
 </head>
 
 <body>
   <div class="wrap guide">
     <div class="container">
-      <div class="content">
-        <header class="header">
-          <h1>가이드 (Mobile)</h1>
-        </header>
-        <div class="pages-list">
-          <header class="header">
-            <h2>개요</h2>
-            <div class="title-pages-list">
-              <p>지방자치단체는 주민의 복리에 관한 사무를 처리하고 재산을 관리하며, 법령의 범위안에서 자치에 관한 규정을 제정할 수 있다.</p>
+		<div class="content">
+			<header class="header">
+				<h1>Studio X+U Publishing guide (MO)</h1>
+			</header>
+			<div class="tab">
+				<div class="tab-inn">
+					<ul>
+						<li><a href="#tab01" class="active">COMMON</a></li>
+						<li><a href="#tab02">FORM</a></li>
+						<li><a href="#tab03">LIST</a></li>
+						<li><a href="#tab04">BOARD</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="tab-content">
+				<!-- common -->
+				<div id="tab01" class="common-wrap">
+	
+					<div class="common-color">
+						<div class="color mb50">
+							<h3 class="guide-tit">Color</h3>
+							<div class="color-inn">
+								<ul>
+									<li class="black">#000000</li>
+									<li class="lime">#DDFF00</li>
+									<li class="line">#444444</li>
+									<li class="box">#191919</li>
+								</ul>
+							</div>
+						</div>
+						<div class="font-color mb50">
+							<h3 class="guide-tit">Font Color</h3>
+							<div class="font-color-inn">
+								<ul>
+									<li class="txt01">#FFFFFF</li>
+									<li class="txt02">#919191</li>
+									<li class="txt03">#555555</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+	
+					<div class="font-style">
 
-              <p class="mt12">대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일 현재 40세에 달하여야 한다. 국무총리는 국무위원의 해임을 대통령에게 건의할 수 있다.</p>
-            </div>
-          </header>
-
-          <div class="pages-list-wrap">
-
-            <div class="pages-list-cp">
-              <header class="sub-header">
-                <h3>구조</h3>
-              </header>
-              <div class="pages-list-content">
-                <!-- <h4>Semantically marked-up ASCII art tree structure</h4> -->
-                <pre>
-root/
-├── html/
-├── html_m/
-├── pc/
-│   ├── css/
-│   ├── images/
-│   └── js/
-└── mobile/
-│   ├── css/
-│   ├── images/
-│   └── js/
-                </pre>
+						<div class="head-tit mb50">
+							<h3 class="guide-tit">Head Title</h3>
+              <p>영문사용시 class="eng"</p>
+							<div class="motion-tit">
+								<span>Regular / 56pt (모션)</span>
+							</div>
+							<h2 class="tit">Medium / 40pt</h2>
               </div>
-            </div>
-
-            <div class="pages-list-cp">
-              <header class="sub-header">
-                <h3>Text</h3>
-              </header>
-              <div class="pages-list-content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              </div>
-            </div>
-
-            <div class="pages-list-cp">
-              <header class="sub-header">
-                <h3>List</h3>
-              </header>
-              <div class="pages-list-content">
-
-                <h4>An Custom Dash HTML List</h4>
-
-                <ul class="list-ul-2">
-                  <li>Coffee</li>
-                  <li>Tea</li>
-                  <li>Milk</li>
-                </ul>
-
-                <br><br>
-                
-                <h4>An Unordered HTML List</h4>
-
-                <ul class="list-ul-1">
-                  <li>Coffee</li>
-                  <li>Tea</li>
-                  <li>Milk</li>
-                </ul>  
-
-                <br><br>
-                
-                <h4>An Ordered HTML List</h4>
-                
-                <ol class="list-ol-1">
-                  <li>Coffee</li>
-                  <li>Tea</li>
-                  <li>Milk</li>
-                </ol> 
-
-              </div>
-            </div>
-
-            <div class="pages-list-cp">
-              <header class="sub-header">
-                <h3>Tab</h3>
-              </header>
-              <div class="pages-list-content">
-                <h4>첫번째 탭메뉴</h4>
-                <div class="tab-container">
-                  <!--탭 메뉴 영역 -->
-                  <div class="tabs">
-                    <ul>
-                      <li class="active"><a href="#" rel="tab1">탭1-1</a></li>
-                      <li><a href="#" rel="tab2">탭1-2탭1-2 탭1-2 탭1-2탭1-2 탭1-2</a></li>
-                    </ul>
-                  </div>
-                  <div id="tab1" class="tab-content">
-                    탭1
-                    선거와 국민투표의 공정한 관리 및 정당에 관한 사무를 처리하기 위하여 선거관리위원회를 둔다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.
-                  </div>
-
-                  <div id="tab2" class="tab-content">
-                    탭2
-                    선거와 국민투표의 공정한 관리 및 정당에 관한 사무를 처리하기 위하여 선거관리위원회를 둔다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.
+              
+              <div class="body-tit mb50">
+                <h3 class="guide-tit">Body Title</h3>
+                <p>영문사용시 class="eng"</p>
+                <div class="body-tit01">
+                  <div class="works-view-wrap">
+                    <div class="view-title">Medium / 44pt / 행간 56</div>
                   </div>
                 </div>
-
-                <h4>두번째 탭메뉴</h4>
-                <div class="tab-container">
-                  <!--탭 메뉴 영역 -->
-                  <div class="tabs">
-                    <ul>
-                      <li class="active"><a href="#" rel="tab3">탭2-1</a></li>
-                      <li><a href="#" rel="tab4">탭2-3탭2-3탭2-3</a></li>
-                      <li><a href="#" rel="tab5">탭2-3탭2-3탭2-3탭2-3탭2-3</a></li>
-                    </ul>
-                  </div>
-                  <div id="tab3" class="tab-content">
-                    탭1
-                    선거와 국민투표의 공정한 관리 및 정당에 관한 사무를 처리하기 위하여 선거관리위원회를 둔다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.
-                  </div>
-
-                  <div id="tab4" class="tab-content">
-                    탭2
-                    근로자는 근로조건의 향상을 위하여 자주적인 단결권·단체교섭권 및 단체행동권을 가진다. 국정감사 및 조사에 관한 절차 기타 필요한 사항은 법률로 정한다.
-                  </div>
-                  <div id="tab5" class="tab-content">
-                    탭2
-                    선거와 국민투표의 공정한 관리 및 정당에 관한 사무를 처리하기 위하여 선거관리위원회를 둔다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.
-
-근로자는 근로조건의 향상을 위하여 자주적인 단결권·단체교섭권 및 단체행동권을 가진다. 국정감사 및 조사에 관한 절차 기타 필요한 사항은 법률로 정한다.
-                  </div>
-                </div>
-                        
-              </div>
-            </div>
-
-            <div class="pages-list-cp">
-              <header class="sub-header">
-                <h3>Table</h3>
-              </header>
-              <div class="pages-list-content">
-
-                <div class="basic-table-wrap">
-                  <table class="basic-table">
-                    <caption></caption>
-                    <thead>
-                      <tr>
-                        <th scope="col">순번</th>
-                        <th scope="col">1Depth</th>
-                        <th scope="col">URL</th>
-                        <th scope="col">상태</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row" class="col-num">1</th>
-                        <td>Alfreds Futterkiste</td>
-                        <td><a href="#">/menu2/index.html</a></td>
-                        <td>완료</td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="col-num">1</th>
-                        <td>Alfreds Futterkiste</td>
-                        <td><a href="#">/menu2/index.html</a></td>
-                        <td>완료</td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="col-num">1</th>
-                        <td>Alfreds Futterkiste</td>
-                        <td><a href="#">/menu2/index.html</a></td>
-                        <td>완료</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <div class="basic-table-wrap">
-                  <table class="basic-table">
-                    <caption></caption>
-                    <thead>
-                      <tr>
-                        <th scope="col">1Depth</th>
-                        <th scope="col">URL</th>
-                        <th scope="col">완료일</th>
-                        <th scope="col">상태</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Alfreds Futterkiste</td>
-                        <td><a href="#">/menu2/index.html</a></td>
-                        <td>2022/4/5</td>
-                        <td>완료</td>
-                      </tr>
-                      <tr>
-                        <td>Alfreds Futterkiste</td>
-                        <td><a href="#">/menu2/index.html</a></td>
-                        <td>2022/4/5</td>
-                        <td>완료</td>
-                      </tr>
-                      <tr>
-                        <td>Alfreds Futterkiste</td>
-                        <td><a href="#">/menu2/index.html</a></td>
-                        <td>2022/4/5</td>
-                        <td>완료</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="pages-list-cp">
-              <header class="sub-header">
-                <h3>Form</h3>
-              </header>
-              <div class="pages-list-content">
-
-                <input type="text" title="타이틀" placeholder="텍스트를 입력해 주세요.">
-
-                <br><br>
-
-                <form action="/action_page.php">
-                  <fieldset>
-                    <legend>ddd</legend>
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname" placeholder="이름"><br><br>
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname" placeholder="성"><br><br>
-                    <input type="submit" class="btns" value="Submit">
-                  </fieldset>
-                </form>
-
-                <br><br>
-
-                <p class="check-type1"><label><input type="checkbox" name="comp" class=""><span></span></label></p>
-                
-                <br><br>
-
-                <p class="check-type1">
-                  <label for="cheese">
-                    <input type="checkbox" name="comp" id="cheese">
-                    <span>Do you like cheese?</span>
-                  </label>
-                </p>
-                
-                <br><br>
-                    
-                <div class="custom-select">
-                  <select>
-                    <option value="0">Select car:</option>
-                    <option value="1">Audi</option>
-                    <option value="2">BMW</option>
-                    <option value="3">Citroen</option>
-                    <option value="4">Ford</option>
-                  </select>
-                </div>
-
-                <br><br>
-
-                <select name="fruits" class="select">
-                  <option disabled selected>fruits</option>
-                  <option value="apple">apple</option>
-                  <option value="orange">orange</option>
-                  <option value="grape">grape</option>
-                  <option value="melon">melon</option>
-                </select>
-
-                <br><br>
-
-                <div class="ip-wrap">
-                  <strong>구분</strong>
-                  <p class="radio-type1"><label><input type="radio" name="radio1" value="" checked="checked"><span>전체</span></label></p>
-                  <p class="radio-type1"><label><input type="radio" name="radio1" value="LTE"><span>LTE</span></label></p>
-                  <p class="radio-type1"><label><input type="radio" name="radio1" value="5G"><span>5G</span></label></p>
-                </div>
-
-                <br><br>
-
-                <label for="w3review">Review of W3Schools:</label>
-
-                <textarea id="w3review" name="w3review" rows="4" cols="50">
-At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
-                </textarea>
-                
-              </div>
-            </div>
-
-            <div class="pages-list-cp">
-              <header class="sub-header">
-                <h3>Button</h3>
-              </header>
-              <div class="pages-list-content">
-                
-                <button type="button" class="btns">button</button>
-                <a href="#" class="btns">a</a>
-
-              </div>
-            </div>
-
-            <div class="pages-list-cp">
-              <header class="sub-header">
-                <h3>Icon</h3>
-              </header>
-              <div class="pages-list-content">
-                <i class='icon'></i> <i class='icon'></i> <i class='icon'></i>
-
-                <br><br>
-
-                <i class='icon'></i>
-
-                <br><br>
-
-                <i class='icon'></i>
-              </div>
-            </div>
-
-            <div class="pages-list-cp">
-              <header class="sub-header">
-                <h3>Popup(layer)</h3>
-              </header>
-              <div class="pages-list-content">
-                <a href="#layer1" class="btn-example">기본 레이어(absolute)</a>
-
-                <br><br>
-
-                <a href="#layer2" class="btn-example">dim 레이어(dim,fixed)</a>
-              </div>
-            </div>
-
-            <div class="pages-list-cp">
-              <header class="sub-header">
-                <h3>게시판(리스트)</h3>
-              </header>
-              <div class="pages-list-content">
-                
-                <div class="basic-table-wrap">
-                  <div class="notice-top">
-                    <div class="notice-top-num">검색결과 : 2,293건</div>
-                    <div class="notice-top-sch">
-                      <form>
-                        <fieldset>
-                          <legend>검색</legend>
-                          <select name="fruits" class="select">
-                            <option disabled selected>fruits</option>
-                            <option value="apple">apple</option>
-                            <option value="orange">orange</option>
-                            <option value="grape">grape</option>
-                            <option value="melon">melon</option>
-                          </select>
-                          <input type="text" title="타이틀" placeholder="텍스트를 입력해 주세요.">
-                          <input type="submit" class="btns" value="검색">
-                        </fieldset>
-                      </form>
+                <div class="body-tit02">
+                  <div class="works-list-wrap">
+                    <div class="normal-list">
+                      <div class="works-title">Medium / 20pt</div>
                     </div>
                   </div>
-                  <table class="notice-table">
-                    <caption></caption>
-                    <colgroup>
-                      <col class="col-wid20">
-                      <col class="col-wid60">
-                      <col class="col-wid20">
-                    </colgroup>
-                    <thead>
-                      <tr>
-                        <th scope="col">번호</th>
-                        <th scope="col">제목</th>
-                        <th scope="col">등록일</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td class="notice-title">모든 국민은 인간다운 생활을 할 권리를 가진다. 국회는 국민의 보통·평등·직접·비밀선거에</td>
-                        <td>2021-01-18</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td class="notice-title">모든 국민은 인간다운 생활을 할 권리를 가진다. 국회는 국민의 보통·평등·직접·비밀선거에</td>
-                        <td>2021-01-18</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td class="notice-title">모든 국민은 인간다운 생활을 할 권리를 가진다. 국회는 국민의 보통·평등·직접·비밀선거에</td>
-                        <td>2021-01-18</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td class="notice-title">모든 국민은 인간다운 생활을 할 권리를 가진다. 국회는 국민의 보통·평등·직접·비밀선거에</td>
-                        <td>2021-01-18</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td class="notice-title">모든 국민은 인간다운 생활을 할 권리를 가진다. 국회는 국민의 보통·평등·직접·비밀선거에</td>
-                        <td>2021-01-18</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div class="pagination-wrap">
-                    <div class="pagination">
-                      <a href="#">&laquo;</a>
-                      <a href="#">1</a>
-                      <a class="active" href="#">2</a>
-                      <a href="#">3</a>
-                      <a href="#">4</a>
-                      <a href="#">5</a>
-                      <a href="#">6</a>
-                      <a href="#">&raquo;</a>
+                </div>
+						</div>
+
+						<div class="body-txt">
+							<h3 class="guide-tit">Body Text</h3>
+              <p>영문사용시 class="eng"</p>
+
+              <div class="works-view-wrap">
+                <div class="view-sub">Regular / 14pt / 행간 24</div>
+              </div>
+
+              <div class="news-contents-slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="contents-img">
+                      <p class="contents-img-txt">Regular, Medium / 12pt / 행간 22</p>
                     </div>
                   </div>
-                  <div class="pagination-wrap">
-                    <ul class="pagination small-type">
-                      <li><a href="javascript:void(0)" class="border-right">❮ &nbsp;</a></li>
-                      <li><a href="javascript:void(0)">&nbsp; ❯</a></li>
-                    </ul>
-                  </div>
-                  <div class="pagination-wrap">
-                    <a href="#" class="btns">더보기</a>
-                  </div>
                 </div>
-
               </div>
-            </div>
+						</div>
+					</div>
 
-            <div class="pages-list-cp">
-              <header class="sub-header">
-                <h3>게시판(상세)</h3>
-              </header>
-              <div class="pages-list-content">
-                
-                <div class="basic-table-wrap">
-                  <div class="notice-view-top">
-                    <p>모든 국민은 인간다운 생활을 할 권리를 가진다.</p>
-                    <div class="notice-view-info">
-                      <span><em>작성자:</em> 국민</span>
-                      <span><em>등록일:</em> 2022-09-04</span>
-                      <span><em>조회수:</em> 437</span>
+				</div>
+				<!-- //common -->
+	
+				<!-- form -->
+				<div id="tab02" class="form-wrap">
+					<div class="btn mb100">
+						<h3 class="guide-tit">Button</h3>
+						<div class="btn-view-more-wrap">
+              <div class="img-btn">
+                <h4>버튼형</h4>
+                <section class="section3">
+                  <span class="view-more">view<br>more</span>
+                </section>
+              </div>
+              <div class="txt-btn">
+                <h4>텍스트형</h4>
+                <span class="view-more">view more</span>
+              </div>
+              <div class="txt-icon-btn">
+                <h4>텍스트 + 아이콘</h4>
+                <a href="#" class="btn-more">view more partners</a>
+              </div>
+              <div class="download-btn">
+                <h4>다운로드 버튼</h4>
+                <section class="section4 about">
+                  <div class="sec3-ci-area">
+                    <div class="btn-wrap">
+                      <button type="button" class="btn-down">
+                        <div class="btn-inn">
+                          <div class="btn-ico">
+                            <span>BI</span> 다운로드
+                          </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
-                  <div class="notice-view-ct">
-                    <p>모든 국민은 인간다운 생활을 할 권리를 가진다. 국회는 국민의 보통·평등·직접·비밀선거에 의하여 선출된 국회의원으로 구성한다. 대통령·국무총리·국무위원·행정각부의 장·헌법재판소 재판관·법관·중앙선거관리위원회 위원·감사원장·감사위원 기타 법률이 정한 공무원이 그 직무집행에 있어서 헌법이나 법률을 위배한 때에는 국회는 탄핵의 소추를 의결할 수 있다.</p>
+                </section>
+              </div>
+            </div>
+					</div>
 
-                    <p>타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다. 대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일 현재 40세에 달하여야 한다.</p>
+          <div class="select-box mb100">
+            <div class="select-inn">
+              <h3 class="guide-tit">Select Box</h3>
+              <div class="search-wrap">
+                <div class="search-box">
+                  <div class="unit-box">
+                    <select class="select" name="" id="">
+                      <option value="">제목</option>
+                      <option value="">내용</option>
+                    </select>
                   </div>
-                  <div class="btn-wrap align-r">
-                    <a href="#" class="btns">목록</a>
-                  </div>
-                  <div class="notice-view-link">
-                    <dl>
-                      <dt><a href="#">다음 글:</a></dt>
-                      <dd><a href="#">모든 국민은 인간다운 생활을 할 권리를 가진다.</a></dd>
-                    </dl>
-                    <dl>
-                      <dt><a href="#">이전 글:</a></dt>
-                      <dd><a href="#">국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다.</a></dd>
-                    </dl>
+                  <div class="unit-box">
+                    <input type="search" title="" placeholder="검색어를 입력해주세요.">
+                    <button class="search-btn"><span class="blind">검색</span></button>
                   </div>
                 </div>
-
               </div>
             </div>
-
-            <div class="pages-list-cp">
-              <header class="sub-header">
-                <h3>gnb, footer</h3>
-              </header>
-              <div class="pages-list-content">
-                <a href="gnb_m.html">gnb, footer</a>
-              </div>
-            </div>
-
           </div>
-        </div>
-      </div>
-      <footer>Copyright 2022. AAA all rights reserved.</footer>
-    </div>
-  </div>
 
-  <div id="layer1" class="pop-layer">
-    <div class="pop-container">
-        <div class="pop-conts">
-            <!--content //-->
-            <p class="ctxt mb20">명령·규칙 또는 처분<br>
-              명령·규칙 또는 처분이 헌법이나 법률에 위반되는 여부가 재판의 전제가 된 경우에는 대법원은 이를 최종적으로 심사할 권한을 가진다. <br><br> 국토와 자원은 국가의 보호를 받으며, 국가는 그 균형있는 개발과 이용을 위하여 필요한 계획을 수립한다.
-            </p>
-
-            <div class="btn-r">
-                <a href="#" class="btn-layerClose">Close</a>
-            </div>
-            <!--// content-->
-        </div>
-    </div>
-  </div>
-
-  <div class="dim-layer">
-    <div class="dimBg"></div>
-    <div id="layer2" class="pop-layer">
-        <div class="pop-container">
-            <div class="pop-conts">
-                <!--content //-->
-                <p class="ctxt mb20">명령·규칙<br>
-                  명령·규칙 또는 처분이 헌법이나 법률에 위반되는 여부가 재판의 전제가 된 경우에는 대법원은 이를 최종적으로 심사할 권한을 가진다. <br><br> 국토와 자원은 국가의 보호를 받으며, 국가는 그 균형있는 개발과 이용을 위하여 필요한 계획을 수립한다.
-                </p>
-
-                <div class="btn-r">
-                    <a href="#" class="btn-layerClose">Close</a>
+          <div class="label">
+            <h3 class="guide-tit">Label</h3>
+            <div class="label-inn">
+              <div class="list-type-table type2">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href=""></a>
+                        <span class="notice">공지</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>   
+              <section class="section2">
+                <div class="works-slide">
+                  <div class="works-item-wrap">
+                    <a href="#"></a>
+                    <img src="../pc/images/img-main2-slide-01.png">
+                    <span class="item-flag">TVING</span>
+                  </div>
                 </div>
-                <!--// content-->
+              </section>           
+
+              <div class="works-view-wrap">
+                <div class="works-view-left">
+                  <div class="view-tag">
+                      <span class="tag">music &amp; concert</span>
+                      <span class="tag">2022</span>
+                      <span class="tag">TVING</span>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+				</div>
+				<!-- //form -->
+	
+				<!-- list -->
+				<div id="tab03" class="list-wrap">
+          <div class="partners mb100">
+            <h3 class="guide-tit">Parteners</h3>
+            <div class="partners-list-wrap">
+              <div class="normal-list">
+                <ul>
+                  <li>
+                    <div class="partners-box">
+                      <div class="partners-logo"><img src="../pc/images/sub/partner_log.png" alt="U+ 모바일tv"></div>
+                    </div>
+                    <div class="partners-tit">U+ 모바일tv</div>
+                  </li>
+                  <li>
+                    <div class="partners-box">
+                      <div class="partners-logo"><img src="../pc/images/sub/partner_log2.png" alt="U+ tv"></div>
+                    </div>
+                    <div class="partners-tit">U+ tv</div>
+                  </li>
+                  <li>
+                    <div class="partners-box">
+                      <div class="partners-logo"><img src="../pc/images/sub/partner_log3.png" alt="BIGC"></div>
+                    </div>
+                    <div class="partners-tit">BIGC</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+                
+          <div class="works-list mb100">
+            <h3 class="guide-tit">Works List</h3>
+            <div class="works-list-wrap">
+              <div class="normal-list">
+                <ul>
+                  <li>
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="works-img">
+                        <img src="../mobile/images/sub/works-imgs01.jpg" alt="">
+                      </div>
+                      <strong class="works-title">아워게임</strong>
+                      <p class="works-sub">그 누구도 볼 수 없었던  그러나 모두가 기다려온<br> 스포츠 팩추얼 시리즈</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>        
+          
+
+          <div class="press">
+            <h3 class="guide-tit">Press</h3>
+            <div class="news-list-wrap">
+              <div class="normal-list">
+                <ul>
+                  <li>
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="news-img">
+                        <img src="../mobile/images/sub/news-imgs01.jpg" alt="">
+                      </div>
+                      <strong class="news-title">‘올빼미’ 밤이 되면 앞이 잘 보인다?</strong>
+                      <p class="news-sub">새로운 스타일의 스릴러 ‘올빼미’가 어디서도 본 적 없는 새로운 소재인 주맹증을 다루고 있는 가운데, 예비 관객들의 궁금증을</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="recruit">
+            <h3 class="guide-tit">Recruit</h3>
+            <div class="list-type-table type2">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href=""></a>
+                      <span class="notice">공지</span>
+                      <div>
+                        <ul>
+                          <li class="title">2022 하반기 STUDIO X+U 컨텐츠 기획 신입사원 모집</li>
+                          <li><span class="experience">신입</span><span class="date">2022.10.18 ~ 2022.10.30</span></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href=""></a>
+                      <span class="num">1</span>
+                      <div>
+                        <ul>
+                          <li class="title">2022 하반기 STUDIO X+U 컨텐츠 기획 신입사원 모집</li>
+                          <li><span class="experience">신입</span><span class="date">2022.10.18 ~ 2022.10.30</span></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href=""></a>
+                      <span class="num">2</span>
+                      <div>
+                        <ul>
+                          <li class="title">2022 하반기 경력 매니저 채용 공고</li>
+                          <li><span class="experience">경력</span><span class="date">2022.10.18 ~ 2022.10.30</span></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href=""></a>
+                      <span class="num">3</span>
+                      <div>
+                        <ul>
+                          <li class="title">신LMD Hub운영 신입사원 모집</li>
+                          <li><span class="experience">신입</span><span class="date">2022.10.18 ~ 2022.10.30</span></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>          
+          </div>
+				</div>
+				<!-- //list -->
+	
+				<!-- board --> 
+				<div id="tab04" class="board-wrap">
+          <div class="works-view">
+            <h3 class="guide-tit">Works View</h3>
+            <div class="works-view-wrap">
+              <div class="view-tag">
+                  <span class="tag">VARIETY &amp; SERIES</span>
+              </div>
+              <div class="view-title">우리동네클라쓰</div>
+              <div class="view-sub">전국 방방곡곡 찾아가는 신개념 동네 메이크오버 버라이어티 쇼. 잊혀가는 우리 지역에 활력과 행복을 되찾아 줄 핫플 원정대가 찾아간다! 사람들의 감동스토리는 덤! SNS를 뜨겁게 달굴 힙한 명소로 부활시키는 신개념 동네 메이크오버 프로젝트</div>
+              <div class="view-cont">
+                <ul class="cont-info-list">
+                  <li>
+                    <span class="list-tit">연출</span>
+                    <strong class="list-txt">정재환, 임태환, 윤원섭, 손동식, 김선영, 박상빈, 허지원</strong>
+                  </li>
+                  <li>
+                    <span class="list-tit">극본</span>
+                    <strong class="list-txt">-</strong>
+                  </li>
+                  <li>
+                    <span class="list-tit">프로듀서</span>
+                    <strong class="list-txt">김종일 CP</strong>
+                  </li>
+                  <li>
+                    <span class="list-tit">출연</span>
+                    <strong class="list-txt">이수근, 김수로, 이진호 등</strong>
+                  </li>
+                  <li>
+                    <span class="list-tit">채널정보</span>
+                    <strong class="list-txt">LG헬로비전, 더라이프</strong>
+                  </li>
+                  <li>
+                    <span class="list-tit">제작</span>
+                    <strong class="list-txt">얼반웍스</strong>
+                  </li>
+                  <li>
+                    <span class="list-tit">방영기간</span>
+                    <strong class="list-txt">2021.07.16 - 2021.10.01</strong>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="view-cont">
+                <div class="cont-img">
+                  <img src="../mobile/images/sub/works-cont-imgs01.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="view-content">
+            <h3 class="guide-tit">content</h3>
+            <div class="news-contents-wrap">
+              <div class="news-title-wrap">
+                <h4>콘텐츠 강화 나선 LGU+ ‘STUDIO X+U’ 신설… 양자영 PD 합류</h4>
+                <p class="date">2022.11.09</p>
+              </div>
+              <div class="news-contents-box">
+                <div class="news-contents-slide">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="contents-img">
+                        <img src="../mobile/images/sub/news-cont-imgs01.jpg" alt="">
+                        <p class="contents-img-txt">왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠 IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="contents-img">
+                        <img src="../mobile/images/sub/news-cont-imgs01.jpg" alt="">
+                        <p class="contents-img-txt">왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠 IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="contents-img">
+                        <img src="../mobile/images/sub/news-cont-imgs01.jpg" alt="">
+                        <p class="contents-img-txt">왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠 IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="btn-prev"></div>
+                  <div class="btn-next"></div>
+                  <div class="slide-pagination"></div>
+                </div>
+  
+                <div>
+                  LG유플러스가 미디어 서비스 경쟁력을 강화하기 위해 콘텐츠 제작을 중심으로 조직 개편을 단행하고 전문 인재 영입 및 파트너사 투자를 지속 확대 추진한다고 9일 밝혔다. 차별화된 오리지널 콘텐츠를 통해 미디어 경쟁력을 강화하고 플랫폼 기업으로 전환에 속도를 내기 위한 U+3.0 전략의 일환이다.<br>
+                </div>
+              </div>
+            </div>
+            <div class="contents-pagination">
+              <ul>
+                <li><a href="#" class="prev"><span class="blind">이전</span></a></li>
+                <!-- 2022-12-20 v2 수정 시작 -->
+                <li><a href="#" class="go-list">목록<span class="blind">목록으로 이동</span></a></li>
+                <!-- // 2022-12-20 v2 수정 끝 -->
+                <li><a href="#" class="next"><span class="blind">다음</span></a></li>
+              </ul>
+            </div>
+          </div>
+				</div>
+				<!-- //board -->
+			</div>
+		</div>
     </div>
   </div>
+  
 
   <script>
-    
+    $(function(){
+      $('.tab-content > div').hide();
+      $('ul a').click(function () {
+        $('.tab-content > div').hide().filter(this.hash).fadeIn();
+        $('ul a').removeClass('active');
+        $(this).addClass('active');
+        return false;
+      }).filter(':eq(0)').click();
+  	});
   </script>
 </body>
 

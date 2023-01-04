@@ -54,6 +54,8 @@ h5{font-weight: bold;margin: 10px 0;}
 body{background-color: #000;}
 .wrap {width: 100%;}
 
+.eng {font-family: 'Poppins', sans-serif;}
+
 /* header */
 #header {position:fixed; top:0; left:0; right:0; z-index:1000;}
 #header .header-inner {position: relative;display:flex; justify-content: space-between; width:100%; max-width:1920px; margin:0 auto; padding:20px 0}

@@ -186,7 +186,7 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-wei
 .program-slide .item-txt-wrap {position:absolute; width:100%; max-width:160rem; min-height:61.8rem; left:5rem; right:5rem; top:50%; margin:0 auto; transform:translateY(-50%)}
 .program-slide .item-txt-wrap .item-tit {display:block; color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-weight:normal; line-height:12rem}
 .program-slide .item-txt-wrap .item-des {margin-top:2.1rem; color:rgba(255,255,255,0.7); font-size:2.2rem; font-weight:normal; line-height:1.5454}
-.program-slide .item-txt-wrap .item-link {display:inline-block; margin-top: 4rem;font-size:1.8rem;color:#DBFC00;}
+.program-slide .item-txt-wrap .item-link {display:inline-block; margin-top: 4rem;font-size:1.8rem;color:#DBFC00; font-family:'Poppins', sans-serif;}
 .program-slide .control-bar {position:absolute; display:flex; align-items:center; justify-content:space-between; max-width:160rem; height:5rem; left:0; right:0; bottom:14.8rem; margin:0 auto; box-sizing:border-box}
 .program-slide .control-bar .control-btns {display:flex; justify-content:center; align-items:center; border:none; background:none}
 .program-slide .control-bar [class^="btn-"] {width:5rem; height:5rem; background:url(../images/img-main-btn-prev.svg) no-repeat center / contain; z-index:50; cursor:pointer; box-sizing:border-box; transition:opacity 0.2s ease; opacity:0.3}
