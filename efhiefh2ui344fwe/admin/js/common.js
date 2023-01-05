@@ -40,6 +40,9 @@ $(document).ready(function(){
   function adminHeaderFix() {
     let ConHeightFix = $('#container').height();
     $('#header').css("min-height", ConHeightFix);
-  }
+  };
 
+  // 드래그앤드롭 실행 
+  $("#table-drag").tableDnD();
+  
 });
