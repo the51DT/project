@@ -43,6 +43,15 @@ $(document).ready(function(){
   };
 
   // 드래그앤드롭 실행 
-  $("#table-drag").tableDnD();
+  $('.notice-table').tableDnD({
+    onDragClass: "myDragClass",
+    checkableClass: "trCheck",
+    onDragStart: function(table, draggedRow, dragObjs) {
+        // console.log('start');
+    },
+    onDrop: function(table, droppedRow, dragObjs) {
+        // console.log('stop');
+    }
+  });
   
 });
