@@ -203,7 +203,7 @@ h2.tit {margin: 0 0 20px 0; color: #000; font-size: 30px; font-weight: bold; lin
 .notice-table th{background-color: #F5F5F5; font-size: 20px; font-weight: bold;}
 .notice-table thead tr {cursor: default !important;}
 .notice-table tbody tr {cursor: move;}
-.notice-table .myDragClass td {background-color: #f5f5f5;}
+.notice-table .myDragClass td {background-color: #f0f0f0;}
 .notice-list{padding: 0 20px}
 .notice-list-cp{margin: 10px auto;margin-bottom:40px;}
 .notice-table{margin: 37px auto;}
