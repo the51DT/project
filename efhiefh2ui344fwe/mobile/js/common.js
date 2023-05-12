@@ -4,8 +4,12 @@ $(document).ready(function(){
   WebFont.load({
   
     // For google fonts
+    // google: {
+    //   families: ['Noto Sans KR', 'Poppins']
+      
+    // }   
     google: {
-      families: ['Noto Sans KR', 'Poppins']
+      families: ['Roboto Condensed', 'Noto Sans KR', 'Poppins']
       
     }
   });

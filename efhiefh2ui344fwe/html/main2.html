@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../pc/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="../pc/css/main2.css">
   <title>메인 2차 오픈</title>  
+  <script type="module" src="https://bks0c7yrb0.execute-api.ap-northeast-2.amazonaws.com/v1/api/fontstream/djs/?sid=gAAAAABkXZnDDMNxdy70pz1nvzsZLRu85_5oyaOZIqWS4V8-EnFu_GFmZKadwZORrz8tCSMno8EO7nfde4c-e6fBdwVpFFbNB8dn5-IeyPHd5C-wi5BWlT3LN3iXmORh-2-sOHrxwujXOpFrMp0Htb2FjVZ1nEzW3Ekg4SUkzUK0TFUfCVWpBFVTG_k6CFi9D8nVLq4_7mkZHdS2cvUeTQea5AuKl8sj6tTVtvKdNzPPHWnQ3ILoltNaEjougIbpKkCPe3NeGj2T" charset="utf-8"></script>
   <script src="../pc/js/vendor/jquery-2.1.3.min.js"></script>
   <script src="../pc/js/vendor/gsap.min.js"></script>
   <script src="../pc/js/vendor/ScrollTrigger.min.js"></script>
@@ -44,14 +45,28 @@
                 <li><a href="#">PARTNERS</a></li>
               </ul>
             </li>
+
+            <!-- ******************** 23/05/08 수정 ******************** -->
             <li>
               <a href="#">
                 <div class="gnb-tit-wrap">
-                  <span>WORKS</span>
-                  <span aria-hidden="true">WORKS</span>
+                  <!-- 23/05/08 WORKS -> CONTENT 텍스트변경 -->
+                  <span>CONTENT</span> 
+                  <span aria-hidden="true">CONTENT</span>
+                  <!-- // 23/05/08 WORKS -> CONTENT 텍스트변경 -->
+
                 </div>
               </a>
+              <!-- 23/05/08 메뉴추가 -->
+              <ul class="sub-list">
+                <li><a href="#">CONTENT</a></li>
+                <li><a href="https://marpple.shop/kr/edu_k_dol?page=0" target="_blank">GOODS</a></li>
+                <li><a href="">CHARACTER GAME</a></li>
+              </ul>
+              <!-- // 23/05/08 메뉴추가 -->
             </li>
+            <!-- ******************** 23/05/08 수정 ******************** -->
+
             <li>
               <a href="#">
                 <div class="gnb-tit-wrap">
@@ -93,6 +108,12 @@
     <!-- // 2022-12-28 수정 끝 -->
 
     <!-- container -->
+
+        <style>
+          .main-tit-area .desc {font-size: 3.8rem; color: #DBFC00;}
+          .main-tit-area .sub_desc {margin-top: 1rem; font-size: 2.6rem; color: rgba(255,255,255,0.7);}
+        </style>
+
     <div id="container">
       <!-- contents -->
       <main class="contents main">
@@ -107,12 +128,19 @@
           
           <div class="main-tit-area">
             <p class="tit"><img src="../pc/images/img-main2-main-txt1.svg" alt="STUDIO X+U"></p>
-            <p class="desc">Add New Experiences</p>
 
-            <div class="img-sec1-scroll"><img src="../pc/images/img-main2-scroll.svg" alt=""></div>
+            <!-- 23/05/08 텍스트변경 -->
+            <p class="desc">Global contents studio creating condensed entertainment</p>
+            <p class="sub_desc">대체 불가능한 압축된 재미를 창조하는 글로벌 콘텐츠 스튜디오</p> <!-- 23/05/08 추가 -->
+            <!-- // 23/05/08 텍스트변경 -->
+
+            <!-- <p class="desc">Add New Experiences</p> -->
+
+            <div class="img-sec1-scroll"><img src="../pc/images/img-main2-scroll.svg" alt="스크롤 다운"></div> <!-- 23/05/08 alt="스크롤 다운" 추가 -->
           </div>
           
         </section>
+
 
         <section class="section section2">
           <div class="section2-trigger"></div>
@@ -184,7 +212,16 @@
               <div class="sec-txt-area">
                 <p class="sec-txt">STUDIO X+U는 새로운 콘텐츠 창작으로<br> 고객에게 차별화된 즐거움과 경험을 선사합니다</p>
                 <div class="sec-tit-wrap">
-                  <span class="sec-tit">Find the X,<br> STUDIO X+U</span>
+
+                  <style>
+                    .section3 .sec-tit {font-size: 4.8rem; font-weight: 700; line-height: 6.8rem;}
+                  </style>
+
+                  <!-- 23/05/08 텍스트변경 -->
+                  <span class="sec-tit">대체 불가능한 압축된 재미를 창조하는<br> 글로벌 콘텐츠 스튜디오</span>
+                  <!-- // 23/05/08 텍스트변경 -->
+
+                  <!-- <span class="sec-tit">Find the X,<br> STUDIO X+U</span> -->
                   <!-- 2022-12-20 수정 시작 -->
                   <a href="#" class="btn-view-more">VIEW<br>MORE</a>
                   <!-- // 2022-12-20 수정 끝 -->
@@ -304,7 +341,7 @@
             <p>(주)엘지유플러스 <span>|</span> 대표이사 황현식 <span>|</span> 서울특별시 중구 후암로 98 LG서울역빌딩 15F</p>
             <p>사업자등록번호 220-81-39938 <span>|</span> 통신판매신고 제 2015-서울용산-00481호</p>
             <p>문의 studioxplusu@gmail.com <span>|</span> <a href="#" class="link-sitemap">사이트맵</a></p>
-            <copy>Copyright © STUDIO X+U All rights reserved.</copy>
+            <copy>Copyright STUDIO X+U All rights reserved.</copy> <!-- 23/05/08 © 제거 -->
           </div>
           
           <!-- 2022-12-15 삭제 시작 -->

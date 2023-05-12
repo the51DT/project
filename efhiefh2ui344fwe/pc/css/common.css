@@ -39,16 +39,17 @@ h4,
 h5{font-weight: bold;margin: 10px 0;}
 
 /* padding & margin */
-.mt0{margin-top: 0px!important;}
-.mt6{margin-top: 6px;}
-.mt12{margin-top: 12px;}
-.mt20{margin-top: 20px;}
-.mt30{margin-top: 30px;}
-.mt40{margin-top: 40px;}
+.mt0{margin-top: 0px !important;}
+.mt6{margin-top: 6px !important;}
+.mt12{margin-top: 12px !important;}
+.mt20{margin-top: 20px !important;}
+.mt30{margin-top: 30px !important;}
+.mt40{margin-top: 40px !important;}
 
-.align-r{text-align: right;}
-.align-l{text-align: left;}
-.align-c{text-align: center;}
+/* align */
+.align-r{text-align: right !important;}
+.align-l{text-align: left !important;}
+.align-c{text-align: center !important;}
 
 /* layout */
 body{background-color: #000;}
@@ -416,7 +417,10 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .list-type-table table .date{font-size: 24px; color: #919191; font-family: 'Poppins', sans-serif;}
 .list-type-table table .n-notice{padding-top: 2px; text-align: center;}
 
-/* works */
+
+
+
+/* ********** works ********** */
 /* works - list */
 .works .normal-tab-wrap{margin-top: -90px;}
 .works-list-wrap{margin-top: 102px;}
@@ -497,7 +501,34 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .works-view .contents-pagination {margin-top: 118px;margin-bottom:160px;}
 .works-view .contents-pagination:before {content: ""; display: block; margin-bottom: 44px; border-top: 1px solid #444;}
 
-/* about */
+
+
+
+/* ********** tiny desk ********** */
+/* tiny - list */
+.tiny-list-wrap .normal-list{margin: 0 -25px;}
+.tiny-list-wrap .normal-list ul{display: flex; flex-wrap: wrap; flex: 0 0 auto;}
+.tiny-list-wrap .normal-list ul li{margin-bottom: 120px; flex: 0 0 auto; width: 33.333%; padding: 0 25px; box-sizing: border-box;}
+.tiny-list-wrap .normal-list ul li.bigger{flex: 0 0 auto; width: 66.666%;}
+.tiny-list-wrap .normal-list ul li .anchor-box{position: relative;}
+.tiny-list-wrap .normal-list ul li .anchor-box a{position: absolute; width: 100%; height: 100%;}
+.tiny-list-wrap .normal-list ul li .tiny-img{margin-bottom: 40px;}
+.tiny-list-wrap .normal-list ul li .tiny-img img{display: block; width: 100%;}
+.tiny-list-wrap .normal-list ul li .tiny-title{display:-webkit-box; font-size: 32px; line-height: 44px; color: #FFFFFF; word-break:keep-all; letter-spacing:0; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden}
+.tiny-list-wrap .normal-list ul li .tiny-sub{display: block; font-size: 20px; line-height: 32px; color: #919191; margin: 20px 0 40px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+.tiny-list-wrap .normal-list ul li .view-more{font-family: 'Poppins', sans-serif; font-size:16px; color: #DBFC00; }
+
+/* tiny - view */
+.tiny-title-wrap{position: relative; padding: 60px 0 66px; border-top: 1px solid #444444; border-bottom: 1px solid #444444;}
+.tiny-title-wrap h4{font-size: 50px; font-weight: 600; color: #fff; margin: 0; line-height: 1.4;}
+.tiny-title-wrap p.date{margin-top: 27px; color: #919191; font-size: 20px;}
+.ver-recruit .tiny-title-wrap .experience{position: absolute; right: 60px; top: 50%; font-size: 22px; color: #DBFC00; transform: translateY(-50%);}
+.tiny-contents-box{padding: 40px 0 78px; border-bottom: 1px solid #444444; font-size: 22px; color: #fff; letter-spacing: -1px; line-height: 36px;}
+.tiny-contents-box a {color: #fff;}
+.tiny-contents-youtube {margin-bottom: 100px; text-align: center;}
+
+
+/* ********** about ********** */
 .pc-1366{display: none;}
 .pc-1366-invisible {display: none;}
 .pc-1920 {display: block;}
@@ -687,7 +718,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section4.about .sec3-ci-area .btn-wrap .btn-down + .btn-down{margin-left: 23px;}
 .section4.about .sec3-ci-area .btn-wrap .btn-down > span{font-family: 'Poppins', sans-serif;}
 
-/* partners */
+/* ********** partners ********** */
 /* .partners-list-wrap{padding-top: 20px;} */
 .partners-list-wrap .normal-list{margin: 0 -35px;}
 .partners-list-wrap .normal-list > ul{display: flex; flex-wrap: wrap; flex: 0 0 auto; margin-top: -10px}
