@@ -26,7 +26,7 @@ button {margin:0; padding:0; background:none}
 #fp-nav ul li:hover a span,
 #fp-nav ul li a.active span {width:1.8rem!important; height:1.6rem!important; margin:0!important}
 .footer-inner {max-width:160rem}
-h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-weight:normal; line-height:12rem}
+h2.tit {color:#fff; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:10rem; font-weight:normal; line-height:12rem}
 
 /* loading animation */
 #header {opacity:0; z-index:-1}
@@ -179,7 +179,7 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-wei
   100% {transform:rotate(360deg)}
 }
 
-.vision-list .list-tit {color:#fff; font-family:'Poppins', sans-serif; font-size:3rem; font-weight:bold; line-height:4.3rem}
+.vision-list .list-tit {color:#fff; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:3rem; font-weight:bold; line-height:4.3rem}
 .vision-list .list-tit > strong {color:#DBFC00; font-weight:bold}
 .vision-list .list-txt {margin-top:1rem; color:#919191; font-size:1.8rem; font-weight:normal; line-height:2.6rem}
 
@@ -189,7 +189,7 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-wei
 .program-slide .item-bg-wrap .slide-video {position:absolute; min-width:100%; min-height:100%; left:50%; top:50%; transform:translate(-50%,-50%)}
 .program-slide .item-bg-wrap .video-dim {position:absolute; left:0; right:0; top:0; height:100%; background:rgba(0,0,0,0.5)}
 .program-slide .item-txt-wrap {position:absolute; width:100%; max-width:160rem; min-height:61.8rem; left:5rem; right:5rem; top:50%; margin:0 auto; transform:translateY(-50%)}
-.program-slide .item-txt-wrap .item-tit {display:block; color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-weight:normal; line-height:12rem}
+.program-slide .item-txt-wrap .item-tit {display:block; color:#fff; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:10rem; font-weight:normal; line-height:12rem}
 .program-slide .item-txt-wrap .item-des {margin-top:2rem; color:rgba(255,255,255,0.7); font-size:2rem; font-weight:normal; line-height:3rem}
 .program-slide .item-txt-wrap .item-link {display:inline-block; margin-top: 4rem;font-size:1.8rem;color:#DBFC00;}
 .program-slide .control-bar {position:absolute; display:flex; align-items:center; justify-content:space-between; max-width:160rem; height:5rem; left:0; right:0; bottom:14.8rem; margin:0 auto; box-sizing:border-box}
@@ -218,9 +218,9 @@ h2.tit {color:#fff; font-family:'Poppins', sans-serif; font-size:10rem; font-wei
 .news-list .news-thumb > img {position:absolute; display:block; max-width:760px; width: 100%;  height:auto; left:50%; top:50%; transform:translate(-50%,-50%)}
 .news-list .news-tit {display: -webkit-box; color:#fff; font-size:2.2rem; font-weight:500; line-height:3.4rem; word-break:keep-all; letter-spacing:0; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden}
 .news-list .news-cont {margin-top:4rem;}
-.news-list .news-date {display:block; margin-top:1rem; color:#444; font-family:'Poppins', sans-serif; font-size:1.6rem; font-weight:normal; line-height:2rem}
+.news-list .news-date {display:block; margin-top:1rem; color:#444; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:1.6rem; font-weight:normal; line-height:2rem}
 .news-list .news-txt {display:-webkit-box; margin-top:1.9rem; color:#919191; font-size:1.8rem; font-weight:normal; line-height:3rem; word-break:keep-all; letter-spacing:0; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden}
-.news-cont .btn-view-more {display:block; margin-top:3.6rem; font-family:'Poppins', sans-serif; color:#DBFC00; font-size:1.8rem; line-height:3rem}
+.news-cont .btn-view-more {display:block; margin-top:3.6rem; font-family:'Roboto Condensed', 'Poppins', sans-serif; color:#DBFC00; font-size:1.8rem; line-height:3rem}
 .news-list .list-item.big {width:51%; max-width:76rem}
 .news-list .list-item.big .news-thumb {width:100%; height:52.3rem}
 .news-list .list-item.big .news-thumb::after {content:''; display:block; position:absolute; height:33rem; left:0; right:0; bottom:0; background:linear-gradient(to bottom, transparent, #000); opacity:0.7; transition:opacity 0.2s}
