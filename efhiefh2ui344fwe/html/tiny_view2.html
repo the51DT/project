@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../pc/css/reset.css">
   <link rel="stylesheet" href="../pc/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="../pc/css/common.css">
-  <title>News_contents</title>  
+  <title>Tiny_Desk_view</title>  
   <!-- ******************** 23/05/23 수정 ******************** -->
   <!-- 23/05/23 폰트코드추가 -->
   <script type="module" src="https://bks0c7yrb0.execute-api.ap-northeast-2.amazonaws.com/v1/api/fontstream/djs/?sid=gAAAAABkXZnDDMNxdy70pz1nvzsZLRu85_5oyaOZIqWS4V8-EnFu_GFmZKadwZORrz8tCSMno8EO7nfde4c-e6fBdwVpFFbNB8dn5-IeyPHd5C-wi5BWlT3LN3iXmORh-2-sOHrxwujXOpFrMp0Htb2FjVZ1nEzW3Ekg4SUkzUK0TFUfCVWpBFVTG_k6CFi9D8nVLq4_7mkZHdS2cvUeTQea5AuKl8sj6tTVtvKdNzPPHWnQ3ILoltNaEjougIbpKkCPe3NeGj2T" charset="utf-8"></script>
@@ -25,7 +25,6 @@
 <body>
   <div class="wrap">
 
-    <!-- 2022-12-28 수정 시작 -->
     <!-- header -->
     <header id="header" class="main-tool-bar">
       <div class="header-inner">
@@ -48,6 +47,7 @@
                 <li><a href="#">PARTNERS</a></li>
               </ul>
             </li>
+
             <!-- ******************** 23/05/23 수정 ******************** -->
             <li>
               <a href="#">
@@ -62,12 +62,13 @@
               <!-- 23/05/23 메뉴추가 -->
               <ul class="sub-list">
                 <li><a href="#">CONTENT</a></li>
-                <li><a href="https://marpple.shop/kr/edu_k_dol?page=0" target="_blank">GOODS</a></li>
-                <li><a href="">CHARACTER GAME</a></li>
+                <li><a href="#">GOODS</a></li>
+                <li><a href="https://marpple.shop/kr/edu_k_dol?page=0" target="_blank">CHARACTER GAME</a></li>
               </ul>
               <!-- // 23/05/23 메뉴추가 -->
             </li>
             <!-- ******************** 23/05/23 수정 ******************** -->
+
             <li>
               <a href="#">
                 <div class="gnb-tit-wrap">
@@ -106,7 +107,6 @@
       </div>
     </header>
     <!--// header -->
-    <!-- // 2022-12-28 수정 끝 -->
 
     <!-- container -->
     <div id="container"> 
@@ -115,55 +115,55 @@
 
         <section class="section_1">
           <div class="inner">
-            <h2 class="blind">News</h2>
+            <h2 class="blind">Tiny Desk KR</h2>
             <h3 class="motion-tit">
-              <!-- 2022-12-19 수정 시작 -->
-              <span>PRESS</span>
-              <!-- // 2022-12-19 수정 끝 -->
+              <span>TINY DESK KR</span>
             </h3>
             
-            <div class="news-contents-wrap">
-              <div class="news-title-wrap">
+            <div class="tiny-contents-wrap">
+              <div class="tiny-title-wrap">
                 <h4>올빼미, 밤이 되면 앞이 잘 보인다?</h4>
                 <p class="date">2022.11.17</p>
               </div>
-              <div class="news-contents-box">
-                <div class="news-contents-slide">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="contents-img">
-                        <img src="../pc/images/sub/news_cont_imgs.png" alt="">
+              <div class="tiny-contents-box">
+                <div class="tiny-view-under">
 
-                        <!-- 2022-12-19 추가 시작 -->
-                        <p>왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
-                        <!-- // 2022-12-19 추가 끝 -->
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="contents-img">
-                        <img src="../pc/images/sub/news_cont_imgs03.png" alt="">
-
-                        <!-- 2022-12-19 추가 시작 -->
-                        <p>왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
-                        <!-- // 2022-12-19 추가 끝 -->
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="contents-img">
-                        <img src="../pc/images/sub/news_cont_imgs03.png" alt="">
-
-                        <!-- 2022-12-19 추가 시작 -->
-                        <p>왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
-                        <!-- // 2022-12-19 추가 끝 -->
-                      </div>
-                    </div>
+                  <!-- 영상일경우 -->
+                  <div class="tiny-contents-youtube">
+                    <iframe width="1080" height="600" src="https://www.youtube.com/embed/eRX5_KUyx7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
+                  <!-- // 유튜브일경우 -->
 
-                  <div class="btn-prev"></div>
-                  <div class="btn-next"></div>
-                  <div class="slide-pagination"></div>
+                  <!-- 이미지일경우 -->
+                  <div class="tiny-contents-slide">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="contents-img">
+                          <img src="../pc/images/sub/news_cont_imgs.png" alt="">
+                          <p>왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="contents-img">
+                          <img src="../pc/images/sub/news_cont_imgs03.png" alt="">
+                          <p>왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="contents-img">
+                          <img src="../pc/images/sub/news_cont_imgs03.png" alt="">
+                          <p>왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="btn-prev"></div>
+                    <div class="btn-next"></div>
+                    <div class="slide-pagination"></div>
+                  </div>
+                  <!-- // 이미지일경우 -->
+
                 </div>
-
                 <div>
                   LG유플러스가 미디어 서비스 경쟁력을 강화하기 위해 콘텐츠 제작을 중심으로 조직 개편을 단행하고 전문 인재 영입 및 파트너사 투자를 지속 확대 추진한다고 9일 밝혔다. 차별화된 오리지널 콘텐츠를 통해 미디어 경쟁력을 강화하고 플랫폼 기업으로 전환에 속도를 내기 위한 U+3.0 전략의 일환이다.<br><br>
 
