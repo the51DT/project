@@ -299,6 +299,24 @@ $(document).ready(function(){
   //   },
   // });
 
+
+  // tiny desk slide
+  const tinySlide = new Swiper('.tiny-contents-slide', {
+    autoHeight : true, // 2022-12-21 추가
+    navigation: {
+      nextEl: '.btn-next',
+      prevEl: '.btn-prev',
+    },
+    pagination: {
+      el: ".slide-pagination",
+      type: "fraction",
+      watchOverflow : true,
+      renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '">' + '</span><span class="' + totalClass + '">';
+      },
+    },
+  });
+
   /* 2022-12-21 수정 시작 */
   /**
    * @author denver

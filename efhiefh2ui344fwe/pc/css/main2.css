@@ -21,8 +21,8 @@ button {margin:0; padding:0; background:none}
 .main-tit-area {position:absolute; width:100%; left:0; right:0; top:0; bottom:0; display:flex; flex-direction:column; justify-content:center; align-items:center; margin:0 auto; text-align:center; animation-name:mainText; animation-duration:2s}
 .main-tit-area .tit {width:100%; max-width:84.1rem}
 .main-tit-area .tit img {display:block; width:100%}
-.main-tit-area .desc {margin-top:4.2rem; color:rgba(255,255,255,0.7); font-family: Sandoll GtNeoCond, "Roboto Condensed", "Noto Sans KR", 'Poppins', sans-serif; font-size:2.6rem; color: #DBFC00; font-weight:normal; line-height:2.6rem; text-align:center}
-.main-tit-area .sub_desc {margin-top: 1rem; font-size: 2.6rem; line-height: 2.6rem; font-weight: bold; color: rgba(255,255,255,0.7); font-family: Sandoll GtNeoCond, "Roboto Condensed", "Noto Sans KR", "Poppins", sans-serif;}
+.main-tit-area .sub_desc {margin-top: 5rem; font-size: 2.6rem; line-height: 2.6rem; font-weight: 700; color: rgba(255,255,255,0.7); font-family: Sandoll GtNeoCond, "Roboto Condensed", "Noto Sans KR", "Poppins", sans-serif;}
+.main-tit-area .desc {margin-top:1rem; color:rgba(255,255,255,0.7); font-family: "Roboto Condensed", 'Poppins', sans-serif; font-size:2.6rem; font-weight:normal; line-height:2.6rem; text-align:center}
 @keyframes mainText {
   from {opacity:0}
   to {opacity:1}
@@ -64,7 +64,7 @@ button {margin:0; padding:0; background:none}
 .section2 .works-slide .control-btns [class^="btn-"] {width:5rem; height:5rem; background:url(../images/img-main-btn-prev.svg) no-repeat center / contain; z-index:50; cursor:pointer; box-sizing:border-box; transition:opacity 0.2s ease; opacity:0.3}
 .section2 .works-slide .control-btns [class^="btn-"]:hover {opacity:1}
 .section2 .works-slide .control-btns .btn-next {margin-left:3rem; background:url(../images/img-main-btn-next.svg) no-repeat center / contain}
-.section3 {position:relative; margin-top:15.5rem}
+.section3 {position:relative; margin-top:15rem}
 .section3-trigger {position:absolute; top:50%; height:15%}
 @media (max-height:800px){
   .section3-trigger {top:80%; height:20%}
@@ -76,9 +76,9 @@ button {margin:0; padding:0; background:none}
 .section3 .video-container::after {content:''; display:block; position:absolute; left:0; right:0; top:0; bottom:0; background:rgba(0,0,0,0.4)}
 .section3 .video-container video {position:absolute; width:auto; min-width:100%; height:auto; min-height:100%; top:0; bottom:0; left:50%; transform:translateX(-50%)}
 .section3 .sec-txt-area {position:absolute; left:0; right:0; top:0; bottom:0; width:100%; max-width:192rem; margin:0 auto; opacity:0}
-.section3 .sec-txt {position:absolute; left:16rem; top:7.7rem; color:#fff; font-size:2rem; line-height: 1.6; z-index:5}
-.section3 .sec-tit-wrap {position:absolute; left:16rem; bottom:9rem; padding-right:13rem; z-index:6}
-.section3 .sec-tit {color:#fff; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:15rem; font-weight:normal; line-height:16rem}
+.section3 .sec-txt {position:absolute; left:16rem; top:8rem; color:#fff; font-size:2rem; line-height: 1.6; font-family:Sandoll GtNeoCond, "Roboto Condensed", "Noto Sans KR", "Poppins", sans-serif; z-index:5}
+.section3 .sec-tit-wrap {position:absolute; left:16rem; bottom:8rem; padding-right:13rem; z-index:6}
+.section3 .sec-tit {font-family:"Roboto Condensed", "Poppins", sans-serif; font-size:15rem; font-weight:normal; line-height:16rem; color:#fff;}
 .section3 .btn-view-more {position:absolute; display:block; width:10rem; right:0; bottom:2.6rem; padding:2.8rem 0; border-radius:50%; background-color:#DBFC00; color:#000; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:2rem; font-weight:600; line-height:2.2rem; text-align:center; z-index:101}
 
 .section4 {margin:15rem 0; padding-bottom:5.6rem}
