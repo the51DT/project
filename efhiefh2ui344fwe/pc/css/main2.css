@@ -21,7 +21,7 @@ button {margin:0; padding:0; background:none}
 .main-tit-area {position:absolute; width:100%; left:0; right:0; top:0; bottom:0; display:flex; flex-direction:column; justify-content:center; align-items:center; margin:0 auto; text-align:center; animation-name:mainText; animation-duration:2s}
 .main-tit-area .tit {width:100%; max-width:84.1rem}
 .main-tit-area .tit img {display:block; width:100%}
-.main-tit-area .sub_desc {margin-top: 5rem; font-size: 2.6rem; line-height: 2.6rem; font-weight: 700; color: rgba(255,255,255,0.7); font-family: Sandoll GtNeoCond, "Roboto Condensed", "Noto Sans KR", "Poppins", sans-serif;}
+.main-tit-area .sub_desc {margin-top: 5rem; font-size: 2.6rem; line-height: 2.6rem; color: rgba(255,255,255,0.7); font-family: Sandoll GtNeoCond, "Roboto Condensed", "Noto Sans KR", "Poppins", sans-serif;}
 .main-tit-area .desc {margin-top:1rem; color:rgba(255,255,255,0.7); font-family: "Roboto Condensed", 'Poppins', sans-serif; font-size:2.6rem; font-weight:normal; line-height:2.6rem; text-align:center}
 @keyframes mainText {
   from {opacity:0}
@@ -58,7 +58,7 @@ button {margin:0; padding:0; background:none}
 .section2 .works-slide .works-item-wrap {position:relative; width:50rem}
 .section2 .works-slide .works-item-wrap > a {display:block; position:absolute; left:0; right:0; top:0; bottom:0}
 .section2 .works-slide .works-item-wrap img {display:block; width:100%}
-.section2 .works-slide .item-tit {margin-top:2.5rem; color:#fff; font-size:2.2rem; font-weight:normal; line-height:2.2rem}
+.section2 .works-slide .item-tit {margin-top:2.5rem; color:#fff; font-size:2.2rem; line-height:2.2rem}
 .section2 .works-slide .item-flag {position:absolute; top:0; right:0; display:block; min-width:10rem; padding:0 1.8rem; background-color:#DBFC00; color:#000; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:1.6rem; font-weight:bold; line-height:4rem; text-align:center; box-sizing:border-box}
 .section2 .works-slide .control-btns {position:absolute; display:flex; justify-content:flex-end; align-items:center; width:100%; max-width:192rem; top:5.5rem; left:0; right:0; margin:0 auto; padding:0 16rem; box-sizing:border-box}
 .section2 .works-slide .control-btns [class^="btn-"] {width:5rem; height:5rem; background:url(../images/img-main-btn-prev.svg) no-repeat center / contain; z-index:50; cursor:pointer; box-sizing:border-box; transition:opacity 0.2s ease; opacity:0.3}
