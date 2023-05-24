@@ -358,7 +358,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .news-contents-slide .slide-pagination::after{content: ''; display: block; position: absolute; top: 6px; left: 6px; width: 20px; height: 20px; background: url(../images/sub/news_arrow_prev_small.png) no-repeat 0 0;}
 .news-contents-slide .slide-pagination::before{content: ''; display: block; position: absolute; top: 6px; right: 6px; width: 20px; height: 20px; background: url(../images/sub/news_arrow_next_small.png) no-repeat 0 0;}
 
-.contents-pagination{margin: 40px 0 160px}
+.contents-pagination{margin: 40px 0 150px}
 .contents-pagination.right {width: calc(50% - 50px); margin-left: auto;}
 .contents-pagination ul{display: flex; justify-content: space-between;}
 .contents-pagination ul a{display: block; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size: 40px; color: #555;}
@@ -366,12 +366,14 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .contents-pagination ul .next{width: 50px; height: 50px; background: url(../images/common/news_arrow_next.svg) no-repeat center 100%;}
 .contents-pagination ul li + li {display: flex;align-items: center;}
 
-.contents-pagination.type2{margin-top: 44px; text-align: center;}
+.contents-pagination.type2{margin-top: 40px; text-align: center;}
 .contents-pagination.type2 a {
     display: block;
     /* font-family:'Roboto Condensed', 'Poppins', sans-serif; */
     font-size: 40px;
     color: #555;
+    font-family: Sandoll GtNeoCond, "Roboto Condensed", "Noto Sans KR", "Poppins", sans-serif;
+
 }
 
 .tabs ul::after{display: block; content: ''; clear: both; float: inherit;}
@@ -482,7 +484,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .works-view-wrap .view-tag{display: flex;}
 .works-view-wrap .view-tag .tag{display: block; padding: 0 11px; border: 1px solid #919191; border-radius: 30px; color: #919191; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:16px; line-height: 28px;}
 .works-view-wrap .view-tag .tag + .tag{margin-left: 8px;}
-.works-view-wrap .view-title{margin-top: 41px; color: #fff; font-size: 70px; line-height: 100px;}
+.works-view-wrap .view-title{margin-top: 40px; color: #fff; font-size: 70px; line-height: 77px;}
 .works-view-wrap .view-sub{margin-top: 14px; color: #919191; font-size: 20px; line-height: 32px;}
 .works-view-right .view-cont{}
 .works-view-wrap .cont-info-list{margin-top: 59px; border-top: 1px solid #444; border-bottom: 1px solid #444;}
