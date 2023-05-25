@@ -118,7 +118,7 @@ body{background-color: #000;}
 section{position: relative;}
 
 .motion-tit{margin: 0 0 100px 0; overflow: hidden; opacity: 0; animation: fadeIn 1.6s forwards;}
-.motion-tit > span{display: block; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size: 120px; line-height: 168px; color: #fff; transform-origin: 50% 50%; transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5); animation:skewUp 0.8s forwards}
+.motion-tit > span{display: block; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size: 120px; line-height: 120px; color: #fff; transform-origin: 50% 50%; transform: translate(0%, 130%) skew(-10deg, 0deg) scale(1, 1.5); animation:skewUp 0.8s forwards}
 
 .section1{min-height: 950px;}
 .section1 .inner{position: relative; padding-top: 200px;}
@@ -497,6 +497,54 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .works-view .contents-pagination {margin-top: 80px;}
 .works-view .contents-pagination:before {content: ""; display: block; margin-bottom: 40px; border-top: 1px solid #444;}
 
+
+/* ********** character game ********** */
+.charater-img-wrap{margin-bottom: 126px;}
+.charater-img-wrap img{width: 100%;}
+
+
+
+/* ********** tiny desk ********** */
+/* tiny - list */
+.tiny-list-wrap .normal-list{margin: 0 -25px;}
+.tiny-list-wrap .normal-list ul{display: flex; flex-wrap: wrap; flex: 0 0 auto;}
+.tiny-list-wrap .normal-list ul li{margin-bottom: 120px; flex: 0 0 auto; width: 33.333%; padding: 0 25px; box-sizing: border-box;}
+.tiny-list-wrap .normal-list ul li.bigger{flex: 0 0 auto; width: 66.666%;}
+.tiny-list-wrap .normal-list ul li .anchor-box{position: relative;}
+.tiny-list-wrap .normal-list ul li .anchor-box a{position: absolute; width: 100%; height: 100%;}
+.tiny-list-wrap .normal-list ul li .tiny-img{margin-bottom: 40px;}
+.tiny-list-wrap .normal-list ul li .tiny-img img{display: block; width: 100%;}
+.tiny-list-wrap .normal-list ul li .tiny-title{display:-webkit-box; font-size: 32px; line-height: 44px; color: #FFFFFF; word-break:keep-all; letter-spacing:0; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden}
+.tiny-list-wrap .normal-list ul li .tiny-sub{display: block; font-size: 20px; line-height: 32px; color: #919191; margin: 20px 0 40px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+.tiny-list-wrap .normal-list ul li .view-more{font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:16px; color: #DBFC00; }
+/* tiny - view */
+.tiny-title-wrap{position: relative; padding: 60px 0 66px; border-top: 1px solid #444444; border-bottom: 1px solid #444444;}
+.tiny-title-wrap h4{font-size: 50px; font-weight: 600; color: #fff; margin: 0; line-height: 1.4;}
+.tiny-title-wrap p.date{margin-top: 27px; color: #919191; font-size: 20px;}
+.ver-recruit .tiny-title-wrap .experience{position: absolute; right: 60px; top: 50%; font-size: 22px; color: #DBFC00; transform: translateY(-50%);}
+.tiny-contents-box{padding: 40px 0 78px; border-bottom: 1px solid #444444; font-size: 22px; color: #fff; letter-spacing: -1px; line-height: 36px;}
+.tiny-contents-box a {color: #fff;}
+.tiny-contents-youtube {margin-bottom: 100px; text-align: center;}
+/* tiny desk  */
+.tiny-contents-slide{position: relative; width: calc(100% + 24px); margin-left: -12px; margin-bottom: 48px; padding-bottom: 0; overflow: hidden;}
+.tiny-contents-slide .contents-img{width: 100%; max-width: 1420px; height: 100%; margin: 0 auto}
+.tiny-contents-slide .contents-img p{margin-top:13px;letter-spacing: -0.15px; font-size: 18px; line-height: 38px; color: #919191; text-align: center;}
+.tiny-contents-slide .contents-img > img{display: block; max-width: 100%; max-height: 100%; margin: 0 auto;}
+.tiny-contents-slide [class^="btn-"] {position: absolute; width: 50px; height: 50px; top:50%; margin-top: -94px;background: url(../images/sub/icon-arrow-left.svg) no-repeat center / contain; box-sizing: border-box; cursor: pointer; z-index: 10; transition: opacity 0.2s ease}
+.tiny-contents-slide .btn-prev {left: 200px}
+.tiny-contents-slide .btn-next {right: 200px; transform: rotate(180deg)}
+.tiny-contents-slide .swiper-button-disabled{cursor: default; opacity: 0.3;}
+.tiny-contents-slide .slide-pagination{ position: relative; display: flex; justify-content: center; align-items: center; width: 60px; height: 32px; margin:13px auto 0; border-radius: 32px; background: rgba(0,0,0,0.7); z-index: 51;}
+.tiny-contents-slide .slide-pagination .swiper-pagination-total::after{content: ''; display: block; position: absolute; width: 1px; height: 8px; top: calc(50% - 4px); left: calc(50% - 0.5px); background: #919191; opacity: 0.4;}
+.tiny-contents-slide .slide-pagination .swiper-pagination-current{display: inline-block; min-width: 8px; color: #fff; font-size: 12px; line-height: 32px; text-align: center;}
+.tiny-contents-slide .slide-pagination .swiper-pagination-total{display: inline-block; min-width: 8px; margin-left: 21px; color: #919191; font-size: 12px; line-height: 32px; opacity: 0.4; text-align: center;}
+/* pagination */
+.tiny-contents-slide .slide-pagination{padding-left: 20px; padding-right: 20px; border-radius: 20px; background-color: #222;}
+.tiny-contents-slide .slide-pagination::after{content: ''; display: block; position: absolute; top: 6px; left: 6px; width: 20px; height: 20px; background: url(../images/sub/news_arrow_prev_small.png) no-repeat 0 0;}
+.tiny-contents-slide .slide-pagination::before{content: ''; display: block; position: absolute; top: 6px; right: 6px; width: 20px; height: 20px; background: url(../images/sub/news_arrow_next_small.png) no-repeat 0 0;}
+
+
+
 /* about */
 .pc-1366{display: none;}
 .pc-1366-invisible {display: none;}
@@ -693,7 +741,8 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .partners-list-wrap .normal-list > ul > li .partners-box .partners-logo img{max-width: 100%;}
 
 /* site map */
-.site-map {margin: 180px 160px 250px;}
+/* .site-map {margin: 180px 160px 250px;} */
+.site-map {margin: 180px 80px 250px;}
 .site-map .motion-tit {margin-bottom: 200px;}
 .site-map .motion-tit span {font-size: 120px; font-family:'Roboto Condensed', 'Poppins', sans-serif; line-height: 180px;}
 .site-map .site-map-wrap {display: flex; justify-content: space-around;}

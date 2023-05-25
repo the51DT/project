@@ -5,7 +5,7 @@ $(window).on('load', function(){
   
     // For google fonts
     google: {
-      families: ['Noto Sans KR', 'Poppins']
+      families: ['Roboto Condensed', 'Noto Sans KR', 'Poppins']
       
     }
   });
