@@ -96,7 +96,7 @@ body{background-color: #000;}
 .gnb+.lang-chioce ul li {position: relative;float: left;}
 .gnb+.lang-chioce a {position: relative; margin-left: 10px; margin-right: 10px; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size: 20px;color: #919191;}
 .gnb+.lang-chioce a.active {color: #fff; opacity: 1;}
-.gnb+.lang-chioce a:first-child:after {overflow: hidden; content: " | ";position: absolute; right: -14px; top: 8px; height: 12px; color: #919191;}
+.gnb+.lang-chioce a:first-child:after {overflow: hidden; content: " | ";position: absolute; right: -14px; top: 5px; height: 12px; color: #919191;}
 
 /* footer */
 .footer-inner {position: relative; padding: 40px 0; width:100%; max-width:360px; margin:0 auto;text-align: center;}
