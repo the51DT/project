@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../pc/css/reset.css">
+  <link rel="stylesheet" href="../pc/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../pc/css/common.css">
+  <title>Tiny_Desk_view</title>  
+  <!-- ******************** 23/05/23 수정 ******************** -->
+  <!-- 23/05/23 폰트코드추가 -->
+  <script type="module" src="https://bks0c7yrb0.execute-api.ap-northeast-2.amazonaws.com/v1/api/fontstream/djs/?sid=gAAAAABkXZnDDMNxdy70pz1nvzsZLRu85_5oyaOZIqWS4V8-EnFu_GFmZKadwZORrz8tCSMno8EO7nfde4c-e6fBdwVpFFbNB8dn5-IeyPHd5C-wi5BWlT3LN3iXmORh-2-sOHrxwujXOpFrMp0Htb2FjVZ1nEzW3Ekg4SUkzUK0TFUfCVWpBFVTG_k6CFi9D8nVLq4_7mkZHdS2cvUeTQea5AuKl8sj6tTVtvKdNzPPHWnQ3ILoltNaEjougIbpKkCPe3NeGj2T" charset="utf-8"></script>
+  <!-- // 23/05/23 폰트코드추가 -->
+  <!-- ******************** 23/05/23 수정 ******************** -->
+  <script src="../pc/js/vendor/jquery-2.1.3.min.js"></script>
+  <script src="../pc/js/vendor/gsap.min.js"></script>
+  <script src="../pc/js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="../pc/js/vendor/swiper-bundle.min.js"></script>
+  <script src="../pc/js/vendor/webfont.js"></script>
+  <script src="../pc/js/common.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- header -->
+    <header id="header" class="main-tool-bar">
+      <div class="header-inner">
+
+        <h1 class="logo">
+          <a href="#"><img src="../pc/images/sub/logo.png" alt="STUDIO X+U"></a>
+        </h1>
+
+        <nav class="gnb">
+          <ul class="gnb-list">
+            <li>
+              <a href="#">
+                <div class="gnb-tit-wrap">
+                  <span>ABOUT</span>
+                  <span aria-hidden="true">ABOUT</span>
+                </div>
+              </a>
+              <ul class="sub-list">
+                <li><a href="#">STUDIO X+U</a></li>
+                <li><a href="#">PARTNERS</a></li>
+              </ul>
+            </li>
+
+            <!-- ******************** 23/05/23 수정 ******************** -->
+            <li>
+              <a href="#">
+                <div class="gnb-tit-wrap">
+                  <!-- 23/05/23 WORKS -> CONTENT 텍스트변경 -->
+                  <span>CONTENT</span> 
+                  <span aria-hidden="true">CONTENT</span>
+                  <!-- // 23/05/23 WORKS -> CONTENT 텍스트변경 -->
+
+                </div>
+              </a>
+              <!-- 23/05/23 메뉴추가 -->
+              <ul class="sub-list">
+                <li><a href="#">CONTENT</a></li>
+                <li><a href="#">GOODS</a></li>
+                <li><a href="https://marpple.shop/kr/edu_k_dol?page=0" target="_blank">CHARACTER GAME</a></li>
+              </ul>
+              <!-- // 23/05/23 메뉴추가 -->
+            </li>
+            <!-- ******************** 23/05/23 수정 ******************** -->
+
+            <li>
+              <a href="#">
+                <div class="gnb-tit-wrap">
+                  <span>NEWS</span>
+                  <span aria-hidden="true">NEWS</span>
+                </div>
+              </a>
+              <ul class="sub-list">
+                <li><a href="#">PRESS</a></li>
+                <!-- <li><a href="#">NOTICE</a></li> -->
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <div class="gnb-tit-wrap">
+                  <span>INFORMATION</span>
+                  <span aria-hidden="true">INFORMATION</span>
+                </div>
+              </a>
+              <ul class="sub-list">
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">RECRUIT</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </nav>
+
+        <div class="lang-chioce">
+          <ul>
+            <li class="active"><a href="#">KR</a></li>
+            <li><a href="#">EN</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container"> 
+      <!-- contents -->
+      <main class="contents">
+
+        <section class="section_1">
+          <div class="inner">
+            <h2 class="blind">Tiny Desk KR</h2>
+            <h3 class="motion-tit">
+              <span>TINY DESK KR</span>
+            </h3>
+            
+            <div class="tiny-contents-wrap">
+              <div class="tiny-title-wrap">
+                <h4>올빼미, 밤이 되면 앞이 잘 보인다?</h4>
+                <p class="date">2022.11.17</p>
+              </div>
+              <div class="tiny-contents-box">
+                <div class="tiny-view-under">
+
+                  <!-- 영상일경우 -->
+                  <div class="tiny-contents-youtube">
+                    <iframe width="1080" height="600" src="https://www.youtube.com/embed/eRX5_KUyx7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <!-- // 유튜브일경우 -->
+
+                  <!-- 이미지일경우 -->
+                  <div class="tiny-contents-slide">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="contents-img">
+                          <img src="../pc/images/sub/news_cont_imgs.png" alt="">
+                          <p>왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="contents-img">
+                          <img src="../pc/images/sub/news_cont_imgs03.png" alt="">
+                          <p>왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="contents-img">
+                          <img src="../pc/images/sub/news_cont_imgs03.png" alt="">
+                          <p>왼쪽부터 이덕재 CCO, 신정수 콘텐츠제작센터장, 이상진 콘텐츠IP사업담당이 새로운 조직인 STUDIO X+U를 소개하고 있다.</p>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="btn-prev"></div>
+                    <div class="btn-next"></div>
+                    <div class="slide-pagination"></div>
+                  </div>
+                  <!-- // 이미지일경우 -->
+
+                </div>
+                <div>
+                  LG유플러스가 미디어 서비스 경쟁력을 강화하기 위해 콘텐츠 제작을 중심으로 조직 개편을 단행하고 전문 인재 영입 및 파트너사 투자를 지속 확대 추진한다고 9일 밝혔다. 차별화된 오리지널 콘텐츠를 통해 미디어 경쟁력을 강화하고 플랫폼 기업으로 전환에 속도를 내기 위한 U+3.0 전략의 일환이다.<br><br>
+
+                  우선 LG유플러스는 내년부터 오리지널 콘텐츠 제작을 본격화하기 위해 이달 CCO(최고콘텐츠전문가) 조직 개편을 단행했다. CCO 조직 내 콘텐츠 제작 전문 조직인 ‘STUDIO X+U’를 두고 산하에 콘텐츠 제작을 전담하는 ‘콘텐츠제작센터’를 신설해 구성원들의 자유로운 창작 활동을 지원한다.<br><br>
+
+                  STUDIO X+U는 콘텐츠 IP 발굴·개발·투자 등을 담당하는 ‘콘텐츠IP사업담당’과 콘텐츠 제작을 맡는 ‘콘텐츠제작센터’ 등 2개의 조직으로 개편됐다. 콘텐츠IP사업담당은 CJ ENM, 하이브 등을 거쳐 입사한 이상진 상무가, 콘텐츠제작센터는 지난 10월 말 LG유플러스에 합류한 신정수 PD가 센터장을 맡아 콘텐츠 제작 및 기획 전반을 맡는다.<br><br>
+
+                  오리지널 콘텐츠 제작의 핵심인 콘텐츠제작센터는 ▲버라이어티제작1팀 ▲버라이어티제작2팀 ▲버라이어티스페셜팀 ▲뮤직콘텐츠제작팀 등 4개의 팀으로 운영된다. 버라이어티제작 1팀과 2팀은 올해 LG유플러스에 합류한 tvN ‘뇌섹시대-문제적 남자’ ‘화성인바이러스’ 등 프로그램을 연출한 이근찬 PD와 SBS ‘런닝맨’ ‘패밀리가 떴다’ 등을 연출한 임형택 PD가 각각 팀장을 맡아 신개념 버라이어티 콘텐츠 제작을 담당할 예정이다.<br><br>
+
+                  리얼리티와 팩추얼 예능 콘텐츠 제작을 담당하는 버라이어티스페셜팀은 이달 초 LG유플러스에 합류한 양자영 PD가 맡는다. 양자영 PD는 2004년 KBS에 입사해 ‘해피선데이(남자의 자격)’ ‘대국민 토크쇼 안녕하세요’ 등 인기 프로그램을 연출한 콘텐츠 전문가다.<br><br>
+
+                  또한 뮤직콘텐츠제작팀은 Mnet ‘보이스코리아 2020’ ‘너의 목소리가 보여’ 중국판 등 뮤직 콘텐츠를 연출한 바 있는 박상준 PD가 팀장을 맡아 음악 기반 콘텐츠 및 아이돌 관련 콘텐츠 기획 및 제작 업무를 담당한다.<br><br>
+
+                  LG유플러스는 콘텐츠 제작을 중심으로 조직을 구성한 만큼 콘텐츠 전문 인재 영입을 지속 추진할 예정이다. 전문 인재를 중심으로 제작한 콘텐츠는 모바일 서비스인 U+모바일tv와 IPTV 서비스인 U+tv 등 ‘놀이 플랫폼’을 통해 선보일 계획이다.<br><br>
+
+                  콘텐츠 제작과 함께 LG유플러스는 경쟁력 있는 콘텐츠 IP 확보를 위한 투자에도 적극적으로 나서고 있다. LG유플러스는 지난 8일 영상 콘텐츠 프로젝트 투자를 담당하는 펀드인 ‘펜처 케이-콘텐츠 투자조합’에 참여하고 콘텐츠 크리에이터와 팬을 연결해주는 플랫폼을 제공하는 스타트업인 ‘빅크’에 지분 투자를 단행했다.<br><br>
+
+                  LG전자, 카카오엔터테인먼트, 바른손이앤에이, 바른손, 신한금융그룹 등과 함께 참여한 ‘펜처 케이-콘텐츠 투자조합’은 경쟁력을 갖춘 국내외 콘텐츠를 발굴하고 창작자들과 IP를 공동 보유함으로써 국내 콘텐츠 시장의 선순환을 이끄는 역할을 할 것으로 기대된다. LG유플러스가 투자한 ‘빅크’는 크리에이터를 위한 플랫폼인 빅크 스튜디오와 팬·독자를 위한 라이브 커뮤니티를 운영, 콘텐츠 IP 기반의 수익화를 통한 시장의 선순환 구조 형성에 기여할 방침이다.<br><br>
+
+                  향후 LG유플러스는 콘텐츠 경쟁력의 기반이 되는 IP 확보를 위해 다양한 파트너들과 협업을 확대해 나갈 계획이다. 앞서 LG유플러스는 애니메이션 ‘캐치 티니핑’의 제작사인 SAMG와 애니메이션 ‘젤리고’를 제작한 드림팩토리, 뮤지컬 관련 IP를 다수 보유한 메타씨어터 등 경쟁력 있는 콘텐츠 제작사에 지분을 투자하며 콘텐츠 IP를 확보한 바 있다.<br><br>
+
+                  이덕재 LG유플러스 CCO는 “새로운 콘텐츠 창작으로 고객에게 차별화된 즐거움과 경험을 선사할 것”이라며 ”콘텐츠를 중심으로 LG유플러스가 미래 사업으로 제시한 4대 플랫폼의 하나인 ‘놀이플랫폼’을 성장시키고 최상의 고객 만족도를 만들어 가겠다”고 말했다.
+                </div>
+              </div>
+            </div>
+            <div class="contents-pagination type2">
+              <ul>
+                <li><a href="#" class="prev"><span class="blind">이전</span></a></li>
+                <li><a href="#" class="go-list">목록<span class="blind">목록으로 이동</span></a></li>
+                <li><a href="#" class="next"><span class="blind">다음</span></a></li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+      <!--// contents -->
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <div class="logo"><img src="../pc/images/sub/foot_logo.png" alt="STUDIO X+U"></div>
+        <div class="footer-conts">
+
+          <div class="footer-info">
+            <p>(주)엘지유플러스 <span>|</span> 대표이사 황현식 <span>|</span> 서울특별시 중구 후암로 98 LG서울역빌딩 15F</p>
+            <p>사업자등록번호 220-81-39938 <span>|</span> 통신판매신고 제 2015-서울용산-00481호</p>
+            <p>문의 studioxplusu@gmail.com <span>|</span> <a href="#" class="link-sitemap">사이트맵</a></p>
+            <copy>Copyright STUDIO X+U All rights reserved.</copy> <!-- 23/05/23 © 제거 -->
+          </div>
+          
+          <!-- 2022-12-15 삭제 시작 -->
+          <!-- <div class="custom-select" style="width:180px;">
+            <select>
+              <option value="0">Family site</option>
+              <option value="1">site 1</option>
+              <option value="2">site 2</option>
+            </select>
+          </div> -->
+          <!-- // 2022-12-15 삭제 끝 -->
+
+          <div class="sns-footer">
+            <a href="https://www.facebook.com/studioxplusu/" target="_blank" title="새창열림"><img src="../pc/images/common/sns-facebook.png" alt="페이스북"></a>
+            <a href="https://www.instagram.com/studio.xplusu/" target="_blank" title="새창열림"><img src="../pc/images/common/sns-instagram.png" alt="인스타그램"></a>
+            <a href="https://www.youtube.com/@studioxplusu" target="_blank" title="새창열림"><img src="../pc/images/common/sns-youtube.png" alt="유튜브"></a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <!--// footer -->
+
+  </div>
+  
+</body>
+
+</html>
+
+

@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../pc/css/reset.css">
+  <link rel="stylesheet" href="../pc/css/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../pc/css/common.css">
+  <title>Tiny_Desk_list</title>  
+  <!-- ******************** 23/05/23 수정 ******************** -->
+  <!-- 23/05/23 폰트코드추가 -->
+  <script type="module" src="https://bks0c7yrb0.execute-api.ap-northeast-2.amazonaws.com/v1/api/fontstream/djs/?sid=gAAAAABkXZnDDMNxdy70pz1nvzsZLRu85_5oyaOZIqWS4V8-EnFu_GFmZKadwZORrz8tCSMno8EO7nfde4c-e6fBdwVpFFbNB8dn5-IeyPHd5C-wi5BWlT3LN3iXmORh-2-sOHrxwujXOpFrMp0Htb2FjVZ1nEzW3Ekg4SUkzUK0TFUfCVWpBFVTG_k6CFi9D8nVLq4_7mkZHdS2cvUeTQea5AuKl8sj6tTVtvKdNzPPHWnQ3ILoltNaEjougIbpKkCPe3NeGj2T" charset="utf-8"></script>
+  <!-- // 23/05/23 폰트코드추가 -->
+  <!-- ******************** 23/05/23 수정 ******************** -->
+  <script src="../pc/js/vendor/jquery-2.1.3.min.js"></script>
+  <script src="../pc/js/vendor/gsap.min.js"></script>
+  <script src="../pc/js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="../pc/js/vendor/swiper-bundle.min.js"></script>
+  <script src="../pc/js/vendor/webfont.js"></script>
+  <script src="../pc/js/common.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- header -->
+    <header id="header" class="main-tool-bar">
+      <div class="header-inner">
+
+        <h1 class="logo">
+          <a href="#"><img src="../pc/images/sub/logo.png" alt="STUDIO X+U"></a>
+        </h1>
+
+        <nav class="gnb">
+          <ul class="gnb-list">
+            <li>
+              <a href="#">
+                <div class="gnb-tit-wrap">
+                  <span>ABOUT</span>
+                  <span aria-hidden="true">ABOUT</span>
+                </div>
+              </a>
+              <ul class="sub-list">
+                <li><a href="#">STUDIO X+U</a></li>
+                <li><a href="#">PARTNERS</a></li>
+              </ul>
+            </li>
+
+            <!-- ******************** 23/05/23 수정 ******************** -->
+            <li>
+              <a href="#">
+                <div class="gnb-tit-wrap">
+                  <!-- 23/05/23 WORKS -> CONTENT 텍스트변경 -->
+                  <span>CONTENT</span> 
+                  <span aria-hidden="true">CONTENT</span>
+                  <!-- // 23/05/23 WORKS -> CONTENT 텍스트변경 -->
+
+                </div>
+              </a>
+              <!-- 23/05/23 메뉴추가 -->
+              <ul class="sub-list">
+                <li><a href="#">CONTENT</a></li>
+                <li><a href="#">GOODS</a></li>
+                <li><a href="https://marpple.shop/kr/edu_k_dol?page=0" target="_blank">CHARACTER GAME</a></li>
+              </ul>
+              <!-- // 23/05/23 메뉴추가 -->
+            </li>
+            <!-- ******************** 23/05/23 수정 ******************** -->
+
+            <li>
+              <a href="#">
+                <div class="gnb-tit-wrap">
+                  <span>NEWS</span>
+                  <span aria-hidden="true">NEWS</span>
+                </div>
+              </a>
+              <ul class="sub-list">
+                <li><a href="#">PRESS</a></li>
+                <!-- <li><a href="#">NOTICE</a></li> -->
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <div class="gnb-tit-wrap">
+                  <span>INFORMATION</span>
+                  <span aria-hidden="true">INFORMATION</span>
+                </div>
+              </a>
+              <ul class="sub-list">
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">RECRUIT</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </nav>
+
+        <div class="lang-chioce">
+          <ul>
+            <li class="active"><a href="#">KR</a></li>
+            <li><a href="#">EN</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container"> 
+      <!-- contents -->
+      <main class="contents">
+
+        <section class="section1">
+          <div class="inner">
+            <span class="section1-start"></span>
+            <h2 class="blind">Tiny Desk KR</h2>
+            <h3 class="motion-tit">
+              <span>TINY DESK KOREA</span>
+            </h3>
+            
+            <div class="search-wrap">
+              <div class="search-box">
+                <div class="unit-box">
+                  <select class="select" name="" id="">
+                    <option value="">제목</option>
+                    <option value="">내용</option>
+                  </select>
+                </div>
+                <div class="unit-box">
+                  <input type="search" title="" placeholder="검색어를 입력해주세요.">
+                  <button class="search-btn"><span class="blind">검색</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="tiny-list-wrap">
+              <div class="normal-list">
+                <ul>
+                  <li>
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="tiny-img">
+                        <img src="../pc/images/sub/news-imgs01.jpg" alt="">
+                      </div>
+                      <strong class="tiny-title">‘올빼미’ 밤이 되면 앞이 잘 보인다?</strong>
+                      <p class="tiny-sub">새로운 스타일의 스릴러 ‘올빼미’가 어디서도 본 적 없는 새로운 소재인 주맹증을 다루고 있는 가운데, 예비 관객들의 궁금증을</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="tiny-img">
+                        <img src="../pc/images/sub/news-imgs02.jpg" alt="">
+                      </div>
+                      <strong class="tiny-title">영화 ‘데시벨’ 검색량 관객수 1위</strong>
+                      <p class="tiny-sub">TDI(티디아이)에 따르면 영화 ‘데시벨’이 누적 검색량과 관객 수 (16일) 모두 1위를 달리는 중이라고 밝혔다.</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="tiny-img">
+                        <img src="../pc/images/sub/news-imgs03.jpg" alt="">
+                      </div>
+                      <strong class="tiny-title">이번엔 뷰티도시…영화 ‘압꾸정’ 마동석 “구강액션 도전”</strong>
+                      <p class="tiny-sub">영화 ‘범죄도시’ 시리즈 제작진과 주연 마동석이 한국의 ‘뷰티도시’ 서울 압구정을 배경으로 한 작품으로 관객과 만난다. 오는 30일</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                  <li class="bigger"><!-- bigger size -->
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="tiny-img">
+                        <img src="../pc/images/sub/news-imgs04.jpg" alt="">
+                      </div>
+                      <strong class="tiny-title">윌 스미스 신작 ‘해방’, 12월 9일 애플TV+서 공개</strong>
+                      <p class="tiny-sub">윌 스미스의 신작 ‘해방’이 12월 9일(금)애플TV+를 통해 공개된다. ‘해방’은 노예제도로부터 해방된 ‘피터’(윌 스미스)가 지혜와 믿음, 
+                        그리고 가족에 대한 사랑으로 루이지애나의 혹독한 자연을 극복하고 냉혹한 사냥꾼들을 피해 자유를 찾아 나서는 여정을 그린 영화다.</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="anchor-box">
+                      <a href="#"></a>
+                      <div class="tiny-img">
+                        <img src="../pc/images/sub/news-noimg.png" alt="">
+                        <!-- <img src="../pc/images/sub/news-imgs05.jpg" alt=""> -->
+                      </div>
+                      <strong class="tiny-title">이미지가 없을 경우 노출되는 이미지</strong>
+                      <p class="tiny-sub">이미지 없이 등록되는 뉴스의 경우 노출 되는 이미지 입니다. 
+                        이미지 없이 등록되는 뉴스의 경우 노출 되는 이미지 입니다.</p>
+                      <span class="view-more">view more</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- <div class="more-btn-box">
+              <button type="button">more</button>
+            </div> -->
+            <div class="pagination-wrap mt0">
+              <div class="pagination">
+                <!-- <a href="#">&laquo;</a> -->
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <!-- <a href="#">&raquo;</a> -->
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+      <!--// contents -->
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <div class="logo"><img src="../pc/images/sub/foot_logo.png" alt="STUDIO X+U"></div>
+        <div class="footer-conts">
+
+          <div class="footer-info">
+            <p>(주)엘지유플러스 <span>|</span> 대표이사 황현식 <span>|</span> 서울특별시 중구 후암로 98 LG서울역빌딩 15F</p>
+            <p>사업자등록번호 220-81-39938 <span>|</span> 통신판매신고 제 2015-서울용산-00481호</p>
+            <p>문의 studioxplusu@gmail.com <span>|</span> <a href="#" class="link-sitemap">사이트맵</a></p>
+            <copy>Copyright STUDIO X+U All rights reserved.</copy> <!-- 23/05/23 © 제거 -->
+          </div>
+
+          <!-- 2022-12-15 삭제 시작 -->
+          <!-- <div class="custom-select" style="width:180px;">
+            <select>
+              <option value="0">Family site</option>
+              <option value="1">site 1</option>
+              <option value="2">site 2</option>
+            </select>
+          </div> -->
+          <!-- // 2022-12-15 삭제 끝 -->
+
+          <div class="sns-footer">
+            <a href="https://www.facebook.com/studioxplusu/" target="_blank" title="새창열림"><img src="../pc/images/common/sns-facebook.png" alt="페이스북"></a>
+            <a href="https://www.instagram.com/studio.xplusu/" target="_blank" title="새창열림"><img src="../pc/images/common/sns-instagram.png" alt="인스타그램"></a>
+            <a href="https://www.youtube.com/@studioxplusu" target="_blank" title="새창열림"><img src="../pc/images/common/sns-youtube.png" alt="유튜브"></a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <!--// footer -->
+
+  </div>
+  
+</body>
+
+</html>
+
+

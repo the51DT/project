@@ -2,7 +2,7 @@
 
 /* base */
 html{overflow-y:scroll; overflow-x:auto;}
-body{font-size: 16px; color: #333; font-family:"Noto Sans KR","Malgun Gothic","맑은 고딕",Dotum,"돋움",sans-serif;}
+body{font-size: 16px; color: #333; font-family:Sandoll GtNeoCond,"Roboto Condensed","Noto Sans KR","Malgun Gothic","맑은 고딕",Dotum,"돋움",sans-serif;}
 a{text-decoration:none;word-break: break-all;color: #333;}
 img{width: 100%;}
 input, select{width: 100%;}

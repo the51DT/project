@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../pc/css/reset.css">
+  <link rel="stylesheet" href="../pc/css/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../pc/css/common.css">
+  <title>Tiny_view</title>  
+  <!-- ******************** 23/05/23 수정 ******************** -->
+  <!-- 23/05/23 폰트코드추가 -->
+  <script type="module" src="https://bks0c7yrb0.execute-api.ap-northeast-2.amazonaws.com/v1/api/fontstream/djs/?sid=gAAAAABkXZnDDMNxdy70pz1nvzsZLRu85_5oyaOZIqWS4V8-EnFu_GFmZKadwZORrz8tCSMno8EO7nfde4c-e6fBdwVpFFbNB8dn5-IeyPHd5C-wi5BWlT3LN3iXmORh-2-sOHrxwujXOpFrMp0Htb2FjVZ1nEzW3Ekg4SUkzUK0TFUfCVWpBFVTG_k6CFi9D8nVLq4_7mkZHdS2cvUeTQea5AuKl8sj6tTVtvKdNzPPHWnQ3ILoltNaEjougIbpKkCPe3NeGj2T" charset="utf-8"></script>
+  <!-- // 23/05/23 폰트코드추가 -->
+  <!-- ******************** 23/05/23 수정 ******************** -->
+  <script src="../pc/js/vendor/jquery-2.1.3.min.js"></script>
+  <script src="../pc/js/vendor/gsap.min.js"></script>
+  <script src="../pc/js/vendor/ScrollTrigger.min.js"></script>
+  <script src="../pc/js/vendor/swiper-bundle.min.js"></script>
+  <script src="../pc/js/vendor/webfont.js"></script>
+  <script src="../pc/js/common.js"></script>
+  <style>
+    /* .works-view-right .first .bg{background: url(../pc/images/sub/works-cont-imgs01.png) no-repeat 0 0; width: 720px; height: 1000px;}
+    .works-view-right .second .bg{background: url(../pc/images/sub/works-cont-imgs02.png) no-repeat 0 0; width: 720px; height: 1000px;}
+    .works-view-right .third .bg{background: url(../pc/images/sub/works-cont-imgs03.png) no-repeat 0 0; width: 720px; height: 1000px;}
+
+    .works-view-right section {
+      height: 1000px;
+      width: 720px;
+      top: 200px;
+      position: fixed;
+      visibility: hidden;
+    }
+
+    .works-view-right .outer,
+    .works-view-right .inner {
+      width: 100%;
+      height: 100%;
+      overflow-y: hidden;
+    }
+
+    .works-view-right .bg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      background-size: cover;
+      background-position: center;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- header -->
+    <header id="header" class="main-tool-bar">
+      <div class="header-inner">
+
+        <h1 class="logo">
+          <a href="#"><img src="../pc/images/sub/logo.png" alt="STUDIO X+U"></a>
+        </h1>
+
+        <nav class="gnb">
+          <ul class="gnb-list">
+            <li>
+              <a href="#">
+                <div class="gnb-tit-wrap">
+                  <span>ABOUT</span>
+                  <span aria-hidden="true">ABOUT</span>
+                </div>
+              </a>
+              <ul class="sub-list">
+                <li><a href="#">STUDIO X+U</a></li>
+                <li><a href="#">PARTNERS</a></li>
+              </ul>
+            </li>
+
+            <!-- ******************** 23/05/23 수정 ******************** -->
+            <li>
+              <a href="#">
+                <div class="gnb-tit-wrap">
+                  <!-- 23/05/23 WORKS -> CONTENT 텍스트변경 -->
+                  <span>CONTENT</span> 
+                  <span aria-hidden="true">CONTENT</span>
+                  <!-- // 23/05/23 WORKS -> CONTENT 텍스트변경 -->
+
+                </div>
+              </a>
+              <!-- 23/05/23 메뉴추가 -->
+              <ul class="sub-list">
+                <li><a href="#">CONTENT</a></li>
+                <li><a href="https://marpple.shop/kr/edu_k_dol?page=0" target="_blank">GOODS</a></li>
+                <li><a href="">CHARACTER GAME</a></li>
+              </ul>
+              <!-- // 23/05/23 메뉴추가 -->
+            </li>
+            <!-- ******************** 23/05/23 수정 ******************** -->
+
+            <li>
+              <a href="#">
+                <div class="gnb-tit-wrap">
+                  <span>NEWS</span>
+                  <span aria-hidden="true">NEWS</span>
+                </div>
+              </a>
+              <ul class="sub-list">
+                <li><a href="#">PRESS</a></li>
+                <!-- <li><a href="#">NOTICE</a></li> -->
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <div class="gnb-tit-wrap">
+                  <span>INFORMATION</span>
+                  <span aria-hidden="true">INFORMATION</span>
+                </div>
+              </a>
+              <ul class="sub-list">
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">RECRUIT</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </nav>
+
+        <div class="lang-chioce">
+          <ul>
+            <li class="active"><a href="#">KR</a></li>
+            <li><a href="#">EN</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </header>
+    <!--// header -->
+
+    <!-- container -->
+    <div id="container"> 
+      <!-- contents -->
+      <main class="contents">
+
+        <section class="section1 works-view">
+          <div class="inner">
+            <h2 class="blind">Works</h2>
+
+            <div class="works-view-wrap">
+              <div class="works-view-left">
+                <div class="view-tag">
+                    <span class="tag">VARIETY &amp; SERIES</span>
+                    <!-- <span class="tag">music &amp; concert</span>
+                    <span class="tag">2022</span>
+                    <span class="tag">TVING</span> -->
+                </div>
+                <div class="view-title">TINY DESK<br>CONCERT KOREA</div>
+                <div class="view-sub">
+                  RM은 2020년 방탄소년단의 홈 콘서트에 이어 그의 솔로 Tiny Desk<br>
+                  데뷔를 그의 첫 정규 앨범 Indigo 발매와 동시에 시작했습니다.
+                </div>
+
+                <div class="view-cont">
+                  <ul class="cont-info-list">
+                    <li>
+                      <span class="list-tit">장르</span>
+                      <strong class="list-txt">예능</strong>
+                    </li>
+                    <li>
+                      <span class="list-tit">연출</span>
+                      <strong class="list-txt">한국화, 최아연, 차인희, 박아랑, 조수희, 정희재, 송지윤</strong>
+                    </li>
+                    <li>
+                      <span class="list-tit">프로듀서</span>
+                      <strong class="list-txt">이평수 CP</strong>
+                    </li>
+                    <li>
+                      <span class="list-tit">제작</span>
+                      <strong class="list-txt">VIVO</strong>
+                    </li>
+                    <li>
+                      <span class="list-tit">출연</span>
+                      <strong class="list-txt">송은이, 김숙, 유세윤, 김중혁</strong>
+                    </li>
+                    <li>
+                      <span class="list-tit">공동제작사</span>
+                      <strong class="list-txt">LG헬로비전, 더라이프</strong>
+                    </li>
+                    <li>
+                      <span class="list-tit">방영기간</span>
+                      <strong class="list-txt">2021.06.07~2021.08.23</strong>
+                    </li>
+
+                    <!-- tiny 인링크 -->
+                    <li>
+                      <span class="list-tit">출연영상</span>
+                      <strong class="list-txt"><a href="#none">보러가기</a></strong>
+                    </li>
+                    <!-- tiny 인링크 -->
+
+
+                  </ul>
+                </div>
+
+              </div>
+              <div class="works-view-right">
+                <div class="cont-img">
+                  <div class="cont-img-inn"><img src="../pc/images/sub/works-cont-imgs00.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="works-view-under">
+              <div class="contents-pagination">
+                <ul>
+                  <li><a href="#" class="prev"><span class="blind">이전</span></a></li>
+                  <li><a href="#" class="go-list">목록<span class="blind">목록으로 이동</span></a></li>
+                  <li><a href="#" class="next"><span class="blind">다음</span></a></li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+
+      </main>
+      <!--// contents -->
+    </div>
+    <!--// container -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <div class="logo"><img src="../pc/images/sub/foot_logo.png" alt="STUDIO X+U"></div>
+        <div class="footer-conts">
+
+          <div class="footer-info">
+            <p>(주)엘지유플러스 <span>|</span> 대표이사 황현식 <span>|</span> 서울특별시 중구 후암로 98 LG서울역빌딩 15F</p>
+            <p>사업자등록번호 220-81-39938 <span>|</span> 통신판매신고 제 2015-서울용산-00481호</p>
+            <p>문의 studioxplusu@gmail.com <span>|</span> <a href="#" class="link-sitemap">사이트맵</a></p>
+            <copy>Copyright STUDIO X+U All rights reserved.</copy> <!-- 23/05/23 © 제거 -->
+          </div>
+          
+          <!-- 2022-12-15 삭제 시작 -->
+          <!-- <div class="custom-select" style="width:180px;">
+            <select>
+              <option value="0">Family site</option>
+              <option value="1">site 1</option>
+              <option value="2">site 2</option>
+            </select>
+          </div> -->
+          <!-- // 2022-12-15 삭제 끝 -->
+
+          <div class="sns-footer">
+            <a href="https://www.facebook.com/studioxplusu/" target="_blank" title="새창열림"><img src="../pc/images/common/sns-facebook.png" alt="페이스북"></a>
+            <a href="https://www.instagram.com/studio.xplusu/" target="_blank" title="새창열림"><img src="../pc/images/common/sns-instagram.png" alt="인스타그램"></a>
+            <a href="https://www.youtube.com/@studioxplusu" target="_blank" title="새창열림"><img src="../pc/images/common/sns-youtube.png" alt="유튜브"></a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <!--// footer -->
+    
+  </div>
+</body>
+
+</html>
+
+
