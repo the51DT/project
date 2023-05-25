@@ -109,7 +109,7 @@ body{background-color: #000;}
 /* .footer-inner .footer-conts .footer-info {} */
 .footer-inner .footer-conts .footer-info p {font-size: 16px;color: #919191;}
 .footer-inner .footer-conts .footer-info p a {font-size: 16px;color: #919191;}
-.footer-inner .footer-conts .footer-info p span {overflow: hidden; position: relative; top: 2px; display: inline-block; color: #444;}
+.footer-inner .footer-conts .footer-info p span {overflow: hidden; position: relative; top: 2px; display: inline-block; margin: 0 3px; color: #444;}
 .footer-inner .footer-conts .footer-info p+p {margin-top: 8px;}
 .footer-inner .footer-conts .footer-info copy {display: block; margin-top: 20px; font-size: 14px;color: #535353;}
 .footer-inner .footer-conts .footer-info .link-sitemap {margin-left: 6px; font-size: 16px; color: #919191;}
@@ -216,7 +216,7 @@ section{position: relative;}
 
 .pagination-wrap{overflow: hidden;text-align: center;margin-top:40px;margin-bottom:157px; font-family:'Roboto Condensed', 'Poppins', sans-serif;}
 .pagination {display: inline-block;}
-.pagination a {color: #fff;float: left; margin-left:7px; padding: 8px 16px; text-decoration: none; font-size: 50px; opacity: .3; font-family: "Roboto Condensed", 'Poppins', sans-serif;}
+.pagination a {color: #fff;float: left; /* margin-left:7px; */ padding: 8px 16px; text-decoration: none; font-size: 50px; opacity: .3; font-family: "Roboto Condensed", 'Poppins', sans-serif;}
 .pagination a.active {color: white;opacity: 1;}
 .pagination.small-type {border: 1px solid #ccc!important;}
 .pagination.small-type li {display: inline;}
