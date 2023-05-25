@@ -388,7 +388,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .information .info-box li{float: left; width: 400px;}
 .information .info-box li:first-child{width: auto;}
 .information .info-box li dt{font-size: 26px; font-family:'Roboto Condensed', 'Poppins', sans-serif; color: #fff;}
-.information .info-box li dt strong{font-weight: bold;}
+/* .information .info-box li dt strong{font-weight: bold;} */
 .information .info-box li dd{font-size: 20px; color: #919191;}
 .information .info-box li dd a{color: #919191;}
 .information .info-box li:first-child dl{display: table;}
@@ -402,7 +402,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .information .info-box .email{font-family:'Roboto Condensed', 'Poppins', sans-serif;}
 
 .information .info-box .sns-wrap {}
-.information .info-box .sns-wrap a {padding-left: 44px; background: url(../images/common/ico-facebook.png) no-repeat 0 -4px;}
+.information .info-box .sns-wrap a {padding-left: 44px; background: url(../images/common/ico-facebook.png) no-repeat 0;}
 .information .info-box .sns-wrap a+a {margin-left: 26px;}
 .information .info-box .sns-wrap .ico-facebook {background-image: url(../images/common/ico-facebook.png);}
 .information .info-box .sns-wrap .ico-instagram {background-image: url(../images/common/ico-instagram.png);}
@@ -1130,7 +1130,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
     .information .info-box li:first-child dl:nth-child(n+2) {margin-top: 29px;}
     .information .info-box .sns-wrap a {letter-spacing: -0.75px;}
     .information .info-box .sns-wrap a+a {margin-left: 25px;}
-    .maps-wrap {margin-top: 86px;margin-bottom: 157px;}
+    .maps-wrap {margin-top: 75px;margin-bottom: 150px;}
 
     /* about */
     .pc-1920 {display:none;}
