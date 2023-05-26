@@ -106,10 +106,10 @@ body{background-color: #000;}
 .footer-inner .footer-conts .select-items {background-color: #000;}
 /* .footer-inner .footer-conts .footer-info {} */
 .footer-inner .footer-conts .footer-info p {font-size: 14px;color: #919191;}
-.footer-inner .footer-conts .footer-info p+p {margin-top: 18px;}
+.footer-inner .footer-conts .footer-info p+p {margin-top: 12px;}
 .footer-inner .footer-conts .footer-info p > span {display:inline-block;position: relative;top:-1px; margin:0 2px;width:1px;height:11px;background-color: #444;vertical-align: middle;font-size:0;}
-.footer-inner .footer-conts .footer-info copy {display: block; margin-top: 29px; font-size: 14px;color: #555;}
-.sns-link ul{display: flex; justify-content: center; margin-top: 43px;}
+.footer-inner .footer-conts .footer-info copy {display: block; margin-top: 26px; font-size: 14px;color: #555;}
+.sns-link ul{display: flex; justify-content: center; margin-top: 40px;}
 .sns-link ul li {margin-left: 20px;}
 .sns-link ul li:first-child {margin-left:0;}
 .sns-link a{display: inline-block;width: 40px; height: 40px;}
@@ -479,9 +479,9 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section4.about .sec3-ci-area .btn-wrap .btn-down{position: relative; width: 100%; margin-bottom: 8px; color: #919191; font-size: 14px; line-height: 34px;}
 .section4.about .sec3-ci-area .btn-wrap .btn-down:last-child{margin-bottom: 0;}
 .section4.about .sec3-ci-area .btn-wrap .btn-down .btn-inn{padding: 10px 0; border: 1px solid #444;}
-.section4.about .sec3-ci-area .btn-wrap .btn-down .btn-inn .btn-ico{position: relative; display: inline-block;}
+.section4.about .sec3-ci-area .btn-wrap .btn-down .btn-inn .btn-ico{position: relative; display: inline-block; font-family: Sandoll GtNeoCond, "Roboto Condensed", "Noto Sans KR", "Poppins", sans-serif;}
 .section4.about .sec3-ci-area .btn-wrap .btn-down .btn-inn .btn-ico::after{content: ''; display: block; position: absolute; width: 24px; height: 24px; top: calc(50% - 14px); right: -30px; background: url(../images/sub/icon-download-919191.svg) no-repeat center / contain;}
-.section4.about .sec3-ci-area .btn-wrap .btn-down > span{font-family:'Roboto Condensed', 'Poppins', sans-serif;}
+/* .section4.about .sec3-ci-area .btn-wrap .btn-down > span{font-family:'Roboto Condensed', 'Poppins', sans-serif;} */
 
 
 /* partners */
@@ -554,7 +554,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
   display: block;
   font-family:'Roboto Condensed', 'Poppins', sans-serif;
   font-size: 56px;
-  line-height: 80px;
+  line-height: 56px;
   color: #fff;
   opacity: 0;
 
