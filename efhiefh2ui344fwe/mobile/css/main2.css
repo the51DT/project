@@ -62,13 +62,13 @@ h1, h2, h3, h4, h5 {margin:0}
 .section3 .sec-txt-area > a {display:block; position:absolute; left:0; right:0; top:0; bottom:0; z-index:500}
 .section3 .sec-txt {position:absolute; left:2rem; right:2rem; top:10rem; color:#fff; font-size:1.4rem; line-height:1.4285; z-index:5;/* letter-spacing: 1px; */}
 .section3 .sec-txt .eng {letter-spacing: 0;}
-.section3 .sec-tit-wrap {position:absolute; left:2rem; right:2rem; bottom:8rem; z-index:6}
-.section3 .sec-tit {display:block; color:#fff; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:5rem; font-weight:normal; line-height:6rem}
-.section3 .view-more {display:block; width:6rem; height:6rem; margin-top:1.5rem; background:url(../images/img-main2-view-more.svg) no-repeat center / contain; font-size:0; text-indent:-9999%; overflow:hidden;}
+.section3 .sec-tit-wrap {position:absolute; left:2rem; top:10rem; z-index:6}
+.section3 .sec-tit {display:block; color:#fff; font-size:2.8rem; line-height:4.4rem}
+.section3 .view-more {display:block; width:6rem; height:6rem; margin-top:2rem; background:url(../images/img-main2-view-more.svg) no-repeat center / contain; font-size:0; text-indent:-9999%; overflow:hidden;}
 
 .section4 .section-inner {height:100%; padding-top:10rem}
 .section4 .tit-area {padding:0 2rem}
-.section4 .tit-area .tit {color:#fff; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:4rem; font-weight:normal; line-height:5.6rem}
+.section4 .tit-area .tit {color:#fff; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:4rem; font-weight:normal; line-height:4rem}
 .section4 .btn-more {display:inline-block; position:relative; margin-top:0.9rem; padding-right:2.2rem; color:#DBFC00; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:1.2rem; line-height:1.6rem}
 .section4 .btn-more::after {content:''; display:block; position:absolute; width:1.6rem; height:1.6rem; bottom:0; right:0; background:url(../images/img-arrow-right-green.svg) no-repeat center / contain}
 .section4 .partners-slide {width:100%; margin:15rem 0; overflow:hidden}
