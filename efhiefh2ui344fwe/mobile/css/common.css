@@ -66,7 +66,7 @@ body{background-color: #000;}
 #header {position:fixed; top:0; left:0; right:0; z-index:1000; background-color: #000;}
 #header .header-inner {position: relative;display:flex; justify-content: space-between; width:100%; margin:0 auto; padding:20px 0}
 #header .logo {margin:0;margin-left: 21px;}
-#header .logo a {display:inline-block; width:127px; height: 18px;}
+#header .logo a {display:inline-block; width:130px; height: 26px;}
 
 #header .all-menu{margin-right: 25px; width: 21px; height: 21px; background: url(../images/common/menu.png) no-repeat 0 50%; background-size: contain; -webkit-transition: all 0.35s ease;transition: all 0.35s ease;}
 #header .all-menu.on{background: url(../images/common/menu_on.png) no-repeat 0 0; background-size: contain; -webkit-transition: all 0.35s ease;transition: all 0.35s ease;}
@@ -75,7 +75,7 @@ body{background-color: #000;}
 .gnb .gnb-list {}
 .gnb .gnb-list > li {margin-top:2px;}
 .gnb .gnb-list > li:first-child {margin-top:0;}
-.gnb .gnb-list > li > a {position: relative; display: block; padding-top: 10px; padding-bottom: 10px; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:30px; line-height:40px; color: #fff; font-weight: bold; text-align: center;}
+.gnb .gnb-list > li > a {position: relative; display: block; padding-top: 10px; padding-bottom: 10px; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:30px; line-height:40px; color: #fff; text-align: center;}
 /* .gnb .gnb-list > li > a:after {content: ""; position: absolute; right: 2px; top: 36px; width: 19px;;height: 11px;background: url(../images/common/ico_down.png) no-repeat 0 0; background-size: cover; -webkit-transition: all 0.35s ease;transition: all 0.35s ease;} */
 .gnb .gnb-list > li > a.nm:after {display: none;}
 .gnb .gnb-list > li > a.active {border-bottom: none}
