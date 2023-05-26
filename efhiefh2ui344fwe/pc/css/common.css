@@ -337,7 +337,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .news-contents-wrap.ver-recruit .inner-news-title-wrap{display: inline-block; max-width: 1300px; vertical-align: middle;}
 .news-title-wrap{position: relative; padding: 60px 0 66px; border-top: 1px solid #444444; border-bottom: 1px solid #444444;}
 .news-title-wrap h4{font-size: 50px; font-weight: 400; color: #fff; margin: 0; line-height: 1.4;}
-.news-title-wrap p.date{margin-top: 27px; color: #919191; font-size: 20px;}
+.news-title-wrap p.date{margin-top: 20px; color: #919191; font-size: 20px;}
 .ver-recruit .news-title-wrap .experience{position: absolute; right: 60px; top: 50%; font-size: 22px; color: #DBFC00; transform: translateY(-50%);}
 .news-contents-box{padding: 40px 0 78px; border-bottom: 1px solid #444444; font-size: 22px; color: #fff; letter-spacing: -1px; line-height: 36px;}
 .news-contents-box a {color: #fff;}
