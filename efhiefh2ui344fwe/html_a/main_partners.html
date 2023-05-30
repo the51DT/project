@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../admin/css/reset.css">
   <link rel="stylesheet" href="../admin/css/common.css">
-  <title>main partners</title>  
+  <title>main works</title>  
   <script src="../admin/js/vendor/jquery-2.1.3.min.js"></script>
   <script src="../admin/js/vendor/webfont.js"></script>
+  <script src="../admin/js/vendor/jquery.tablednd.js"></script>
   <script src="../admin/js/common.js"></script>
 </head>
 
@@ -92,7 +93,7 @@
 
             <div class="basic-table-wrap mt100">
               <h2 class="tit">국문</h2>
-              <table class="notice-table view-type">
+              <table class="notice-table view-type type2">
                 <caption></caption>
                 <colgroup>
                   <col class="col-wid16">
@@ -100,7 +101,12 @@
                 </colgroup>
                 <tbody>
                   <tr>
-                    <td class="nv-title"><span class="essential">이미지1</span></td>
+                    <td class="nv-title">
+                      <span class="essential">
+                        <span class="change"><img src="../admin/images/common/ico_change.png" alt="리스트 순서 바꾸기"></span>
+                        이미지1
+                      </span>
+                    </td>
                     <td class="nv-cont form-type">
                       <div class="filebox">
                         <input type="text" class="upload-name" title="이미지" value="" style="width: 500px;">
@@ -108,11 +114,16 @@
                         <input type="file" id="file">
                         <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
                         <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
-                    </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title"><span class="essential">이미지2</span></td>
+                    <td class="nv-title">
+                      <span class="essential">
+                        <span class="change"><img src="../admin/images/common/ico_change.png" alt="리스트 순서 바꾸기"></span>
+                        이미지2
+                      </span>
+                    </td>
                     <td class="nv-cont form-type">
                       <div class="filebox">
                         <input type="text" class="upload-name" title="이미지" value="" style="width: 500px;">
@@ -120,11 +131,16 @@
                         <input type="file" id="file">
                         <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
                         <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
-                    </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title"><span class="essential">이미지3</span></td>
+                    <td class="nv-title">
+                      <span class="essential">
+                        <span class="change"><img src="../admin/images/common/ico_change.png" alt="리스트 순서 바꾸기"></span>
+                        이미지3
+                      </span>
+                    </td>
                     <td class="nv-cont form-type">
                       <div class="filebox">
                         <input type="text" class="upload-name" title="상세 이미지" value="" style="width: 500px;">
@@ -132,11 +148,16 @@
                         <input type="file" id="file">
                         <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
                         <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
-                    </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title"><span class="essential">이미지4</span></td>
+                    <td class="nv-title">
+                      <span class="essential">
+                        <span class="change"><img src="../admin/images/common/ico_change.png" alt="리스트 순서 바꾸기"></span>
+                        이미지4
+                      </span>
+                    </td>
                     <td class="nv-cont form-type">
                       <div class="filebox">
                         <input type="text" class="upload-name" title="이미지" value="" style="width: 500px;">
@@ -144,11 +165,16 @@
                         <input type="file" id="file">
                         <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
                         <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
-                    </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title"><span class="essential">이미지5</span></td>
+                    <td class="nv-title">
+                      <span class="essential">
+                        <span class="change"><img src="../admin/images/common/ico_change.png" alt="리스트 순서 바꾸기"></span>
+                        이미지5
+                      </span>
+                    </td>
                     <td class="nv-cont form-type">
                       <div class="filebox">
                         <input type="text" class="upload-name" title="이미지" value="" style="width: 500px;">
@@ -156,7 +182,24 @@
                         <input type="file" id="file">
                         <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
                         <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
-                    </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="nv-title">
+                      <span class="essential">
+                        <span class="change"><img src="../admin/images/common/ico_change.png" alt="리스트 순서 바꾸기"></span>
+                        이미지6
+                      </span>
+                    </td>
+                    <td class="nv-cont form-type">
+                      <div class="filebox">
+                        <input type="text" class="upload-name" title="이미지" value="" style="width: 500px;">
+                        <label for="file" class="btns">찾아보기</label> 
+                        <input type="file" id="file">
+                        <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
+                        <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
