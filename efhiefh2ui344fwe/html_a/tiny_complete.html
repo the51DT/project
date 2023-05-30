@@ -83,34 +83,26 @@
                 <li>WORKS</li>
                 <li>TINY DESK</li>
                 <li>등록</li>
-              </ul>              
+              </ul>
             </div>
 
             <div class="admin-title">
               <p><strong>김엘지</strong>님, 안녕하세요! <button type="button" class="btns logout">로그아웃</button></p>
             </div>
 
+            <!-- 국문 -->
             <div class="basic-table-wrap mt100">
+
               <h2 class="tit">국문</h2>
               <table class="notice-table view-type">
                 <caption></caption>
                 <colgroup>
-                  <col class="col-wid16">
+                  <col class="col-wid10">
                   <col>
                 </colgroup>
                 <tbody>
                   <tr>
-                    <td class="nv-title"><span class="essential">카테고리</span></td>
-                    <td class="nv-cont form-type">
-                      <select name="category" class="select" style="width:300px;">
-                        <option disabled selected>PROGRAM</option>
-                        <option value="MUSIC &amp; CONCERT">MUSIC &amp; CONCERT</option>
-                        <option value="CHARACTER">CHARACTER</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="nv-title">고정여부</td>
+                    <td class="nv-title">고정 여부</td>
                     <td class="nv-cont form-type">
                       <div class="screen-pin-area">
                         <p class="check-type1 type2">
@@ -127,116 +119,61 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title"><span class="essential">제목</span></td>
+                    <td class="nv-title">날짜</td>
                     <td class="nv-cont form-type">
-                      <input type="text" title="제목" value="" placeholder="제목을 입력해주세요" style="width: 500px;">
+                      <input type="date" title="날짜" placeholder="YYYY-MM-DD" style="width: 240px;">
+                      <p class="check-type1 type3">
+                        <label for="postingDate">
+                          <input type="checkbox" name="screenPin" id="postingDate">
+                          <span class="nv-title">예약게시일</span>
+                        </label>
+                      </p>
+                      <input disabled type="date" title="날짜" placeholder="YYYY-MM-DD" style="width: 240px;">
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title">장르</td>
+                    <td class="nv-title">제목</td>
                     <td class="nv-cont form-type">
-                      <input type="text" title="장르" value="" placeholder="장르를 입력해주세요" style="width: 500px;">
+                      <input type="text" title="제목" placeholder="제목을 입력해주세요" style="width: 960px;">
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title">설명</td>
+                    <td class="nv-title">내용</td>
                     <td class="nv-cont form-type">
-                      <input type="text" title="설명" value="" placeholder="설명을 입력해주세요" style="width: 960px;">
-                    </td>
-                  </tr>
-                  <tr class="sub-tit-row">
-                    <td class="nv-title">상세</td>
-                    <td class="nv-cont form-type">
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값1</span>
-                          <input type="text" title="항목값1 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용1</span>
-                          <input type="text" title="항목값1 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값2</span>
-                          <input type="text" title="항목값2 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용2</span>
-                          <input type="text" title="항목값2 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값3</span>
-                          <input type="text" title="항목값3 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용3</span>
-                          <input type="text" title="항목값3 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값4</span>
-                          <input type="text" title="항목값4 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용4</span>
-                          <input type="text" title="항목값4 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값5</span>
-                          <input type="text" title="항목값5 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용5</span>
-                          <input type="text" title="항목값5 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값6</span>
-                          <input type="text" title="항목값6 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용6</span>
-                          <input type="text" title="항목값6 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값7</span>
-                          <input type="text" title="항목값7 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용7</span>
-                          <input type="text" title="항목값7 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값8</span>
-                          <input type="text" title="항목값8 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용8</span>
-                          <input type="text" title="항목값8 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
+                      <textarea name="textArea" placeholder="내용을 입력해주세요" style="width: 960px;"></textarea>
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title"><span class="essential">메인 이미지</span></td>
+                    <td class="nv-title">사진</td>
                     <td class="nv-cont form-type">
                       <div class="filebox">
-                        <input type="text" class="upload-name" title="메인 이미지" value="" style="width: 500px;">
-                        <label for="file" class="btns">찾아보기</label> 
-                        <input type="file" id="file">
-                    </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="nv-title"><span class="essential">상세 이미지</span></td>
-                    <td class="nv-cont form-type">
-                      <div class="filebox">
-                        <input type="text" class="upload-name" title="상세 이미지" value="" style="width: 500px;">
+                        <input type="text" class="upload-name" title="이미지" value="" placeholder="이미지를 추가해주세요" style="width: 500px;">
                         <label for="file" class="btns">찾아보기</label> 
                         <input type="file" id="file">
                         <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
                         <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="nv-title">YOUTUBE URL</td>
-                    <td class="nv-cont form-type">
-                      <input type="text" title="YOUTUBE URL" value="" placeholder="경로를 입력해주세요" style="width: 500px;">
+                        <span class="files-text">※ 파일 형식이 맞지 않아 업로드 할 수 없습니다.</span>
+                        <input type="text" class="upload-des" title="이미지" value="" placeholder="이미지 설명을 작성해주세요" style="width: 960px;">
+                      </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
 
               <div class="pagination-wrap btn-type">
+                <div class="pagination">
+                  <a href="#"><img src="../admin/images/common/n_prev2.png" alt="처음으로"></a>
+                  <a href="#"><img src="../admin/images/common/n_prev.png" alt="이전"></a>
+                  
+                  <a href="#">1</a>
+                  <a class="active" href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">6</a>
+                  <a href="#"><img src="../admin/images/common/n_next.png" alt="다음"></a>
+                  <a href="#"><img src="../admin/images/common/n_next2.png" alt="마지막으로"></a>
+                </div>
                 <div class="btn-wrap align-r">
                   <a href="#" class="btns">목록</a>
                   <a href="#" class="btns type2">등록</a>
@@ -244,28 +181,20 @@
               </div>
               
             </div>
-
+            
+            <!-- 영문 -->
             <div class="basic-table-wrap mt100">
+              
               <h2 class="tit">영문</h2>
               <table class="notice-table view-type">
                 <caption></caption>
                 <colgroup>
-                  <col class="col-wid16">
+                  <col class="col-wid10">
                   <col>
                 </colgroup>
                 <tbody>
                   <tr>
-                    <td class="nv-title"><span class="essential">카테고리</span></td>
-                    <td class="nv-cont form-type">
-                      <select name="category" class="select" style="width:300px;">
-                        <option disabled selected>PROGRAM</option>
-                        <option value="MUSIC &amp; CONCERT">MUSIC &amp; CONCERT</option>
-                        <option value="CHARACTER">CHARACTER</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="nv-title">고정여부</td>
+                    <td class="nv-title">고정 여부</td>
                     <td class="nv-cont form-type">
                       <div class="screen-pin-area">
                         <p class="check-type1 type2">
@@ -282,116 +211,61 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title"><span class="essential">제목</span></td>
+                    <td class="nv-title">날짜</td>
                     <td class="nv-cont form-type">
-                      <input type="text" title="제목" value="" placeholder="제목을 입력해주세요" style="width: 500px;">
+                      <input type="date" title="날짜" placeholder="YYYY-MM-DD" style="width: 240px;">
+                      <p class="check-type1 type3">
+                        <label for="postingDate">
+                          <input type="checkbox" name="screenPin" id="postingDate">
+                          <span class="nv-title">예약게시일</span>
+                        </label>
+                      </p>
+                      <input disabled type="date" title="날짜" placeholder="YYYY-MM-DD" style="width: 240px;">
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title">장르</td>
+                    <td class="nv-title">제목</td>
                     <td class="nv-cont form-type">
-                      <input type="text" title="장르" value="" placeholder="장르를 입력해주세요" style="width: 500px;">
+                      <input type="text" title="제목" placeholder="제목을 입력해주세요" style="width: 960px;">
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title">설명</td>
+                    <td class="nv-title">내용</td>
                     <td class="nv-cont form-type">
-                      <input type="text" title="설명" value="" placeholder="설명을 입력해주세요" style="width: 960px;">
-                    </td>
-                  </tr>
-                  <tr class="sub-tit-row">
-                    <td class="nv-title">상세</td>
-                    <td class="nv-cont form-type">
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값1</span>
-                          <input type="text" title="항목값1 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용1</span>
-                          <input type="text" title="항목값1 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값2</span>
-                          <input type="text" title="항목값2 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용2</span>
-                          <input type="text" title="항목값2 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값3</span>
-                          <input type="text" title="항목값3 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용3</span>
-                          <input type="text" title="항목값3 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값4</span>
-                          <input type="text" title="항목값4 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용4</span>
-                          <input type="text" title="항목값4 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값5</span>
-                          <input type="text" title="항목값5 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용5</span>
-                          <input type="text" title="항목값5 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값6</span>
-                          <input type="text" title="항목값6 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용6</span>
-                          <input type="text" title="항목값6 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값7</span>
-                          <input type="text" title="항목값7 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용7</span>
-                          <input type="text" title="항목값7 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
-                      
-                        <div class="sub-form-type2">
-                          <span class="sub-tit-type2">항목값8</span>
-                          <input type="text" title="항목값8 제목" value="" placeholder="항목을 입력해주세요" style="width: 250px;">
-                          <span class="sub-tit-type2">내용8</span>
-                          <input type="text" title="항목값8 내용" value="" placeholder="내용을 입력해주세요" style="width: 500px;">
-                        </div>
+                      <textarea name="textArea" placeholder="내용을 입력해주세요" style="width: 960px;"></textarea>
                     </td>
                   </tr>
                   <tr>
-                    <td class="nv-title"><span class="essential">메인 이미지</span></td>
+                    <td class="nv-title">사진</td>
                     <td class="nv-cont form-type">
                       <div class="filebox">
-                        <input type="text" class="upload-name" title="메인 이미지" value="" style="width: 500px;">
-                        <label for="file" class="btns">찾아보기</label> 
-                        <input type="file" id="file">
-                    </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="nv-title"><span class="essential">상세 이미지</span></td>
-                    <td class="nv-cont form-type">
-                      <div class="filebox">
-                        <input type="text" class="upload-name" title="상세 이미지" value="" style="width: 500px;">
+                        <input type="text" class="upload-name" title="이미지" value="" placeholder="이미지를 추가해주세요" style="width: 500px;">
                         <label for="file" class="btns">찾아보기</label> 
                         <input type="file" id="file">
                         <button type="button" class="row-plus"><img src="../admin/images/common/img-row-plus.png" alt="행추가"></button>
                         <button type="button" class="row-minus"><img src="../admin/images/common/img-row-minus.png" alt="행삭제"></button>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="nv-title">YOUTUBE URL</td>
-                    <td class="nv-cont form-type">
-                      <input type="text" title="YOUTUBE URL" value="" placeholder="경로를 입력해주세요" style="width: 500px;">
+                        <span class="files-text">※ 파일 형식이 맞지 않아 업로드 할 수 없습니다.</span>
+                        <input type="text" class="upload-des" title="이미지" value="" placeholder="이미지 설명을 작성해주세요" style="width: 960px;">
+                      </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
 
               <div class="pagination-wrap btn-type">
+                <div class="pagination">
+                  <a href="#"><img src="../admin/images/common/n_prev2.png" alt="처음으로"></a>
+                  <a href="#"><img src="../admin/images/common/n_prev.png" alt="이전"></a>
+                  
+                  <a href="#">1</a>
+                  <a class="active" href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">6</a>
+                  <a href="#"><img src="../admin/images/common/n_next.png" alt="다음"></a>
+                  <a href="#"><img src="../admin/images/common/n_next2.png" alt="마지막으로"></a>
+                </div>
                 <div class="btn-wrap align-r">
                   <a href="#" class="btns">목록</a>
                   <a href="#" class="btns type2">등록</a>
