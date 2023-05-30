@@ -567,7 +567,7 @@ a.btn-layerClose {display: inline-block;height: 25px;padding: 0 14px 0;border: 1
 .section2.about .sec2-txt-area .logo{width: 550px; margin-top: 57px}
 .section2.about .sec2-txt-area .logo > img{display: block;width:100%;}
 
-.section3.about{margin-top:160px}
+.section3.about{margin-top:160px; overflow: hidden;}
 .section3.about .sec3-ani-area{display: flex; flex-wrap: nowrap; align-items: center; margin-top: 41px;}
 .section3.about .sec3-ani-box{position: relative; width: calc(100% - 13px); min-width: calc(100% - 13px); height:550px; background-color:#191919 }
 .section3.about .sec3-ani-box.box1{width: 25%; min-width: calc(25% - 10px);}
