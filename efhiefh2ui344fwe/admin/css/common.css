@@ -55,7 +55,7 @@ h5{font-weight: bold;margin: 10px 0;}
 .mt100{margin-top: 100px;}
 
 .align-r{text-align: right;}
-.align-l{text-align: left;}
+.align-l{text-align: left !important;}
 .align-c{text-align: center;}
 
 .float-r{float: right;}
@@ -80,11 +80,14 @@ h5{font-weight: bold;margin: 10px 0;}
 #header .gnb-list li a:hover,
 #header .gnb-list li a.active {color: #DBFB00; transition: ease 0.4s;}
 #header .gnb-list > li > a:before {transition: ease 0.4s;}
+#header .gnb-list > li > a.g0:before {content: ""; position: absolute; left: 0; top: 0; width: 22px; height: 21px; background: url(../images/common/g0.png) no-repeat 0 0;}
 #header .gnb-list > li > a.g1:before {content: ""; position: absolute; left: 0; top: 0; width: 22px; height: 21px; background: url(../images/common/g1.png) no-repeat 0 0;}
 #header .gnb-list > li > a.g2:before {content: ""; position: absolute; left: 0; top: 0; width: 22px; height: 21px; background: url(../images/common/g2.png) no-repeat 0 0;}
 #header .gnb-list > li > a.g3:before {content: ""; position: absolute; left: 0; top: 0; width: 22px; height: 21px; background: url(../images/common/g3.png) no-repeat 3px 0;}
 #header .gnb-list > li > a.g4:before {content: ""; position: absolute; left: 0; top: 0; width: 22px; height: 21px; background: url(../images/common/g4.png) no-repeat 3px 0;}
 
+#header .gnb-list > li > a:hover.g0:before,
+#header .gnb-list > li > a.active.g0:before {content: ""; position: absolute; left: 0; top: 0; width: 22px; height: 21px; background: url(../images/common/g0over.png) no-repeat 0 0;}
 #header .gnb-list > li > a:hover.g1:before,
 #header .gnb-list > li > a.active.g1:before {content: ""; position: absolute; left: 0; top: 0; width: 22px; height: 21px; background: url(../images/common/g1over.png) no-repeat 0 0;}
 #header .gnb-list > li > a:hover.g2:before,
@@ -242,6 +245,7 @@ h2.tit {margin: 0 0 20px 0; color: #000; font-size: 30px; font-weight: bold; lin
 .notice-table .sub-tit-row td .sub-form-type2 {width: 100%; display: table;}
 .notice-table .sub-tit-row td .sub-form-type2+.sub-form-type2 {margin-top: 20px;}
 .notice-table .sub-tit-row td .sub-form-type2 .sub-form-type2-row {width: 50%; display: table-cell; padding: 35px 0;}
+/* .notice-table .sub-tit-row td .sub-form-type2 .sub-form-type3-row {width: 50%; display: table-cell; padding: 35px 0;} */
 .notice-table .sub-tit-row td .sub-form-type2 .sub-form-type2-row .sub-tit-type2 {width: 120px; padding-right: 12px; box-sizing: border-box; word-break: break-all;}
 .notice-table .sub-tit-row td .sub-form-type2 .sub-form-type2-row .sub-ip-txt {color: #000; font-weight: bold;}
 .notice-table .sub-tit-row td span.sub-tit-type2{margin-left: 80px;}
@@ -251,9 +255,21 @@ h2.tit {margin: 0 0 20px 0; color: #000; font-size: 30px; font-weight: bold; lin
 
 .notice-table td.nv-cont{text-align: left; font-weight: bold; font-size: 20px;}
 .notice-table td.nv-cont.form-type{padding-top:20px; padding-bottom:20px}
-.notice-table td.nv-cont.form-type.type2{padding-top:00px; padding-bottom:0px}
+.notice-table td.nv-cont.form-type.type2{padding-top:0px; padding-bottom:0px}
 .notice-table td.nv-cont.form-type.type2 .sub-form-type2{margin-top: 0; border-bottom: 1px solid #BABABA; line-height: 96px;}
 .notice-table td.nv-cont.form-type.type2 .sub-form-type2:last-child{border-bottom: 0;}
+
+.notice-table .sub-tit-row td .sub-form-type3 {width: 100%; display: table;}
+.notice-table .sub-tit-row td .sub-form-type3+.sub-form-type3 {margin-top: 20px;}
+.notice-table .sub-tit-row td .sub-form-type3 .sub-form-type3-row {display: table-cell; padding: 35px 0;}
+.notice-table .sub-tit-row td .sub-form-type3 .sub-form-type3-row .sub-tit-type3 {width: 120px; padding-right: 12px; box-sizing: border-box; word-break: break-all;}
+.notice-table .sub-tit-row td .sub-form-type3 .sub-form-type3-row .sub-ip-txt {width: 250px; color: #000; font-weight: bold; display: -webkit-box; text-overflow: ellipsis; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+.notice-table .sub-tit-row td span.sub-tit-type3{margin-left: 80px;}
+.notice-table .sub-tit-row td span:first-child.sub-tit-type3{margin-left: 0;}
+
+.notice-table td.nv-cont.form-type.type3{padding-top:0px; padding-bottom:0px}
+.notice-table td.nv-cont.form-type.type3 .sub-form-type3{margin-top: 0; border-bottom: 1px solid #BABABA; line-height: 96px;}
+.notice-table td.nv-cont.form-type.type3 .sub-form-type3:last-child{border-bottom: 0;}
 
 .notice-table td.nv-cont.form-type textarea{height: 630px;}
 .date-terms-type {position: relative; display: inline-block;}
