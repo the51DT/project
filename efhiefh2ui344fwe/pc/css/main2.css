@@ -8,6 +8,7 @@ body {background-color:#000}
 .blind {display:block; position:absolute; width:0; height:0; left:-9999%; top:-9999%; font-size:0; text-indent:-9999%; opacity:0; overflow:hidden}
 h1, h2, h3, h4, h5 {margin:0}
 button {margin:0; padding:0; background:none}
+br {font-family:dotum;}
 
 /* 텍스트 드래그 컬러 */
 ::selection{background-color: #DBFC00; color: #000;}
