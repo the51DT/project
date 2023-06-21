@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {margin:0}
 .section3 .sec-txt {position:absolute; left:2rem; right:2rem; top:10rem; color:#fff; font-size:1.4rem; line-height:1.4285; z-index:5;/* letter-spacing: 1px; */}
 .section3 .sec-txt .eng {letter-spacing: 0;}
 .section3 .sec-tit-wrap {position:absolute; left:2rem; top:10rem; z-index:6}
-.section3 .sec-tit {display:block; color:#fff; font-size:2.8rem; line-height:4.4rem}
+.section3 .sec-tit {display:block; color:#fff; font-size:2.2rem; line-height:3.2rem}
 .section3 .view-more {display:block; width:6rem; height:6rem; margin-top:2rem; background:url(../images/img-main2-view-more.svg) no-repeat center / contain; font-size:0; text-indent:-9999%; overflow:hidden;}
 
 .section4 .section-inner {height:100%; padding-top:10rem}

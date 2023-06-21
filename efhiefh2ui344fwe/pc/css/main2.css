@@ -79,7 +79,7 @@ button {margin:0; padding:0; background:none}
 .section3 .sec-txt-area {position:absolute; left:0; right:0; top:0; bottom:0; width:100%; max-width:192rem; margin:0 auto; opacity:0}
 .section3 .sec-txt {position:absolute; left:16rem; top:8rem; color:#fff; font-size:2rem; line-height: 1.6; font-family:Sandoll GtNeoCond, "Roboto Condensed", "Noto Sans KR", "Poppins", sans-serif; z-index:5}
 .section3 .sec-tit-wrap {position:absolute; left:16rem; top:12rem; padding-right:13rem; z-index:6}
-.section3 .sec-tit {display: block; font-size:7rem; font-weight:normal; line-height:10rem; color:#fff;}
+.section3 .sec-tit {display: block; font-size:5rem; font-weight:normal; line-height:7rem; color:#fff;}
 .section3 .btn-view-more {position:absolute; display:block; width:10rem; right:0; bottom:1.2rem; padding:2.8rem 0; border-radius:50%; background-color:#DBFC00; color:#000; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:2rem; line-height:2.2rem; text-align:center; z-index:101}
 
 .section4 {margin:15rem 0; padding-bottom:5.6rem}
