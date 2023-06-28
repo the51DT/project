@@ -58,6 +58,7 @@ h5{font-weight: bold;margin: 10px 0;}
 .pr20 {padding-right: 20px !important;}
 .pr30 {padding-right: 30px !important;}
 .pr37 {padding-right: 37px !important;}
+.pr53 {padding-right: 53px !important;}
 
 .align-r{text-align: right;}
 .align-l{text-align: left !important;}
@@ -229,6 +230,8 @@ h2.tit {margin: 0 0 20px 0; color: #000; font-size: 30px; font-weight: bold; lin
 .notice-table.view-type.type3 .sub-tit-type2 {padding-right: 20px; font-size: 20px; color: #999; line-height: 32px;}
 .notice-table.view-type.type3 .row-btn {padding: 20px 0 20px 8px; text-align: right;}
 .notice-table.view-type.type3 .filebox {display: flex; align-items: center;}
+.notice-table.view-type.type3 .urlbox {display: flex; align-items: center; margin-top: 20px;}
+
 
 .notice-table td.n-num{color: #999;}
 .notice-table td.n-title{font-size: 20px; text-align: left; font-weight: bold;}
