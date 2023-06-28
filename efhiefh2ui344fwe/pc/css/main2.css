@@ -57,7 +57,7 @@ button {margin:0; padding:0; background:none}
 .section2 .works-slide .swiper-slide.swiper-slide-next,
 .section2 .works-slide .swiper-slide.swiper-slide-active {opacity:1}
 .section2 .works-slide .works-item-wrap {position:relative; width:50rem}
-.section2 .works-slide .works-item-wrap > a {display:block; position:absolute; left:0; right:0; top:0; bottom:0}
+/* .section2 .works-slide .works-item-wrap > a {display:block; position:absolute; left:0; right:0; top:0; bottom:0} */
 .section2 .works-slide .works-item-wrap img {display:block; width:100%; height: 72rem;}
 .section2 .works-slide .item-tit {margin-top:2.5rem; color:#fff; font-size:2.2rem; line-height:2.2rem}
 .section2 .works-slide .item-flag {position:absolute; top:0; right:0; display:block; min-width:10rem; padding:0 1.8rem; background-color:#DBFC00; color:#000; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:1.6rem; font-weight:bold; line-height:4rem; text-align:center; box-sizing:border-box}
