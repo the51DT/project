@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5 {margin:0}
 .section2.fit-change .works-slide {margin-top:2rem}
 .section2 .works-slide .swiper-slide {position:relative; width:28.6rem!important; margin:0 1rem}
 .section2 .works-slide .works-item-wrap {position:relative}
-.section2 .works-slide .works-item-wrap > a {display:block; position:absolute; left:0; right:0; top:0; bottom:0}
+/* .section2 .works-slide .works-item-wrap > a {display:block; position:absolute; left:0; right:0; top:0; bottom:0} */
 .section2 .works-slide .works-item-wrap img {height: 41rem;}
 .section2 .works-slide .item-tit {margin-top:1.4rem; color:#fff; font-size:2rem; font-weight:500; line-height:3rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
 .section2 .works-slide .item-flag {position:absolute; top:0; right:0; display:block; min-width:8rem; padding:0 1.8rem; background-color:#DBFC00; color:#000; font-family:'Roboto Condensed', 'Poppins', sans-serif; font-size:1.2rem; font-weight:bold; line-height:3rem; text-align:center}
